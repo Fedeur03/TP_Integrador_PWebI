@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: Calibri;
+}
+
+
+.navbar {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #602929;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.vistas {
+    margin-left: 15em;
+    display: flex;
+    gap: 20px;
+}
+
+.usuario {
+    display: flex;
+    gap: 20px;
+    margin-left: 15em;
+}
+
+.nav-list {
+    list-style-type: none;
+    justify-content: flex-end;
+    display: flex;
+    gap: 20px;
+
+}
+
+ul li a {
+    font-size: 2em;
+    text-decoration: none;
+    color: #EBDBDB;
+}
+
+ul li a:hover {
+    color: #fff;
+}
+
