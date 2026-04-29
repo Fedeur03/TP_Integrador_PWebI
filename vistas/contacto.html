@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../estilos/navbar.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <link rel="stylesheet" href="../estilos/styles.css">
+    <link rel="stylesheet" href="../estilos/formulario.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
@@ -16,25 +17,72 @@
         <span class="nav-logo">LOGO</span>
         <ul class="nav-list">
             <div class="vistas">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Vuelos</a></li>
-            <li><a href="#">Ofertas</a></li>
-            <li><a href="#">Contacto</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Vuelos</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contacto</a></li>
             </div>
             <div class="usuario">
-            <li><a href="#">Registro</a></li>
-            <li><a href="#">Iniciar Sesión</a></li>
+                <li><a href="#">Registro</a></li>
+                <li><a href="#">Iniciar Sesión</a></li>
             </div>
         </ul>
     </nav>
 
     <main class="contenedor">
-        <section class="contenido_principal">
-            <h1>Bienvenido a mi página web</h1>
-            <p>Este es el contenido principal de mi página web.</p>
+        <section class="formulario">
+            <span class="form-header">
+                <span class="title-header"> ¿Alguna pregunta? Contáctanos</span>
+                <p class="description-header">Completa el formulario debajo para comunicarte con nosotros.</p>
+            </span>
+            <span class="form-data">
+                <div class="row">
+                    <article class="name-form">
+                        <label for="name">Nombre y Apellido:</label>
+                        <input type="text" placeholder="Juan Perez" name="name">
+                    </article>
+
+                    <article class="email-form">
+
+                        <label for="email">Correo:</label>
+                        <input type="email" placeholder="correo@proveedor.com" name="email">
+
+                    </article>
+
+
+                </div>
+
+                <div class="row">
+                    <article class="phone-form">
+
+                        <label for="phone">Telefono:</label>
+                        <input type="text" placeholder="+54 (011) 1234 5678" name="phone">
+
+                    </article>
+
+                    <article class="subject-form">
+
+                        <label for="subject">Asunto:</label>
+                        <select name="subject">
+                            <option>Problemas con mi vuelo</option>
+                            <option>Reclamo de pagos</option>
+                            <option>Hubo un problema con mi documentación</option>
+                            <option>Quiero un reembolso</option>
+                            <option>Equipaje perdido</option>
+                            <option>Otro/a</option>
+                        </select>
+                    </article>
+                </div>
+            </span>
+            <span class="form-message">
+                <article class="message-form">
+                    <label for="message">Mensaje:</label>
+                    <textarea placeholder="Detalla tu mensaje" name="message"></textarea>
+                </article>
+            </span>
+            <button type="submit" class="submit-button">Enviar</button>
         </section>
     </main>
-
     <footer class="footer">
         <div class="contenedor_footer">
             <section class="redes_sociales">
@@ -48,7 +96,8 @@
                 <p>Términos y condiciones</p>
                 <p>Privacidad</p>
             </section>
-        </div><hr>
+        </div>
+        <hr>
         <div class="copyright">
             <p>&copy; 2026 Mi página web. Todos los derechos reservados.</p>
         </div>

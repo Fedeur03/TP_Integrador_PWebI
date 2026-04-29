@@ -1,0 +1,128 @@
+.formulario {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #642E2E;
+    border-radius: 20px;
+    background-color: #C9AFAF;
+    margin: 40px;
+    padding: 40px;
+    height: auto;
+}
+
+.form-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2vh;
+}
+
+.title-header {
+    font-size: 2em;
+    font-weight: bold;
+    color: #642E2E;
+}
+
+.description-header {
+    font-size: 1.2em;
+    text-align: center;
+    color: #6e3434;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.form-data {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: auto;
+}
+
+.form-message {
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+    gap: 20px;
+    height: auto;
+}
+
+.message-form{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    color: #000000 !important;
+}
+
+article {
+    margin:10px;
+}
+
+article label {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #642E2E;
+}
+
+article input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #642E2E;
+    color: #000000 !important;
+    padding: 10px;
+    font-size: 1.2em;
+    
+}
+
+article select {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #642E2E;
+    color: #602929 !important;
+    padding: 10px;
+    font-size: 1.2em; 
+}
+
+article textarea {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #642E2E;
+    color: #000000 !important;
+    padding: 10px;
+    font-size: 1.2em;
+    
+}
+
+.submit-button {
+    font-size: 1.2em;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #642E2E;
+    background-color: #642E2E;
+    color: #fff !important;
+    padding: 15px 40px 15px ;
+    margin: 20px;
+    align-self: flex-end;
+}
+
+.submit-button:hover {
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #642E2E !important;
+    cursor: pointer;
+}
