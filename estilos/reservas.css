@@ -1,0 +1,106 @@
+
+
+
+.contenedor_reservas {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: 2rem;
+    width: 100%;
+    padding: 2rem;
+    padding-top: 0;
+    background-color: #ebebeb;
+}
+
+.contenido_principal_reservas {
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 10rem;
+    width: 100%;
+}
+
+.contenido_principal_reservas h1 {
+    font-size: 1.5rem;
+    color: #642E2E;
+    border-bottom: 0.1rem solid #642E2E;
+}
+.contenido_principal_reservas h2 {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+    color: #642E2E;
+}
+
+.contenido_secundario_reservas {
+    margin-top: 1rem;
+    border-left: 0.1rem solid #642E2E;
+    padding-left: 1rem;
+    color: #642E2E;
+
+}
+
+.contenido_secundario_reservas details {
+    background-color: #C9AFAF;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #642E2E;
+}
+
+summary {
+    display: grid;
+    grid-template-columns: 3fr 1fr auto;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+}
+
+summary::after {
+    content: '▼';
+    font-size: 1.2rem;
+}
+
+details[open] h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+
+}
+
+details[open] summary::after {
+    content: '▲';
+}
+
+details[open] {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: 2rem;
+
+}
+details[open] div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+details[open] div svg{
+    width: 8rem;
+    height: 8rem;
+    grid-column: 2;
+    grid-row: 1/3;
+    justify-self: end;
+}
+
+.precio {
+    text-align: right;
+    margin-right: 0.5rem;
+
+}
+
+.contenido-seleccionado {
+    background-color: #C9AFAF;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+strong {
+  margin-left: 0.5rem;
+}
