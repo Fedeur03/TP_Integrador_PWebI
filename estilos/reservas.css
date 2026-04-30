@@ -6,8 +6,8 @@
     grid-template-columns: 2fr 5fr;
     gap: 2rem;
     width: 100%;
-    padding: 2rem;
-    padding-top: 0;
+    padding: 0 2rem;
+    padding-bottom: 12rem;
     background-color: #ebebeb;
 }
 
@@ -55,8 +55,10 @@ summary {
     list-style: none;
     cursor: pointer;
 }
-
-summary::after {
+/* ::before y ::after insertan contenido 
+antes o después del contenido real del elemento. 
+Siempre necesitan content */
+summary::after { 
     content: '▼';
     font-size: 1.2rem;
 }

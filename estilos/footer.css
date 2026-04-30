@@ -1,40 +1,50 @@
+/* FOOTER */
 .footer {
-    width: 100%;
+    font-size: 0.7rem;
+    margin-top: auto;
+    position: fixed; 
     bottom: 0;
-    height: auto;
+    width: 100%;
     justify-content: center;
     align-items: center;
     background-color: #602929;
     color: #fff;
-    padding: 10px 20px;
+    padding: 0.2rem 2rem;
+    max-height: 12rem;
 }
 
 .redes_sociales{
-    display:flex;
-    flex-direction: column;
-    gap: 20px;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 }
 
 .logo {
-     font-size: 1.5em;
-
+    font-size: 1.5em;
 }
 
 .preguntas {
     display: flex;
     flex-direction: column;
-    gap: 20px;}
+    gap: 1rem;
+}
 
 .contenedor_footer {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 3em;
-    margin-top: 3.5em;
+    padding: 1rem 0;
 }
 
 .copyright {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2em;
+    padding-top: 0.5rem;
 }
+
+.preguntas a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+/* FIN FOOTER */

@@ -6,6 +6,7 @@ form {
     background-color: #fff;
     padding: 2em;
     border-radius: 2rem;
+    box-sizing: border-box;
 }
 
 h2 {
@@ -21,6 +22,8 @@ label {
 }
 
 input {
+    box-sizing: border-box;
+    width: 100%;
     padding: 0.4rem;
     margin-bottom: 0.5rem;
     border: 1px solid #ccc;

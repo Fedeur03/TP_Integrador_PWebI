@@ -18,18 +18,18 @@
     padding: 0 20px;
     background-color: #602929;
     color: #fff;
-    font-size: 15px;
+    font-size: 0.7rem;
 }
 
 .vistas {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 0.5rem;
 }
 
 .usuario {
     display: flex;
-    gap: 15px;
+    gap: 0.5rem;
     align-items: center;
 }
 
@@ -54,7 +54,7 @@ ul li a {
     font-size: 1.5em;
     text-decoration: none;
     color: #EBDBDB;
-    padding: 19px 20px;
+    padding: 1rem 1rem;
     
 }
 
@@ -63,13 +63,16 @@ ul li a:hover {
     color: #602929;
 }
 
-.sign-in{
-    background-color: #f5ecec;
+.contenido-seleccionado {
+    background-color: #C9AFAF;
+    font-weight: bold;
     color: #602929 !important;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-.sign-in:hover {
+
+.contenido-seleccionado:hover {
     background-color: #EBDBDB;
     color: #602929 !important;
 }
