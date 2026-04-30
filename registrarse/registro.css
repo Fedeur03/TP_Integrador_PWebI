@@ -1,79 +1,33 @@
-form {
-    width: 50%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 0.6em;
-    background-color: #fff;
-    padding: 2em;
-    border-radius: 2rem;
-}
+6 gancias
+4 fernet
+1 federico
+1 alma mora
+1 finca las moras
+_________________
+1 corona
+1 sprite
+1 coca1.75
+1 speed XL
+2 fernet
+2 gancias
+-----------------
+5 pack Coca1.75
 
-h2 {
-    text-align: center;
-    color: #602929;
-    margin-bottom: 0.3em;
-}
 
-label {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #642E2E;
-}
 
-input {
-    padding: 0.4rem;
-    margin-bottom: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 1rem;
-    background-color: #faf9f9;
-    font-size: 1rem;
-}
+|||||||||||||||||||
+................. 
 
-input:hover {
-    border-color: #602929;
-    background-color: #ccc;
-}
-
-form a {
-    font-size: 0.850rem;
-    color: #602929;
-    text-align: end;
-    text-decoration: none;
-}
-
-form a:hover {
-    text-decoration: underline;
-}
-
-button {
-    padding: 0.5rem;
-    background-color: #642E2E;
-    color: #fff;
-    border: 0.2rem solid #602929;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 0.3em;
-}
-
-button:hover {
-    background-color: #7a3333;
-}
-
-form p {
-    text-align: center;
-    font-size: 0.850rem;
-    color: #555;
-}
-
-.limpiar {
-    background-color: #fff;
-    color: #642E2E;
-    border: 0.1rem solid #602929;
-}
-
-.limpiar:hover {
-    background-color: #d6d6d6;
-}
+1 federico 21.200
+1 alma mora 21.500
+1 finca las moras 17.000
+_________________
+1 corona  43.500
+1 sprite  17.000(6u)
+1 speed XL 23.000
+6 fernet  84.000
+8 gancias 44.000
+-----------------
+6 pack Coca 108.000
+|||||||||||||||||||
+total $379,200
