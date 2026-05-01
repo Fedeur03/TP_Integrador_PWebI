@@ -1,6 +1,10 @@
 
 /*contacto.html tiene una NAV distinta, es por algo en espacial? */
-/* */
+/* Fede: Es para andar probando diseños, sinceramente el navbar inicial me parecia
+muy burdo y basico asi que anduve probando para probar otro diseño.
+Cuando estemos en llamada todos juntos si quieren lo organizamos y hacemos
+uno para unificar en todos.
+ */
 /* */
 /* */
 /* */

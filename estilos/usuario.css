@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.contenedor_reservas {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: 2rem;
+    width: 100%;
+    padding: 0 2rem;
+    padding-bottom: 12rem;
+    background-color: #ebebeb;
+}
+
+.contenido_principal_reservas {
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 10rem;
+    width: 100%;
+}
+
+
+
+.contenido_principal_reservas h1 {
+    font-size: 1.5rem;
+    color: #642E2E;
+    border-bottom: 0.1rem solid #642E2E;
+}
+
+.contenido_principal_reservas h2 {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+    color: #642E2E;
+}
+
+.contenido_secundario_reservas {
+    margin-top: 1rem;
+    border-left: 0.1rem solid #642E2E;
+    padding-left: 1rem;
+    color: #642E2E;
+
+}
+
+.contenido_secundario_reservas details {
+    background-color: #C9AFAF;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #642E2E;
+}
+
+
+
+.contenido-seleccionado {
+    background-color: #C9AFAF;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+strong {
+    margin-left: 0.5rem;
+}
+
+.categoria {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: rem;
+}
+
+.contenedor {
+    padding: 1rem;
+    margin-top: 1rem;
+    min-width: 80%;
+    width: auto;
+    height: auto;
+    background-color: #C9AFAF;
+    border-radius: 4px;
+}
+
+.seccion-superior {
+    display: flex;
+    width: auto;
+    margin-left: 5em;
+    justify-content: flex-start;
+}
+
+.datos_personales {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 0.5rem;
+    margin-left: 5rem;
+}
+
+.user-image {
+    width: 20em;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cambiar-imagen {
+    display: flex;
+    flex-direction: row;
+    margin-left: 11.5em;
+    justify-content: flex-start;
+}
+
+.documento-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.editar-documento {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    justify-self: flex-end;
+}
+
+.editar-documento a {
+    text-decoration: none;
+    color: #642E2E;
+}
+
+
+
+.sector-imagen {
+    margin-top: 1rem;
+    width: auto;
+}
+
+.sector-imagen img {
+    width: 10em;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.label {
+
+    font-size: 1.2rem;
+}
+
+input {
+    padding: 0.5rem;
+    border: 0.1rem solid #642E2E;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #642E2E;
+    font-size: 1rem;
+}
+
+select {
+    padding: 0.5rem;
+    border: 0.1rem solid #642E2E;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #642E2E;
+    font-size: 1rem;
+}
+
+.datos-documento {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.sector-datos {
+    display: flex;
+    gap: 4rem;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.sector-completar {
+    display: flex;
+    gap: 4rem;
+    box-sizing: border-box;
+
+    align-items: center;
+}
+
+#editar {
+    color:beige !important;
+
+}

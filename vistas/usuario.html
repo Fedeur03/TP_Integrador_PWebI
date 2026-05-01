@@ -4,34 +4,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Check Out</title>
+    <title>Inicio</title>
     <link rel="stylesheet" href="../estilos/navbar.css">
     <link rel="stylesheet" href="../estilos/footer.css">
-    <link rel="stylesheet" href="../estilos/styles.css">
-    <link rel="stylesheet" href="../estilos/reservas.css">
+    <link rel="stylesheet" href="../estilos/usuario.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
     <nav class="navbar">
-        <span class="nav-logo">LOGO</span>
+        <img src="../media/flyway_logo.png" class="nav-logo" />
         <ul class="nav-list">
             <div class="vistas">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../vistas/vuelos.html">Vuelos</a></li>
                 <li><a href="../vistas/ofertas.html">Ofertas</a></li>
                 <li><a href="../vistas/contacto.html">Contacto</a></li>
-                <li><a href="../vistas/check_out.html">Check Out</a></li>
             </div>
         </ul>
     </nav>
-    <main class="contenedor">
-        <section class="contenido_principal">
-            <h1>Check Out</h1>
-            <p>Este es el contenido principal de mi página web.</p>
-        </section>
-    </main>
 
+    <main class="contenedor_reservas">
+        <section class="contenido_principal_reservas">
+            <h1>Perfil</h1><br>
+            <h2 class="contenido-seleccionado opcion">Informacion Personal</h2>
+            <h2 class="opcion">Mis Vuelos Reservados</h2>
+        </section>
+        <section class="contenido_secundario_reservas">
+            <h1>Perfil</h1>
+            <span class="categoria">Mis Datos </span> <a href="#">Editar datos</a>
+            <div class="contenedor">
+                <div class="seccion-superior">
+                    <img class="user-image" src="../media/user_template.jpg" alt="Imagen de perfil del usuario" />
+
+                    <div class="datos_personales">
+                        <p>Nombre Completo:</p>
+                        <input type="text" value="Juan Perez" disabled>
+                        <p>Correo Electrónico:</p>
+                        <input type="text" value="QaZB3@example.com" disabled>
+                        <p>Teléfono:</p>
+                        <input type="text" value="+54 9 11 1234-5678" disabled>
+                        <p>Dirección:</p>
+                        <input type="text" value="Calle Falsa 123, Ciudad, País" disabled>
+                        <p>Fecha de Nacimiento:</p>
+                        <input type="text" value="01/01/1990" disabled>
+                    </div>
+
+                </div>
+                <a href="#" class="cambiar-imagen">Cambiar imagen</a>
+
+
+
+
+
+            </div><br>
+            <span class="categoria">Mis Documentos</span>
+            <div class="contenedor">
+
+                <div class="seccion-inferior">
+                    <div class="documento">
+
+
+                        <div class="datos-documento">
+                            <div class="sector-imagen">
+                                <img class="documento-imagen" src="../media/assets/pasaporte.png"
+                                    alt="Imagen del documento del usuario" />
+                            </div>
+
+                            <div class="sector-datos">
+                                <div class="row">
+                                    <p class="label">Tipo de Documento</p>
+                                    <select disabled>
+                                        <option value="dni">DNI</option>
+                                        <option selected value="pasaporte">Pasaporte</option>
+                                        <option value="licencia">Licencia de Conducir</option>
+                                    </select>
+                                    <p class="label">Número de Documento</p>
+                                    <input type="text" value="12345678" disabled>
+                                </div>
+                                <div class="row">
+                                    <p class="label">Fecha de Vencimiento</p>
+                                    <input type="date" value="2025-01-01" disabled>
+                                    <p class="label">Fecha de Expedición</p>
+                                    <input type="date" value="2020-01-01" disabled>
+
+                                </div>
+
+                                <div class="row">
+                                    <p class="label">País de Emisión</p>
+                                    <input type="text" value="Argentina" disabled>
+                                    <p class="label">País de Residencia</p>
+                                    <input type="text" value="Argentina" disabled>
+
+
+                                </div>
+                            </div>
+
+                            <div class="editar-documento">
+                                
+                                <p>Editar</p>
+                                <p>Eliminar</p>
+
+
+
+                            </div>
+
+
+                        </div><br>
+                        <hr><br>
+                        <div class="documento">
+
+
+                        <div class="datos-documento">
+                            <div class="sector-imagen">
+                                <img class="documento-imagen" src="../media/assets/dni.png"
+                                    alt="Imagen del documento del usuario" />
+                            </div>
+
+                            <div class="sector-datos">
+                                <div class="row">
+                                    <p class="label">Tipo de Documento</p>
+                                    <select disabled>
+                                        <option selected value="dni">DNI</option>
+                                        <option  value="pasaporte">Pasaporte</option>
+                                        <option value="licencia">Licencia de Conducir</option>
+                                    </select>
+                                    <p class="label">Número de Documento</p>
+                                    <input type="text" value="12345678" disabled>
+                                </div>
+                                <div class="row">
+                                    <p class="label">Fecha de Vencimiento</p>
+                                    <input type="date" value="2025-01-01" disabled>
+                                    <p class="label">Fecha de Expedición</p>
+                                    <input type="date" value="2020-01-01" disabled>
+
+                                </div>
+
+                                <div class="row">
+                                    <p class="label">País de Emisión</p>
+                                    <input type="text" value="Argentina" disabled>
+                                    <p class="label">País de Residencia</p>
+                                    <input type="text" value="Argentina" disabled>
+
+
+                                </div>
+                            </div>
+
+                            <div class="editar-documento">
+                                
+                                <p>Editar</p>
+                                <p>Eliminar</p>
+
+
+
+                            </div>
+
+
+                        </div>
+
+                            <br>
+                            <hr><br>
+                            <div class="documento">
+                                <span class="categoria">Nuevo Documento</span>
+                                <div class="sector-completar">
+                                    <div class="row">
+                                        <p class="label">Tipo de Documento</p>
+                                        <select >
+                                            <option value="dni">DNI</option>
+                                            <option value="pasaporte">Pasaporte</option>
+                                            <option value="licencia">Licencia de Conducir</option>
+                                        </select>
+                                        <p class="label">Número de Documento</p>
+                                        <input type="text" value="12345678" >
+                                    </div>
+                                    <div class="row">
+                                        <p class="label">Fecha de Vencimiento</p>
+                                        <input type="date" value="2025-01-01" >
+                                        <p class="label">Fecha de Expedición</p>
+                                        <input type="date" value="2020-01-01" >
+
+                                    </div>
+
+                                    <div class="row">
+                                        <p class="label">País de Emisión</p>
+                                        <input type="text" value="Argentina" >
+                                        <p class="label">País de Residencia</p>
+                                        <input type="text" value="Argentina" >
+
+
+                                    </div>
+
+                                    <div class="row">
+                                        
+                                        <p class="label">Subir Documento</p>
+                                        <input type="file" name="subir-archivo"/><br>
+                                        <p>Solo se aceptan documentos en formato PDF, JPG o PNG</p>
+                                        
+
+                                    </div>
+                                </div>
+                                
+                                
+
+                            </div>
+
+
+
+
+
+
+                        </div>
+                    </div>
+
+        </section>
+
+    </main>
 
     <footer class="footer">
         <div class="contenedor_footer">
@@ -52,5 +239,7 @@
             <p>&copy; 2026 Mi página web. Todos los derechos reservados.</p>
         </div>
     </footer>
+
 </body>
+
 </html>
