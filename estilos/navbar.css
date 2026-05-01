@@ -12,6 +12,7 @@
 .navbar {
     width: 100%;
     height: 5em;
+    position: sticky !important;
     display: flex;
     align-items: center;
     justify-content: space-between;
