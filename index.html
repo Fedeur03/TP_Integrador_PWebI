@@ -29,12 +29,46 @@
         </ul>
     </nav>
 
-    <main class="contenedor">
-        <section class="contenido_principal">
-            <h1>Bienvenido a mi página web</h1>
-            <p>Este es el contenido principal de mi página web.</p>
-        </section>
-    </main>
+    <section class="contenido_principal">
+
+        <h1>Busca tu vuelo</h1>
+    
+        <form class="buscador">
+    
+            <div class="tipo_vuelo">
+                <label><input type="radio" name="viaje" checked> Ida y vuelta</label>
+                <label><input type="radio" name="viaje"> Solo ida</label>
+            </div>
+    
+            <div class="fila">
+                <input type="text" placeholder="Origen">
+                <input type="text" placeholder="Destino">
+            </div>
+    
+            <div class="fila">
+                <input type="date">
+                <input type="date">
+            </div>
+    
+            <div class="fila">
+                <select>
+                    <option>1 Pasajero</option>
+                    <option>2 Pasajeros</option>
+                    <option>3 Pasajeros</option>
+                </select>
+    
+                <select>
+                    <option>Economy</option>
+                    <option>Business</option>
+                    <option>Primera Clase</option>
+                </select>
+            </div>
+    
+            <button type="submit">Buscar vuelos</button>
+    
+        </form>
+    
+    </section>
 
     <footer class="footer">
         <div class="contenedor_footer">
