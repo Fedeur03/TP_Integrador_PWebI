@@ -1,0 +1,56 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.contenedor h2 {
+    color: #602929;
+    margin-bottom: 1em;
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.5em;
+}
+
+.caja {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #c9afaf;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    gap: 0.8rem;
+}
+
+.caja h3 {
+    color: #602929;
+}
+
+.resultados {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #c9afaf;
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 0.6em;
+}
+
+.resultado-aerolinea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+    text-align: center;
+}
+
+.resultado-aerolinea hr {
+    flex-grow: 1;
+}
+
+.duracion-mas-escala {
+    font-size: 0.850rem;
+    text-align: center;
+}
