@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+    <link rel="stylesheet" href="../estilos/navbar.css">
+    <link rel="stylesheet" href="../estilos/footer.css">
+    <link rel="stylesheet" href="./resultados.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <span class="nav-logo">LOGO</span>
+        <ul class="nav-list">
+            <div class="vistas">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Vuelos</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </div>
+            <div class="usuario">
+                <li><a href="login.html">Iniciar Sesión</a></li>
+                <li><a href="registro.html" class="sign-in">Registro</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <main class="contenedor">
+
+        <h2>Resultados de Búsqueda</h2>
+
+        <div class="grilla">
+
+            <section class="caja">
+                <h3>Filtrar por</h3>
+
+                <h4>Precio</h4>
+
+                <div class="rango_precio">
+                    <span>$100</span>
+                    <span>$1.000</span>
+                </div>
+                <input type="range" min="0" max="1000" value="500">
+
+                <h4>Tipo de vuelo</h4>
+                <label><input type="checkbox"> Directo</label>
+                <label><input type="checkbox"> Con escalas</label>
+
+                <h4>Aerolínea</h4>
+                <label><input type="checkbox"> Aerolíneas Argentinas</label>
+                <label><input type="checkbox"> American Airlines </label>
+                <label><input type="checkbox"> Flybondi </label>
+                <label><input type="checkbox"> Emirates </label>
+            </section>
+
+            <section class="caja">
+                <h3>Aerolínea</h3>
+
+                <div class="resultados">
+                    <h4>Aerolíneas Argentinas</h4>
+                    <div class="resultado-aerolinea">
+                        <div>
+                            <p class="hora-y-ciudad">12:00</p>
+                            <p class="hora-y-ciudad">MENDOZA</p>
+                        </div>
+                        <hr>
+                            <i class="fa-solid fa-plane"></i>
+                        <hr>
+                        <div>
+                            <p class="hora-y-ciudad">08:40</p>
+                            <p class="hora-y-ciudad">PARIS</p>
+                        </div>
+                        <div class="acciones">
+                            <p class="etiqueta_precio">$ 540 USD</p>
+                            <button>SELECCIONAR</button>
+                        </div>
+                    </div>
+                    <p class="duracion-escala">15h 10m · 11 escalas</p>
+                </div>
+
+                <div class="resultados">
+                    <h4>American Airlines</h4>
+                    <div class="resultado-aerolinea">
+                        <div>
+                            <p class="hora-y-ciudad">14:00</p>
+                            <p class="hora-y-ciudad">LONDRES</p>
+                        </div>
+                        <hr>
+                            <i class="fa-solid fa-plane"></i>
+                        <hr>
+                        <div>
+                            <p class="hora-y-ciudad">22:00</p>
+                            <p class="hora-y-ciudad">TOKIO</p>
+                        </div>
+                        <div class="acciones">
+                            <p class="etiqueta_precio">$ 980 USD</p>
+                            <button>SELECCIONAR</button>
+                        </div>
+                    </div>
+                    <p class="duracion-escala">15h 10m · 11 escalas</p>
+                </div>
+
+            </section>
+
+            <section class="caja">
+                <h3>Equipaje</h3>
+                <label><input type="checkbox"> Solo opciones con equipaje</label>
+                <label><input type="radio" name="equipaje"> <i class="fa-solid fa-briefcase"></i> Equipaje de mano</label>
+                <label><input type="radio" name="equipaje"> <i class="fa-solid fa-suitcase"></i> Equipaje en bodega</label>
+
+                <hr>
+
+                <h3>Políticas</h3>
+                <p>Priorizar la integridad de los pasajeros</p>
+                <p>Cancelar gratis en las próximas 24 horas</p>
+                <p>Seguridad total en cada vuelo</p>
+                <p>Sin reembolso luego del despegue</p>
+                <p>Minimizar el impacto ambiental</p>
+                <p>Puntualidad máxima garantizada</p>
+                <p>Cuidado experto del equipaje</p>
+                </p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor_footer">
+            <section class="redes_sociales">
+                <i class="fa-brands fa-instagram logo"></i>
+                <i class="fa-brands fa-square-x-twitter logo"></i>
+                <i class="fa-brands fa-square-facebook logo"></i>
+                <i class="fa-brands fa-linkedin logo"></i>
+            </section>
+            <section class="preguntas">
+                <p>Preguntas frecuentes</p>
+                <p>Términos y condiciones</p>
+                <p>Privacidad</p>
+            </section>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>&copy; 2026 Mi página web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
