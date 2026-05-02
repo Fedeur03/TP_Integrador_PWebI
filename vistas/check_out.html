@@ -32,28 +32,49 @@
         <form class="resumen">
             <div class="datos_pasajero">
                 <div class="header">
-                    <p class="title">Datos del Pasajero</p>
-                    <span class="subtitle">Ingrese los datos del pasajero para completar la compra</span>
-                </div>
-                <div class="contenido">
-                    <label for="nombre">Nombre Completo:</label>
-                    <input type="text" name="nombre" placeholder="Juan Martin Perez" required>
-                    <label for="documento">Documento de Identidad:</label>
-                    <div class="documento">
-                        <select name="documento" required>
-                            <option selected>DNI</option>
-                            <option>Pasaporte</option>
-                            <option>Libreta Cívica</option>
+                    <div class="sector_img">
 
+                        <i class="fa fa-address-book" aria-hidden="true"></i>
 
-                        </select>
-                        <input type="text" name="numero_documento" placeholder="12345678" required>
                     </div>
 
-                    <label for="correo">Correo Electrónico:</label>
-                    <input name="correo" type="email" placeholder="correo@proveedor.com" required>
-                    <label for="telefono">Teléfono (opcional):</label>
-                    <input type="text" name="telefono" placeholder="+54 9 11 1234-5678">
+                    <div class="sector_texto">
+                        <p class="title">Datos del Pasajero</p>
+                        <span class="subtitle">Ingrese los datos del pasajero para completar la compra</span>
+                    </div>
+
+                </div>
+                <div class="contenido">
+                    <div class="dos-columnas">
+                        <label>Nombres:</label>
+                        <input type="text" name="nombre" placeholder="Juan Martin" required>
+                        <br><label>Apellido:</label>
+                        <input type="text" name="apellido" placeholder="Parez Gonzalez" required>
+                    </div>
+
+                    <div>
+                        <label for="documento">Documento de Identidad:</label>
+                        <div class="documento">
+                            <select name="documento" required>
+                                <option selected>DNI</option>
+                                <option>Pasaporte</option>
+                                <option>Libreta Cívica</option>
+
+
+                            </select>
+                            <input type="text" name="numero_documento" placeholder="12345678" required>
+                        </div>
+                    </div>
+
+
+
+                    <div class="dos-columnas">
+                        <label>Correo Electrónico:</label>
+                        <input name="correo" type="email" placeholder="correo@proveedor.com" required>
+                        <br><label>Teléfono (opcional):</label>
+                        <input type="text" name="telefono" placeholder="+54 9 11 1234-5678">
+                    </div>
+
 
                 </div>
             </div>
@@ -61,8 +82,15 @@
             <div class="metodo_pago">
                 <div class="sector_superior">
                     <div class="header">
-                        <p class="title">Método de pago</p>
-                        <span class="subtitle">Seleccione su método de pago preferido</span>
+                        <div class="sector_img">
+                            <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                        </div>
+                        <div class="sector_texto">
+                            <p class="title">Método de pago</p>
+                            <span class="subtitle">Seleccione su método de pago preferido</span>
+                        </div>
+
+
                     </div>
 
                     <div class="contenido_row">
@@ -75,29 +103,33 @@
                         </span>
                     </div>
                 </div>
-
                 <div class="sector_inferior">
-                    <div class="header">
-                        <p class="title">Tarjeta de crédito/débito</p>
-                        <span class="subtitle">Ingrese los datos de su tarjeta</span>
+                    <div class="sub-header">
+                        <div class="sector_texto">
+                            <p class="sub-title">Tarjeta de crédito/débito</p>
+                        </div>
                     </div>
 
-                    <div class="contenido">
+                    <div class="sub_contenido">
 
-                        <label for="numero_tarjeta">Número de tarjeta:</label>
-                        <input type="text" name="numero_tarjeta" placeholder="1234-5678-9012-3456" required>
-                        <label for="nombre_titular">Nombre del titular:</label>
-                        <input type="text" name="nombre_titular" placeholder="Juan Martin Perez" required>
+                        <div class="dos-columnas">
+                            <label for="numero_tarjeta">Número de tarjeta:</label>
+                            <input type="text" name="numero_tarjeta" placeholder="1234-5678-9012-3456" required>
+                            <br><label for="nombre_titular">Nombre del titular:</label>
+                            <input type="text" name="nombre_titular" placeholder="Juan Martin Perez" required>
+                            <span class="subtitle">Ingrese el nombre como figura en su tarjeta</span>
+                        </div>
+
+
                         <div class="fecha_cvv">
                             <div class="fecha_vencimiento">
                                 <label>Fecha de vencimiento:</label><br>
-                                <input type="text" name="fecha_vencimiento" placeholder="MM/AA" required>
-                                
+                                <input type="date" name="fecha_vencimiento" placeholder="MM/AA" required>
                             </div>
 
                             <div class="cvv">
                                 <label>CVV:</label><br>
-                                <input type="text" name="cvv" placeholder="123" required>
+                                <input type="number" id="cvv" placeholder="123" required>
                             </div>
 
 
@@ -112,8 +144,17 @@
 
             <div class="resumen_vuelo">
                 <div class="header">
-                    <p class="title">Resumen del vuelo</p>
-                    <span class="subtitle">Por favor, confirme los datos del vuelo</span>
+                    <div class="sector_img">
+                        <i class="fa fa-plane" aria-hidden="true"></i>
+                    </div>
+                    <div class="sector_texto">
+                        <p class="title">Resumen del vuelo</p>
+                        <span class="subtitle">Por favor, confirme los datos del vuelo</span>
+
+                    </div>
+
+
+
                 </div>
 
                 <div class="contenido centrado">
@@ -123,14 +164,16 @@
                     <p>Duración: 12h 30m</p>
                     <hr>
 
-                    <p>Millas disponibles: 4589 miles</p>
+                    Millas disponibles:
+                    4589 miles
+
                     <div class="millas_descuento">
                         <div class="titulo_millas">
-                            <p>¿Cuántas desea usar? </p>
+                            ¿Cuántas desea usar?
 
                         </div>
                         <div class="millas_precio">
-                            <input type="text" name="millas" placeholder="5424">
+                            <input type="number" name="millas" placeholder="5424">
                         </div>
                     </div>
 
@@ -145,7 +188,8 @@
 
 
 
-                    </div><hr>
+                    </div>
+                    <hr>
 
                     <div class="cupon_descuento">
                         <div class="cupon_precio">
@@ -154,16 +198,13 @@
                         <div class="titulo_cupon">
                             <button type="button" class="aplicar_cupon">Aplicar cupón</button>
                         </div>
-                        
+
                     </div>
 
 
-
-
-
-
                 </div>
-                <button type="submit" class="confirmar"><i class="fa fa-arrow-right" aria-hidden="true"></i> <span>Confirmar compra</span></button>
+                <button type="submit" class="confirmar"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    <span>Confirmar compra</span></button><br>
         </form>
 
     </main>
