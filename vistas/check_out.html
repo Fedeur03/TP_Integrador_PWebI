@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../estilos/navbar.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <link rel="stylesheet" href="../estilos/styles.css">
-    <link rel="stylesheet" href="../estilos/reservas.css">
+    <link rel="stylesheet" href="../estilos/check_out.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
@@ -25,11 +25,147 @@
             </div>
         </ul>
     </nav>
+
     <main class="contenedor">
-        <section class="contenido_principal">
-            <h1>Check Out</h1>
-            <p>Este es el contenido principal de mi página web.</p>
-        </section>
+        <h1 class="categoria">Check Out</h1>
+
+        <form class="resumen">
+            <div class="datos_pasajero">
+                <div class="header">
+                    <p class="title">Datos del Pasajero</p>
+                    <span class="subtitle">Ingrese los datos del pasajero para completar la compra</span>
+                </div>
+                <div class="contenido">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" name="nombre" placeholder="Juan Martin Perez" required>
+                    <label for="documento">Documento de Identidad:</label>
+                    <div class="documento">
+                        <select name="documento" required>
+                            <option selected>DNI</option>
+                            <option>Pasaporte</option>
+                            <option>Libreta Cívica</option>
+
+
+                        </select>
+                        <input type="text" name="numero_documento" placeholder="12345678" required>
+                    </div>
+
+                    <label for="correo">Correo Electrónico:</label>
+                    <input name="correo" type="email" placeholder="correo@proveedor.com" required>
+                    <label for="telefono">Teléfono (opcional):</label>
+                    <input type="text" name="telefono" placeholder="+54 9 11 1234-5678">
+
+                </div>
+            </div>
+
+            <div class="metodo_pago">
+                <div class="sector_superior">
+                    <div class="header">
+                        <p class="title">Método de pago</p>
+                        <span class="subtitle">Seleccione su método de pago preferido</span>
+                    </div>
+
+                    <div class="contenido_row">
+
+                        <input type="radio" name="metodo_pago" value="Tarjeta de Crédito"><span class="tarjeta">
+                            Tarjeta de Crédito
+                        </span>
+                        <input type="radio" name="metodo_pago" value="Tarjeta de Débito"><span class="tarjeta">
+                            Tarjeta de Débito
+                        </span>
+                    </div>
+                </div>
+
+                <div class="sector_inferior">
+                    <div class="header">
+                        <p class="title">Tarjeta de crédito/débito</p>
+                        <span class="subtitle">Ingrese los datos de su tarjeta</span>
+                    </div>
+
+                    <div class="contenido">
+
+                        <label for="numero_tarjeta">Número de tarjeta:</label>
+                        <input type="text" name="numero_tarjeta" placeholder="1234-5678-9012-3456" required>
+                        <label for="nombre_titular">Nombre del titular:</label>
+                        <input type="text" name="nombre_titular" placeholder="Juan Martin Perez" required>
+                        <div class="fecha_cvv">
+                            <div class="fecha_vencimiento">
+                                <label>Fecha de vencimiento:</label><br>
+                                <input type="text" name="fecha_vencimiento" placeholder="MM/AA" required>
+                                
+                            </div>
+
+                            <div class="cvv">
+                                <label>CVV:</label><br>
+                                <input type="text" name="cvv" placeholder="123" required>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="resumen_vuelo">
+                <div class="header">
+                    <p class="title">Resumen del vuelo</p>
+                    <span class="subtitle">Por favor, confirme los datos del vuelo</span>
+                </div>
+
+                <div class="contenido centrado">
+                    <p>Vuelo: Buenos Aires (EZE) ⮕ Madrid (MAD)</p>
+                    <p>Fecha: 15 de Octubre de 2024</p>
+                    <p>Hora: 22:30</p>
+                    <p>Duración: 12h 30m</p>
+                    <hr>
+
+                    <p>Millas disponibles: 4589 miles</p>
+                    <div class="millas_descuento">
+                        <div class="titulo_millas">
+                            <p>¿Cuántas desea usar? </p>
+
+                        </div>
+                        <div class="millas_precio">
+                            <input type="text" name="millas" placeholder="5424">
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div class="precio">
+                        <div class="titulo_precio">
+                            Precio total:
+                        </div>
+                        <div class="valor_precio">
+                            <span class="precio_numero">$ 800</span> USD
+                        </div>
+
+
+
+                    </div><hr>
+
+                    <div class="cupon_descuento">
+                        <div class="cupon_precio">
+                            <input type="text" name="cupon" placeholder="Ingrese su cupón">
+                        </div>
+                        <div class="titulo_cupon">
+                            <button type="button" class="aplicar_cupon">Aplicar cupón</button>
+                        </div>
+                        
+                    </div>
+
+
+
+
+
+
+                </div>
+                <button type="submit" class="confirmar"><i class="fa fa-arrow-right" aria-hidden="true"></i> <span>Confirmar compra</span></button>
+        </form>
+
     </main>
 
 
@@ -53,4 +189,5 @@
         </div>
     </footer>
 </body>
+
 </html>
