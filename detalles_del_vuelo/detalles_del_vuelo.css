@@ -57,8 +57,6 @@
 
 .mapa {
     display: flex;
-    gap: 2rem;
-    align-items: flex-start;
 }
 
 .referencias {
@@ -78,6 +76,7 @@
     text-align: center;
     padding-top: 2.2rem;
     gap: 1.2rem;
+    margin-right: 2rem;
 }
 
 .grupo {
@@ -88,6 +87,7 @@
     border-radius: 0.6rem;
     padding: 0.8rem;
     gap: 1.2rem;
+    margin-right: 2rem;
 }
 
 .columnas {
