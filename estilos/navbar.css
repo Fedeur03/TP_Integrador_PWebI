@@ -63,13 +63,14 @@ ul li a {
 ul li a:hover {
     background-color: #9c7575;
     color: #602929;
+    border-radius: 3px;
 }
 
 .contenido-seleccionado {
     background-color: #C9AFAF;
     font-weight: bold;
     color: #602929 !important;
-    border-radius: 5px;
+    border-radius: 3px;
     margin-bottom: 10px;
 }
 
