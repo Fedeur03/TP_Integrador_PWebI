@@ -106,8 +106,7 @@ strong {
 .datos_personales {
     display: flex;
     width: auto;
-    gap: 0.5rem;
-    margin-left: 5rem;
+    margin-left: 3rem;
 }
 
 .user-image {
@@ -175,7 +174,7 @@ strong {
 
 input[type="file"]{
     padding: 0.5rem;
-    width: auto !important;
+    width: 11rem !important;
     border: 0.1rem solid #642E2E;
     border-radius: 3px;
     background-color: #fff;
