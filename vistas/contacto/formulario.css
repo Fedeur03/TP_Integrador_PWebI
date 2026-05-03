@@ -1,16 +1,17 @@
-.formulario {
-    width: 45%;
+body {
+    background-color: #F5EDED;
+}
+
+.contenedor{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    border: 2px solid #642E2E;
-    border-radius: 20px;
-    background-color: #C9AFAF;
-    margin: 40px;
-    padding: 40px;
-    height: auto;
+    margin-top: 5vh;
+    min-height: 25vh;
+    background-color: #F5EDED;
+    padding-bottom: 4rem;
 }
+
 
 .form-header{
     display: flex;
@@ -49,7 +50,6 @@
 .form-message {
     width: 100%;
     display: flex;
-    justify-content: stretch;
     gap: 20px;
     height: auto;
 }
@@ -73,7 +73,7 @@ article label {
 
 article input {
     width: 100%;
-    height: 40px;
+    height: 50px;
     border-radius: 5px;
     border: 2px solid #642E2E;
     color: #000000 !important;
@@ -84,7 +84,7 @@ article input {
 
 article select {
     width: 100%;
-    height: auto;
+    height: 50px;
     border-radius: 5px;
     border: 2px solid #642E2E;
     color: #602929 !important;
@@ -104,6 +104,8 @@ article textarea {
 }
 
 .submit-button {
+    justify-self: flex-end;
+    font-weight: bold;
     font-size: 1.2em;
     width: auto;
     height: auto;
