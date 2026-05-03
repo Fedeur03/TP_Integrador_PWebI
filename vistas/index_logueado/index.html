@@ -7,7 +7,7 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="../../estilos/navbar.css">
     <link rel="stylesheet" href="../../estilos/footer.css">
-    <link rel="stylesheet" href="./contenedor.css">
+    <link rel="stylesheet" href="../../estilos/contenedor.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
@@ -35,46 +35,83 @@
         </div>
     </nav>
 
-    <section class="contenido_principal">
+    <main class="contenedor">
 
-        <h1>Busca tu vuelo</h1>
-    
-        <form class="buscador">
-    
-            <div class="tipo_vuelo">
-                <label><input type="radio" name="viaje" checked> Ida y vuelta</label>
-                <label><input type="radio" name="viaje"> Solo ida</label>
-            </div>
-    
-            <div class="fila">
-                <input type="text" placeholder="Origen">
-                <input type="text" placeholder="Destino">
-            </div>
-    
-            <div class="fila">
-                <input type="date">
-                <input type="date">
-            </div>
-    
-            <div class="fila">
-                <select>
-                    <option>1 Pasajero</option>
-                    <option>2 Pasajeros</option>
-                    <option>3 Pasajeros</option>
-                </select>
-    
-                <select>
-                    <option>Economy</option>
-                    <option>Business</option>
-                    <option>Primera Clase</option>
-                </select>
-            </div>
-    
-            <button type="submit">Buscar vuelos</button>
-    
-        </form>
-    
-    </section>
+        <section class="contenido_principal">
+
+            <h1>Busca tu vuelo</h1>
+
+            <form class="buscador">
+
+              
+                <div class="tipo_vuelo">
+                    <label><input type="radio" name="viaje" checked> Ida y vuelta</label>
+                    <label><input type="radio" name="viaje"> Solo ida</label>
+                </div>
+
+        
+                <div class="fila">
+
+                    <div class="input_icono">
+                        <i class="fa-solid fa-plane-departure"></i>
+                        <input type="text" placeholder="Origen">
+                    </div>
+
+                    <div class="input_icono">
+                        <i class="fa-solid fa-plane-arrival"></i>
+                        <input type="text" placeholder="Destino">
+                    </div>
+
+                </div>
+
+                
+                <div class="fila">
+
+                    <div class="input_icono">
+                        <i class="fa-solid fa-calendar"></i>
+                        <input type="date">
+                    </div>
+
+                    <div class="input_icono">
+                        <i class="fa-solid fa-calendar"></i>
+                        <input type="date">
+                    </div>
+
+                </div>
+
+            
+                <div class="fila">
+
+                    <div class="input_icono">
+                        <i class="fa-solid fa-user"></i>
+                        <select>
+                            <option>1 Pasajero</option>
+                            <option>2 Pasajeros</option>
+                            <option>3 Pasajeros</option>
+                        </select>
+                    </div>
+
+                    <div class="input_icono">
+                        <i class="fa-solid fa-chair"></i>
+                        <select>
+                            <option>Economy</option>
+                            <option>Business</option>
+                            <option>Primera Clase</option>
+                        </select>
+                    </div>
+
+                </div>
+
+          
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i> Buscar vuelos
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
 
     <footer class="footer">
         <div class="contenedor_footer">
