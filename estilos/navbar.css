@@ -73,9 +73,3 @@ ul li a:hover {
     border-radius: 3px;
     margin-bottom: 10px;
 }
-
-
-.contenido-seleccionado:hover {
-    background-color: #EBDBDB;
-    color: #602929 !important;
-}

@@ -4,13 +4,12 @@
     padding: 0;
 }
 
-
 .contenedor_reservas {
     display: grid;
-    grid-template-columns: 2fr 5fr;
+    grid-template-columns: 1fr 3fr;
     gap: 2rem;
     width: 100%;
-    padding: 0 2rem;
+    padding: 2rem;
     padding-bottom: 12rem;
     background-color: #ebebeb;
 }
@@ -21,19 +20,13 @@
     font-weight: bold;
 }
 
-.link:hover{
-    color: #9c7575;
-}
-
 .contenido_principal_reservas {
     padding: 1rem;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    height: 10rem;
+    height: 10%;
     width: 100%;
 }
-
-
 
 .contenido_principal_reservas h1 {
     font-size: 1.5rem;
@@ -52,13 +45,12 @@
     border-left: 0.1rem solid #642E2E;
     padding-left: 1rem;
     color: #642E2E;
-
 }
-
 
 .contenido-seleccionado {
     background-color: #C9AFAF;
-    font-size: 1.2rem;
+    padding: 0.5em;
+    border-radius: 6px;
     font-weight: bold;
 }
 
@@ -123,8 +115,6 @@ strong {
     background-color: #fff;
     color: #642E2E;
     font-size: 1rem;
-
-
 }
 
 .cambiar-imagen {
@@ -141,7 +131,6 @@ strong {
     align-items: center;
 }
 
-
 .sector-imagen {
     margin-top: 1rem;
     width: auto;
@@ -155,7 +144,6 @@ strong {
 }
 
 .label {
-
     font-size: 1.2rem;
 }
 
@@ -189,7 +177,7 @@ input[type="file"]{
     width: 8.5em;
     border: 0.1rem solid #642E2E;
     border-radius: 3px;
-     background-color: #fff;
+    background-color: #fff;
     color: #642E2E;
     font-size: 1rem;
 }
