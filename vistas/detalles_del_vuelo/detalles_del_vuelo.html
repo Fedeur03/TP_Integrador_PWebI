@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles de Vuelo</title>
-    <link rel="stylesheet" href="../estilos/navbar.css">
-    <link rel="stylesheet" href="../estilos/footer.css">
+    <link rel="stylesheet" href="../../estilos/navbar.css">
+    <link rel="stylesheet" href="../../estilos/footer.css">
     <link rel="stylesheet" href="./detalles_del_vuelo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
@@ -14,19 +14,26 @@
 <body>
 
     <nav class="navbar">
-        <span class="nav-logo">LOGO</span>
-        <ul class="nav-list">
-            <div class="vistas">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Vuelos</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Contacto</a></li>
-            </div>
-            <div class="usuario">
-                <li><a href="login.html">Iniciar Sesión</a></li>
-                <li><a href="registro.html" class="sign-in">Registro</a></li>
-            </div>
-        </ul>
+        <div class="nav-left">
+            <ul class="nav-list">
+                <a href="../index_logueado/index.html"><img src="../../media/flyway_logo.png" class="nav-logo" /></a>
+                <div class="vistas">
+                    <li><a href="../index_logueado/index.html">Inicio</a></li>
+                    <li><a href="../mis_reservas/mis_reservas.html">Vuelos</a></li>
+                    <li><a href="../resultados_busqueda/resultados.html">Ofertas</a></li>
+                    <li><a href="../contacto/contacto.html" class="contenido-seleccionado">Contacto</a></li>
+                </div>
+
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul class="nav-list">
+                <div class="usuario">
+                    <li class="log-in"><a href="../usuario/usuario.html" class="contenido-seleccionado">Juan Perez ▼</a></li>
+                    <li class="log-in"><a href="../mis_reservas/mis_reservas.html">Mis Reservas</a></li>
+                </div>
+            </ul>
+        </div>
     </nav>
 
     <main class="contenedor">
