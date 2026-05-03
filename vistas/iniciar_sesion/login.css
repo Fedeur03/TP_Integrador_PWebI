@@ -1,4 +1,5 @@
 form {
+    justify-self: center;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -7,6 +8,7 @@ form {
     padding: 2em;
     border-radius: 2rem;
     box-sizing: border-box;
+    height: 59vh;
 }
 
 h2 {

@@ -1,4 +1,5 @@
 form {
+    justify-self: center;
     width: 50%;
     height: auto;
     display: flex;
