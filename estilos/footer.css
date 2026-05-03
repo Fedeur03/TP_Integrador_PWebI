@@ -29,6 +29,8 @@ gap: 2em;
 
 .social i{
     margin-right: 1em;
+    display: flex;
+    justify-self: center;
 }
 
 .informacion{
@@ -56,6 +58,8 @@ gap: 2em;
     width: 60%;
     margin-top: 0.5em;
     margin-bottom: 1em;
+    display: flex;
+    justify-self: center;
 }
 
 
