@@ -28,7 +28,8 @@
         <div class="nav-right">
             <ul class="nav-list">
                 <div class="usuario">
-                    <li class="log-in"><a href="../usuario/usuario.html" class="contenido-seleccionado">Juan Perez ▼</a></li>
+                    <li class="log-in"><a href="../usuario/usuario.html" class="contenido-seleccionado">Juan Perez ▼</a>
+                    </li>
                     <li class="log-in"><a href="../mis_reservas/mis_reservas.html">Mis Reservas</a></li>
                 </div>
             </ul>
@@ -38,8 +39,9 @@
     <main class="contenedor_reservas">
         <section class="contenido_principal_reservas">
             <h1>Perfil</h1><br>
-            <h2 class="contenido-seleccionado opcion">Informacion Personal</h2>
-            <h2 class="opcion">Mis Vuelos Reservados</h2>
+            <h2 class="contenido-seleccionado opcion"><a class="link" href="../usuario/usuario.html">Informacion
+                    Personal</a></h2>
+            <h2 class="opcion"><a class="link" href="../mis_reservas/mis_reservas.html">Mis Vuelos Reservados</a></h2>
         </section>
         <section class="contenido_secundario_reservas">
             <h1>Perfil</h1>
@@ -75,11 +77,6 @@
 
                 </div>
                 <button class="boton-documento cambiar-imagen">Cambiar imagen</button>
-
-
-
-
-
             </div><br>
             <span class="categoria">Mis Documentos</span>
             <div class="contenedor">
@@ -98,7 +95,7 @@
                                 <div class="row">
                                     <p class="label">Tipo de Documento</p>
                                     <select disabled>
-                                        <option value="dni">Documento de Identidad</option>
+                                        <option value="dni">DNI</option>
                                         <option selected value="pasaporte">Pasaporte</option>
                                         <option value="licencia">Licencia de Conducir</option>
                                         <option value="Libreta Cívica">Libreta Cívica</option>
@@ -149,7 +146,7 @@
                                     <div class="row">
                                         <p class="label">Tipo de Documento</p>
                                         <select disabled>
-                                            <option selected value="dni">Documento de Identidad</option>
+                                            <option selected value="dni">DNI</option>
                                             <option value="pasaporte">Pasaporte</option>
                                             <option value="licencia">Licencia de Conducir</option>
                                             <option value="Libreta Cívica">Libreta Cívica</option>
@@ -195,7 +192,7 @@
                                     <div class="row">
                                         <p class="label">Tipo de Documento</p>
                                         <select required>
-                                            <option value="dni">Documento de Identidad</option>
+                                            <option value="dni">DNI</option>
                                             <option value="pasaporte">Pasaporte</option>
                                             <option value="licencia">Licencia de Conducir</option>
                                             <option value="Libreta Cívica">Libreta Cívica</option>
@@ -220,20 +217,21 @@
 
                                     </div>
 
-                                    <div class="row">
+                                    <div class="row_documento">
 
                                         <p class="label">Subir Documento</p>
+                                        <label for="subir-archivo" class="subir-archivo-label">Seleccione un documento</label>
                                         <input type="file" name="subir-archivo" /><br>
                                         <p>Solo se aceptan documentos en formato PDF, JPG o PNG</p>
 
 
                                     </div>
 
-                                    
+
                                 </div>
-                                 <div class="envio">
+                                <div class="envio">
                                     <button type="submit" class="boton-documento">Guardar Documento</button>
-                                 </div>
+                                </div>
 
 
 

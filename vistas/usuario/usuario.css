@@ -15,6 +15,16 @@
     background-color: #ebebeb;
 }
 
+.link{
+    text-decoration: none;
+    color:#642E2E;
+    font-weight: bold;
+}
+
+.link:hover{
+    color: #9c7575;
+}
+
 .contenido_principal_reservas {
     padding: 1rem;
     display: grid;
@@ -45,15 +55,6 @@
 
 }
 
-.contenido_secundario_reservas details {
-    background-color: #C9AFAF;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 1rem;
-    color: #642E2E;
-}
-
-
 
 .contenido-seleccionado {
     background-color: #C9AFAF;
@@ -73,8 +74,8 @@ strong {
 .contenedor {
     padding: 1rem;
     margin-top: 1rem;
-    min-width: 80%;
     width: auto;
+    max-width: 90%;
     height: auto;
     background-color: #C9AFAF;
     border-radius: 4px;
@@ -83,7 +84,8 @@ strong {
 .contenedor_size {
     padding: 1rem;
     margin-top: 1rem;
-    width: 60%;
+    width: auto;
+    max-width: 80%;
     height: auto;
     justify-content: center;
     background-color: #C9AFAF;
@@ -94,6 +96,11 @@ strong {
     display: flex;
     width: auto;
     justify-content: flex-start;
+}
+
+.seccion-inferior {
+    display: flex;
+    width: auto;
 }
 
 .datos_personales {
@@ -109,6 +116,18 @@ strong {
     border-radius: 50%;
 }
 
+.row input{
+    padding: 0.5rem;
+    width: 15em;
+    border: 0.1rem solid #642E2E;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #642E2E;
+    font-size: 1rem;
+
+
+}
+
 .cambiar-imagen {
     display: flex;
     flex-direction: row;
@@ -122,10 +141,6 @@ strong {
     justify-content: space-between;
     align-items: center;
 }
-
-
-
-
 
 
 .sector-imagen {
@@ -145,9 +160,9 @@ strong {
     font-size: 1.2rem;
 }
 
-input {
+.documento input {
     padding: 0.5rem;
-    width: 15em;
+    width: 8em !important;
     border: 0.1rem solid #642E2E;
     border-radius: 3px;
     background-color: #fff;
@@ -155,12 +170,12 @@ input {
     font-size: 1rem;
 }
 
-select {
+.documento select {
     padding: 0.5rem;
-    width: 15em;
+    width: 8.5em;
     border: 0.1rem solid #642E2E;
     border-radius: 3px;
-    background-color: #fff;
+     background-color: #fff;
     color: #642E2E;
     font-size: 1rem;
 }
@@ -203,4 +218,9 @@ select {
     border-radius: 3px;
     cursor: pointer;
     font-size: 1rem;
+}
+
+
+.row_documento input[type="file"]{
+    width: 1000 !important;
 }
