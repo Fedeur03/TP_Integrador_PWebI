@@ -160,7 +160,10 @@ strong {
     font-size: 1.2rem;
 }
 
-.documento input {
+.documento input[type="text"],
+.documento input[type="number"],
+.documento input[type="email"],
+.documento input[type="date"] {
     padding: 0.5rem;
     width: 8em !important;
     border: 0.1rem solid #642E2E;
@@ -168,6 +171,18 @@ strong {
     background-color: #fff;
     color: #642E2E;
     font-size: 1rem;
+}
+
+input[type="file"]{
+    padding: 0.5rem;
+    width: auto !important;
+    border: 0.1rem solid #642E2E;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #642E2E;
+    font-size: 1rem;
+    accent-color: #642E2E !important;
+    background-color: #642E2E !important;
 }
 
 .documento select {

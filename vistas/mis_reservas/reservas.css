@@ -62,3 +62,13 @@
 .contenido img {
     width: 10%;
 }
+
+.link{
+    text-decoration: none;
+    color:#642E2E;
+    font-weight: bold;
+}
+
+.link:hover{
+    color: #9c7575;
+}
