@@ -1,0 +1,61 @@
+/* CONTENEDOR */
+.contenedor_vuelos{
+    width:90%;
+    max-width:1100px;
+    margin:40px auto;
+    min-height:60vh; /* 🔥 clave para empujar el footer */
+}
+
+/* TITULO */
+.contenedor_vuelos h1{
+    margin-bottom:30px;
+    color:#642E2E;
+    text-align:center;
+    font-size:32px;
+}
+
+/* CABECERA */
+.tabla_header{
+    display:grid;
+    grid-template-columns:2fr repeat(4, 1fr);
+    background:#642E2E;
+    color:white;
+    padding:15px;
+    border-radius:10px 10px 0 0;
+    text-align:center;
+    font-weight:bold;
+}
+
+/* FILAS */
+.fila_vuelo{
+    display:grid;
+    grid-template-columns:2fr repeat(4, 1fr);
+    padding:25px;
+    border:1px solid #ccc;
+    border-top:none;
+    align-items:center;
+    background:white;
+}
+
+/* HOVER */
+.fila_vuelo:hover{
+    background:#f5eded;
+}
+
+/* INFO VUELO */
+.info_vuelo{
+    font-size:14px;
+    line-height:1.4;
+}
+
+/* PRECIOS */
+.precio{
+    text-align:center;
+    font-weight:bold;
+    color:#642E2E;
+}
+
+/* FOOTER LOGO (para que no sea gigante) */
+.footer img{
+    max-width:300px;
+}
