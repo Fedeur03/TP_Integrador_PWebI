@@ -1,12 +1,21 @@
 .contenedor_vuelos {
     display: flex;
+    flex-direction:column;
     justify-content: center;
-    gap: 5rem;
+    align-items: center;
+    gap: 3rem;
     margin: 3rem;
 }
 
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
 .card_vuelo {
-    width: 50%;
+    width: 30%;
     background-color: #7a2e2e;
     border-radius: 2rem;
     padding: 1.2rem;
@@ -41,5 +50,33 @@
     display: block;
     color: #3a1414;
     font-size: 1.2rem;
-    margin-bottom: 0.8rem;
+}
+
+.info_vuelo button {
+    width: 30%;
+    background-color: #7a2e2e;
+    color: #fff;
+    font-size: 1rem;
+    align-self: center;
+    margin-top: 0.5rem;
+    padding: 0.3rem;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.boton {
+    padding: 1rem 2rem;
+    color: white;
+    background-color: #7a2e2e;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.boton:hover{
+    background-color: #7e4040;
 }
