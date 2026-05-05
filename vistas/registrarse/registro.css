@@ -1,13 +1,13 @@
 form {
-    justify-self: center;
     width: 50%;
+    margin: 2rem auto;
     height: auto;
     display: flex;
     flex-direction: column;
-    gap: 0.6em;
-    background-color: #fff;
-    padding: 2em;
+    background-color: #e8e7e7;
     border-radius: 2rem;
+    gap: 0.6em;
+    padding: 2em;
 }
 
 h2 {
