@@ -1,6 +1,6 @@
 .banner img {
-    width: 100%;
     display: block;
+    width: 100%;
 }
 
 .buscador {
@@ -49,6 +49,10 @@
     background: white;
     font-size: 1rem;
     width: 100%;
+}
+
+input:hover, select:hover {
+    background-color: #ccc;
 }
 
 .boton_buscar {

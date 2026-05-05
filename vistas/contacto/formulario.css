@@ -37,7 +37,6 @@ body {
 .row {
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
 
 .form-data {
@@ -62,7 +61,7 @@ body {
 }
 
 article {
-    margin:10px;
+    margin: 15px;
 }
 
 article label {
@@ -103,19 +102,22 @@ article textarea {
     
 }
 
+.submit-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
 .submit-button {
-    justify-self: flex-end;
     font-weight: bold;
     font-size: 1.2em;
-    width: auto;
-    height: auto;
     border-radius: 5px;
     border: 1px solid #642E2E;
     background-color: #642E2E;
     color: #fff !important;
-    padding: 15px 40px 15px ;
-    margin: 20px;
-    align-self: flex-end;
+    padding: 15px 40px;
+    cursor: pointer;
 }
 
 .submit-button:hover {
