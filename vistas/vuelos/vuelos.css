@@ -1,57 +1,45 @@
-
-.contenedor_vuelos{
-    width:90%;
-    max-width:1100px;
-    margin:40px auto;
-    min-height:60vh; /* 🔥 clave para empujar el footer */
+.contenedor_vuelos {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin: 3rem;
 }
 
-
-.contenedor_vuelos h1{
-    margin-bottom:30px;
-    color:#642E2E;
-    text-align:center;
-    font-size:32px;
+.card_vuelo {
+    width: 50%;
+    background-color: #7a2e2e;
+    border-radius: 2rem;
+    padding: 1.2rem;
+    box-sizing: border-box;
 }
 
-
-.tabla_header{
-    display:grid;
-    grid-template-columns:2fr repeat(4, 1fr);
-    background:#642E2E;
-    color:white;
-    padding:15px;
-    border-radius:10px 10px 0 0;
-    text-align:center;
-    font-weight:bold;
+.img_vuelo img {
+    width: 100%;
+    height: 50%;
+    display: block;
+    border-radius: 2rem;
 }
 
-
-.fila_vuelo{
-    display:grid;
-    grid-template-columns:2fr repeat(4, 1fr);
-    padding:25px;
-    border:1px solid #ccc;
-    border-top:none;
-    align-items:center;
-    background:white;
+.info_vuelo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    background-color: white;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
 }
 
-
-.fila_vuelo:hover{
-    background:#f5eded;
+.info_vuelo p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #7a2e2e;
 }
 
-
-.info_vuelo{
-    font-size:14px;
-    line-height:1.4;
+.info_vuelo strong {
+    display: block;
+    color: #3a1414;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
 }
-
-
-.precio{
-    text-align:center;
-    font-weight:bold;
-    color:#642E2E;
-}
-
