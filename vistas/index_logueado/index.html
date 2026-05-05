@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../estilos/navbar.css">
     <link rel="stylesheet" href="../../estilos/footer.css">
     <link rel="stylesheet" href="../../estilos/contenedor.css">
+    <link rel="stylesheet" href="../../estilos/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
@@ -18,7 +19,7 @@
                 <a href="../index_logueado/index.html"><img src="../../media/flyway_logo.png" class="nav-logo" /></a>
                 <div class="vistas">
                     <li><a href="../index_logueado/index.html" class="contenido-seleccionado">Inicio</a></li>
-                    <li><a href="../mis_reservas/mis_reservas.html">Vuelos</a></li>
+                    <li><a href="../vuelos/vuelos.html">Vuelos</a></li>
                     <li><a href="../resultados_busqueda/resultados.html">Ofertas</a></li>
                     <li><a href="../contacto/contacto.html">Contacto</a></li>
                 </div>
@@ -43,69 +44,52 @@
 
             <form class="buscador" action="../resultados_busqueda/resultados.html">
 
-              
                 <div class="tipo_vuelo">
-                    <label><input type="radio" name="viaje" checked> Ida y vuelta</label>
+                    <label><input type="radio" name="viaje"> Ida y vuelta</label>
                     <label><input type="radio" name="viaje"> Solo ida</label>
                 </div>
 
-        
                 <div class="fila">
-
-                    <div class="input_icono">
-                        <i class="fa-solid fa-plane-departure"></i>
-                        <input type="text" placeholder="Origen">
-                    </div>
-
-                    <div class="input_icono">
-                        <i class="fa-solid fa-plane-arrival"></i>
-                        <input type="text" placeholder="Destino">
-                    </div>
-
+                    <label>Origen
+                        <input type="text" placeholder="Buenos Aires">
+                    </label>
+                    <label>Destino
+                        <input type="text" placeholder="Madrid">
+                    </label>
                 </div>
 
-                
                 <div class="fila">
-
-                    <div class="input_icono">
-                        <i class="fa-solid fa-calendar"></i>
+                    <label>Ida
                         <input type="date">
-                    </div>
-
-                    <div class="input_icono">
-                        <i class="fa-solid fa-calendar"></i>
+                    </label>
+                    <label>Vuelta
                         <input type="date">
-                    </div>
-
+                    </label>
                 </div>
 
-            
                 <div class="fila">
-
-                    <div class="input_icono">
-                        <i class="fa-solid fa-user"></i>
+                    <label>Pasajeros
                         <select>
                             <option>1 Pasajero</option>
                             <option>2 Pasajeros</option>
                             <option>3 Pasajeros</option>
+                            <option>4 Pasajeros</option>
+                            <option>5 Pasajeros</option>
+                            <option>6 Pasajeros</option>
                         </select>
-                    </div>
-
-                    <div class="input_icono">
-                        <i class="fa-solid fa-chair"></i>
+                    </label>
+                    <label>Clase
                         <select>
-                            <option>Economy</option>
-                            <option>Business</option>
+                            <option>Económica</option>
+                            <option>Ejecutiva</option>
                             <option>Primera Clase</option>
                         </select>
-                    </div>
-
+                    </label>
                 </div>
 
-          
-                <button type="submit">
+                <a href="../resultados_busqueda/resultados.html" class="boton_buscar">
                     <i class="fa-solid fa-magnifying-glass"></i> Buscar vuelos
-                </button>
+                </a>
 
             </form>
 
