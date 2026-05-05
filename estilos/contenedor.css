@@ -22,10 +22,11 @@ body {
     border-radius: 20px;
     background-color: #C9AFAF;
     margin: 2rem;
-    padding: 3rem;
     gap: 1.5rem;
+    padding: 2rem;
 }
 
 .contenido_principal h1 {
     color: #642E2E;
+    font-size: 2rem;
 }
