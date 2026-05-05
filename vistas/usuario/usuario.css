@@ -99,6 +99,7 @@ strong {
     display: flex;
     width: auto;
     margin-left: 3rem;
+    gap: 3rem;
 }
 
 .user-image {
@@ -116,6 +117,8 @@ strong {
     color: #642E2E;
     font-size: 1rem;
 }
+
+
 
 .cambiar-imagen {
     display: flex;

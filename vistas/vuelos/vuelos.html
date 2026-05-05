@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="../../estilos/navbar.css">
     <link rel="stylesheet" href="../../estilos/footer.css">
-    <link rel="stylesheet" href="../../estilos/contenedor.css">
+
     <link rel="stylesheet" href="./vuelos.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -16,23 +16,26 @@
 <body>
 
 <nav class="navbar">
-    <a href="../../index.html">
-        <img src="../../media/flyway_logo.png" class="nav-logo" />
-    </a>
+        <div class="nav-left">
+            <ul class="nav-list">
+                <a href="../index_logueado/index.html"><img src="../../media/flyway_logo.png" class="nav-logo" /></a>
+                <div class="vistas">
+                    <li><a href="../index_logueado/index.html">Inicio</a></li>
+                    <li><a href="../vuelos/vuelos.html" class="contenido-seleccionado">Vuelos</a></li>
+                    <li><a href="../contacto/contacto.html" >Contacto</a></li>
+                </div>
 
-    <ul class="nav-list">
-        <div class="vistas">
-            <li><a href="../../index.html">Inicio</a></li>
-            <li><a href="./vuelos.html" class="contenido-seleccionado">Vuelos</a></li>
-            <li><a href="../contacto/contacto.html">Contacto</a></li>
+            </ul>
         </div>
-
-        <div class="usuario">
-            <li><a href="../iniciar_sesion/login.html">Iniciar Sesión</a></li>
-            <li><a href="../registrarse/registro.html">Registro</a></li>
+        <div class="nav-right">
+            <ul class="nav-list">
+                <div class="usuario">
+                    <li class="log-in"><a href="../usuario/usuario.html">Juan Perez ▼</a></li>
+                    <li class="log-in"><a href="../mis_reservas/mis_reservas.html" >Mis Reservas</a></li>
+                </div>
+            </ul>
         </div>
-    </ul>
-</nav>
+    </nav>
 
 <main class="contenedor_vuelos">
 
@@ -44,6 +47,7 @@
 
         <div class="info_vuelo">
             <p><strong>COR → PAR</strong></p>
+            <hr class="separador">
             <p>09:10 - 19:15</p>
             <p>Duración: 10h</p>
             <p>Sin escalas</p>
@@ -59,6 +63,7 @@
 
         <div class="info_vuelo">
             <p><strong>BUE → ROM</strong></p>
+            <hr class="separador">
             <p>18:25 - 04:30</p>
             <p>Duración: 10h</p>
             <p>Sin escalas</p>
@@ -74,6 +79,7 @@
 
         <div class="info_vuelo">
             <p><strong>MEN → LON</strong></p>
+            <hr class="separador">
             <p>02:15 - 18:45</p>
             <p>Duración: 16h</p>
             <p>2 escalas</p>
