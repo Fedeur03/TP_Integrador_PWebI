@@ -12,18 +12,25 @@
 <body>
 
     <nav class="navbar">
-        <a href="../../index.html"><img src="../../media/flyway_logo.png" class="nav-logo" /></a>
-        <ul class="nav-list">
-            <div class="vistas">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../vuelos/vuelos.html">Vuelos</a></li>
-                <li><a href="../vistas/contacto.html">Contacto</a></li>
-            </div>
-            <div class="usuario">
-                <li><a href="./login.html" class="contenido-seleccionado">Iniciar Sesión</a></li>
-                <li><a href="../registrarse/registro.html">Registro</a></li>
-            </div>
-        </ul>
+        <div class="nav-left">
+            <ul class="nav-list">
+                <a href="../index_logueado/index.html"><img src="../../media/flyway_logo.png" class="nav-logo" /></a>
+                <div class="vistas">
+                    <li><a href="../index_logueado/index.html">Inicio</a></li>
+                    <li><a href="../vuelos/vuelos.html">Vuelos</a></li>
+                    <li><a href="../contacto/contacto.html" >Contacto</a></li>
+                </div>
+
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul class="nav-list">
+                <div class="usuario">
+                    <li class="log-in"><a href="../iniciar_sesion/login.html">Acceder</a></li>
+                    <li><a href="../registrarse/registro.html" class="sign-in">Comenzar ahora</a></li>
+                </div>
+            </ul>
+        </div>
     </nav>
 
     <main class="contenedor">

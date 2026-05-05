@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="./estilos/navbar.css">
-    <link rel="stylesheet" href="./estilos/footer.css">
-    <link rel="stylesheet" href="./estilos/contenedor.css">
-    <link rel="stylesheet" href="./estilos/index.css">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../../estilos/navbar.css">
+    <link rel="stylesheet" href="../../estilos/footer.css">
+    <link rel="stylesheet" href="./formulario.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
@@ -18,9 +17,9 @@
             <ul class="nav-list">
                 <a href="./vistas/index_logueado/index.html"><img src="../../media/flyway_logo.png" class="nav-logo" /></a>
                 <div class="vistas">
-                    <li><a href="/index.html" class="contenido-seleccionado">Inicio</a></li>
+                    <li><a href="/index.html" >Inicio</a></li>
                     <li><a href="/vistas/vuelos_no_logueado/vuelos_no_logueado.html">Vuelos</a></li>
-                    <li><a href="/vistas/contacto_no_logueado/contacto_no_logueado.html">Contacto</a></li>
+                    <li><a href="/vistas/contacto_no_logueado/contacto_no_logueado.html" class="contenido-seleccionado">Contacto</a></li>
                 </div>
 
             </ul>
@@ -36,71 +35,64 @@
         </div>
     </nav>
 
-    <div class="banner">
-        <img src="./media/banner-inicio.png" alt="Banner">
-    </div>
-
     <main class="contenedor">
+        <form class="formulario">
+            <span class="form-header">
+                <span class="title-header"> ¿Alguna pregunta? Contáctanos</span>
+                <p class="description-header">Completa el formulario debajo para comunicarte con nosotros.</p>
+            </span>
+            <span class="form-data">
+                <div class="row">
+                    <article class="name-form">
+                        <label for="name">Nombre Completo:</label>
+                        <input type="text" placeholder="Juan Perez" name="name" required>
+                    </article>
 
-        <section class="contenido_principal">
+                    <article class="email-form">
 
-            <h1>Busca tu vuelo</h1>
+                        <label for="email">Correo:</label>
+                        <input type="email" placeholder="correo@proveedor.com" name="email" required>
 
-            <form class="buscador" action="./vistas/resultados_busqueda/resultados.html">
+                    </article>
 
-                <div class="tipo_vuelo">
-                    <label><input type="radio" name="viaje"> Ida y vuelta</label>
-                    <label><input type="radio" name="viaje"> Solo ida</label>
+
                 </div>
 
-                <div class="fila">
-                    <label>Origen
-                        <input type="text" placeholder="Buenos Aires">
-                    </label>
-                    <label>Destino
-                        <input type="text" placeholder="Madrid">
-                    </label>
-                </div>
+                <div class="row">
+                    <article class="phone-form">
 
-                <div class="fila">
-                    <label>Ida
-                        <input type="date">
-                    </label>
-                    <label>Vuelta
-                        <input type="date">
-                    </label>
-                </div>
+                        <label for="phone">Teléfono:</label>
+                        <input type="text" placeholder="+54 (011) 1234 5678" name="phone" required>
 
-                <div class="fila">
-                    <label>Pasajeros
-                        <select>
-                            <option>1 Pasajero</option>
-                            <option>2 Pasajeros</option>
-                            <option>3 Pasajeros</option>
-                            <option>4 Pasajeros</option>
-                            <option>5 Pasajeros</option>
-                            <option>6 Pasajeros</option>
+                    </article>
+
+                    <article class="subject-form">
+
+                        <label for="subject">Asunto:</label>
+                        <select name="subject" required>
+                            <option>Problemas con mi vuelo</option>
+                            <option>Reclamo de pagos</option>
+                            <option>Hubo un problema con mi documentación</option>
+                            <option>Quiero un reembolso</option>
+                            <option>Equipaje perdido</option>
+                            <option>Otro/a</option>
                         </select>
-                    </label>
-                    <label>Clase
-                        <select>
-                            <option>Económica</option>
-                            <option>Ejecutiva</option>
-                            <option>Primera Clase</option>
-                        </select>
-                    </label>
+                    </article>
                 </div>
-
-                <button class="boton_buscar">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    Buscar vuelos
-                </button>
-                   
-            </form>
-
-        </section>
-
+            </span>
+            <span class="form-message">
+                <article class="message-form">
+                    <label for="message">Mensaje:</label>
+                    <textarea placeholder="Detalle su mensaje" name="message" required></textarea>
+                </article>
+            </span>
+            
+            <div class="submit-container">
+                <button class="submit-button">Enviar</button>
+            </div>
+        </form>
     </main>
+
 
 
     <footer class="footer">
@@ -137,7 +129,7 @@
                     <span><a href="../contacto/contacto.html">Contacto</a></span>
                 </div>
             </section>
- 
+
             <section class="contacto">
                 <p>Contacto</p>
                 <hr class="division">
