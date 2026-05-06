@@ -114,3 +114,23 @@
 .seleccionado {
     color: #602929;
 }
+
+.boton-checkout {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.btn-finalizar {
+    background-color: #642E2E; /* color principal de tu web */
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-finalizar:hover {
+    background-color: #4e2020; /* tono más oscuro (ya lo usás en botones) */
+}
