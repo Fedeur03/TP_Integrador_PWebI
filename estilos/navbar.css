@@ -41,7 +41,6 @@
 }
 
 .nav-list {
-    
     list-style-type: none;
     justify-content: flex-start;
     align-items: center;
@@ -51,7 +50,6 @@
 }
 
 ul li a {
-    overflow:scroll;
     font-size: 1.5em;
     text-decoration: none;
     color: #EBDBDB;
