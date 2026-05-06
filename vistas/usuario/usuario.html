@@ -36,18 +36,23 @@
     </nav>
 
     <main class="contenedor_reservas">
-        <section class="contenido_principal_reservas">
-            <h1>Perfil</h1><br>
-            <h2 class="contenido-seleccionado opcion"><a class="link" href="../usuario/usuario.html">Informacion
-                    Personal</a></h2>
-            <h2 class="opcion"><a class="link" href="../mis_reservas/mis_reservas.html">Mis Vuelos Reservados</a></h2>
+        <section class="lateral">
+            <h1>Perfil</h1>
+            <h2 class="seleccionado"><a class="link" href="../usuario/usuario.html">Información Personal</a></h2>
+            <h2><a class="link" href="../mis_reservas/mis_reservas.html"> Vuelos Reservados</a>
+            </h2>
         </section>
+
         <section class="contenido_secundario_reservas">
             <h1>Perfil</h1>
             <span class="categoria">Mis Datos </span> <button class="boton-documento">Editar</button>
             <div class="contenedor_size">
                 <div class="seccion-superior">
-                    <img class="user-image" src="../../media/user_template.jpg" alt="Imagen de perfil del usuario" />
+                    <div>
+                        <img class="user-image" src="../../media/user_template.jpg"
+                            alt="Imagen de perfil del usuario" />
+                        <button class="boton-documento cambiar-imagen">Cambiar imagen</button>
+                    </div>
 
                     <div class="datos_personales">
                         <div class="row">
@@ -75,175 +80,154 @@
                     </div>
 
                 </div>
-                <button class="boton-documento cambiar-imagen">Cambiar imagen</button>
-            </div><br>
+
+            </div>
             <span class="categoria">Mis Documentos</span>
             <div class="contenedor">
 
-                <div class="seccion-inferior">
-                    <div class="documento">
 
+                <div class="datos-documento">
+                    <div class="sector-imagen">
+                        <img class="documento-imagen" src="../../media/assets/pasaporte.png"
+                            alt="Imagen del documento del usuario" />
+                    </div>
 
-                        <div class="datos-documento">
-                            <div class="sector-imagen">
-                                <img class="documento-imagen" src="../../media/assets/pasaporte.png"
-                                    alt="Imagen del documento del usuario" />
-                            </div>
+                    <div class="sector-datos">
+                        <div class="row">
+                            <p class="label">Tipo de Documento</p>
+                            <select disabled>
+                                <option value="dni">DNI</option>
+                                <option selected value="pasaporte">Pasaporte</option>
+                                <option value="licencia">Licencia de Conducir</option>
+                                <option value="Libreta Cívica">Libreta Cívica</option>
+                            </select>
+                            <p class="label">Nro de Documento</p>
+                            <input type="text" value="12345678" disabled>
+                            <p class="label">Fecha de Vencimiento</p>
+                            <input type="date" value="2025-01-01" disabled>
 
-                            <div class="sector-datos">
-                                <div class="row">
-                                    <p class="label">Tipo de Documento</p>
-                                    <select disabled>
-                                        <option value="dni">DNI</option>
-                                        <option selected value="pasaporte">Pasaporte</option>
-                                        <option value="licencia">Licencia de Conducir</option>
-                                        <option value="Libreta Cívica">Libreta Cívica</option>
-                                    </select>
-                                    <p class="label">Número de Documento</p>
-                                    <input type="text" value="12345678" disabled>
-                                </div>
-                                <div class="row">
-                                    <p class="label">Fecha de Vencimiento</p>
-                                    <input type="date" value="2025-01-01" disabled>
-                                    <p class="label">Fecha de Expedición</p>
-                                    <input type="date" value="2020-01-01" disabled>
-
-                                </div>
-
-                                <div class="row">
-                                    <p class="label">País de Emisión</p>
-                                    <input type="text" value="Argentina" disabled>
-                                    <p class="label">País de Residencia</p>
-                                    <input type="text" value="Argentina" disabled>
-
-
-                                </div>
-                            </div>
-
-                            <div class="editar-documento">
-
-                                <button class="boton-documento">Editar</button>
-                                <button class="boton-documento">Eliminar</button>
-
-
-
-                            </div>
-
-
-                        </div><br>
-                        <hr><br>
-                        <div class="documento">
-
-
-                            <div class="datos-documento">
-                                <div class="sector-imagen">
-                                    <img class="documento-imagen" src="../../media/assets/dni.png"
-                                        alt="Imagen del documento del usuario" />
-                                </div>
-
-                                <div class="sector-datos">
-                                    <div class="row">
-                                        <p class="label">Tipo de Documento</p>
-                                        <select disabled>
-                                            <option selected value="dni">DNI</option>
-                                            <option value="pasaporte">Pasaporte</option>
-                                            <option value="licencia">Licencia de Conducir</option>
-                                            <option value="Libreta Cívica">Libreta Cívica</option>
-                                        </select>
-                                        <p class="label">Número de Documento</p>
-                                        <input type="text" value="12345678" disabled>
-                                    </div>
-                                    <div class="row">
-                                        <p class="label">Fecha de Vencimiento</p>
-                                        <input type="date" value="2025-01-01" disabled>
-                                        <p class="label">Fecha de Expedición</p>
-                                        <input type="date" value="2020-01-01" disabled>
-
-                                    </div>
-
-                                    <div class="row">
-                                        <p class="label">País de Emisión</p>
-                                        <input type="text" value="Argentina" disabled>
-                                        <p class="label">País de Residencia</p>
-                                        <input type="text" value="Argentina" disabled>
-
-
-                                    </div>
-                                </div>
-
-                                <div class="editar-documento">
-
-                                    <button class="boton-documento">Editar</button>
-                                    <button class="boton-documento">Eliminar</button>
-
-
-
-                                </div>
-
-
-                            </div>
-
-                            <br>
-                            <hr><br>
-                            <form class="documento">
-                                <span class="categoria">Nuevo Documento</span>
-                                <div class="sector-completar">
-                                    <div class="row">
-                                        <p class="label">Tipo de Documento</p>
-                                        <select required>
-                                            <option value="dni">DNI</option>
-                                            <option value="pasaporte">Pasaporte</option>
-                                            <option value="licencia">Licencia de Conducir</option>
-                                            <option value="Libreta Cívica">Libreta Cívica</option>
-                                        </select>
-                                        <p class="label">Número de Documento</p>
-                                        <input type="text" placeholder="12345678" required>
-                                    </div>
-                                    <div class="row">
-                                        <p class="label">Fecha de Vencimiento</p>
-                                        <input type="date" value="2025-01-01" required>
-                                        <p class="label">Fecha de Expedición</p>
-                                        <input type="date" value="2020-01-01" required>
-
-                                    </div>
-
-                                    <div class="row">
-                                        <p class="label">País de Emisión</p>
-                                        <input type="text" placeholder="Argentina" required>
-                                        <p class="label">País de Residencia</p>
-                                        <input type="text" placeholder="Argentina" required>
-
-
-                                    </div>
-
-                                    <div class="row_documento">
-
-                                        <p class="label">Subir Documento</p>
-                                        <label for="subir-archivo" class="subir-archivo-label">Seleccione un
-                                            documento</label>
-                                        <input type="file" name="subir-archivo" /><br>
-                                        <p>Solo se aceptan documentos en formato PDF, JPG o PNG</p>
-
-
-                                    </div>
-
-
-                                </div>
-                                <div class="envio">
-                                    <button type="submit" class="boton-documento">Guardar Documento</button>
-                                </div>
-
-
-
-                            </form>
-
-
-
-
+                        </div>
+                        <div class="row">
+                            <p class="label">Fecha de Expedición</p>
+                            <input type="date" value="2020-01-01" disabled>
+                            <p class="label">País de Emisión</p>
+                            <input type="text" value="Argentina" disabled>
+                            <p class="label">País de Residencia</p>
+                            <input type="text" value="Argentina" disabled>
 
 
                         </div>
                     </div>
+
+                    <div class="editar-documento">
+
+                        <button class="boton-documento">Editar</button>
+                        <button class="boton-documento">Eliminar</button>
+
+
+
+                    </div>
+
+
+                </div>
+                <hr>
+                <div class="datos-documento">
+                    <div class="sector-imagen">
+                        <img class="documento-imagen" src="../../media/assets/dni.png"
+                            alt="Imagen del documento del usuario" />
+                    </div>
+
+                    <div class="sector-datos">
+                        <div class="row">
+                            <p class="label">Tipo de Documento</p>
+                            <select disabled>
+                                <option selected value="dni">DNI</option>
+                                <option value="pasaporte">Pasaporte</option>
+                                <option value="licencia">Licencia de Conducir</option>
+                                <option value="Libreta Cívica">Libreta Cívica</option>
+                            </select>
+                            <p class="label">Nro de Documento</p>
+                            <input type="text" value="12345678" disabled>
+                            <p class="label">Fecha de Vencimiento</p>
+                            <input type="date" value="2025-01-01" disabled>
+                        </div>
+
+                        <div class="row">
+                            <p class="label">Fecha de Expedición</p>
+                            <input type="date" value="2020-01-01" disabled>
+                            <p class="label">País de Emisión</p>
+                            <input type="text" value="Argentina" disabled>
+                            <p class="label">País de Residencia</p>
+                            <input type="text" value="Argentina" disabled>
+
+
+                        </div>
+                    </div>
+
+                    <div class="editar-documento">
+
+                        <button class="boton-documento">Editar</button>
+                        <button class="boton-documento">Eliminar</button>
+
+
+
+                    </div><br>
+
+
+                </div>
+                <hr>
+                <form class="documento">
+                    <span class="categoria">Nuevo Documento</span>
+                    <div class="sector-completar">
+                        <div class="row">
+                            <p class="label">Tipo de Documento</p>
+                            <select required>
+                                <option value="dni">DNI</option>
+                                <option value="pasaporte">Pasaporte</option>
+                                <option value="licencia">Licencia de Conducir</option>
+                                <option value="Libreta Cívica">Libreta Cívica</option>
+                            </select>
+                            <p class="label">Nro de Documento</p>
+                            <input type="text" placeholder="12345678" required>
+                        </div>
+                        <div class="row">
+                            <p class="label">Fecha de Vencimiento</p>
+                            <input type="date" value="2025-01-01" required>
+                            <p class="label">Fecha de Expedición</p>
+                            <input type="date" value="2020-01-01" required>
+
+                        </div>
+
+                        <div class="row">
+                            <p class="label">País de Emisión</p>
+                            <input type="text" placeholder="Argentina" required>
+                            <p class="label">País de Residencia</p>
+                            <input type="text" placeholder="Argentina" required>
+
+
+                        </div>
+
+                        <div class="row_documento">
+
+                            <p class="label">Subir Documento</p>
+                            <label for="subir-archivo" class="subir-archivo-label">Seleccione un
+                                documento</label>
+                            <input type="file" name="subir-archivo" /><br>
+                            <p>Solo se aceptan documentos en formato PDF, JPG o PNG</p>
+
+
+                        </div>
+
+
+                    </div>
+                    <div class="envio">
+                        <button type="submit" class="boton-documento">Guardar Documento</button>
+                    </div>
+
+
+
+                </form>
+            </div>
 
         </section>
 
@@ -278,7 +262,8 @@
                 <hr class="division">
                 <div class="lista">
                     <span><a href="../../index.html">Inicio</a></span>
-                    <span><a href="../vuelos/vuelos.html">Vuelos</a></span>
+                    <span><a href="../mis_reservas/mis_reservas.html">Vuelos</a></span>
+                    <span><a href="../resultados_busqueda/resultados.html">Ofertas</a></span>
                     <span><a href="../contacto/contacto.html">Contacto</a></span>
                 </div>
             </section>
