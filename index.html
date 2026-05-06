@@ -42,11 +42,11 @@
 
     <main class="contenedor">
 
-        <section class="contenido_principal">
+        <section class="contenido_buscar_vuelo">
 
-            <h1>Busca tu vuelo</h1>
+            <h1>Buscá tu vuelo ideal</h1>
 
-            <form class="buscador" action="./vistas/resultados_no_logueado/resultados_no_logueado.html">
+            <form class="buscador" action="../resultados_busqueda/resultados.html">
 
                 <div class="tipo_vuelo">
                     <label><input type="radio" name="viaje"> Ida y vuelta</label>
@@ -54,26 +54,26 @@
                 </div>
 
                 <div class="fila">
-                    <label>Origen
-                        <input type="text" placeholder="Buenos Aires" required>
+                    <label><span class="categoria"><i class="fa-solid fa-plane-departure"></i>Origen</span>
+                        <input type="text" placeholder="EZE - Buenos Aires">
                     </label>
-                    <label>Destino
-                        <input type="text" placeholder="Madrid" required>
-                    </label>
-                </div>
-
-                <div class="fila">
-                    <label>Ida
-                        <input type="date" required>
-                    </label>
-                    <label>Vuelta
-                        <input type="date" required>
+                    <label><span class="categoria"><i class="fa-solid fa-plane-arrival"></i>Destino</span>
+                        <input type="text" placeholder="BAR- Madrid">
                     </label>
                 </div>
 
                 <div class="fila">
-                    <label>Pasajeros
-                        <select required>
+                    <label><span class="categoria"><i class="fa-solid fa-calendar"></i>Ida</span>
+                        <input type="date">
+                    </label>
+                    <label><span class="categoria"><i class="fa-solid fa-calendar"></i>Vuelta</span>
+                        <input type="date">
+                    </label>
+                </div>
+
+                <div class="fila">
+                    <label><span class="categoria"><i class="fa-solid fa-people-group"></i>Pasajeros</span>
+                        <select>
                             <option>1 Pasajero</option>
                             <option>2 Pasajeros</option>
                             <option>3 Pasajeros</option>
@@ -82,8 +82,8 @@
                             <option>6 Pasajeros</option>
                         </select>
                     </label>
-                    <label>Clase
-                        <select required>
+                    <label><span class="categoria"><i class="fa-solid fa-layer-group"></i>Clase</span>
+                        <select>
                             <option>Económica</option>
                             <option>Ejecutiva</option>
                             <option>Primera Clase</option>
@@ -91,11 +91,12 @@
                     </label>
                 </div>
 
+
                 <button class="boton_buscar">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     Buscar vuelos
-                </button>
-                   
+                </button>  
+
             </form>
 
         </section>

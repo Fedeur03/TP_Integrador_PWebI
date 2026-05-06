@@ -41,9 +41,9 @@
 
     <main class="contenedor">
 
-        <section class="contenido_principal">
+        <section class="contenido_buscar_vuelo">
 
-            <h1>Busca tu vuelo</h1>
+            <h1>Buscá tu vuelo ideal</h1>
 
             <form class="buscador" action="../resultados_busqueda/resultados.html">
 
@@ -53,25 +53,25 @@
                 </div>
 
                 <div class="fila">
-                    <label>Origen
-                        <input type="text" placeholder="Buenos Aires">
+                    <label><span class="categoria"><i class="fa-solid fa-plane-departure"></i>Origen</span>
+                        <input type="text" placeholder="EZE - Buenos Aires">
                     </label>
-                    <label>Destino
-                        <input type="text" placeholder="Madrid">
-                    </label>
-                </div>
-
-                <div class="fila">
-                    <label>Ida
-                        <input type="date">
-                    </label>
-                    <label>Vuelta
-                        <input type="date">
+                    <label><span class="categoria"><i class="fa-solid fa-plane-arrival"></i>Destino</span>
+                        <input type="text" placeholder="BAR- Madrid">
                     </label>
                 </div>
 
                 <div class="fila">
-                    <label>Pasajeros
+                    <label><span class="categoria"><i class="fa-solid fa-calendar"></i>Ida</span>
+                        <input type="date">
+                    </label>
+                    <label><span class="categoria"><i class="fa-solid fa-calendar"></i>Vuelta</span>
+                        <input type="date">
+                    </label>
+                </div>
+
+                <div class="fila">
+                    <label><span class="categoria"><i class="fa-solid fa-people-group"></i>Pasajeros</span>
                         <select>
                             <option>1 Pasajero</option>
                             <option>2 Pasajeros</option>
@@ -81,7 +81,7 @@
                             <option>6 Pasajeros</option>
                         </select>
                     </label>
-                    <label>Clase
+                    <label><span class="categoria"><i class="fa-solid fa-layer-group"></i>Clase</span>
                         <select>
                             <option>Económica</option>
                             <option>Ejecutiva</option>
