@@ -1,0 +1,28 @@
+body{
+    background-color: #F5EDED !important;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contenedor{
+    width: 60% !important;
+    justify-self: center;
+    margin: 3rem;
+}
+
+.titulo {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color:#642E2E;
+}
+
+.sub-titulo{
+    font-weight: bold;
+    color:#642E2E;
+}
+
+main article{
+    margin-bottom: 1rem;
+    text-align:justify;
+}
+
