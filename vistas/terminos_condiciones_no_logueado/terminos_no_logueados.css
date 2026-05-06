@@ -5,7 +5,7 @@
     background-color: #ebebeb;
 }
 
-.contenedor_privacidad {
+.contenedor_terminos {
     display: grid;
     grid-template-columns: 2fr 5fr;
     gap: 2rem;
@@ -13,19 +13,19 @@
     padding: 0 2rem;
 }
 
-.contenedor_privacidad h1 {
+.contenedor_terminos h1 {
     font-size: 1.5rem;
     color: #642E2E;
 }
 
-.contenedor_privacidad h2 {
+.contenedor_terminos h2 {
     text-transform: bold;
     font-size: 1rem;
     padding: 0.7rem;
     color: #642E2E;
 }
 
-.contenedor_privacidad p {
+.contenedor_terminos p {
     padding: 0.4rem 1rem 1.2rem 1rem;
     color: #642E2E;
 }
