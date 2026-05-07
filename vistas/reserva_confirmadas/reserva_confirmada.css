@@ -1,0 +1,50 @@
+.contenedor{
+    padding: 1em 5em;
+    color: #602929;
+    font-weight: bold;
+    
+}
+.tarjeta {
+    background-color: #C9AFAF;
+    border-radius: 10px;
+    padding: 1.2em;
+    color: #602929;
+    margin: 1em 5em;
+}
+
+.abierta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenido-secundario{
+    text-align: center;
+    color: black;
+    font-size: 1.2em;
+}
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.contenido img {
+    width: 10%;
+}
+.link{
+    text-decoration: none;
+    color:#642E2E;
+    font-weight: bold;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
