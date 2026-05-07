@@ -3,14 +3,24 @@ body {
     height: 100%;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 .contenedor {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.contenedor h1 {
+    color: #642E2E;
+    font-size: 2rem;
+}
+
 .contenido_principal {
-    width: 80%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,49 +30,4 @@ body {
     margin: 2rem;
     gap: 1.5rem;
     padding: 2rem;
-}
-
-.contenido_buscar_vuelo {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2rem;
-    gap: 1.5rem;
-    padding: 2rem;
-    color: #642E2E;
-    margin-bottom: 5rem;
-}
-
-.buscador {
-    padding: 2.5em !important;
-}
-
-label input, select{
-    height: 45px;
-}
-
-.categoria {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-
-.tipo_vuelo label {
-    font-size: 1.5rem !important;
-    color: #642E2E;
-}
-
-.tipo_vuelo label input {
-    accent-color: #642E2E !important;
-
-}
-
-.boton_buscar{
-    margin-top: 1.5rem;
-}
-
-.contenido_principal h1 {
-    color: #642E2E;
-    font-size: 2rem;
 }
