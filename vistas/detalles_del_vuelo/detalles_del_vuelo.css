@@ -55,111 +55,6 @@
     text-align: center;
 }
 
-.mapa .pasillo {
-    font-size: 0.9rem;
-    text-align: center;
-
-}
-
-.mapa {
-    display: grid;
-    grid-template-columns: auto repeat(9, 1fr);
-    grid-template-rows: auto repeat(4, 1fr);
-    gap: 1rem;
-    align-items: center;
-    justify-items: center;
-
-    font-size: 2rem;
-    color: #602929;
-    font-weight: bold;
-}
-
-.mapa .numero {
-    grid-column: 1;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #602929;
-}
-
-.mapa .letra {
-    grid-row: 1;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #602929;
-}
-
-.mapa .vacio {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.referencias {
-    display: flex;
-    align-items: center;
-    gap: 0.2rem;
-    font-size: 0.9rem;
-    color: #602929;
-}
-
-.numeros {
-    display: flex;
-    flex-direction: column;
-    color: #602929;
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-align: center;
-    padding-top: 2.2rem;
-    gap: 1.2rem;
-    margin-right: 2rem;
-}
-
-.grupo {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #c9afaf;
-    border-radius: 0.6rem;
-    padding: 0.8rem;
-    gap: 1.2rem;
-    margin-right: 2rem;
-}
-
-.disponible {
-    color: #9b7fc4;
-}
-
-.cuadrado.ocupado {
-    margin-left: 1rem;
-}
-
-.ocupado {
-    color: #ccc;
-}
-
-.seleccionado {
-    color: #602929;
-}
-
-
-.boton-checkout {
-    margin-top: 1.5rem;
-    text-align: center;
-}
-
-.btn-finalizar {
-    background-color: #642E2E;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    transition: 0.3s;
-}
-
-.btn-finalizar:hover {
-    background-color: #4e2020;
-}
 .botones {
     width: 50%;
     display: flex;
@@ -196,4 +91,90 @@
 
 .boton-volver:hover {
     background-color: #ccc;
+}
+
+.mapa {
+    display: flex;
+}
+
+
+.referencias {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    font-size: 0.9rem;
+    color: #602929;
+    margin-bottom: 1rem;
+}
+
+.numeros {
+    display: flex;
+    flex-direction: column;
+    color: #602929;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 2.2rem;
+    gap: 1.9rem;
+    margin-right: 1.4rem;
+}
+
+.grupo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #c9afaf;
+    border-radius: 0.6rem;
+    padding: 0.5rem 0.8rem;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.7rem;
+    color: #602929;
+    font-weight: bold;
+}
+
+.disponible {
+    color: #9b7fc4;
+}
+
+.cuadrado.ocupado {
+    margin-left: 1rem;
+}
+
+.ocupado {
+    color: #ccc;
+}
+
+.cuadrado.seleccionado {
+    margin-left: 1rem;
+}
+
+.seleccionado {
+    color: #602929;
+}
+
+.boton-checkout {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.btn-finalizar {
+    background-color: #642E2E;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-finalizar:hover {
+    background-color: #4e2020;
 }

@@ -278,9 +278,13 @@ select {
 }
 
 .cvv {
-    width: 35%;
+    width: 40%;
     gap: 0.5rem;
     align-self: center !important;
+}
+
+.millas_precio {
+    width: 40%;
 }
 
 input[type="number"] {
