@@ -4,18 +4,15 @@
     padding: 0;
 }
 
-
-
 .lateral {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 1rem;
     color: #602929;
     padding: 1rem;
 }
 
 .lateral h1 {
-    color: #602929;
     font-size: 1.5rem;
     color: #642E2E;
     border-bottom: 0.1rem solid #642E2E;
@@ -24,13 +21,17 @@
 .lateral h2 {
     font-size: 0.9rem;
     padding: 0.7rem;
-    color: #642E2E;
 }
 
 .seleccionado {
     background-color: #C9AFAF;
-    padding: 0.5em;
     border-radius: 6px;
+    font-weight: bold;
+}
+
+.link {
+    text-decoration: none;
+    color: #642E2E;
     font-weight: bold;
 }
 
@@ -40,40 +41,16 @@
     gap: 2rem;
     width: 100%;
     padding: 2rem;
-    padding-bottom: 12rem;
     background-color: #ebebeb;
 }
-
-.link{
-    text-decoration: none;
-    color:#642E2E;
-    font-weight: bold;
-}
-
 
 .contenido_secundario_reservas {
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    margin-top: 1rem;
+    gap: 1rem;
     border-left: 0.1rem solid #642E2E;
     padding-left: 1rem;
     color: #642E2E;
-    width: 50rem;
-}
-.contenido_secundario_reservas h1, .contenido_secundario_reservas span {
-    font-size: 1.2rem;
-}
-
-.contenido-seleccionado {
-    background-color: #C9AFAF;
-    padding: 0.5em;
-    border-radius: 6px;
-    font-weight: bold;
-}
-
-strong {
-    margin-left: 0.5rem;
 }
 
 .categoria {
@@ -82,202 +59,140 @@ strong {
 }
 
 .contenedor {
-    display: grid;
-    grid-template-columns:1fr;
-    grid-template-rows: repeat(3 2fr);
-    padding: 1rem;
-    width: 100%;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     background-color: #C9AFAF;
-    border-radius: 4px;
-    padding-top: 0;
+    padding: 1.5rem;
+    border-radius: 6px;
+    width: fit-content;
 }
 
 .contenedor_size {
-    display: grid;
-    grid-template-rows: 1fr ;
-    max-width: 100%;
-    gap: 2em;
-}
-
-.seccion-superior {    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    grid-template-rows: repeat(2 1fr);
-    background-color: #C9AFAF;
-    border-radius: 10px;
-    padding: 1.2em;
-    color: #602929;
-}
-
-.seccion-inferior {
     display: flex;
-    width: auto;
+    flex-direction: column;
+}
+
+.seccion-superior {
+    display: flex;
+    gap: 2rem;
+    background-color: #C9AFAF;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: fit-content;
+    align-items: flex-start;
+}
+
+.sector-imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-image {
+    width: 9rem;
+    border-radius: 50%;
+}
+
+.cambiar-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.7rem;
+    width: 8rem;
 }
 
 .datos_personales {
     display: flex;
-    width: auto;
-    gap: 3rem;
+    gap: 2rem;
 }
 
-.user-image {
-    width: 10em;
-    height: auto;
-    border-radius: 50%;
-}
-
-.row input{
-    padding: 0.5rem;
-    width: 15rem;
-    border: 0.1rem solid #642E2E;
-    border-radius: 3px;
-    background-color: #fff;
-    color: #642E2E;
-    font-size: 1rem;
-}
-
-
-
-.cambiar-imagen {
+.row {
     display: flex;
-    flex-direction: row;
-    margin-left: 1em;
-    justify-content: flex-start;
-    margin-top: 0.5rem;
-}
-
-.documento-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.sector-imagen {
-    width: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column; 
-    
-}
-
-.sector-imagen img {
-    width: 15em;
-    height: auto;
-    border-radius: 4px;
-    object-fit: cover;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .label {
-    font-size: 1.2rem;
-    text-align: left;
+    font-size: 1rem;
+    color: #642E2E;
 }
 
-.documento input[type="text"],
-.documento input[type="number"],
-.documento input[type="email"],
-.documento input[type="date"] {
+.row input,
+.row select {
+    width: 12rem;
     padding: 0.5rem;
-    width: 100%;
     border: 0.1rem solid #642E2E;
     border-radius: 3px;
-    background-color: #fff;
+    background-color: white;
     color: #642E2E;
-    font-size: 1rem;
-}
-
-input[type="file"]{
-    padding: 0.5rem;
-    width: 11rem !important;
-    border: 0.1rem solid #642E2E;
-    border-radius: 3px;
-    background-color: #fff;
-    color: #642E2E;
-    font-size: 1rem;
-    accent-color: #642E2E !important;
-    background-color: #642E2E !important;
-}
-
-select {
-    padding: 0.5rem;
-    width: 15em;
-    border: 0.1rem solid #642E2E;
-    border-radius: 3px;
-    background-color: #fff;
-    color: #642E2E;
-    font-size: 1rem;
-}
-.documento {
-    display: grid;
-    grid-template-rows: 1fr 9fr;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    width: 100%;
 }
 
 .datos-documento {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 1rem;
-    justify-content: start;
-    align-items: start;
-    box-sizing: border-box;
-    width: 15rem;
-    padding-top: 1rem;
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem 0;
 }
-.datos-documento .row {
-    width: 13rem;
-}
-.datos-documento .row input, .datos-documento .row select {
-     width: 100%;
-    width: 100%;
+
+.documento-imagen {
+    width: 8rem;
+    border-radius: 4px;
 }
 
 .sector-datos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.editar-documento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 1rem;
-    justify-content: start;
-    align-items: start;
-    box-sizing: border-box;
+}
+
+.documento {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     width: 100%;
 }
 
 .sector-completar {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    box-sizing: border-box;
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
 }
 
-.sector-completar .row, .sector-completar .row input, .sector-completar .row select {
-    width: 15rem;
+.row_documento {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input[type="file"] {
+    width: 12rem;
+    background-color: white;
+    color: #642E2E;
 }
 
 .envio {
     display: flex;
     justify-content: flex-end;
+    margin-top: auto;
 }
 
 .boton-documento {
-    padding: 0.5rem 0.5rem;
+    width: 8rem;
+    padding: 0.7rem;
     background-color: #642E2E;
-    color: #fff;
+    color: white;
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 1rem;
-    width: 9em;
-}
-.editar-documento{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-bottom: 1rem;
 }
 
-.row_documento input[type="file"]{
-    width: 1000 !important;
+hr {
+    border: 0.05rem solid white;
 }
