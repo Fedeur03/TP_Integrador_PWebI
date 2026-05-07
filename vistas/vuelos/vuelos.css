@@ -87,11 +87,13 @@
     padding: 0.4rem 1rem;
     cursor: pointer;
     border-radius: 8px;
+    border: 1px solid #883e3e !important;
 }
 
 .icono-busqueda:hover{
     color: #883e3e;
     background-color:#fff;
+
 
 }
 
