@@ -14,6 +14,21 @@
     gap: 1rem;
 }
 
+.contenedor h1 {
+    color: #642E2E;
+    font-size: 2rem;
+}
+
+.contenido_buscar_vuelo{
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .buscador label {
     display: flex;
     flex-direction: column;
