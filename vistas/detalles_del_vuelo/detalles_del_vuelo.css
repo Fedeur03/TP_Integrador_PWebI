@@ -54,11 +54,13 @@
     font-size: 0.850rem;
     text-align: center;
 }
-.mapa .pasillo{
+
+.mapa .pasillo {
     font-size: 0.9rem;
     text-align: center;
-    
+
 }
+
 .mapa {
     display: grid;
     grid-template-columns: auto repeat(9, 1fr);
