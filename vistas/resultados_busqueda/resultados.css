@@ -15,6 +15,27 @@
     gap: 1.5rem;
 }
 
+.busqueda{
+    padding: 0.5em;
+    font-size: 1rem;
+    border-color:#642E2E;
+    border-radius: 5px;
+}
+
+.btn-refrescar{
+    margin-top:1em;
+    background-color:#642E2E;
+    color: #fff;
+    border-radius: 5px;
+    padding:0.5rem;
+    border: 1px solid #642E2E !important;
+}
+
+.btn-refrescar:hover{
+    background-color:#814242;
+    cursor: pointer;
+}
+
 .caja {
     background-color: #fff;
     border: 0.1rem solid #c9afaf;
