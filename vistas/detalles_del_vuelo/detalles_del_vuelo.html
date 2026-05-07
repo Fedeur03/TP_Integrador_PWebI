@@ -28,7 +28,8 @@
         <div class="nav-right">
             <ul class="nav-list">
                 <div class="usuario">
-                    <li class="log-in"><a href="../usuario/usuario.html" >Juan Perez ▼</a></li>
+                    <li class="log-in"><a href="../usuario/usuario.html" class="contenido-seleccionado">Juan Perez ▼</a>
+                    </li>
                     <li class="log-in"><a href="../mis_reservas/mis_reservas.html">Mis Reservas</a></li>
                 </div>
             </ul>
@@ -39,7 +40,7 @@
 
         <h2>Detalle de Vuelo / Seleccioná tu Asiento</h2>
 
-        <div class="grilla">
+        <section class="grilla">
 
             <section class="caja">
                 <h3>Detalle de Vuelo</h3>
@@ -47,17 +48,13 @@
                 <div class="resultados">
                     <p>Ida: Mendoza → Paris</p>
                     <div class="resultado-aerolinea">
-                        <div>
-                            <p class="hora-y-ciudad">12:00</p>
-                            <p class="hora-y-ciudad">BUE</p>
-                        </div>
+                        <p class="hora-y-ciudad">12:00</p>
+                        <p class="hora-y-ciudad">BUE</p>
                         <hr>
                         <i class="fa-solid fa-plane"></i>
                         <hr>
-                        <div>
-                            <p class="hora-y-ciudad">08:40</p>
-                            <p class="hora-y-ciudad">MAD</p>
-                        </div>
+                        <p class="hora-y-ciudad">08:40</p>
+                        <p class="hora-y-ciudad">MAD</p>
                     </div>
                     <p class="duracion-mas-escala">15h 10m · 3 escalas</p>
                 </div>
@@ -67,17 +64,13 @@
                 <div class="resultados">
                     <p>Vuelta: Paris → Mendoza</p>
                     <div class="resultado-aerolinea">
-                        <div>
-                            <p class="hora-y-ciudad">18:30</p>
-                            <p class="hora-y-ciudad">MAD</p>
-                        </div>
+                        <p class="hora-y-ciudad">18:30</p>
+                        <p class="hora-y-ciudad">MAD</p>
                         <hr>
                         <i class="fa-solid fa-plane"></i>
                         <hr>
-                        <div>
-                            <p class="hora-y-ciudad">06:40</p>
-                            <p class="hora-y-ciudad">BUE</p>
-                        </div>
+                        <p class="hora-y-ciudad">06:40</p>
+                        <p class="hora-y-ciudad">BUE</p>
                     </div>
                     <p class="duracion-mas-escala">21h 50m · 5 escalas</p>
                 </div>
@@ -88,120 +81,112 @@
                     <p>Total</p>
                     <strong>$ 550 USD</strong>
                 </div>
-
-                <div class="boton-checkout">
-                    <a href="../check_out/check_out.html" class="btn-finalizar">Finalizar compra</a>
-                </div>
-
-                <div class="boton-volver">
-                    <a href="../resultados_busqueda/resultados.html" class="btn-finalizar">Volver</a>
-                </div>
-
-
+                <button class="submit-button" ></button><a href="../check_out/check_out.html">Seleccionar Asiento</a></button>
             </section>
 
             <section class="caja">
                 <h3>Seleccioná tu Asiento</h3>
 
-                <div class="referencias">
+                <section class="referencias">
                     <i class="fa-solid fa-square disponible"></i> Disponible
                     <i class="fa-solid fa-square cuadrado ocupado"></i> Ocupado
+                </section>
+                <section class="mapa">
+                    <span class="vacio"></span>
+                    <span class="letra">A</span>
+                    <span class="letra">B</span>
+                    <span class="letra">C</span>
+                    <span class="letra">D</span>
+                    <span class="letra">.</span>
+                    <span class="letra">E</span>
+                    <span class="letra">F</span>
+                    <span class="letra">G</span>
+                    <span class="letra">H</span>
+
+                    <span class="numero">1</span>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch ocupado"></i>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <span class="pasillo">P</span>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch ocupado"></i>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch ocupado"></i>
+
+                    <span class="numero">2</span>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch ocupado"></i>
+                    <i class="fa-solid fa-couch seleccionado"></i>
+                    <span class="pasillo">A</span>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch ocupado"></i>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch ocupado"></i>
+
+                    <span class="numero">3</span>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch ocupado"></i>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <span class="pasillo">S</span>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch ocupado"></i>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch ocupado"></i>
+
+                    <span class="numero">4</span>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch ocupado"></i>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <span class="pasillo">I</span>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch ocupado"></i>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch ocupado"></i>
+
+                    <span class="numero">5</span>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch ocupado"></i>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <span class="pasillo">L</span>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch ocupado"></i>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch ocupado"></i>
+
+                    <span class="numero">6</span>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch ocupado"></i>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <span class="pasillo">L</span>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch ocupado"></i>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch ocupado"></i>
+
+                    <span class="numero">7</span>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch ocupado"></i>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <span class="pasillo">O</span>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch ocupado"></i>
+                    <i class="fa-solid fa-couch disponible"></i>
+                    <i class="fa-solid fa-couch ocupado"></i>
+
+                </section>
                 </div>
 
-                <div class="mapa">
-
-                    <div class="numeros">
-                        <p></p>
-                        <p>1</p>
-                        <p>2</p>
-                        <p>3</p>
-                        <p>4</p>
-                        <p>5</p>
-                    </div>
-
-                    <div class="grupo">
-                        <div class="columnas">
-                            <p>A</p>
-                            <p>B</p>
-                            <p>C</p>
-                            <p>D</p>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                        </div>
-                    </div>
-
-                    <div class="grupo">
-                        <div class="columnas">
-                            <p>E</p>
-                            <p>F</p>
-                            <p>G</p>
-                            <p>H</p>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch seleccionado"></i>
-                            <i class="fa-solid fa-couch seleccionado"></i>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch seleccionado"></i>
-                            <i class="fa-solid fa-couch seleccionado"></i>
-                        </div>
-                    </div>
-
-                </div>
 
             </section>
 
-        </div>
+            </div>
     </main>
 
     <footer class="footer">
