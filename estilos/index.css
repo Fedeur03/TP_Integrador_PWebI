@@ -4,7 +4,7 @@
 }
 
 .buscador {
-    width: 80%;
+    width: auto;
     background-color: #f5ecec;
     border: 1px solid #642E2E;
     border-radius: 10px;
@@ -56,6 +56,17 @@ select:hover {
     background-color: #ccc;
 }
 
+.tipo_vuelo label{
+    font-size: 1.2rem;
+    accent-color:#642E2E ;
+}
+
+.categoria{
+    display: flex;
+    align-items: center;
+gap:0.5em;
+}
+
 .boton_buscar {
     display: flex;
     justify-content: center;
@@ -69,6 +80,7 @@ select:hover {
     font-size: 1rem;
     cursor: pointer;
     border: none;
+    margin-top: 1.5rem;
 }
 
 .boton_buscar:hover {

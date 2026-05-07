@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="./estilos/navbar.css">
-    <link rel="stylesheet" href="./estilos/footer.css">
-    <link rel="stylesheet" href="./estilos/contenedor.css">
-    <link rel="stylesheet" href="./estilos/index.css">
+    <link rel="stylesheet" href="../../estilos/navbar.css">
+    <link rel="stylesheet" href="../../estilos/footer.css">
+    <link rel="stylesheet" href="../../estilos/contenedor.css">
+    <link rel="stylesheet" href="../../estilos/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
@@ -16,11 +16,11 @@
     <nav class="navbar">
         <div class="nav-left">
             <ul class="nav-list">
-                <a href="./index.html"><img src="../../media/flyway_logo.png" class="nav-logo" /></a>
+                <a href="../../index.html"><img src="../../media/flyway_logo.png" class="nav-logo" /></a>
                 <div class="vistas">
-                    <li><a href="/index.html" class="contenido-seleccionado">Inicio</a></li>
-                    <li><a href="/vistas/vuelos_no_logueado/vuelos_no_logueado.html">Vuelos</a></li>
-                    <li><a href="/vistas/contacto_no_logueado/contacto_no_logueado.html">Contacto</a></li>
+                    <li><a href="../../index.html" >Inicio</a></li>
+                    <li><a href="./vuelos_no_logueado.html"  class="contenido-seleccionado">Vuelos</a></li>
+                    <li><a href="../contacto_no_logueado/contacto_no_logueado.html">Contacto</a></li>
                 </div>
 
             </ul>
@@ -37,64 +37,42 @@
     </nav>
 
     <div class="banner">
-        <img src="./media/banner-inicio.png" alt="Banner">
+        <img src="../../media/banner-inicio.png" alt="Banner">
     </div>
 
     <main class="contenedor">
 
-        <section class="contenido_principal">
+        <section class="contenido_buscar_vuelo">
 
-            <h1>Busca tu vuelo</h1>
+            <h1>Buscá tu vuelo ideal</h1><br>
 
-            <form class="buscador" action="./vistas/resultados_no_logueado/resultados_no_logueado.html">
+            <form class="buscador" action="../resultados_busqueda/resultados.html">
 
                 <div class="tipo_vuelo">
-
-                    <label>
-                        <input type="radio" name="viaje" required>
-                        Ida y vuelta
-                    </label>
-
-                    <label>
-                        <input type="radio" name="viaje" required>
-                        Solo ida
-                    </label>
-
+                    <label><input type="radio" name="viaje"> Ida y vuelta</label>
+                    <label><input type="radio" name="viaje"> Solo ida</label>
                 </div>
 
                 <div class="fila">
-
-                    <label>
-                        Origen
-                        <input type="text" placeholder="Buenos Aires" required>
+                    <label><span class="categoria"><i class="fa-solid fa-plane-departure"></i>Origen</span>
+                        <input type="text" placeholder="EZE - Buenos Aires">
                     </label>
-
-                    <label>
-                        Destino
-                        <input type="text" placeholder="Madrid" required>
+                    <label><span class="categoria"><i class="fa-solid fa-plane-arrival"></i>Destino</span>
+                        <input type="text" placeholder="BAR- Madrid">
                     </label>
-
                 </div>
 
                 <div class="fila">
-
-                    <label>
-                        Ida
-                        <input type="date" required>
+                    <label><span class="categoria"><i class="fa-solid fa-calendar"></i>Ida</span>
+                        <input type="date">
                     </label>
-
-                    <label>
-                        Vuelta
-                        <input type="date" required>
+                    <label><span class="categoria"><i class="fa-solid fa-calendar"></i>Vuelta</span>
+                        <input type="date">
                     </label>
-
                 </div>
 
                 <div class="fila">
-
-                    <label>
-                        Pasajeros
-
+                    <label><span class="categoria"><i class="fa-solid fa-people-group"></i>Pasajeros</span>
                         <select>
                             <option>1 Pasajero</option>
                             <option>2 Pasajeros</option>
@@ -103,85 +81,78 @@
                             <option>5 Pasajeros</option>
                             <option>6 Pasajeros</option>
                         </select>
-
                     </label>
-
-                    <label>
-                        Clase
-
+                    <label><span class="categoria"><i class="fa-solid fa-layer-group"></i>Clase</span>
                         <select>
                             <option>Económica</option>
                             <option>Ejecutiva</option>
                             <option>Primera Clase</option>
                         </select>
-
                     </label>
-
                 </div>
+
 
                 <button class="boton_buscar">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     Buscar vuelos
-                </button>
+                </button>  
 
             </form>
 
         </section>
+
     </main>
 
-
     <footer class="footer">
-        <div class="contenedor_footer">
-            <section class="social">
-                <img src="../../media/footer_logo.png">
-                <div class="social-brands">
-                    <i class="fa-brands fa-square-instagram"></i>
-                    <i class="fa-brands fa-square-facebook"></i>
-                    <i class="fa-brands fa-x-twitter"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                </div>
+    <div class="contenedor_footer">
+        <section class="social">
+            <img src="../../media/footer_logo.png">
+            <div class="social-brands">
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
 
-            </section>
+        </section>
 
-            <section class="informacion">
-                <p>Información</p>
-                <hr class="division">
-                <div class="lista">
-                    <span><a href="./vistas/preguntas_no_logueado/preguntas_no_logueado.html">Preguntas
-                            Frecuentes</a></span>
-                    <span><a href="#">Términos y Condiciones</a></span>
-                    <span><a href="#">Privacidad</a></span>
-                </div>
+        <section class="informacion">
+            <p>Información</p>
+            <hr class="division">
+            <div class="lista">
+                <span><a href="../preguntas_no_logueado/preguntas_no_logueado.html">Preguntas Frecuentes</a></span>
+                <span><a href="#">Términos y Condiciones</a></span>
+                <span><a href="#">Privacidad</a></span>
+            </div>
 
-            </section>
+        </section>
 
-            <section class="enlaces">
-                <p>Enlaces Útiles</p>
-                <hr class="division">
-                <div class="lista">
-                    <span><a href="../../index.html">Inicio</a></span>
-                    <span><a href="./vistas/vuelos_no_logueado/vuelos_no_logueado.html">Vuelos</a></span>
-                    <span><a href="./vistas/contacto_no_logueado/contacto_no_logueado.html">Contacto</a></span>
-                </div>
-            </section>
+        <section class="enlaces">
+            <p>Enlaces Útiles</p>
+            <hr class="division">
+            <div class="lista">
+                <span><a href="../../index.html">Inicio</a></span>
+                <span><a href="./vuelos_no_logueado.html">Vuelos</a></span>
+                <span><a href="../contacto_no_logueado/contacto_no_logueado.html">Contacto</a></span>
+            </div>
+        </section>
 
-            <section class="contacto">
-                <p>Contacto</p>
-                <hr class="division">
-                <div class="lista">
-                    <span>Villanueva 123, CABA, Argentina</span>
-                    <span>flyway@customerservice.com</span>
-                    <span>(+54) 11 2345-6789</span>
-                    <span>Lun a Vie: 9:00 a 18:00</span>
-                </div>
-            </section>
-        </div>
-        <hr>
-        <div class="copyright">
-            <p>&copy; 2026 Mi página web. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-
+        <section class="contacto">
+            <p>Contacto</p>
+            <hr class="division">
+            <div class="lista">
+                <span>Villanueva 123, CABA, Argentina</span>
+                <span>flyway@customerservice.com</span>
+                <span>(+54) 11 2345-6789</span>
+                <span>Lun a Vie: 9:00 a 18:00</span>
+            </div>
+        </section>
+    </div>
+    <hr>
+    <div class="copyright">
+        <p>&copy; 2026 Mi página web. Todos los derechos reservados.</p>
+    </div>
+</footer>
 </body>
 
 </html>
