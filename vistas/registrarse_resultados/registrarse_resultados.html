@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../../estilos/navbar.css">
+    <link rel="stylesheet" href="../../estilos/footer.css">
+    <link rel="stylesheet" href="../registrarse/registro.css">
+    <link rel="icon" href="/media/flyway_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <ul class="nav-list">
+                <a href="../index_logueado/index.html"><img src="../../media/flyway_logo.png" class="nav-logo" /></a>
+                <div class="vistas">
+                    <li><a href="../index_logueado/index.html">Inicio</a></li>
+                    <li><a href="../vuelos/vuelos.html">Vuelos</a></li>
+                    <li><a href="../contacto/contacto.html" >Contacto</a></li>
+                </div>
+
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul class="nav-list">
+                <div class="usuario">
+                    <li class="log-in"><a href="../iniciar_sesion/login.html">Acceder</a></li>
+                    <li><a href="../registrarse/registro.html" class="sign-in">Comenzar ahora</a></li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="contenedor">
+        <section class="contenido_principal">
+            <form action="../resultados_busqueda/resultados.html">
+
+                <h2>Registrarse</h2>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresar nombre" required>
+
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingresar apellido" required>
+
+                <label for="dni">DNI</label>
+                <input type="text" id="dni" name="dni" placeholder="Ingresar DNI" maxlength="8" required>
+
+                <label for="nacimiento">Fecha de nacimiento</label>
+                <input type="text" id="nacimiento" name="nacimiento" placeholder="DD/MM/YYYY" required>
+
+                <label for="pasaporte">Pasaporte</label>
+                <input type="text" id="pasaporte" name="pasaporte" placeholder="Ingresar pasaporte">
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required>
+
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="••••••••" required>
+
+                <button type="submit">Crear cuenta</button>
+                <button class= "limpiar" type="reset">Limpiar</button>
+
+                <p>¿Ya tenés cuenta? <a href="../iniciar_sesion/login.html">Iniciar Sesión</a></p>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+    <div class="contenedor_footer">
+        <section class="social">
+            <img src="../../media/footer_logo.png">
+            <div class="social-brands">
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+
+        </section>
+
+        <section class="informacion">
+            <p>Información</p>
+            <hr class="division">
+            <div class="lista">
+                <span><a href="/vistas/preguntas_no_logueado/preguntas_no_logueado.html">Preguntas Frecuentes</a></span>
+                <span><a href="/vistas/terminos_condiciones_no_logueado/terminos_no_logueados.html">Términos y Condiciones</a></span>
+                <span><a href="/vistas/privacidad_no_logueado/privacidad_no_logueado.html">Privacidad</a></span>
+            </div>
+
+        </section>
+
+        <section class="enlaces">
+            <p>Enlaces Útiles</p>
+            <hr class="division">
+            <div class="lista">
+                <span><a href="/index.html">Inicio</a></span>
+                <span><a href="/vistas/vuelos_no_logueado/vuelos_no_logueado.html">Vuelos</a></span>
+                <span><a href="/vistas/contacto_no_logueado/contacto_no_logueado.html">Contacto</a></span>
+            </div>
+        </section>
+
+        <section class="contacto">
+            <p>Contacto</p>
+            <hr class="division">
+            <div class="lista">
+                <span>Villanueva 123, CABA, Argentina</span>
+                <span>flyway@customerservice.com</span>
+                <span>(+54) 11 2345-6789</span>
+                <span>Lun a Vie: 9:00 a 18:00</span>
+            </div>
+        </section>
+    </div>
+    <hr>
+    <div class="copyright">
+        <p>&copy; 2026 Mi página web. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</body>
+</html>

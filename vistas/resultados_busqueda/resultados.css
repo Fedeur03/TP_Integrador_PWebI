@@ -89,6 +89,7 @@ input[type="range"] {
     gap: 1rem;
     margin: 0 auto;
     margin-top: 2.5rem;
+    font-size: 1.4rem;
 }
 
 .volver-filtro{
@@ -96,7 +97,6 @@ input[type="range"] {
     border: 2px solid #7a2e2e;
     padding: 1rem 0.5rem;
     border-radius: 0.7rem;
-    font-size: 1.1rem;
     cursor: pointer;
 }
 
@@ -111,7 +111,6 @@ input[type="range"] {
     border: none;
     padding: 1rem 0.5rem;
     border-radius: 0.7rem;
-    font-size: 1.1rem;
     cursor: pointer;
 }
 
