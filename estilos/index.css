@@ -6,12 +6,12 @@
 .buscador {
     width: auto;
     background-color: #f5ecec;
-    border: 1px solid #642E2E;
+    border: 2px solid #642E2E;
     border-radius: 10px;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .contenedor h1 {
@@ -19,14 +19,20 @@
     font-size: 2rem;
 }
 
-.contenido_buscar_vuelo{
-    margin-top: 2rem;
-    margin-bottom: 7rem;
-    width: auto;
+.contenido_buscar_vuelo {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: 2px solid #4e2020;
+    border-radius: 2rem;
+    padding: 2rem 2.5rem;
+    background-color: #ccb5b5;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .buscador label {
@@ -42,7 +48,7 @@
 .tipo_vuelo {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .tipo_vuelo label {
@@ -53,7 +59,7 @@
 
 .fila {
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
 }
 
 .fila input,
@@ -95,7 +101,6 @@ gap:0.5em;
     font-size: 1rem;
     cursor: pointer;
     border: none;
-    margin-top: 1.5rem;
 }
 
 .boton_buscar:hover {

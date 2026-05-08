@@ -49,25 +49,25 @@
             <form class="buscador" action="/vistas/resultados_no_logueado/resultados_no_logueado.html">
 
                 <div class="tipo_vuelo">
-                    <label><input type="radio" name="viaje"> Ida y vuelta</label>
+                    <label><input type="radio" name="viaje" required> Ida y vuelta</label>
                     <label><input type="radio" name="viaje"> Solo ida</label>
                 </div>
 
                 <div class="fila">
                     <label><span class="categoria"><i class="fa-solid fa-plane-departure"></i>Origen</span>
-                        <input type="text" placeholder="EZE - Buenos Aires">
+                        <input type="text" placeholder="EZE - Buenos Aires" required>
                     </label>
                     <label><span class="categoria"><i class="fa-solid fa-plane-arrival"></i>Destino</span>
-                        <input type="text" placeholder="BAR- Madrid">
+                        <input type="text" placeholder="BAR- Madrid" required>
                     </label>
                 </div>
 
                 <div class="fila">
                     <label><span class="categoria"><i class="fa-solid fa-calendar"></i>Ida</span>
-                        <input type="date">
+                        <input type="date" required>
                     </label>
                     <label><span class="categoria"><i class="fa-solid fa-calendar"></i>Vuelta</span>
-                        <input type="date">
+                        <input type="date" required>
                     </label>
                 </div>
 

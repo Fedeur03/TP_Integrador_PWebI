@@ -8,12 +8,6 @@ body {
     flex-direction: column;
 }
 
-.contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .contenedor h1 {
     color: #642E2E;
     font-size: 2rem;
