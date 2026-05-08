@@ -19,7 +19,21 @@
     padding: 0.5em;
     font-size: 1rem;
     border-color:#642E2E;
+    border-radius: 10rem;
+}
+
+.btn-refrescar{
+    margin-top:1em;
+    background-color:#642E2E;
+    color: #fff;
     border-radius: 5px;
+    padding:0.5rem;
+    border: 1px solid #642E2E !important;
+}
+
+.btn-refrescar:hover{
+    background-color:#814242;
+    cursor: pointer;
 }
 
 .caja {
@@ -68,16 +82,20 @@ input[type="range"] {
 }
 
 .botones-filtro{
+    width: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    margin-top: 2rem;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    font-size: 1.4rem;
 }
 
 .volver-filtro{
     background-color: white;
     border: 2px solid #7a2e2e;
-    padding: 0.7rem 1.5rem;
+    padding: 1rem 0.5rem;
     border-radius: 0.7rem;
     cursor: pointer;
 }
@@ -91,7 +109,7 @@ input[type="range"] {
 .refrescar-filtro{
     background-color: #7a2e2e;
     border: none;
-    padding: 0.7rem 1.5rem;
+    padding: 1rem 0.5rem;
     border-radius: 0.7rem;
     cursor: pointer;
 }
