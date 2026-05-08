@@ -81,6 +81,49 @@ input[type="range"] {
     accent-color: #642E2E;
 }
 
+.botones-filtro{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.volver-filtro{
+    background-color: white;
+    border: 2px solid #7a2e2e;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.7rem;
+    cursor: pointer;
+}
+
+.volver-filtro a{
+    color: #7a2e2e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.refrescar-filtro{
+    background-color: #7a2e2e;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.7rem;
+    cursor: pointer;
+}
+
+.refrescar-filtro a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.volver-filtro:hover{
+    background-color: #f3f3f3;
+}
+
+.refrescar-filtro:hover{
+    background-color: #5c2020;
+}
+
 .resultados {
     border: 1px solid #c9afaf;
     border-radius: 1rem;

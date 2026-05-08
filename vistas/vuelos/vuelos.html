@@ -21,7 +21,7 @@
                 <a href="../index_logueado/index.html"><img src="../../media/flyway_logo.png" class="nav-logo" /></a>
                 <div class="vistas">
                     <li><a href="../index_logueado/index.html">Inicio</a></li>
-                    <li><a href="../vuelos/vuelos.html">Vuelos</a></li>
+                    <li><a href="../vuelos/vuelos.html" class="contenido-seleccionado">Vuelos</a></li>
                     <li><a href="../contacto/contacto.html">Contacto</a></li>
                 </div>
 
@@ -39,8 +39,15 @@
 
     <main class="contenedor_vuelos">
 
-        <div class="busqueda"><input size="40" type="text" placeholder="Buscar destinos o aerolineas" />
-            <a href="/vistas/resultados_busqueda/resultados.html"><span class="icono-busqueda"><i class="fa-solid fa-magnifying-glass"></i></span></div></a>
+        <div class="busqueda">
+            <input size="40" type="text" placeholder="Buscar destinos o aerolineas"/>
+            
+            <a href="/vistas/resultados_busqueda/resultados.html">
+                <span class="icono-busqueda">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+            </a>
+        </div>
 
         <div class="row">
             <div class="card_vuelo">
@@ -150,7 +157,9 @@
 
         <button class="boton">Cargar Más</button>
 
-
+        <a href="#" class="boton-subir">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
 
     </main>
 

@@ -80,7 +80,6 @@
 }
 
 .icono-busqueda{
-    position: relative;
     color: #fff;
     background-color:#7a2e2e;
     height: 2rem;
@@ -93,8 +92,6 @@
 .icono-busqueda:hover{
     color: #883e3e;
     background-color:#fff;
-
-
 }
 
 button a {
@@ -119,4 +116,22 @@ button:hover {
 
 .boton:hover{
     background-color: #7e4040;
+}
+
+.boton-subir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #7a2e2e;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.boton-subir:hover{
+    background-color: #7a2e2e;
+    color: #fff;
+    border-radius: 10rem;
+    width: 5%;
+    height: 50%;
 }
