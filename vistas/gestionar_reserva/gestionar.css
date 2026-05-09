@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+}
+
+.titulo {
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.sub-titulo{
+    margin-top:1rem;
+    font-size: 1.5rem;
+
+}
+
+.sub-titulo button{
+    background-color: #642E2E;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.rojo {
+    color: #642E2E;
+}
+
+.grilla{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.detalles-vuelo{
+    display: grid;
+    grid-template-columns: 2fr 0.5rem 1fr;
+    padding:2rem;
+    gap:1rem;
+}
+
+.detalles{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.texto{
+    display: grid;
+    grid-template-rows: 2;
+}
+.info{
+    font-weight: bold;
+}
+
+.linea-divisoria{
+    border-left: #642E2E solid 0.1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.forma-rojo{
+    color:#642E2E;
+    background-color: #642E2E;
+}
+

@@ -6,6 +6,15 @@
     background-color: #ebebeb;
 }
 
+.tarjeta a{
+    text-decoration: none;
+    color:#fff
+}
+
+.tarjeta button:hover{
+    background-color: #7c5050;
+}
+
 .lateral {
     display: flex;
     flex-direction: column;
