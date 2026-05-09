@@ -44,7 +44,21 @@
     color: #642E2E;
 }
 
+.boton{
+    width: 12%;
+    background-color: #642E2E;
+    color: #fff;
+    margin-top:1rem;
+    padding: 0.7em 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    justify-self: flex-end;
+}
+
 .tarjeta {
+    display: flex;
+    flex-direction: column;
     background-color: #C9AFAF;
     border-radius: 10px;
     padding: 1.2em;

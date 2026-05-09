@@ -1,21 +1,40 @@
 .contenedor{
+    display: flex;
+    justify-self: center;
+    margin-top: 1rem;
+    width: 80%;
     padding: 1em 5em;
     color: #602929;
-    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
     
 }
 .tarjeta {
+    width: 55%;
     background-color: #C9AFAF;
-    border-radius: 10px;
+    border-radius: 15px 50px 15px 50px;
+    border: 1px solid #602929;
     padding: 1.2em;
     color: #602929;
     margin: 1em 5em;
+    font-size:large;
+
 }
 
 .abierta {
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 0.7rem;
+}
+
+.abierta p{
+    display:flex;
+    font-size: 1.1em;
+    gap: 0.2rem;
+}
+
+.icon{
+    width: 35px;
 }
 
 .cabecera {
@@ -36,7 +55,7 @@
 }
 
 .contenido img {
-    width: 10%;
+    width: 15%;
 }
 .link{
     text-decoration: none;

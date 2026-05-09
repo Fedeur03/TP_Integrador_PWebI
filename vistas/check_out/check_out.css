@@ -21,6 +21,7 @@ label {
     display: block !important;
     font-size: 1.1rem !important;
     font-weight: bold;
+    color:#642E2E !important;
 }
 
 input,
@@ -78,7 +79,7 @@ select {
 .header {
     width: 100%;
     padding: 1rem;
-    background-color: #ebdbdb;
+    background-color: #642E2E;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     display: flex;
@@ -95,17 +96,18 @@ select {
 .sub-header {
     width: 100%;
     padding: 0.5rem;
-    background-color: #ebdbdb;
+    background-color: #642E2E;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1em;
+    color:#fff;
 }
 
 .sector_img {
-    color: #642E2E;
+    color: #ffffff;
     font-size: 1.5rem;
 }
 
@@ -125,21 +127,21 @@ select {
 
 .title {
     font-size: 1.5rem;
-    color: #642E2E;
+    color: #ffffff;
     font-weight: bold;
 }
 
 .sub-title {
     font-size: 1.rem;
     padding: 0.5em;
-    color: #642E2E;
+    color: #ffffff;
     font-weight: bold;
 
 }
 
 .subtitle {
     font-size: 1rem;
-    color: #4d4c4c;
+    color: #a1a1a1;
 }
 
 .contenido {
@@ -148,6 +150,8 @@ select {
     gap: 1rem;
     padding: 1rem;
     flex-direction: column;
+    color:#642E2E;
+
 }
 
 .sub_contenido {

@@ -15,11 +15,11 @@
     <nav class="navbar">
         <div class="nav-left">
             <ul class="nav-list">
-                <a href="../index_logueado/index.html"><img src="../../media/flyway_logo.png" class="nav-logo" /></a>
+                <a href="../../index.html"><img src="../../media/flyway_logo.png" class="nav-logo" /></a>
                 <div class="vistas">
-                    <li><a href="../index_logueado/index.html">Inicio</a></li>
-                    <li><a href="../vuelos/vuelos.html">Vuelos</a></li>
-                    <li><a href="../contacto/contacto.html" >Contacto</a></li>
+                    <li><a href="/index.html" >Inicio</a></li>
+                    <li><a href="/vistas/vuelos_no_logueado/vuelos_no_logueado.html">Vuelos</a></li>
+                    <li><a href="/vistas/contacto_no_logueado/contacto_no_logueado.html" class="contenido-seleccionado">Contacto</a></li>
                 </div>
 
             </ul>
@@ -27,8 +27,9 @@
         <div class="nav-right">
             <ul class="nav-list">
                 <div class="usuario">
-                    <li class="log-in"><a href="../iniciar_sesion/login.html">Acceder</a></li>
-                    <li><a href="../registrarse/registro.html" class="sign-in">Comenzar ahora</a></li>
+
+                    <li class="log-in"><a href="/vistas/iniciar_sesion/login.html">Acceder</a></li>
+                    <li><a href="/vistas/registrarse/registro.html" class="sign-in">Comenzar ahora</a></li>
                 </div>
             </ul>
         </div>
@@ -50,7 +51,7 @@
                 <input type="text" id="dni" name="dni" placeholder="Ingresar DNI" maxlength="8" required>
 
                 <label for="nacimiento">Fecha de nacimiento</label>
-                <input type="text" id="nacimiento" name="nacimiento" placeholder="DD/MM/YYYY" required>
+                <input type="date" id="nacimiento" name="nacimiento" placeholder="DD/MM/YYYY" required>
 
                 <label for="pasaporte">Pasaporte</label>
                 <input type="text" id="pasaporte" name="pasaporte" placeholder="Ingresar pasaporte">
