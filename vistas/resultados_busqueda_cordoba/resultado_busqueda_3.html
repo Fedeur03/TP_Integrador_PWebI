@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+    <link rel="stylesheet" href="../../estilos/navbar.css">
+    <link rel="stylesheet" href="../../estilos/footer.css">
+    <link rel="icon" href="/media/flyway_logo.png">
+    <link rel="stylesheet" href="../resultados_busqueda/resultados.css">
+    <link rel="icon" href="/media/flyway_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <ul class="nav-list">
+                <a href="../index_logueado/index.html"><img src="../../media/flyway_logo.png" class="nav-logo" /></a>
+                <div class="vistas">
+                    <li><a href="../index_logueado/index.html">Inicio</a></li>
+                    <li><a href="../vuelos/vuelos.html">Vuelos</a></li>
+                    <li><a href="../contacto/contacto.html">Contacto</a></li>
+                </div>
+
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul class="nav-list">
+                <div class="usuario">
+                    <li class="log-in"><a href="../usuario/usuario.html">Juan Perez ▼</a></li>
+                    <li class="log-in"><a href="../mis_reservas/mis_reservas.html">Mis Reservas</a></li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+<main class="contenedor">
+
+        <h2>Resultados de Búsqueda</h2>
+        
+
+        <div class="grilla">
+            
+
+            <section class="caja">
+                <input size="40" class="busqueda" type="text" placeholder="Buscar destinos o aerolineas" />
+                <h3>Filtrar por</h3>
+
+                <h4>Precio</h4>
+
+                <div class="rango_precio">
+                    <span>$100</span>
+                    <span>$1.000</span>
+                </div>
+                <input type="range" min="0" max="1000" value="500">
+
+                <h4>Tipo de vuelo</h4>
+                <label><input type="checkbox"> Directo</label>
+                <label><input type="checkbox"> Con escalas</label>
+
+                <h4>Aerolínea</h4>
+                <label><input type="checkbox"> Aerolíneas Argentinas</label>
+                <label><input type="checkbox"> American Airlines </label>
+                <label><input type="checkbox"> Flybondi </label>
+                <label><input type="checkbox"> Emirates </label>
+
+                <div class="botones-filtro">
+                    <button class="refrescar-filtro">
+                        <a href="./resultados_no_logueado.html">REFRESCAR</a>
+                    </button>
+
+                    <button class="volver-filtro">
+                        <a href="../index_logueado/index.html">VOLVER</a>
+                    </button>
+                </div>
+            </section>
+
+            <section class="caja">
+                <h3>Aerolínea</h3>
+
+                <div class="resultados">
+                    <h4>Aerolíneas Argentinas</h4>
+                    <div class="resultado-aerolinea">
+                        <div>
+                            <p class="hora-y-ciudad">12:00</p>
+                            <p class="hora-y-ciudad">CORDOBA</p>
+                        </div>
+                        <hr>
+                            <i class="fa-solid fa-plane"></i>
+                        <hr>
+                        <div>
+                            <p class="hora-y-ciudad">08:40</p>
+                            <p class="hora-y-ciudad">LONDRES</p>
+                        </div>
+                        <div class="acciones">
+                            <button class="btn-detalles"> <a href="../detalles_del_vuelo/detalles_del_vuelo.html">DETALLES</a></button>
+                            <button class="btn-seleccionar"> <a href="../check_out/check_out.html">SELECCIONAR</a></button>
+                        </div>
+                    </div>
+                    <p class="duracion-escala">15h 10m · 11 escalas</p>
+                </div>
+
+                <div class="resultados">
+                    <h4>American Airlines</h4>
+                    <div class="resultado-aerolinea">
+                        <div>
+                            <p class="hora-y-ciudad">14:00</p>
+                            <p class="hora-y-ciudad">CORDOBA</p>
+                        </div>
+                        <hr>
+                            <i class="fa-solid fa-plane"></i>
+                        <hr>
+                        <div>
+                            <p class="hora-y-ciudad">22:00</p>
+                            <p class="hora-y-ciudad">LONDRES</p>
+                        </div>
+                        <div class="acciones">
+                            <button class="btn-detalles"> <a href="../detalles_del_vuelo/detalles_del_vuelo.html">DETALLES</a></button>
+                            <button class="btn-seleccionar"> <a href="../check_out/check_out.html">SELECCIONAR</a></button>
+                        </div>
+                    </div>
+                    <p class="duracion-escala">15h 10m · 11 escalas</p>
+                </div>
+
+                <div class="resultados">
+                    <h4>Flybondi</h4>
+                    <div class="resultado-aerolinea">
+                        <div>
+                            <p class="hora-y-ciudad">20:00</p>
+                            <p class="hora-y-ciudad">CORDOBA</p>
+                        </div>
+                        <hr>
+                            <i class="fa-solid fa-plane"></i>
+                        <hr>
+                        <div>
+                            <p class="hora-y-ciudad">11:55</p>
+                            <p class="hora-y-ciudad">LONDRES</p>
+                        </div>
+                        <div class="acciones">
+                            <button class="btn-detalles"> <a href="../detalles_del_vuelo/detalles_del_vuelo.html">DETALLES</a></button>
+                            <button class="btn-seleccionar"> <a href="../check_out/check_out.html">SELECCIONAR</a></button>
+                        </div>
+                    </div>
+                    <p class="duracion-escala">15h 55m · 9 escalas</p>
+                </div>
+
+            </section>
+
+            <section class="caja">
+                <h3>Equipaje</h3>
+                <label><input type="checkbox"> Solo opciones con equipaje</label>
+                <label><input type="radio" name="equipaje"> <i class="fa-solid fa-briefcase"></i> Equipaje de mano</label>
+                <label><input type="radio" name="equipaje"> <i class="fa-solid fa-suitcase"></i> Equipaje en bodega</label>
+
+                <hr>
+
+                <h3>Políticas</h3>
+                <p>Priorizar la integridad de los pasajeros</p>
+                <p>Cancelación gratuita en 24 horas</p>
+                <p>Seguridad total en cada vuelo</p>
+                <p>Sin reembolso luego del despegue</p>
+                <p>Minimizar el impacto ambiental</p>
+                <p>Puntualidad máxima garantizada</p>
+                <p>Cuidado experto del equipaje</p>
+                <p>Atención al cliente 24/7</p>
+                <p>Cambios de fecha flexibles</p>
+                <p>Información de vuelo en tiempo real</p>
+                <p>Embarque rápido y organizado</p>
+                <p>Equipaje protegido en todo momento</p>
+                <p>Protocolos sanitarios actualizados</p>
+                <p>Transparencia en tarifas y cargos</p>
+
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor_footer">
+            <section class="social">
+                <img src="../../media/footer_logo.png">
+                <div class="social-brands">
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+
+            </section>
+
+            <section class="informacion">
+                <p>Información</p>
+                <hr class="division">
+                <div class="lista">
+                    <span><a href="/vistas/preguntas_frecuentes/preguntas_frecuentes.html">Preguntas
+                            Frecuentes</a></span>
+                    <span><a href="/vistas/terminos_y_condiciones/terminos.html">Términos y Condiciones</a></span>
+                    <span><a href="/vistas/privacidad/privacidad.html">Privacidad</a></span>
+                </div>
+
+            </section>
+
+            <section class="enlaces">
+                <p>Enlaces Útiles</p>
+                <hr class="division">
+                <div class="lista">
+                    <span><a href="/vistas/index_logueado/index.html">Inicio</a></span>
+                    <span><a href="/vistas/vuelos/vuelos.html">Vuelos</a></span>
+                    <span><a href="/vistas/contacto/contacto.html">Contacto</a></span>
+                </div>
+            </section>
+
+            <section class="contacto">
+                <p>Contacto</p>
+                <hr class="division">
+                <div class="lista">
+                    <span>Villanueva 123, CABA, Argentina</span>
+                    <span>flyway@customerservice.com</span>
+                    <span>(+54) 11 2345-6789</span>
+                    <span>Lun a Vie: 9:00 a 18:00</span>
+                </div>
+            </section>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>&copy; 2026 Mi página web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
