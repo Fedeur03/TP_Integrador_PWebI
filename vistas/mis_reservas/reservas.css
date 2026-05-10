@@ -54,15 +54,16 @@
 }
 
 .boton{
-    width: 12%;
+    width: 15%;
     background-color: #642E2E;
     color: #fff;
     margin-top:1rem;
     padding: 0.7em 1.2em;
     border: none;
     border-radius: 8px;
+    font-size: 0.950rem;
+    font-weight: bold;
     cursor: pointer;
-    justify-self: flex-end;
 }
 
 .tarjeta {
@@ -84,6 +85,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0.4rem;
 }
 
 .contenido {
@@ -94,7 +96,7 @@
 }
 
 .contenido img {
-    width: 10%;
+    width: 12%;
 }
 
 .link{
