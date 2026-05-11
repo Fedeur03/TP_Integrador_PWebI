@@ -37,46 +37,49 @@
         </div>
     </nav>
 
-<main class="contenedor">
+    <main class="contenedor">
 
         <h2>Resultados de Búsqueda</h2>
-        
+
 
         <div class="grilla">
-            
 
-            <section class="caja">
-                <input size="40" class="busqueda" type="text" placeholder="Buscar destinos o aerolineas" />
-                <h3>Filtrar por</h3>
+            <form>
 
-                <h4>Precio</h4>
+                <section class="caja">
+                    <input size="40" class="busqueda" type="text" placeholder="Buscar destinos o aerolineas" />
+                    <h3>Filtrar por</h3>
 
-                <div class="rango_precio">
-                    <span>$100</span>
-                    <span>$1.000</span>
-                </div>
-                <input type="range" min="0" max="1000" value="500">
+                    <h4>Precio</h4>
 
-                <h4>Tipo de vuelo</h4>
-                <label><input type="checkbox"> Directo</label>
-                <label><input type="checkbox"> Con escalas</label>
+                    <div class="rango_precio">
+                        <span>$100</span>
+                        <span>$1.000</span>
+                    </div>
+                    <input type="range" min="0" max="1000" value="500">
 
-                <h4>Aerolínea</h4>
-                <label><input type="checkbox"> Aerolíneas Argentinas</label>
-                <label><input type="checkbox"> American Airlines </label>
-                <label><input type="checkbox"> Flybondi </label>
-                <label><input type="checkbox"> Emirates </label>
+                    <h4>Tipo de vuelo</h4>
+                    <label><input type="checkbox"> Directo</label>
+                    <label><input type="checkbox"> Con escalas</label>
 
-                <div class="botones-filtro">
-                    <button class="refrescar-filtro">
-                        <a href="../resultados_no_logueado/resultados_no_logueado.html">REFRESCAR</a>
-                    </button>
+                    <h4>Aerolínea</h4>
+                    <label><input type="checkbox"> Aerolíneas Argentinas</label>
+                    <label><input type="checkbox"> American Airlines </label>
+                    <label><input type="checkbox"> Flybondi </label>
+                    <label><input type="checkbox"> Emirates </label>
 
-                    <button class="volver-filtro">
-                        <a href="../index_logueado/index.html">VOLVER</a>
-                    </button>
-                </div>
-            </section>
+                    <div class="botones-filtro">
+                        <button type="reset" class="refrescar-filtro">
+                            REFRESCAR
+                        </button>
+
+
+                        <button class="volver-filtro">
+                            <a href="../index_logueado/index.html">VOLVER</a>
+                        </button>
+                    </div>
+                </section>
+            </form>
 
             <section class="caja">
                 <h3>Aerolínea</h3>

@@ -22,20 +22,6 @@
     border-radius: 10rem;
 }
 
-.btn-refrescar{
-    margin-top:1em;
-    background-color:#642E2E;
-    color: #fff;
-    border-radius: 5px;
-    padding:0.5rem;
-    border: 1px solid #642E2E !important;
-}
-
-.btn-refrescar:hover{
-    background-color:#814242;
-    cursor: pointer;
-}
-
 .caja {
     background-color: #fff;
     border: 0.1rem solid #c9afaf;
@@ -108,16 +94,12 @@ input[type="range"] {
 
 .refrescar-filtro{
     background-color: #7a2e2e;
+    color: #fff;
+    font-weight: bold;
     border: none;
     padding: 1rem 0.5rem;
     border-radius: 0.7rem;
     cursor: pointer;
-}
-
-.refrescar-filtro a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
 }
 
 .volver-filtro:hover{
