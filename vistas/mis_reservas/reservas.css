@@ -42,7 +42,15 @@
     border-radius: 6px;
     font-weight: bold;
 }
+.link{
+    text-decoration: none;
+    color:#642E2E;
+    font-weight: bold;
+}
 
+.link:hover{
+    color: #9c7575;
+}
 .vuelos {
     display: flex;
     flex-direction: column;
@@ -54,7 +62,7 @@
 }
 
 .boton{
-    width: 15%;
+    width: 22%;
     background-color: #642E2E;
     color: #fff;
     margin-top:1rem;
@@ -75,12 +83,6 @@
     color: #602929;
 }
 
-.abierta {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-}
-
 .cabecera {
     display: flex;
     justify-content: space-between;
@@ -97,14 +99,4 @@
 
 .contenido img {
     width: 12%;
-}
-
-.link{
-    text-decoration: none;
-    color:#642E2E;
-    font-weight: bold;
-}
-
-.link:hover{
-    color: #9c7575;
 }
