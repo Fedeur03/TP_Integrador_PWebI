@@ -1,6 +1,6 @@
 .contenedor_vuelos {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 3rem;
@@ -65,24 +65,24 @@
     cursor: pointer;
 }
 
-.busqueda{
-    display:flex;
+.busqueda {
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
 }
 
-.busqueda input{
+.busqueda input {
     border: 2px solid #7a2e2e;
     height: 2rem;
-    font-size:large;
+    font-size: large;
     border-radius: 10px;
     padding: 1rem;
 }
 
-.icono-busqueda{
+.icono-busqueda {
     color: #fff;
-    background-color:#7a2e2e;
+    background-color: #7a2e2e;
     height: 2rem;
     padding: 0.4rem 1rem;
     cursor: pointer;
@@ -90,9 +90,9 @@
     border: 1px solid #883e3e !important;
 }
 
-.icono-busqueda:hover{
+.icono-busqueda:hover {
     color: #883e3e;
-    background-color:#fff;
+    background-color: #fff;
 }
 
 button a {
@@ -115,11 +115,7 @@ button:hover {
     font-weight: bold;
 }
 
-.boton:hover{
-    background-color: #7e4040;
-}
-
-.boton-subir{
+.boton-subir {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,7 +125,7 @@ button:hover {
     cursor: pointer;
 }
 
-.boton-subir:hover{
+.boton-subir:hover {
     background-color: #7a2e2e;
     color: #fff;
     border-radius: 10rem;
