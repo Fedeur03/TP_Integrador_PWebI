@@ -19,7 +19,7 @@
 }
 
 .contenedor_terminos h2 {
-    text-transform: bold;
+    font-weight: bold;
     font-size: 1rem;
     padding: 0.7rem;
     color: #642E2E;
