@@ -1,14 +1,14 @@
 .contenedor{
     display: flex;
-    justify-self: center;
-    margin-top: 1rem;
-    width: 80%;
-    padding: 1em 5em;
-    color: #602929;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    
+    margin: 1rem auto;
+    width: 80%;
+    min-height: 75vh;
+    color: #602929;    
 }
+
 .tarjeta {
     width: 55%;
     background-color: #C9AFAF;
