@@ -3,11 +3,12 @@ body {
 }
 
 .contenedor{
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 5vh;
-    min-height: 25vh;
+    margin-top: 2rem;
     background-color: #F5EDED;
     padding-bottom: 4rem;
 }
@@ -19,7 +20,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-bottom: 2vh;
+    margin-bottom: 1rem;
 }
 
 .title-header {
