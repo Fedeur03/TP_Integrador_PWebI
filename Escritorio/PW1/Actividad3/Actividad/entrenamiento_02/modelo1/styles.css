@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+
+    span {
+        font-size: 4em;
+    }
+
+    .parte_superior {
+        
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction:column
+    }
+
+    .cubo_superior {
+        border: 0.2em solid rgb(0, 0, 0);
+        width: 100%;
+        height: 23.5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+
+    .parte_inferior {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cubo_inferior {
+        border: 0.2em solid rgb(0, 0, 0);
+        height: 25vh;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #verde {
+        background-color: rgb(185, 228, 156);
+    }
+
+    #amarillo {
+        background-color: rgb(236, 236, 147);
+    }
+
+    .verde{
+        margin-bottom: 1em;
+    }
+
+    .rojo {
+        background-color: rgb(230, 134, 134);
+    }
+
+    .azul {
+        background-color: rgb(161, 206, 243);
+        display: flex;
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+
+    span {
+    font-size: 4em;
+}
+
+.parte_superior {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.cubo_superior {
+    border: 0.2em solid rgb(0, 0, 0);
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.parte_inferior {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.cubo_inferior {
+    border: 0.2em solid rgb(0, 0, 0);
+    height: 40vh;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#verde {
+    background-color: rgb(138, 179, 138);
+}
+
+#amarillo {
+    background-color: rgb(236, 236, 147);
+}
+
+.rojo {
+    background-color: rgb(230, 134, 134);
+}
+
+}
+

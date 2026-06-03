@@ -1,0 +1,322 @@
+:root {
+    --primary-color: #0066cc;
+    --primary-dark: #0052a3;
+    --secondary-color: #f47c20;
+    --secondary-dark: #d46a0a;
+    --base-font-size: 16px;
+}   
+html {
+    font-family: "Vollkorn", serif;
+    background-color: #b9b9b9;
+    color: #333;
+    font-size: 62.5%;
+
+}
+body {
+    font-size: 16px;
+    margin: 0;
+
+}
+main {
+    width: 80%;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: 0.8rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+}
+
+.boxPrincipal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 0 0;
+    background-color: #a1a0a0;
+    border-radius:0 0 12px 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+}
+
+h1 {  
+    color: var(--primary-dark);
+    font-size: 2,5rem;
+    text-align: left;
+    width: 35rem;
+    white-space: nowrap;
+}
+h2 {
+    font-size: 3rem;
+    padding-left: 2rem;
+    margin-bottom: 0;
+    color: var(--secondary-dark);
+}
+h3 {
+    font-size: 2rem;
+    padding-left: 2rem;
+    margin-bottom: 0;
+    color: var(--primary-dark);
+}
+ul {
+    font-size: 2rem;
+    text-align: justify;
+    list-style-type: disc;
+    margin-top: 0;
+}
+.divisor {
+    border-top: 1px solid #333; /* Estilo, grosor y color */
+    margin: 15px auto;
+    width: 80%; /* Ancho reducido para centrarla */
+}
+.profile-photo {
+    justify-content: center; /* Alinea a la derecha */
+    width: 23rem;
+    height: 23rem;
+    border-radius: 80%;
+    padding-right: 2rem;
+}
+.button {
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.boxPrincipalEmpresa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #a1a0a0;
+    border-radius:0 0 12px 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+}
+.boxSecundarioEmpresa {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+}
+.boxSecundarioEmpresa p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: justify;
+}
+.boxPrincipalEducacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 0 0 0 0;
+    background-color: #a1a0a0;
+    border-radius:0 0 12px 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+}
+.boxSecundarioEducacion {
+    margin: 0 5rem;
+}
+
+.boxSecundarioEducacion,h1{
+    overflow-wrap: break-word;
+    white-space: normal;
+    
+}
+.boxSecundarioEducacion, img {
+    width: 80%;
+}
+.boxSecundarioEducacion,ul {
+    padding-bottom: 1rem;
+}
+.boxContainerCourse {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    align-items: start;
+}
+.boxSecundarioCourse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+}
+.boxSecundarioCourse:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.boxSecundarioCourse h2 {
+    text-align: center;
+    overflow-wrap: break-word;
+    white-space: normal;
+    width: 100%;
+    min-height: 18rem;
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+}
+.boxSecundarioCourse img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+.boxSecundarioCourse p {
+    padding: 1rem;
+    text-align: justify;
+}
+.boxSecundarioCourse ul {
+    text-align: left;
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit; /* toma el color del elemento padre */
+    text-decoration: none; /* opcional: saca el subrayado */
+}
+@media (max-width: 768px) {
+        main {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        margin-bottom: 10rem;
+    }
+    .boxPrincipal {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+    .boxPrincipal h1, li{
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+        
+    }
+    .profile-photo {
+        width: 15rem;
+        height: 15rem;
+        margin-top: 1rem;
+        padding: 0;
+    }
+    .boxSecundario{
+        text-align: center;
+    }
+    h1, h2, h3{
+        padding-left: 0;
+    }
+    li{
+        list-style-type: none;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        border-bottom: 1px solid #333; /* Estilo, grosor y color */
+        margin: 15px auto;
+        width: 80%; /* Ancho reducido para centrarla */
+
+    }
+    ul{
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+    .boxPrincipalEmpresa, h1{
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .boxPrincipalEmpresa, h2, h3{
+        text-align: center;
+    }
+    .boxSecundarioEmpresa {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .boxSecundarioEmpresa iframe {
+        width: 100%;
+        height: auto;
+        order: 2;
+    }
+    .boxSecundarioEmpresa p {
+        order: 1;
+        padding: 1rem;
+    }
+    .boxContainerCourse {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .boxContainerCourse img{
+        width: 100%;
+        height: auto;
+    }
+    .boxContainerCourse li{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+    .boxContainerCourse ul{
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    .boxContainerCourse p{
+        padding: 1rem;
+        text-align: left;
+    }
+    .boxSecundarioCourse h2 {
+        padding: 0;
+        margin: 1rem;
+    }
+    .boxPrincipalEducacion{
+        display: flex;
+        align-items: center;
+    }
+    .boxSecundarioEducacion{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+    .boxSecundarioEducacion, img {
+        width: 100%;
+        height: auto;
+    }
+    .boxSecundarioEducacion, li {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--primary-dark);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+    margin-top: auto;
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+}

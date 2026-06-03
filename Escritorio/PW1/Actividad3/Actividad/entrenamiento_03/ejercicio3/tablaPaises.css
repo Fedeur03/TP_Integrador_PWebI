@@ -1,0 +1,95 @@
+:root {
+    --primary-color: #0066cc;
+    --primary-dark: #0052a3;
+    --secondary-color: #f47c20;
+    --secondary-dark: #d46a0a;
+    --base-font-size: 16px;
+}
+
+.container {
+    background-color: var(--secondary-dark);
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#grilla-paises {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+@media (max-width: 612px) {
+    #grilla-paises {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 3px solid var(--primary-dark);
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: white;
+  min-height: 10rem;
+}
+
+.card img {
+  width: 5rem;
+  height: 3rem;
+  object-fit: cover;   /* recorta sin deformar si la imagen no es exacta */
+  border: 1px solid black;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    /* se queda fijo sobre todo */
+    inset: 0;
+    /* cubre toda la pantalla */
+    background: rgba(0, 0, 0, 0.5);
+    place-items: center;
+}
+
+#popup.visible {
+    display: grid;
+}
+
+#popup-contenido {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+}
+#popup-contenido h2 {
+  margin-top: 0;
+  color: var(--primary-dark);
+  font-size: 1.8rem;
+}
+#popup-contenido ul {
+  font-size: 0.9rem;
+  color: #333;
+  list-style: none;
+  padding: 0;
+}
+#popup-contenido button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--secondary-color);
+}

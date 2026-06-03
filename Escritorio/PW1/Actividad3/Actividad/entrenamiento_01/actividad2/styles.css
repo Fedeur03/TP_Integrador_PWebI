@@ -1,0 +1,203 @@
+:root{
+    --primary-color: #0066cc;
+    --primary-dark: #0052a3;
+    --secondary-color: #f47c20;
+    --secondary-dark: #d46a0a;
+    --base-font-size: 16px;
+}
+
+html{
+    font-size: var(--base-font-size);
+    font-family: "Vollkorn", serif;
+    background-color: #f0f0f0;
+    color: #333;    
+    font-size: 62.5%;
+
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: var(--primary-color);
+    margin: 20px;
+    display: inline-block;
+}
+.box:hover{
+    background-color: var(--primary-dark);
+}
+
+.button{
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: var(--secondary-dark);
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main {
+    width: 80%;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* NAV */
+nav {
+    background-color: var(--primary-color);
+    padding: 0.8rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit; /* toma el color del elemento padre */
+    text-decoration: none; /* opcional: saca el subrayado */
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--secondary-color);
+}
+
+nav ul li a:visited {
+    color: #fff;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+main p {
+    font-size: 1.1rem;
+    color: #555;
+}
+div{
+    margin-bottom: 5rem;
+    width: 100%;
+    text-align: left;
+    background-color: #a1a0a0;
+    border-radius:6rem 0 6rem 0;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+    overflow: hidden
+}
+/* FOOTER */
+footer {
+    background-color: var(--primary-dark);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+    margin-top: auto;
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+}
+
+
+.boxPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 0;
+}
+.boxPrincipal img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.boxSecundario{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 0 0 0 3rem;
+    padding: 3rem 3rem 3rem 0;
+}
+.boxSecundario ul,ol{
+    padding-left: 3rem;
+
+}
+@media (max-width: 768px) {
+    main{
+        padding: 0;
+    }
+    .div{
+        padding: 0;
+    }
+    .boxSecundario{
+        padding-right: 1rem;
+    }
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #a1a0a0;
+    padding: 3rem;
+    border-radius: 6rem 0 6rem 0;
+    margin: 2rem auto;
+    font-size: 2rem;
+}
+
+.form-area{
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1.4rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease;
+
+}
+.form-area-mensaje{
+        width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1.4rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    resize: vertical;        /* permite redimensionar solo verticalmente */
+    min-height: 120px;
+    transition: border-color 0.2s ease;
+}   

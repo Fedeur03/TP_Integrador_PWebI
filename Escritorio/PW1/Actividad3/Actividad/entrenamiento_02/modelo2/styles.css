@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+}
+
+.sector {
+    border: 0.1em solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    font-size: 4em;
+}
+
+.verde {
+    background-color: rgb(126, 216, 126);
+}
+
+.amarillo {
+    background-color: rgb(245, 245, 88);
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .contenido {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+
+    .sector_superior {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 30%;
+
+    }
+
+    .sector_intermedio {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 20%;
+    }
+
+    .sector_inferior {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 55%;
+    }
+
+    .sector_superior .sector{
+        display:flex;
+        flex-direction: row;
+        width: 100%;
+        height: 25vh;
+    }
+
+    .sector_intermedio .sector {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 25vh;
+    }
+
+    .sector_inferior .sector {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height:50vh;
+    }
+
+    
+
+    .sector{
+        width: 100%;
+    }
+
+    .rojo_mobile {
+        background-color: rgb(207, 79, 79);
+
+    }
+
+    .azul_mobile {
+        background-color: rgb(108, 108, 221);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .sector_superior {
+        width: 100%;
+        height: 25vh;
+        display: flex;
+    }
+
+    .sector_intermedio {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+    }
+
+    .sector_inferior {
+        width: 100%;
+        height: 25vh;
+        display: flex;
+    }
+
+    .sector {
+        width: 50%
+    }
+
+    .rojo_pc {
+        background-color: rgb(207, 79, 79);
+    }
+
+    .azul_pc {
+        background-color: rgb(108, 108, 221);
+    }
+
+
+
+}
