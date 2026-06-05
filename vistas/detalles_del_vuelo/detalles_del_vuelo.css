@@ -95,7 +95,35 @@
 }
 
 .mapa {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto repeat(9, 1fr);
+    grid-template-rows: auto repeat(4, 1fr);
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
+
+    font-size: 2rem;
+    color: #602929;
+    font-weight: bold;
+}
+
+.mapa .numero {
+    grid-column: 1;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #602929;
+}
+
+.mapa .letra {
+    grid-row: 1;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #602929;
+}
+
+.mapa .vacio {
+    grid-column: 1;
+    grid-row: 1;
 }
 
 
@@ -129,15 +157,6 @@
     padding: 0.5rem 0.8rem;
     gap: 2rem;
     margin-right: 2rem;
-}
-
-.columnas {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.7rem;
-    color: #602929;
-    font-weight: bold;
 }
 
 .disponible {
