@@ -78,3 +78,13 @@ form p {
 .limpiar:hover {
     background-color: #d6d6d6;
 }
+
+#mensajeError {
+    width: 32%;
+    margin: auto;
+    background-color: red;
+    color: white;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-size: 1.4rem;
+}
