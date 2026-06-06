@@ -38,7 +38,8 @@ form.addEventListener("submit", function (evento) {
         nacimiento: nacimiento,
         pasaporte: pasaporte,
         email: email,
-        password: password
+        password: password,
+        vuelos: []
     };
 
     usuarios.push(nuevoUsuario);

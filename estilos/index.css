@@ -106,3 +106,12 @@ gap:0.5em;
 .boton_buscar:hover {
     background: #4e2020;
 }
+
+#mensajeError {
+    margin: auto;
+    background-color: red;
+    color: white;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-size: 1.4rem;
+}
