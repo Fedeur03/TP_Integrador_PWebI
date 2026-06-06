@@ -18,7 +18,7 @@ if (usuarioLogueado) {
         <div class="nav-right">
             <ul class="nav-list">
                 <div class="usuario">
-                    <li class="log-in"><a href="/vistas/usuario/usuario.html">Juan Perez ▼</a></li>
+                    <li class="log-in"><a href="/vistas/usuario/usuario.html">${usuarioLogueado.nombre} ${usuarioLogueado.apellido} ▼</a></li>
                     <li class="log-in"><a href="/vistas/mis_reservas/mis_reservas.html">Mis Reservas</a></li>
                 </div>
             </ul>
