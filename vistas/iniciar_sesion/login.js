@@ -29,5 +29,5 @@ form.addEventListener("submit", function (evento) {
 
     localStorage.setItem("usuarioLogueado", JSON.stringify(usuarioEncontrado));
 
-    window.location.href = "../index_logueado/index.html";
+    window.location.href = "/index.html";
 });
