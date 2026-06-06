@@ -43,5 +43,5 @@ form.addEventListener("submit", function (evento) {
     localStorage.setItem("busquedaVuelo", JSON.stringify(busqueda));
 
     window.location.href =
-        "/vistas/resultados_no_logueado/resultados_no_logueado.html";
+        "/vistas/resultados_busqueda/resultados.html";
 });
