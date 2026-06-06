@@ -14,21 +14,21 @@ if (contenedorDatosUsuario == 0 || !usuarioActual) {
                     <div class="datos_personales">
                         <div class="row">
                             <p class="label">Nombre Completo:</p>
-                            <input type="text" value="Juan Perez" disabled>
+                            <input type="text" value="${usuarioActual.nombre} ${usuarioActual.apellido}" disabled>
                             <p class="label">Correo Electrónico:</p>
-                            <input type="text" value="QaZB3@example.com" disabled>
+                            <input type="text" value="${usuarioActual.email}" disabled>
                             <p class="label">Teléfono:</p>
-                            <input type="text" value="+54 9 11 1234-5678" disabled>
+                            <input type="text" value="${usuarioActual.telefono || 'No agregó teléfono'}" disabled>
                         </div>
 
                         <div class="row">
 
                             <p class="label">Dirección:</p>
-                            <input type="text" value="Calle Falsa 123, Ciudad, País" disabled>
+                            <input type="text" value="${usuarioActual.direccion || 'No agregó dirección'}" disabled>
                             <p class="label">Fecha de Nacimiento:</p>
-                            <input type="text" value="01/01/1990" disabled>
+                            <input type="text" value="${usuarioActual.nacimiento}" disabled>
                             <p class="label">Millas Acumuladas:</p>
-                            <input type="text" value="1500" disabled>
+                            <input type="text" value="${usuarioActual.millas || 0}" disabled>
                         </div>
                     </div>`
 }
@@ -36,7 +36,7 @@ if (contenedorDatosUsuario == 0 || !usuarioActual) {
 const contenedorDocumentos = document.getElementById("documentos");
 
 if (contenedorDocumentos == 0 || !usuarioActual || usuarioActual.documento != true) {
-    contenedorDocumentos.innerHTML = `<h3>No se pudo cargar la información de los documentos</h3><br><hr>`;
+    contenedorDocumentos.innerHTML = `<h3>No posee documentos registrados</h3><br><hr>`;
 } else {
     usuarioActual.documento.forEach(documento => {
         contenedorDocumentos.innerHTML += `<div class="datos-documento">

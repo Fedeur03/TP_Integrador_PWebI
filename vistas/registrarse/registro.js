@@ -37,6 +37,9 @@ form.addEventListener("submit", function (evento) {
         dni: dni,
         nacimiento: nacimiento,
         documento: [],
+        telefono: null,
+        direccion: null,
+        millas: 100,
         email: email,
         password: password,
         vuelos: []
