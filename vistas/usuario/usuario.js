@@ -36,7 +36,7 @@ if (contenedorDatosUsuario == 0 || !usuarioActual) {
 const contenedorDocumentos = document.getElementById("documentos");
 
 if (contenedorDocumentos == 0 || !usuarioActual || usuarioActual.documento != true) {
-    contenedorDocumentos.innerHTML = `<h3>No se pudo cargar la información de los documentos</h3>`;
+    contenedorDocumentos.innerHTML = `<h3>No se pudo cargar la información de los documentos</h3><br><hr>`;
 } else {
     usuarioActual.documento.forEach(documento => {
         contenedorDocumentos.innerHTML += `<div class="datos-documento">
