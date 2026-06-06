@@ -44,7 +44,7 @@ form.addEventListener("submit", function (evento) {
 
     usuarios.push(nuevoUsuario);
 
-    localStorage.setItem("usuarios", JSON.stringify(usuarios));
+    localStorage.setItem("usuarioLogueado", JSON.stringify(usuarios));
 
     alert("Usuario registrado correctamente");
 
