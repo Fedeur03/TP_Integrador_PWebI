@@ -25,49 +25,36 @@
                 <h3>Detalle de Vuelo</h3>
 
                 <div class="resultados">
-                    <p>Ida: Buenos Aires → Madrid</p>
+                    <p>Ida: <span id="ruta"></span></p>
                     <div class="resultado-aerolinea">
-                        <p class="hora-y-ciudad">12:00</p>
-                        <p class="hora-y-ciudad">BUE</p>
+                        <p class="hora-y-ciudad" id="hora-salida"></p>
+                        <p class="hora-y-ciudad" id="ciudad-origen"></p>
                         <hr>
                         <i class="fa-solid fa-plane"></i>
                         <hr>
-                        <p class="hora-y-ciudad">08:40</p>
-                        <p class="hora-y-ciudad">MAD</p>
+                        <p class="hora-y-ciudad" id="hora-llegada"></p>
+                        <p class="hora-y-ciudad" id="ciudad-destino"></p>
                     </div>
-                    <p class="duracion-mas-escala">15h 10m · 3 escalas</p>
-                </div>
-
-                <hr>
-
-                <div class="resultados">
-                    <p>Vuelta: Madrid → Buenos Aires</p>
-                    <div class="resultado-aerolinea">
-                        <p class="hora-y-ciudad">18:30</p>
-                        <p class="hora-y-ciudad">MAD</p>
-                        <hr>
-                        <i class="fa-solid fa-plane"></i>
-                        <hr>
-                        <p class="hora-y-ciudad">06:40</p>
-                        <p class="hora-y-ciudad">BUE</p>
-                    </div>
-                    <p class="duracion-mas-escala">21h 50m · 5 escalas</p>
+                    <p class="duracion-mas-escala" id="duracion"></p>
                 </div>
 
                 <hr>
 
                 <div class="resultado-aerolinea">
                     <p>Total</p>
-                    <strong>$ 550 USD</strong>
+                    <strong id="precio-total">$ --- USD</strong>
                 </div>
 
                 <hr>
 
+               <p>Asientos: <span id="nombre-asiento">Ninguno</span></p>
+
+               <hr>
+                
                 <div class="botones">
-                    <a class="boton-checkout" href="../check_out/check_out.html">AVANZAR</a>
+                    <a class="boton-checkout" onclick="validar(evento)" href="../check_out/check_out.html">AVANZAR</a>
                     <a class="boton-volver" href="../resultados_busqueda/resultados.html">VOLVER</a>
                 </div>
-
 
             </section>
 
@@ -78,7 +65,7 @@
                     <i class="fa-solid fa-square disponible"></i> Disponible
                     <i class="fa-solid fa-square cuadrado ocupado"></i> Ocupado
                     <i class="fa-solid fa-square cuadrado seleccionado"></i> Seleccionado
-                </div>
+                </section>
 
                 <div class="mapa">
 
@@ -94,119 +81,103 @@
                     </div>
 
                     <div class="grupo">
-                        <div class="columnas">
-                            <p>A</p>
-                            <p>B</p>
-                            <p>C</p>
-                            <p>D</p>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                        </div>
-                    </div>
+                        <p>A</p>
+                        <p>B</p>
+                        <p>C</p>
+                        <p>D</p>
 
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'A1')"></i>
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'B1')"></i>
+                        <i class="fa-solid fa-couch ocupado"></i>
+                        <i class="fa-solid fa-couch ocupado"></i>
+
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'A2')"></i>
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'B2')"></i>
+                        <i class="fa-solid fa-couch ocupado"></i>
+                        <i class="fa-solid fa-couch ocupado"></i>
+
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'A3')"></i>
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'B3')"></i>
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'C3')"></i>
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'D3')"></i>
+
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'A4')"></i>
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'B4')"></i>
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'C4')"></i>
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'D4')"></i>
+
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'A5')"></i>
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'B5')"></i>
+                        <i class="fa-solid fa-couch ocupado"></i>
+                        <i class="fa-solid fa-couch ocupado"></i>
+
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'A6')"></i>
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'B6')"></i>
+                        <i class="fa-solid fa-couch ocupado"></i>
+                        <i class="fa-solid fa-couch ocupado"></i>
+
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'A7')"></i>
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'B7')"></i>
+                        <i class="fa-solid fa-couch ocupado"></i>
+                        <i class="fa-solid fa-couch ocupado"></i>
+                    </div>
 
                     <div class="grupo">
-                        <div class="columnas">
-                            <p>E</p>
-                            <p>F</p>
-                            <p>G</p>
-                            <p>H</p>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                            <i class="fa-solid fa-couch ocupado"></i>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch seleccionado"></i>
-                            <i class="fa-solid fa-couch seleccionado"></i>
-                        </div>
-                        <div class="columnas">
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch disponible"></i>
-                            <i class="fa-solid fa-couch seleccionado"></i>
-                            <i class="fa-solid fa-couch seleccionado"></i>
-                        </div>
+                        <p>E</p>
+                        <p>F</p>
+                        <p>G</p>
+                        <p>H</p>
+
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'E1')"></i>
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'F1')"></i>
+                        <i class="fa-solid fa-couch ocupado"></i>
+                        <i class="fa-solid fa-couch ocupado"></i>
+
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'E2')"></i>
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'F2')"></i>
+                        <i class="fa-solid fa-couch ocupado"></i>
+                        <i class="fa-solid fa-couch ocupado"></i>
+
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'E3')"></i>
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'F3')"></i>
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'G3')"></i>
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'H3')"></i>
+
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'E4')"></i>
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'F4')"></i>
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'G4')"></i>
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'H4')"></i>
+
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'E5')"></i>
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'F5')"></i>
+                        <i class="fa-solid fa-couch ocupado"></i>
+                        <i class="fa-solid fa-couch ocupado"></i>
+
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'E6')"></i>
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'F6')"></i>
+                        <i class="fa-solid fa-couch ocupado"></i>
+                        <i class="fa-solid fa-couch ocupado"></i>
+
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'E7')"></i>
+                        <i class="fa-solid fa-couch disponible" onclick="elegirAsiento(this, 'F7')"></i>
+                        <i class="fa-solid fa-couch ocupado"></i>
+                        <i class="fa-solid fa-couch ocupado"></i>
                     </div>
+
+                </div>
 
                 </div>
 
             </section>
 
-            </div>
+        </section>
     </main>
 
-    <footer class="footer" id="footer">
-    </footer>
-<script src="/componentes/navbar.js"></script>
-<script src="/componentes/footer.js"></script>
+    <footer class="footer" id="footer"></footer>
+
+    <script src="/componentes/navbar.js"></script>
+    <script src="/componentes/footer.js"></script>
+    <script src="./detalles_del_vuelo.js"></script>>
 </body>
 
 </html>

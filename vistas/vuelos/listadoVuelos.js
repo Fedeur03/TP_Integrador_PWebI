@@ -1,9 +1,7 @@
-// 1. Cambiamos el enfoque: la función asíncrona ahora coordina la carga y el renderizado
 async function inicializarVuelos() {
     try {
         const response = await fetch('../../database/listadoVuelos.json');
         
-        // Validación de seguridad por si el archivo no se encuentra
         if (!response.ok) {
             throw new Error(`No se pudo cargar el JSON. Estado: ${response.status}`);
         }
@@ -11,7 +9,6 @@ async function inicializarVuelos() {
         const vuelos = await response.json();
         console.log('Vuelos cargados con éxito:', vuelos);
         
-        // Ejecutamos la función de renderizado pasándole los datos reales ya obtenidos
         mostrarVuelos(vuelos);
 
     } catch (error) {
@@ -19,16 +16,19 @@ async function inicializarVuelos() {
     }
 }
 
-// 2. Función encargada exclusivamente de pintar las tarjetas en el HTML
 function mostrarVuelos(vuelos) {
     const contenedorVuelos = document.getElementById('contenedor_vuelos');
     
-    // Limpiamos el contenedor por si acaso quedaba contenido previo
     contenedorVuelos.innerHTML = '';
 
     vuelos.forEach(vuelo => {
-        // Evaluamos dinámicamente si tiene escalas o no
-        const textoEscalas = vuelo.escalas === 0 ? 'Sin escalas' : `${vuelo.escalas} escalas`;
+        
+    let textoEscalas;
+
+    if (vuelo.escalas === 0) {
+        textoEscalas = "Sin escalas";
+
+    } else `${vuelo.escalas} escalas`;
 
         contenedorVuelos.innerHTML += `
             <div class="card_vuelo">
@@ -50,5 +50,4 @@ function mostrarVuelos(vuelos) {
     });
 }
 
-// 3. Arrancamos el proceso automáticamente al cargar el script
 inicializarVuelos();
