@@ -10,6 +10,7 @@ form.addEventListener("submit", function (evento) {
     const fechaVuelta = document.getElementById("fechaVuelta").value;
     const pasajeros = document.getElementById("pasajeros").value;
     const clase = document.getElementById("clase").value;
+    const tipoDeVuelo = document.getElementById("tipo-vuelo").value;
 
     mensajeError.textContent = "";
 
@@ -37,11 +38,11 @@ form.addEventListener("submit", function (evento) {
         fecha_ida: fechaIda,
         fecha_vuelta: fechaVuelta,
         cantidad_pasajeros: pasajeros,
-        clase: clase
+        clase: clase,
+        tipoDeVuelo: tipoDeVuelo
     };
 
     localStorage.setItem("busquedaVuelo", JSON.stringify(busqueda));
 
-    window.location.href =
-        "/vistas/resultados_busqueda/resultados.html";
+    window.location.href = "/vistas/resultados_busqueda/resultados.html";
 });

@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "tipo_de_Vuelo": "Ida",
     "codigo_reserva": "AB1234XYZ",
     "origen": "Buenos Aires (BUE)",
     "destino": "Madrid (MAD)",
