@@ -1,20 +1,20 @@
 let asientosElegidos = [];
 
-function elegirAsiento(elemento, nombre) {
+function elegirAsiento(elemento, asiento) {
 
     if (elemento.classList.contains("seleccionado")) {
         elemento.classList.remove("seleccionado");
         elemento.classList.add("disponible");
 
-        asientosElegidos = asientosElegidos.filter(function (asiento) {
-            return asiento !== nombre;
+        asientosElegidos = asientosElegidos.filter(function (cadaAsiento) {
+            return cadaAsiento !== asiento;
         });
 
     } else {
         elemento.classList.remove("disponible");
         elemento.classList.add("seleccionado");
 
-        asientosElegidos.push(nombre);
+        asientosElegidos.push(asiento);
     }
 
     document.getElementById("nombre-asiento").textContent = asientosElegidos.join(", ");
@@ -33,9 +33,9 @@ if (vuelo) {
     document.getElementById("precio-total").textContent = "$ " + vuelo.precio + " USD";
 }
 
-function validar(evento) {
+function validar(event) {
     if (asientosElegidos.length === 0) {
-        evento.preventDefault();
+        event.preventDefault();
         alert("Seleccioná al menos un asiento antes de continuar.");
     }
 }
