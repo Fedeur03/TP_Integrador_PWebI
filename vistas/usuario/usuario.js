@@ -35,7 +35,7 @@ if (contenedorDatosUsuario == 0 || !usuarioActual) {
 
 const contenedorDocumentos = document.getElementById("documentos");
 
-if (contenedorDocumentos == 0 || !usuarioActual || usuarioActual.documento != true) {
+if (contenedorDocumentos == 0 || !usuarioActual) {
     contenedorDocumentos.innerHTML = `<h3>No posee documentos registrados</h3><br><hr>`;
 } else {
     usuarioActual.documento.forEach(documento => {

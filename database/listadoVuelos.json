@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "codigo_reserva": "AB1234XYZ",
     "origen": "Buenos Aires (BUE)",
     "destino": "Madrid (MAD)",
@@ -16,6 +17,7 @@
     "estado_reserva": "Pendiente de Check-In"
   },
   {
+    "id": 2,
     "codigo_reserva": "MX9876LMN",
     "origen": "México DF (MEX)",
     "destino": "Cancún (CUN)",
@@ -32,6 +34,7 @@
     "estado_reserva": "Confirmado"
   },
   {
+    "id": 3,
     "codigo_reserva": "NY4567BTR",
     "origen": "Nueva York (JFK)",
     "destino": "Londres (LHR)",
@@ -48,6 +51,7 @@
     "estado_reserva": "Pendiente de Check-In"
   },
   {
+    "id": 4,
     "codigo_reserva": "SP3322LKJ",
     "origen": "São Paulo (GRU)",
     "destino": "Santiago (SCL)",
@@ -64,6 +68,7 @@
     "estado_reserva": "Pendiente de Check-In"
   },
   {
+    "id": 5,
     "codigo_reserva": "PA8899QWE",
     "origen": "París (CDG)",
     "destino": "Tokio (HND)",
@@ -80,6 +85,7 @@
     "estado_reserva": "Pendiente de Check-In"
   },
   {
+    "id": 6,
     "codigo_reserva": "BO0011VFR",
     "origen": "Bogotá (BOG)",
     "destino": "Miami (MIA)",
@@ -96,6 +102,7 @@
     "estado_reserva": "Confirmado"
   },
   {
+    "id": 7,
     "codigo_reserva": "MA5544EDC",
     "origen": "Madrid (MAD)",
     "destino": "Roma (FCO)",
@@ -112,6 +119,7 @@
     "estado_reserva": "Pendiente de Check-In"
   },
   {
+    "id": 8,
     "codigo_reserva": "LA7766YHN",
     "origen": "Los Ángeles (LAX)",
     "destino": "Sídney (SYD)",
@@ -128,6 +136,7 @@
     "estado_reserva": "Pendiente de Check-In"
   },
   {
+    "id": 9,
     "codigo_reserva": "DU1122WSX",
     "origen": "Dubái (DXB)",
     "destino": "Maldivas (MLE)",
@@ -144,6 +153,7 @@
     "estado_reserva": "Pendiente de Check-In"
   },
   {
+    "id": 10,
     "codigo_reserva": "LI3344RFV",
     "origen": "Lima (LIM)",
     "destino": "Cuzco (CUZ)",
@@ -160,6 +170,7 @@
     "estado_reserva": "Confirmado"
   },
   {
+    "id": 11,
     "codigo_reserva": "FR5566TGB",
     "origen": "Fráncfort (FRA)",
     "destino": "Barcelona (BCN)",
@@ -176,6 +187,7 @@
     "estado_reserva": "Pendiente de Check-In"
   },
   {
+    "id": 12,
     "codigo_reserva": "CH7788YJM",
     "origen": "Chicago (ORD)",
     "destino": "Toronto (YYZ)",
@@ -192,6 +204,7 @@
     "estado_reserva": "Pendiente de Check-In"
   },
   {
+    "id": 13,
     "codigo_reserva": "LO9900IKM",
     "origen": "Londres (LHR)",
     "destino": "París (CDG)",
@@ -208,6 +221,7 @@
     "estado_reserva": "Pendiente de Check-In"
   },
   {
+    "id": 14,
     "codigo_reserva": "TO1133OLP",
     "origen": "Tokio (NRT)",
     "destino": "Seúl (ICN)",
@@ -224,6 +238,7 @@
     "estado_reserva": "Pendiente de Check-In"
   },
   {
+    "id": 15,
     "codigo_reserva": "BU2244ZAQ",
     "origen": "Buenos Aires (EZE)",
     "destino": "Río de Janeiro (GIG)",
@@ -240,6 +255,7 @@
     "estado_reserva": "Pendiente de Check-In"
   },
   {
+    "id": 16,
     "codigo_reserva": "SI4455XSW",
     "origen": "Singapur (SIN)",
     "destino": "Bangkok (BKK)",
@@ -256,6 +272,7 @@
     "estado_reserva": "Pendiente de Check-In"
   },
   {
+    "id": 17,
     "codigo_reserva": "AM6677CDE",
     "origen": "Ámsterdam (AMS)",
     "destino": "Lisboa (LIS)",
@@ -272,6 +289,7 @@
     "estado_reserva": "Pendiente de Check-In"
   },
   {
+    "id": 18,
     "codigo_reserva": "CA8899MJU",
     "origen": "Ciudad de Cabo (CPT)",
     "destino": "Johannesburgo (JNB)",
@@ -288,6 +306,7 @@
     "estado_reserva": "Confirmado"
   },
   {
+    "id": 19,
     "codigo_reserva": "CO0022KLI",
     "origen": "Santiago (SCL)",
     "destino": "Punta Cana (PUJ)",
@@ -304,6 +323,7 @@
     "estado_reserva": "Pendiente de Check-In"
   },
   {
+    "id": 20,
     "codigo_reserva": "BA3355NHY",
     "origen": "Barcelona (BCN)",
     "destino": "París (ORY)",
