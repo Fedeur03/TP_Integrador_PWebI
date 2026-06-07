@@ -21,7 +21,7 @@ function elegirAsiento(elemento, asiento) {
     localStorage.setItem("asientoElegido", asientosElegidos.join(", "));
 }
 
-const vuelo = JSON.parse(localStorage.getItem("vueloSeleccionado"));
+const vuelo = JSON.parse(localStorage.getItem("vueloComprado"));
 
 if (vuelo) {
     document.getElementById("ruta").textContent = vuelo.origen + " → " + vuelo.destino;
@@ -30,7 +30,7 @@ if (vuelo) {
     document.getElementById("hora-llegada").textContent = vuelo.llegada;
     document.getElementById("ciudad-destino").textContent = vuelo.destino;
     document.getElementById("duracion").textContent = vuelo.duracion;
-    document.getElementById("precio-total").textContent = "$ " + vuelo.precio + " USD";
+    document.getElementById("precio-total").textContent = "$ " + vuelo.precio_total_usd + " USD";
 }
 
 function validar(event) {

@@ -71,10 +71,10 @@ contenedorVuelos.addEventListener('click', (evento) => {
     if (evento.target.classList.contains('boton_comprar')) {
         const codigoVueloComprado = evento.target.getAttribute('data-codigovuelo');
         
-        console.log('Vuelo comprado con código:', codigoVueloComprado);
-        localStorage.setItem('vueloComprado', codigoVueloComprado);
         
-       // window.location.href = '../resultados_busqueda/resultados.html';
+        localStorage.setItem('vueloComprado', JSON.stringify(buscarVuelo(codigoVueloComprado)));
+        
+       window.location.href = '/vistas/detalles_del_vuelo/detalles_del_vuelo.html';
     }
 });
 
