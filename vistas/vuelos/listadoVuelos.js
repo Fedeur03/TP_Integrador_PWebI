@@ -21,7 +21,7 @@ function mostrarVuelos() {
         contenedorVuelos.innerHTML += `
         <div class="card_vuelo">
             <div class="img_vuelo">
-                <img src="../../media/vuelos-card-madrid.jpg" alt="${vuelo.destino}">
+                <img src="${vuelo.ruta_imagen}" alt="${vuelo.destino}">
             </div>
             <div class="info_vuelo">
                 <p><strong>${vuelo.origen} → ${vuelo.destino}</strong></p>
@@ -75,12 +75,15 @@ function buscar() {
     }
 
     let hayCoincidencia = false;
+    let vuelosFiltrados = [];
+
     for (let i = 0; i < todosLosVuelos.length; i++) {
         const vuelo = todosLosVuelos[i];
         if (vuelo.destino.toLowerCase().includes(texto) ||
             vuelo.origen.toLowerCase().includes(texto)  ||
             vuelo.aerolinea.toLowerCase().includes(texto)) {
             hayCoincidencia = true;
+            vuelosFiltrados.push(vuelo);
         }
     }
 
@@ -89,7 +92,7 @@ function buscar() {
         return;
     }
 
-    localStorage.setItem("busqueda", texto);
+    localStorage.setItem("vuelosFiltrados", JSON.stringify(vuelosFiltrados));
     window.location.href = "/vistas/resultados_busqueda/resultados.html";
 }
 
