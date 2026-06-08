@@ -15,7 +15,9 @@
     "puerta": "23",
     "aerolinea": "Iberia",
     "precio_total_usd": 1200,
-    "estado_reserva": "Pendiente de Check-In"
+    "estado_reserva": "Pendiente de Check-In",
+    "objeto": "",
+    "ruta_imagen": "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?w=800"
   },
   {
     "id": 2,
@@ -32,7 +34,9 @@
     "puerta": "52",
     "aerolinea": "Aeroméxico",
     "precio_total_usd": 250,
-    "estado_reserva": "Confirmado"
+    "estado_reserva": "Confirmado",
+    "objeto": "",
+    "ruta_imagen": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800"
   },
   {
     "id": 3,
@@ -49,7 +53,9 @@
     "puerta": "B22",
     "aerolinea": "Delta Air Lines",
     "precio_total_usd": 850,
-    "estado_reserva": "Pendiente de Check-In"
+    "estado_reserva": "Pendiente de Check-In",
+    "objeto": "",
+    "ruta_imagen": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800"
   },
   {
     "id": 4,
@@ -66,7 +72,9 @@
     "puerta": "304",
     "aerolinea": "LATAM Airlines",
     "precio_total_usd": 420,
-    "estado_reserva": "Pendiente de Check-In"
+    "estado_reserva": "Pendiente de Check-In",
+    "objeto": "",
+    "ruta_imagen": "https://images.unsplash.com/photo-1589909202802-8f4aadce1849?w=800"
   },
   {
     "id": 5,
@@ -83,7 +91,9 @@
     "puerta": "K43",
     "aerolinea": "Air France",
     "precio_total_usd": 1800,
-    "estado_reserva": "Pendiente de Check-In"
+    "estado_reserva": "Pendiente de Check-In",
+    "objeto": "",
+    "ruta_imagen": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800"
   },
   {
     "id": 6,
@@ -100,7 +110,9 @@
     "puerta": "12",
     "aerolinea": "Avianca",
     "precio_total_usd": 390,
-    "estado_reserva": "Confirmado"
+    "estado_reserva": "Confirmado",
+    "objeto": "",
+    "ruta_imagen": "https://images.trvl-media.com/place/800070/02ee0441-a9dd-4b32-bb53-9644902187e1.jpg"
   },
   {
     "id": 7,
@@ -117,7 +129,9 @@
     "puerta": "U32",
     "aerolinea": "ITA Airways",
     "precio_total_usd": 140,
-    "estado_reserva": "Pendiente de Check-In"
+    "estado_reserva": "Pendiente de Check-In",
+    "objeto": "",
+    "ruta_imagen": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800"
   },
   {
     "id": 8,
@@ -134,7 +148,9 @@
     "puerta": "150",
     "aerolinea": "Qantas",
     "precio_total_usd": 2100,
-    "estado_reserva": "Pendiente de Check-In"
+    "estado_reserva": "Pendiente de Check-In",
+    "objeto": "",
+    "ruta_imagen": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800"
   },
   {
     "id": 9,
@@ -151,7 +167,9 @@
     "puerta": "A12",
     "aerolinea": "Emirates",
     "precio_total_usd": 750,
-    "estado_reserva": "Pendiente de Check-In"
+    "estado_reserva": "Pendiente de Check-In",
+    "objeto": "",
+    "ruta_imagen": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800"
   },
   {
     "id": 10,
@@ -168,7 +186,9 @@
     "puerta": "05",
     "aerolinea": "Sky Airline",
     "precio_total_usd": 85,
-    "estado_reserva": "Confirmado"
+    "estado_reserva": "Confirmado",
+    "objeto": "",
+    "ruta_imagen": "https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=800"
   },
   {
     "id": 11,
@@ -185,7 +205,9 @@
     "puerta": "A26",
     "aerolinea": "Lufthansa",
     "precio_total_usd": 220,
-    "estado_reserva": "Pendiente de Check-In"
+    "estado_reserva": "Pendiente de Check-In",
+    "objeto": "",
+    "ruta_imagen": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800"
   },
   {
     "id": 12,
@@ -202,7 +224,9 @@
     "puerta": "E11",
     "aerolinea": "United Airlines",
     "precio_total_usd": 180,
-    "estado_reserva": "Pendiente de Check-In"
+    "estado_reserva": "Pendiente de Check-In",
+    "objeto": "",
+    "ruta_imagen": "https://images.unsplash.com/photo-1503152394-c571994fd383?w=800"
   },
   {
     "id": 13,
@@ -219,7 +243,9 @@
     "puerta": "A10",
     "aerolinea": "British Airways",
     "precio_total_usd": 110,
-    "estado_reserva": "Pendiente de Check-In"
+    "estado_reserva": "Pendiente de Check-In",
+    "objeto": "",
+    "ruta_imagen": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800"
   },
   {
     "id": 14,
@@ -236,7 +262,9 @@
     "puerta": "34",
     "aerolinea": "ANA (All Nippon Airways)",
     "precio_total_usd": 310,
-    "estado_reserva": "Pendiente de Check-In"
+    "estado_reserva": "Pendiente de Check-In",
+    "objeto": "",
+    "ruta_imagen": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800"
   },
   {
     "id": 15,
@@ -253,7 +281,9 @@
     "puerta": "17",
     "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 480,
-    "estado_reserva": "Pendiente de Check-In"
+    "estado_reserva": "Pendiente de Check-In",
+    "objeto": "",
+    "ruta_imagen": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=800"
   },
   {
     "id": 16,
@@ -270,7 +300,9 @@
     "puerta": "B4",
     "aerolinea": "Singapore Airlines",
     "precio_total_usd": 260,
-    "estado_reserva": "Pendiente de Check-In"
+    "estado_reserva": "Pendiente de Check-In",
+    "objeto": "",
+    "ruta_imagen": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=800"
   },
   {
     "id": 17,
@@ -287,7 +319,9 @@
     "puerta": "D15",
     "aerolinea": "KLM",
     "precio_total_usd": 195,
-    "estado_reserva": "Pendiente de Check-In"
+    "estado_reserva": "Pendiente de Check-In",
+    "objeto": "",
+    "ruta_imagen": "https://images.unsplash.com/photo-1509840841025-9088ba78a826?w=800"
   },
   {
     "id": 18,
@@ -304,7 +338,9 @@
     "puerta": "A3",
     "aerolinea": "South African Airways",
     "precio_total_usd": 130,
-    "estado_reserva": "Confirmado"
+    "estado_reserva": "Confirmado",
+    "objeto": "",
+    "ruta_imagen": "https://images.unsplash.com/photo-1577971132997-c10ae868de65?w=800"
   },
   {
     "id": 19,
@@ -321,7 +357,9 @@
     "puerta": "15",
     "aerolinea": "Copa Airlines",
     "precio_total_usd": 1650,
-    "estado_reserva": "Pendiente de Check-In"
+    "estado_reserva": "Pendiente de Check-In",
+    "objeto": "",
+    "ruta_imagen": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800"
   },
   {
     "id": 20,
@@ -338,6 +376,8 @@
     "puerta": "B12",
     "aerolinea": "Vueling",
     "precio_total_usd": 65,
-    "estado_reserva": "Pendiente de Check-In"
+    "estado_reserva": "Pendiente de Check-In",
+    "objeto": "",
+    "ruta_imagen": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800"
   }
 ]
