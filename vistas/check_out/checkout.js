@@ -1,0 +1,67 @@
+const cupones = {
+    "FLYWAY10": 10,
+    "VERANO20": 20,
+    "PROMO5": 5,
+};
+
+const vuelo   = JSON.parse(localStorage.getItem("vueloSeleccionado"));
+const usuario = JSON.parse(localStorage.getItem("usuarioLogueado"));
+
+document.getElementById("nombre").value   = usuario.nombre;
+document.getElementById("apellido").value = usuario.apellido;
+document.getElementById("email").value    = usuario.email;
+
+document.getElementById("vuelo-ruta").textContent     = vuelo.origen + " → " + vuelo.destino;
+document.getElementById("vuelo-fecha").textContent    = vuelo.fecha_vuelo;
+document.getElementById("vuelo-hora").textContent     = vuelo.hora_vuelo;
+document.getElementById("vuelo-duracion").textContent = vuelo.duracion_estimada;
+
+let precioBase = vuelo.precio_total_usd;
+document.getElementById("precio-total").textContent = "$ " + precioBase;
+
+const millasDisponibles = usuario.millas;
+document.getElementById("millas-disponibles").textContent = millasDisponibles;
+document.getElementById("input-millas").max = millasDisponibles;
+
+
+document.getElementById("input-millas").addEventListener("input", function () {
+
+    if (this.value > millasDisponibles) {
+        this.value = millasDisponibles;
+    }
+
+    if (this.value < 0) {
+        this.value = 0;
+    }
+
+    const millasUsadas = parseInt(this.value) || 0;
+    const nuevo = precioBase - (millasUsadas * 0.01);
+
+    if (nuevo < 0) {
+        document.getElementById("precio-total").textContent = "$ 0.00";
+    } else {
+        document.getElementById("precio-total").textContent = "$ " + nuevo.toFixed(2);
+    }
+});
+
+
+document.querySelector(".aplicar_cupon").addEventListener("click", function () {
+
+    const codigo = document.getElementById("input-cupon").value.toUpperCase();
+
+    if (cupones[codigo]) {
+        const porcentaje = cupones[codigo];
+        const descuento  = precioBase * porcentaje / 100;
+        const nuevo      = precioBase - descuento;
+
+        document.getElementById("precio-total").textContent  = "$ " + nuevo.toFixed(2);
+        document.getElementById("mensaje-cupon").textContent = "Cupón aplicado: " + porcentaje + "% de descuento";
+        document.getElementById("mensaje-cupon").style.color = "green";
+
+    } else {
+        document.getElementById("mensaje-cupon").textContent = "Cupón inválido";
+        document.getElementById("mensaje-cupon").style.color = "red";
+    }
+    
+    window.location.href = "/vistas/reserva_confirmada/reserva_confirmada.html";
+});

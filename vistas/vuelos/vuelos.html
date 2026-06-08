@@ -18,20 +18,17 @@
     <nav class="navbar" id="navbar"></nav>
 
     <main class="contenedor_vuelos">
-        
+
 
         <div class="busqueda">
-            <input size="40" type="text" placeholder="Buscar destinos o aerolineas" required />
-
-            <a href="/vistas/resultados_busqueda/resultados.html">
-                <span class="icono-busqueda">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </span>
-            </a>
+            <input id="input-busqueda" size="40" type="text" placeholder="Buscar destinos o aerolineas" />
+            <span class="icono-busqueda" onclick="buscar()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
         </div>
 
         <div class="row" id="contenedor_vuelos">
-            
+
         </div>
 
         <button id="cargarMasVuelos" class="boton">Cargar más vuelos</button>
@@ -45,9 +42,9 @@
     <footer class="footer" id="footer">
 
     </footer>
-<script src="/componentes/navbar.js"></script>
-<script src="listadoVuelos.js"></script>
-<script src="/componentes/footer.js"></script>
+    <script src="/componentes/navbar.js"></script>
+    <script src="listadoVuelos.js"></script>
+    <script src="/componentes/footer.js"></script>
 </body>
 
 </html>

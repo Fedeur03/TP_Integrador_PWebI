@@ -1,19 +1,11 @@
 let todosLosVuelos = [];
-let cantidadVuelosMostrados = 9; 
+let cantidadVuelosMostrados = 9;
 
 async function inicializarVuelos() {
     try {
         const response = await fetch('../../database/listadoVuelos.json');
-        
-        if (!response.ok) {
-            throw new Error(`No se pudo cargar el JSON. Estado: ${response.status}`);
-        }
-
         todosLosVuelos = await response.json();
-        console.log('Vuelos cargados con éxito:', todosLosVuelos);
-        
         mostrarVuelos();
-
     } catch (error) {
         console.error('Error al cargar los vuelos:', error);
     }
@@ -21,26 +13,23 @@ async function inicializarVuelos() {
 
 function mostrarVuelos() {
     const contenedorVuelos = document.getElementById('contenedor_vuelos');
-    
     contenedorVuelos.innerHTML = '';
 
-    const vuelosAFiltrar = todosLosVuelos.slice(0, cantidadVuelosMostrados);
+    const vuelosAMostrar = todosLosVuelos.slice(0, cantidadVuelosMostrados);
 
-    vuelosAFiltrar.forEach(vuelo => {
-
+    vuelosAMostrar.forEach(function (vuelo) {
         contenedorVuelos.innerHTML += `
         <div class="card_vuelo">
             <div class="img_vuelo">
                 <img src="../../media/vuelos-card-madrid.jpg" alt="${vuelo.destino}">
             </div>
-
             <div class="info_vuelo">
                 <p><strong>${vuelo.origen} → ${vuelo.destino}</strong></p>
                 <hr class="separador">
                 <p>${vuelo.hora_vuelo} - ${vuelo.llegada_estimada}</p>
                 <p>Duración: ${vuelo.duracion_estimada}</p>
-                <p>${vuelo.escalas.length || 0} Escalas</p>
-                <p>Precio Total: ${vuelo.precio_total_usd} USD</p>
+                <p>${vuelo.escalas} escalas</p>
+                <p>Precio: ${vuelo.precio_total_usd} USD</p>
                 <p>Aerolínea: ${vuelo.aerolinea}</p>
                 <button class="boton_comprar" data-codigovuelo="${vuelo.id}">Comprar</button>
             </div>
@@ -49,47 +38,59 @@ function mostrarVuelos() {
 
     const botonCargarMas = document.getElementById('cargarMasVuelos');
     if (cantidadVuelosMostrados >= todosLosVuelos.length) {
-        botonCargarMas.style.display = 'none'; 
+        botonCargarMas.style.display = 'none';
+    } else {
+        botonCargarMas.style.display = 'block';
     }
 }
 
-
-const botonCargarMas = document.getElementById('cargarMasVuelos');
-botonCargarMas.addEventListener('click', () => {
+document.getElementById('cargarMasVuelos').addEventListener('click', function () {
     cantidadVuelosMostrados += 9;
     mostrarVuelos();
 });
 
-
-inicializarVuelos();
-
-
-const contenedorVuelos = document.getElementById('contenedor_vuelos');
-
-contenedorVuelos.addEventListener('click', (evento) => {
-
+document.getElementById('contenedor_vuelos').addEventListener('click', function (evento) {
     if (evento.target.classList.contains('boton_comprar')) {
-        const codigoVueloComprado = evento.target.getAttribute('data-codigovuelo');
-        
-        
-        localStorage.setItem('vueloComprado', JSON.stringify(buscarVuelo(codigoVueloComprado)));
-        
-       window.location.href = '/vistas/detalles_del_vuelo/detalles_del_vuelo.html';
+        const id = evento.target.getAttribute('data-codigovuelo');
+
+        // Buscamos el vuelo con ese id con un for
+        let vueloEncontrado = null;
+        for (let i = 0; i < todosLosVuelos.length; i++) {
+            if (todosLosVuelos[i].id === parseInt(id)) {
+                vueloEncontrado = todosLosVuelos[i];
+            }
+        }
+
+        localStorage.setItem('vueloSeleccionado', JSON.stringify(vueloEncontrado));
+        window.location.href = '/vistas/detalles_del_vuelo/detalles_del_vuelo.html';
     }
 });
 
+function buscar() {
+    const texto = document.getElementById("input-busqueda").value.toLowerCase().trim();
 
-function buscarVuelo(idVuelo) {
-    if (!idVuelo) return null;
-    
-
-    const vueloEncontrado = todosLosVuelos.find(vuelo => vuelo.id === parseInt(idVuelo, 10));
-    
-    if (vueloEncontrado) {
-        console.log('Vuelo encontrado:', vueloEncontrado);
-        return vueloEncontrado;
-    } else {
-        console.warn('No se encontró ningún vuelo con el ID:', idVuelo);
-        return null;
+    if (texto === "") {
+        alert("Ingresá un destino o aerolínea para buscar");
+        return;
     }
+
+    let hayCoincidencia = false;
+    for (let i = 0; i < todosLosVuelos.length; i++) {
+        const vuelo = todosLosVuelos[i];
+        if (vuelo.destino.toLowerCase().includes(texto) ||
+            vuelo.origen.toLowerCase().includes(texto)  ||
+            vuelo.aerolinea.toLowerCase().includes(texto)) {
+            hayCoincidencia = true;
+        }
+    }
+
+    if (!hayCoincidencia) {
+        alert("No se encontraron vuelos para esa búsqueda");
+        return;
+    }
+
+    localStorage.setItem("busqueda", texto);
+    window.location.href = "/vistas/resultados_busqueda/resultados.html";
 }
+
+inicializarVuelos();
