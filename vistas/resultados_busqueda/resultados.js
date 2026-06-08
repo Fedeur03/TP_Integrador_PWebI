@@ -36,8 +36,21 @@ function mostrarResultados(resultados) {
 mostrarResultados(resultados);
 
 const botonFiltro = document.getElementById('botonFiltrado');
-
-botonFiltro.addEeventListener('click', function (evento) {
+botonFiltro.addEventListener('click', function (evento) {
     evento.preventDefault();
-    window.reload();
+
+    const precioBuscado = document.getElementById('rango-precio').value;
+    console.log(precioBuscado);
+    const esDirecto = document.getElementById('esDirecto').checked;
+    console.log(esDirecto);
+    const tieneEscala = document.getElementById('esConEscala').checked;
+    console.log(tieneEscala);
+    const esArgentina = document.getElementById('esAerolineaArgentina').checked;
+    const esAmerican = document.getElementById('esAerolineaAmerican').checked;
+    const esFlybondi = document.getElementById('esAerolineaFlybondi').checked;
+    const esEmirates = document.getElementById('esAerolineaEmirates').checked;
+
+    let arrayFiltrado = JSON.parse(resultados).filter(vuelo => vuelo.precio_total_usd <= precioBuscado);
+
+    //location.reload();
 })
