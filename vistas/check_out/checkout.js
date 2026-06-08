@@ -7,10 +7,22 @@ const cupones = {
 const vuelo   = JSON.parse(localStorage.getItem("vueloSeleccionado"));
 const usuario = JSON.parse(localStorage.getItem("usuarioLogueado"));
 
+// Llenamos los datos del usuario
 document.getElementById("nombre").value   = usuario.nombre;
 document.getElementById("apellido").value = usuario.apellido;
 document.getElementById("email").value    = usuario.email;
 
+document.getElementById("numero-documento").value = usuario.dni;
+
+document.getElementById("tipo-documento").addEventListener("change", function () {
+    if (this.value === "DNI") {
+        document.getElementById("numero-documento").value = usuario.dni;
+    } else {
+        document.getElementById("numero-documento").value = usuario.pasaporte[0];
+    }
+});
+
+// Llenamos los datos del vuelo
 document.getElementById("vuelo-ruta").textContent     = vuelo.origen + " → " + vuelo.destino;
 document.getElementById("vuelo-fecha").textContent    = vuelo.fecha_vuelo;
 document.getElementById("vuelo-hora").textContent     = vuelo.hora_vuelo;
@@ -62,6 +74,30 @@ document.querySelector(".aplicar_cupon").addEventListener("click", function () {
         document.getElementById("mensaje-cupon").textContent = "Cupón inválido";
         document.getElementById("mensaje-cupon").style.color = "red";
     }
-    
+});
+
+
+document.getElementById("form-checkout").addEventListener("submit", function (evento) {
+    evento.preventDefault();
+
+    const credito = document.getElementById("radio-credito").checked;
+    const debito  = document.getElementById("radio-debito").checked;
+    const tarjeta = document.querySelector("input[name='numero_tarjeta']").value;
+    const titular = document.querySelector("input[name='nombre_titular']").value;
+    const vence   = document.querySelector("input[name='fecha_vencimiento']").value;
+    const cvv     = document.getElementById("cvv").value;
+
+    const error = document.getElementById("mensaje-error");
+
+    if (!credito && !debito) {
+        error.textContent = "Seleccioná un método de pago";
+        return;
+    }
+
+    if (!tarjeta || !titular || !vence || !cvv) {
+        error.textContent = "Completá todos los datos de la tarjeta";
+        return;
+    }
+
     window.location.href = "/vistas/reserva_confirmada/reserva_confirmada.html";
 });

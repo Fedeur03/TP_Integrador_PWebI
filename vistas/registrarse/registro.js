@@ -26,17 +26,22 @@ form.addEventListener("submit", function (evento) {
         return;
     }
 
+     if (pasaporte !== "" && pasaporte.length <= 9) {
+        mensajeError.textContent = "El Pasaporte debe tener minimo 9 valores";
+        return;
+    }
+
     if (usuarioExistente) {
         mensajeError.textContent = "Ya existe una cuenta con ese correo";
         return;
     }
 
     const nuevoUsuario = {
-       nombre: nombre,
+        nombre: nombre,
         apellido: apellido,
         dni: dni,
         nacimiento: nacimiento,
-        documento: [],
+        pasaporte: [],
         telefono: null,
         direccion: null,
         millas: 100,
@@ -44,6 +49,10 @@ form.addEventListener("submit", function (evento) {
         password: password,
         vuelos: []
     };
+
+    if (pasaporte.length != "") {
+        nuevoUsuario.pasaporte.push(pasaporte);
+    }
 
     usuarios.push(nuevoUsuario);
 
