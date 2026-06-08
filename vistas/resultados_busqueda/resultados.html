@@ -49,8 +49,8 @@
                     <label><input type="checkbox"> Emirates </label>
 
                     <div class="botones-filtro">
-                        <button type="reset" class="refrescar-filtro">
-                            REFRESCAR
+                        <button class="refrescar-filtro" id="botonFiltrado">
+                            APLICAR
                         </button>
 
 
@@ -61,74 +61,10 @@
                 </section>
             </form>
 
-            <section class="caja">
+            <section class="caja" id="resultados">
                 <h3>Aerolínea</h3>
 
-                <div class="resultados">
-                    <h4>Aerolíneas Argentinas</h4>
-                    <div class="resultado-aerolinea">
-                        <div>
-                            <p class="hora-y-ciudad">12:00</p>
-                            <p class="hora-y-ciudad">BUENOS AIRES</p>
-                        </div>
-                        <hr>
-                        <i class="fa-solid fa-plane"></i>
-                        <hr>
-                        <div>
-                            <p class="hora-y-ciudad">08:40</p>
-                            <p class="hora-y-ciudad">MADRID</p>
-                        </div>
-                        <div class="acciones">
-                            <button class="btn-seleccionar"> <a
-                                    href="../detalles_del_vuelo/detalles_del_vuelo.html">SELECCIONAR</a></button>
-                        </div>
-                    </div>
-                    <p class="duracion-escala">15h 10m · 11 escalas</p>
-                </div>
-
-                <div class="resultados">
-                    <h4>American Airlines</h4>
-                    <div class="resultado-aerolinea">
-                        <div>
-                            <p class="hora-y-ciudad">14:00</p>
-                            <p class="hora-y-ciudad">BUENOS AIRES</p>
-                        </div>
-                        <hr>
-                        <i class="fa-solid fa-plane"></i>
-                        <hr>
-                        <div>
-                            <p class="hora-y-ciudad">22:00</p>
-                            <p class="hora-y-ciudad">MADRID</p>
-                        </div>
-                        <div class="acciones">
-                            <button class="btn-seleccionar"> <a
-                                    href="../detalles_del_vuelo/detalles_del_vuelo.html">SELECCIONAR</a></button>
-                        </div>
-                    </div>
-                    <p class="duracion-escala">15h 10m · 11 escalas</p>
-                </div>
-
-                <div class="resultados">
-                    <h4>Flybondi</h4>
-                    <div class="resultado-aerolinea">
-                        <div>
-                            <p class="hora-y-ciudad">20:00</p>
-                            <p class="hora-y-ciudad">BUENOS AIRES</p>
-                        </div>
-                        <hr>
-                        <i class="fa-solid fa-plane"></i>
-                        <hr>
-                        <div>
-                            <p class="hora-y-ciudad">11:55</p>
-                            <p class="hora-y-ciudad">MADRID</p>
-                        </div>
-                        <div class="acciones">
-                            <button class="btn-seleccionar"> <a
-                                    href="../detalles_del_vuelo/detalles_del_vuelo.html">SELECCIONAR</a></button>
-                        </div>
-                    </div>
-                    <p class="duracion-escala">15h 55m · 9 escalas</p>
-                </div>
+                
 
             </section>
 
@@ -167,6 +103,7 @@
     </footer>
 <script src="/componentes/navbar.js"></script>
 <script src="/componentes/footer.js"></script>
+<script src="resultados.js"></script>
 </body>
 
 </html>
