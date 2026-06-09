@@ -20,33 +20,35 @@
         <h1>¡Compra Confirmada! </h1>
         <p>Gracias por elegir FlyWay. Tu reserva ha sido confirmada exitosamente.</p>
         <p>Detalles de tu reserva:</p>
+
         <div class="tarjeta">
             <div class="cabecera">
-                <h3>Buenos Aires (BUE) → Madrid (MAD)</h3>
-                <strong>$ 800 USD</strong>
+                <h3 id="ruta"></h3>
+                <strong id="precio"></strong>
             </div>
             <div class="contenido">
                 <div class="abierta">
-                    <p><i class="fa-solid fa-calendar icon"></i>Fecha: <strong>15 de Julio de 2026</strong></p>
-                    <p><i class="fa-solid fa-clock icon"></i>Hora estimada: <strong>10:00 - 23:00</strong></p>
-                    <p><i class="fa-solid fa-plane-circle-check icon"></i>Escalas: <strong>1</strong></p>
+                    <p><i class="fa-solid fa-calendar icon"></i>Fecha: <strong id="fecha"></strong></p>
+                    <p><i class="fa-solid fa-clock icon"></i>Hora estimada: <strong id="hora"></strong></p>
+                    <p><i class="fa-solid fa-plane-circle-check icon"></i>Escalas: <strong id="escalas"></strong></p>
                 </div>
                 <img src="../../media/QR.png" alt="QR">
             </div>
         </div>
         <div class="contenido-secundario">
-            <p>Tu código de reserva es: <strong>ABC123XYZ</strong></p>
+            <p>Tu código de reserva es: <strong id="codigo"></strong></p>
             <p>Por favor, guarda este código para futuras referencias.</p>
-
             <p>Recibirás un correo electrónico con los detalles de tu vuelo y el código QR para el check-in.</p>
             <p>¡Esperamos que tengas un excelente viaje con FlyWay!</p>
         </div>
     </main>
 
-    <footer class="footer" id="footer">
-    </footer>
-<script src="/componentes/navbar.js"></script>
-<script src="/componentes/footer.js"></script>
+    <footer class="footer" id="footer"></footer>
+    
+    <script src="/componentes/navbar.js"></script>
+    <script src="/componentes/footer.js"></script>
+    <script src="./reserva_confirmada.js"></script>
+
 </body>
 
 </html>
