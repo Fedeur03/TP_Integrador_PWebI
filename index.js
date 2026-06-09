@@ -57,8 +57,21 @@ form.addEventListener("submit", function (evento) {
         clase: clase,
         tipoDeVuelo: tipoDeVuelo
     };
-
     localStorage.setItem("busquedaVuelo", JSON.stringify(busqueda));
 
-    window.location.href = "/vistas/resultados_busqueda/resultados.html";
+    fetch('/database/listadoVuelos.json')
+        .then(response => response.json())
+        .then(todosLosVuelos => {
+            const vuelosFiltrados = todosLosVuelos.filter(vuelo =>
+                vuelo.origen.toLowerCase().includes(origen.toLowerCase()) ||
+                vuelo.destino.toLowerCase().includes(destino.toLowerCase())
+            );
+
+            localStorage.setItem("vuelosFiltrados", JSON.stringify(vuelosFiltrados));
+            window.location.href = "/vistas/resultados_busqueda/resultados.html";
+        })
+        .catch(error => {
+            console.error('Error al cargar vuelos:', error);
+            mensajeError.textContent = "Error al buscar vuelos. Intentá de nuevo.";
+        });
 });

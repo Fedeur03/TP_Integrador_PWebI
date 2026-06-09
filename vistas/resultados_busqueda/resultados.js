@@ -1,13 +1,17 @@
 const contenedorResultados = document.getElementById("resultados");
 const resultados = localStorage.getItem("vuelosFiltrados");
 
-function mostrarResultados(resultados) {
-    const vuelosFiltrados = JSON.parse(resultados);
-
-    if (vuelosFiltrados.length === 0) {
-        contenedorResultados.innerHTML = "<p>No se encontraron resultados para esa búsqueda</p>";
-        return;
+    if (!resultados) {
+        window.location.href = "/index.html";
     }
+
+    function mostrarResultados(resultados) {
+        if (!resultados) {
+            contenedorResultados.innerHTML = "<p>No se encontraron resultados para esa búsqueda</p>";
+            return;
+        }
+
+    const vuelosFiltrados = JSON.parse(resultados);
 
     let htmlAcumulado = "";
     vuelosFiltrados.forEach(resultado => {
@@ -85,7 +89,7 @@ botonFiltro.addEventListener('click', function (evento) {
                 soloAerolineas.push(arrayFiltrado[i]);
             }
             if (esEmirates && arrayFiltrado[i].aerolinea === "Emirates") {
-                soloAerolineas.push(arrayAerolineas.push(arrayFiltrado[i]));
+                soloAerolineas.push(arrayFiltrado[i]);
             }
         }
         arrayFiltrado = soloAerolineas;
@@ -96,6 +100,8 @@ botonFiltro.addEventListener('click', function (evento) {
 
 const precioSeleccionado = document.getElementById('valor-range');
 const elementoRange = document.getElementById('rango-precio');
+
+precioSeleccionado.textContent = ` $ ${elementoRange.value}`;
 
 elementoRange.addEventListener('input', function () {
     precioSeleccionado.textContent = ` $ ${elementoRange.value}`;
