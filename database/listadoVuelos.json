@@ -5,7 +5,6 @@
     "codigo_reserva": "AB1234XYZ",
     "origen": "Buenos Aires (BUE)",
     "destino": "Madrid (MAD)",
-    "asientos": [],
     "fecha_vuelo": "15 de Julio de 2026",
     "hora_vuelo": "16:00 h",
     "escalas": 0,
@@ -16,7 +15,12 @@
     "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 1200,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "ocupado" }, { "id": "1C", "estado": "disponible" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "ocupado" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "ocupado" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "ocupado" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "ocupado" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "disponible" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "ocupado" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "ocupado" }
+    ]
   },
   {
     "id": 2,
@@ -24,7 +28,6 @@
     "codigo_reserva": "MX9876LMN",
     "origen": "México DF (MEX)",
     "destino": "Cancún (CUN)",
-    "asientos": [],
     "fecha_vuelo": "18 de Julio de 2026",
     "hora_vuelo": "09:30 h",
     "escalas": 0,
@@ -35,7 +38,12 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 250,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "ocupado" }, { "id": "1B", "estado": "disponible" }, { "id": "1C", "estado": "disponible" }, { "id": "1D", "estado": "ocupado" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "ocupado" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "ocupado" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "ocupado" },
+      { "id": "3A", "estado": "ocupado" }, { "id": "3B", "estado": "disponible" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "ocupado" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 3,
@@ -43,7 +51,6 @@
     "codigo_reserva": "NY4567BTR",
     "origen": "Nueva York (JFK)",
     "destino": "Londres (LHR)",
-    "asientos": [],
     "fecha_vuelo": "22 de Julio de 2026",
     "hora_vuelo": "21:00 h",
     "escalas": 1,
@@ -54,7 +61,12 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 850,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "disponible" }, { "id": "1C", "estado": "ocupado" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "ocupado" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "ocupado" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "ocupado" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "ocupado" }, { "id": "3B", "estado": "ocupado" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "ocupado" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 4,
@@ -62,7 +74,6 @@
     "codigo_reserva": "SP3322LKJ",
     "origen": "São Paulo (GRU)",
     "destino": "Santiago (SCL)",
-    "asientos": [],
     "fecha_vuelo": "05 de Agosto de 2026",
     "hora_vuelo": "13:15 h",
     "escalas": 0,
@@ -73,7 +84,12 @@
     "aerolinea": "Flybondi",
     "precio_total_usd": 420,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1589909202802-8f4aadce1849?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1589909202802-8f4aadce1849?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "ocupado" }, { "id": "1C", "estado": "ocupado" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "ocupado" }, { "id": "2E", "estado": "ocupado" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "ocupado" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "ocupado" }
+    ]
   },
   {
     "id": 5,
@@ -81,7 +97,6 @@
     "codigo_reserva": "PA8899QWE",
     "origen": "París (CDG)",
     "destino": "Tokio (HND)",
-    "asientos": [],
     "fecha_vuelo": "12 de Agosto de 2026",
     "hora_vuelo": "23:20 h",
     "escalas": 2,
@@ -92,7 +107,12 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 1800,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "ocupado" }, { "id": "1B", "estado": "ocupado" }, { "id": "1C", "estado": "ocupado" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "ocupado" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "ocupado" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "ocupado" }, { "id": "3C", "estado": "ocupado" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "ocupado" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 6,
@@ -100,7 +120,6 @@
     "codigo_reserva": "BO0011VFR",
     "origen": "Bogotá (BOG)",
     "destino": "Miami (MIA)",
-    "asientos": [],
     "fecha_vuelo": "20 de Agosto de 2026",
     "hora_vuelo": "06:00 h",
     "escalas": 0,
@@ -111,7 +130,12 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 390,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://images.trvl-media.com/place/800070/02ee0441-a9dd-4b32-bb53-9644902187e1.jpg"
+    "ruta_imagen": "https://images.trvl-media.com/place/800070/02ee0441-a9dd-4b32-bb53-9644902187e1.jpg",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "disponible" }, { "id": "1C", "estado": "disponible" }, { "id": "1D", "estado": "ocupado" }, { "id": "1E", "estado": "ocupado" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "ocupado" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "ocupado" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "disponible" }, { "id": "3C", "estado": "ocupado" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "ocupado" }
+    ]
   },
   {
     "id": 7,
@@ -119,7 +143,6 @@
     "codigo_reserva": "MA5544EDC",
     "origen": "Madrid (MAD)",
     "destino": "Roma (FCO)",
-    "asientos": [],
     "fecha_vuelo": "02 de Septiembre de 2026",
     "hora_vuelo": "10:45 h",
     "escalas": 0,
@@ -130,7 +153,12 @@
     "aerolinea": "Flybondi",
     "precio_total_usd": 140,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "ocupado" }, { "id": "1C", "estado": "disponible" }, { "id": "1D", "estado": "ocupado" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "ocupado" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "ocupado" },
+      { "id": "3A", "estado": "ocupado" }, { "id": "3B", "estado": "disponible" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "ocupado" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 8,
@@ -138,7 +166,6 @@
     "codigo_reserva": "LA7766YHN",
     "origen": "Los Ángeles (LAX)",
     "destino": "Sídney (SYD)",
-    "asientos": [],
     "fecha_vuelo": "15 de Septiembre de 2026",
     "hora_vuelo": "22:30 h",
     "escalas": 1,
@@ -149,7 +176,12 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 2100,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "disponible" }, { "id": "1C", "estado": "disponible" }, { "id": "1D", "estado": "ocupado" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "ocupado" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "ocupado" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "ocupado" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "ocupado" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "ocupado" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 9,
@@ -157,7 +189,6 @@
     "codigo_reserva": "DU1122WSX",
     "origen": "Dubái (DXB)",
     "destino": "Maldivas (MLE)",
-    "asientos": [],
     "fecha_vuelo": "01 de Octubre de 2026",
     "hora_vuelo": "02:00 h",
     "escalas": 0,
@@ -168,7 +199,12 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 750,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "ocupado" }, { "id": "1B", "estado": "ocupado" }, { "id": "1C", "estado": "disponible" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "ocupado" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "ocupado" }, { "id": "2D", "estado": "ocupado" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "disponible" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "ocupado" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "ocupado" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 10,
@@ -176,7 +212,6 @@
     "codigo_reserva": "LI3344RFV",
     "origen": "Lima (LIM)",
     "destino": "Cuzco (CUZ)",
-    "asientos": [],
     "fecha_vuelo": "10 de Octubre de 2026",
     "hora_vuelo": "07:15 h",
     "escalas": 0,
@@ -187,7 +222,12 @@
     "aerolinea": "Flybondi",
     "precio_total_usd": 85,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "disponible" }, { "id": "1C", "estado": "ocupado" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "ocupado" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "ocupado" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "ocupado" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "ocupado" }, { "id": "3B", "estado": "disponible" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "ocupado" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 11,
@@ -195,7 +235,6 @@
     "codigo_reserva": "FR5566TGB",
     "origen": "Fráncfort (FRA)",
     "destino": "Barcelona (BCN)",
-    "asientos": [],
     "fecha_vuelo": "24 de Octubre de 2026",
     "hora_vuelo": "14:10 h",
     "escalas": 0,
@@ -206,7 +245,12 @@
     "aerolinea": "Flybondi",
     "precio_total_usd": 220,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "ocupado" }, { "id": "1B", "estado": "disponible" }, { "id": "1C", "estado": "ocupado" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "ocupado" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "ocupado" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "ocupado" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "ocupado" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "ocupado" }
+    ]
   },
   {
     "id": 12,
@@ -214,7 +258,6 @@
     "codigo_reserva": "CH7788YJM",
     "origen": "Chicago (ORD)",
     "destino": "Toronto (YYZ)",
-    "asientos": [],
     "fecha_vuelo": "05 de Noviembre de 2026",
     "hora_vuelo": "18:00 h",
     "escalas": 0,
@@ -225,7 +268,12 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 180,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1503152394-c571994fd383?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1503152394-c571994fd383?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "ocupado" }, { "id": "1C", "estado": "disponible" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "ocupado" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "ocupado" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "ocupado" },
+      { "id": "3A", "estado": "ocupado" }, { "id": "3B", "estado": "disponible" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "ocupado" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 13,
@@ -233,7 +281,6 @@
     "codigo_reserva": "LO9900IKM",
     "origen": "Londres (LHR)",
     "destino": "París (CDG)",
-    "asientos": [],
     "fecha_vuelo": "12 de Noviembre de 2026",
     "hora_vuelo": "11:30 h",
     "escalas": 0,
@@ -244,7 +291,12 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 110,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "ocupado" }, { "id": "1B", "estado": "disponible" }, { "id": "1C", "estado": "ocupado" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "ocupado" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "ocupado" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "ocupado" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "disponible" }, { "id": "3C", "estado": "ocupado" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "ocupado" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 14,
@@ -252,7 +304,6 @@
     "codigo_reserva": "TO1133OLP",
     "origen": "Tokio (NRT)",
     "destino": "Seúl (ICN)",
-    "asientos": [],
     "fecha_vuelo": "01 de Diciembre de 2026",
     "hora_vuelo": "12:55 h",
     "escalas": 1,
@@ -263,7 +314,12 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 310,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "disponible" }, { "id": "1C", "estado": "disponible" }, { "id": "1D", "estado": "ocupado" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "ocupado" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "ocupado" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "ocupado" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "ocupado" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "ocupado" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "ocupado" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "ocupado" }
+    ]
   },
   {
     "id": 15,
@@ -271,7 +327,6 @@
     "codigo_reserva": "BU2244ZAQ",
     "origen": "Buenos Aires (EZE)",
     "destino": "Río de Janeiro (GIG)",
-    "asientos": [],
     "fecha_vuelo": "15 de Diciembre de 2026",
     "hora_vuelo": "08:20 h",
     "escalas": 0,
@@ -282,7 +337,12 @@
     "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 480,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "ocupado" }, { "id": "1B", "estado": "disponible" }, { "id": "1C", "estado": "disponible" }, { "id": "1D", "estado": "ocupado" }, { "id": "1E", "estado": "ocupado" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "ocupado" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "ocupado" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "disponible" }, { "id": "3C", "estado": "ocupado" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "ocupado" }
+    ]
   },
   {
     "id": 16,
@@ -290,7 +350,6 @@
     "codigo_reserva": "SI4455XSW",
     "origen": "Singapur (SIN)",
     "destino": "Bangkok (BKK)",
-    "asientos": [],
     "fecha_vuelo": "05 de Enero de 2027",
     "hora_vuelo": "17:30 h",
     "escalas": 1,
@@ -301,7 +360,12 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 260,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "ocupado" }, { "id": "1C", "estado": "disponible" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "ocupado" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "ocupado" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "ocupado" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "ocupado" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "disponible" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "ocupado" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "ocupado" }
+    ]
   },
   {
     "id": 17,
@@ -309,7 +373,6 @@
     "codigo_reserva": "AM6677CDE",
     "origen": "Ámsterdam (AMS)",
     "destino": "Lisboa (LIS)",
-    "asientos": [],
     "fecha_vuelo": "20 de Enero de 2027",
     "hora_vuelo": "14:00 h",
     "escalas": 0,
@@ -320,7 +383,12 @@
     "aerolinea": "Flybondi",
     "precio_total_usd": 195,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1509840841025-9088ba78a826?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1509840841025-9088ba78a826?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "ocupado" }, { "id": "1B", "estado": "disponible" }, { "id": "1C", "estado": "disponible" }, { "id": "1D", "estado": "ocupado" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "ocupado" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "ocupado" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "ocupado" },
+      { "id": "3A", "estado": "ocupado" }, { "id": "3B", "estado": "disponible" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "ocupado" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 18,
@@ -328,7 +396,6 @@
     "codigo_reserva": "CA8899MJU",
     "origen": "Ciudad de Cabo (CPT)",
     "destino": "Johannesburgo (JNB)",
-    "asientos": [],
     "fecha_vuelo": "10 de Febrero de 2027",
     "hora_vuelo": "10:15 h",
     "escalas": 0,
@@ -339,7 +406,12 @@
     "aerolinea": "Flybondi",
     "precio_total_usd": 130,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://images.unsplash.com/photo-1577971132997-c10ae868de65?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1577971132997-c10ae868de65?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "disponible" }, { "id": "1C", "estado": "ocupado" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "ocupado" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "ocupado" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "ocupado" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "ocupado" }, { "id": "3B", "estado": "ocupado" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "ocupado" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 19,
@@ -347,7 +419,6 @@
     "codigo_reserva": "CO0022KLI",
     "origen": "Santiago (SCL)",
     "destino": "Punta Cana (PUJ)",
-    "asientos": [],
     "fecha_vuelo": "02 de Marzo de 2027",
     "hora_vuelo": "01:30 h",
     "escalas": 1,
@@ -358,7 +429,12 @@
     "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 1650,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "ocupado" }, { "id": "1C", "estado": "ocupado" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "ocupado" }, { "id": "2E", "estado": "ocupado" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "ocupado" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "ocupado" }
+    ]
   },
   {
     "id": 20,
@@ -366,7 +442,6 @@
     "codigo_reserva": "BA3355NHY",
     "origen": "Barcelona (BCN)",
     "destino": "París (ORY)",
-    "asientos": [],
     "fecha_vuelo": "18 de Marzo de 2027",
     "hora_vuelo": "21:40 h",
     "escalas": 0,
@@ -377,7 +452,12 @@
     "aerolinea": "Flybondi",
     "precio_total_usd": 65,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "ocupado" }, { "id": "1B", "estado": "ocupado" }, { "id": "1C", "estado": "ocupado" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "ocupado" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "ocupado" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "ocupado" }, { "id": "3C", "estado": "ocupado" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "ocupado" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 21,
@@ -385,7 +465,6 @@
     "codigo_reserva": "AA1122QQW",
     "origen": "Buenos Aires (EZE)",
     "destino": "Miami (MIA)",
-    "asientos": [],
     "fecha_vuelo": "25 de Marzo de 2027",
     "hora_vuelo": "23:30 h",
     "escalas": 0,
@@ -396,7 +475,12 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 950,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "disponible" }, { "id": "1C", "estado": "disponible" }, { "id": "1D", "estado": "ocupado" }, { "id": "1E", "estado": "ocupado" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "ocupado" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "ocupado" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "disponible" }, { "id": "3C", "estado": "ocupado" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "ocupado" }
+    ]
   },
   {
     "id": 22,
@@ -404,7 +488,6 @@
     "codigo_reserva": "FB3344EED",
     "origen": "Bariloche (BRC)",
     "destino": "Buenos Aires (AEP)",
-    "asientos": [],
     "fecha_vuelo": "02 de Abril de 2027",
     "hora_vuelo": "14:20 h",
     "escalas": 0,
@@ -415,7 +498,12 @@
     "aerolinea": "Flybondi",
     "precio_total_usd": 75,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "ocupado" }, { "id": "1C", "estado": "disponible" }, { "id": "1D", "estado": "ocupado" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "ocupado" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "ocupado" },
+      { "id": "3A", "estado": "ocupado" }, { "id": "3B", "estado": "disponible" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "ocupado" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 23,
@@ -423,7 +511,6 @@
     "codigo_reserva": "EM5566RRF",
     "origen": "Buenos Aires (EZE)",
     "destino": "Dubái (DXB)",
-    "asientos": [],
     "fecha_vuelo": "10 de Abril de 2027",
     "hora_vuelo": "21:30 h",
     "escalas": 1,
@@ -434,7 +521,12 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 1850,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "disponible" }, { "id": "1C", "estado": "disponible" }, { "id": "1D", "estado": "ocupado" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "ocupado" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "ocupado" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "ocupado" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "ocupado" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "ocupado" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 24,
@@ -442,7 +534,6 @@
     "codigo_reserva": "AR7788TTG",
     "origen": "Mendoza (MDZ)",
     "destino": "Buenos Aires (AEP)",
-    "asientos": [],
     "fecha_vuelo": "18 de Abril de 2027",
     "hora_vuelo": "11:05 h",
     "escalas": 0,
@@ -453,7 +544,12 @@
     "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 90,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "ocupado" }, { "id": "1B", "estado": "ocupado" }, { "id": "1C", "estado": "disponible" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "ocupado" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "ocupado" }, { "id": "2D", "estado": "ocupado" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "disponible" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "ocupado" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "ocupado" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 25,
@@ -461,7 +557,6 @@
     "codigo_reserva": "AM9900YYH",
     "origen": "Nueva York (JFK)",
     "destino": "Los Ángeles (LAX)",
-    "asientos": [],
     "fecha_vuelo": "05 de Mayo de 2027",
     "hora_vuelo": "08:00 h",
     "escalas": 0,
@@ -472,7 +567,12 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 320,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "disponible" }, { "id": "1C", "estado": "ocupado" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "ocupado" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "ocupado" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "ocupado" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "ocupado" }, { "id": "3B", "estado": "disponible" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "ocupado" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 26,
@@ -480,7 +580,6 @@
     "codigo_reserva": "EM2211UUJ",
     "origen": "Londres (LHR)",
     "destino": "Sídney (SYD)",
-    "asientos": [],
     "fecha_vuelo": "12 de Mayo de 2027",
     "hora_vuelo": "13:45 h",
     "escalas": 2,
@@ -491,7 +590,12 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 2400,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "ocupado" }, { "id": "1B", "estado": "disponible" }, { "id": "1C", "estado": "ocupado" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "ocupado" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "ocupado" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "ocupado" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "ocupado" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "ocupado" }
+    ]
   },
   {
     "id": 27,
@@ -499,7 +603,6 @@
     "codigo_reserva": "FB4433IOL",
     "origen": "Buenos Aires (AEP)",
     "destino": "Córdoba (COR)",
-    "asientos": [],
     "fecha_vuelo": "20 de Mayo de 2027",
     "hora_vuelo": "19:15 h",
     "escalas": 0,
@@ -510,7 +613,12 @@
     "aerolinea": "Flybondi",
     "precio_total_usd": 60,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "ocupado" }, { "id": "1C", "estado": "disponible" }, { "id": "1D", "estado": "ocupado" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "ocupado" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "ocupado" },
+      { "id": "3A", "estado": "ocupado" }, { "id": "3B", "estado": "disponible" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "ocupado" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 28,
@@ -518,7 +626,6 @@
     "codigo_reserva": "AR6655KKM",
     "origen": "Madrid (MAD)",
     "destino": "Buenos Aires (EZE)",
-    "asientos": [],
     "fecha_vuelo": "01 de Junio de 2027",
     "hora_vuelo": "23:10 h",
     "escalas": 1,
@@ -529,7 +636,12 @@
     "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 1150,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://images.unsplash.com/photo-1542838132-92c53300491e?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1542838132-92c53300491e?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "disponible" }, { "id": "1C", "estado": "disponible" }, { "id": "1D", "estado": "ocupado" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "ocupado": "ocupado" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "ocupado" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "ocupado" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "ocupado" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "ocupado" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 29,
@@ -537,7 +649,6 @@
     "codigo_reserva": "AM8877LLN",
     "origen": "Miami (MIA)",
     "destino": "Cancún (CUN)",
-    "asientos": [],
     "fecha_vuelo": "10 de Junio de 2027",
     "hora_vuelo": "10:30 h",
     "escalas": 0,
@@ -548,7 +659,12 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 210,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "ocupado" }, { "id": "1B", "estado": "ocupado" }, { "id": "1C", "estado": "disponible" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "ocupado" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "ocupado" }, { "id": "2D", "estado": "ocupado" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "disponible" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "ocupado" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "ocupado" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 30,
@@ -556,7 +672,6 @@
     "codigo_reserva": "EM0011PPO",
     "origen": "Tokio (NRT)",
     "destino": "Roma (FCO)",
-    "asientos": [],
     "fecha_vuelo": "18 de Junio de 2027",
     "hora_vuelo": "22:00 h",
     "escalas": 2,
@@ -567,7 +682,12 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 1980,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1518391846015-55a9cc003b25?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1518391846015-55a9cc003b25?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "disponible" }, { "id": "1C", "estado": "ocupado" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "ocupado" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "ocupado" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "ocupado" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "ocupado" }, { "id": "3B", "estado": "disponible" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "ocupado" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 31,
@@ -575,7 +695,6 @@
     "codigo_reserva": "AR1155ZZX",
     "origen": "Buenos Aires (AEP)",
     "destino": "Iguazú (IGR)",
-    "asientos": [],
     "fecha_vuelo": "05 de Julio de 2027",
     "hora_vuelo": "07:45 h",
     "escalas": 0,
@@ -586,7 +705,12 @@
     "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 115,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://images.unsplash.com/photo-1549479701-447551cc7203?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1549479701-447551cc7203?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "ocupado" }, { "id": "1B", "estado": "disponible" }, { "id": "1C", "estado": "ocupado" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "ocupado" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "ocupado" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "ocupado" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "ocupado" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "ocupado" }
+    ]
   },
   {
     "id": 32,
@@ -594,7 +718,6 @@
     "codigo_reserva": "FB2266XXC",
     "origen": "Salta (SLA)",
     "destino": "Buenos Aires (AEP)",
-    "asientos": [],
     "fecha_vuelo": "12 de Julio de 2027",
     "hora_vuelo": "16:20 h",
     "escalas": 0,
@@ -605,7 +728,12 @@
     "aerolinea": "Flybondi",
     "precio_total_usd": 80,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1596125160902-60f23547b744?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1596125160902-60f23547b744?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "ocupado" }, { "id": "1C", "estado": "disponible" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "ocupado" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "ocupado" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "ocupado" },
+      { "id": "3A", "estado": "ocupado" }, { "id": "3B", "estado": "disponible" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "ocupado" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 33,
@@ -613,7 +741,6 @@
     "codigo_reserva": "AM3377VVB",
     "origen": "Dallas (DFW)",
     "destino": "París (CDG)",
-    "asientos": [],
     "fecha_vuelo": "20 de Julio de 2027",
     "hora_vuelo": "15:40 h",
     "escalas": 1,
@@ -624,7 +751,12 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 1050,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "ocupado" }, { "id": "1B", "estado": "disponible" }, { "id": "1C", "estado": "ocupado" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "ocupado" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "ocupado" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "ocupado" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "disponible" }, { "id": "3C", "estado": "ocupado" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "ocupado" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 34,
@@ -632,7 +764,6 @@
     "codigo_reserva": "EM4488NNM",
     "origen": "El Cairo (CAI)",
     "destino": "Dubái (DXB)",
-    "asientos": [],
     "fecha_vuelo": "28 de Julio de 2027",
     "hora_vuelo": "12:15 h",
     "escalas": 0,
@@ -643,7 +774,12 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 410,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "disponible" }, { "id": "1C", "estado": "disponible" }, { "id": "1D", "estado": "ocupado" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "ocupado" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "ocupado" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "ocupado" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "ocupado" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "ocupado" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "ocupado" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "ocupado" }
+    ]
   },
   {
     "id": 35,
@@ -651,7 +787,6 @@
     "codigo_reserva": "AR5599MMK",
     "origen": "Buenos Aires (EZE)",
     "destino": "Ushuaia (USH)",
-    "asientos": [],
     "fecha_vuelo": "05 de Agosto de 2027",
     "hora_vuelo": "05:00 h",
     "escalas": 1,
@@ -662,7 +797,12 @@
     "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 190,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1516690561799-46d8f74f90f6?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1516690561799-46d8f74f90f6?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "ocupado" }, { "id": "1B", "estado": "disponible" }, { "id": "1C", "estado": "disponible" }, { "id": "1D", "estado": "ocupado" }, { "id": "1E", "estado": "ocupado" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "ocupado" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "ocupado" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "disponible" }, { "id": "3C", "estado": "ocupado" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "ocupado" }
+    ]
   },
   {
     "id": 36,
@@ -670,7 +810,6 @@
     "codigo_reserva": "FB6600LLJ",
     "origen": "El Calafate (FTE)",
     "destino": "Buenos Aires (AEP)",
-    "asientos": [],
     "fecha_vuelo": "12 de Agosto de 2027",
     "hora_vuelo": "18:10 h",
     "escalas": 0,
@@ -681,7 +820,12 @@
     "aerolinea": "Flybondi",
     "precio_total_usd": 130,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "ocupado" }, { "id": "1C", "estado": "disponible" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "ocupado" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "ocupado" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "ocupado" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "ocupado" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "disponible" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "ocupado" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "ocupado" }
+    ]
   },
   {
     "id": 37,
@@ -689,7 +833,6 @@
     "codigo_reserva": "AM7711HGB",
     "origen": "Londres (LHR)",
     "destino": "Miami (MIA)",
-    "asientos": [],
     "fecha_vuelo": "20 de Agosto de 2027",
     "hora_vuelo": "09:45 h",
     "escalas": 0,
@@ -700,7 +843,12 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 780,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "ocupado" }, { "id": "1B", "estado": "disponible" }, { "id": "1C", "estado": "disponible" }, { "id": "1D", "estado": "ocupado" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "ocupado" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "disponible" }, { "id": "2E", "estado": "ocupado" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "ocupado" },
+      { "id": "3A", "estado": "ocupado" }, { "id": "3B", "estado": "disponible" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "ocupado" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 38,
@@ -708,7 +856,6 @@
     "codigo_reserva": "EM8822YTR",
     "origen": "Estambul (IST)",
     "destino": "Dubái (DXB)",
-    "asientos": [],
     "fecha_vuelo": "01 de Septiembre de 2027",
     "hora_vuelo": "16:30 h",
     "escalas": 1,
@@ -719,7 +866,12 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 530,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "disponible" }, { "id": "1C", "estado": "ocupado" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "ocupado" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "ocupado" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "ocupado" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "ocupado" }, { "id": "3B", "estado": "ocupado" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "ocupado" }, { "id": "3G", "estado": "disponible" }
+    ]
   },
   {
     "id": 39,
@@ -727,7 +879,6 @@
     "codigo_reserva": "AR9933BBN",
     "origen": "Buenos Aires (EZE)",
     "destino": "San Pablo (GRU)",
-    "asientos": [],
     "fecha_vuelo": "10 de Septiembre de 2027",
     "hora_vuelo": "12:15 h",
     "escalas": 0,
@@ -738,7 +889,12 @@
     "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 310,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "disponible" }, { "id": "1B", "estado": "ocupado" }, { "id": "1C", "estado": "ocupado" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "disponible" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "ocupado" }, { "id": "2E", "estado": "ocupado" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "ocupado" }, { "id": "3C", "estado": "disponible" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "disponible" }, { "id": "3G", "estado": "ocupado" }
+    ]
   },
   {
     "id": 40,
@@ -746,7 +902,6 @@
     "codigo_reserva": "FB0044VVC",
     "origen": "Comodoro Rivadavia (CRD)",
     "destino": "Buenos Aires (AEP)",
-    "asientos": [],
     "fecha_vuelo": "20 de Septiembre de 2027",
     "hora_vuelo": "09:00 h",
     "escalas": 3,
@@ -757,6 +912,11 @@
     "aerolinea": "Flybondi",
     "precio_total_usd": 165,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://images.unsplash.com/photo-1433832565846-4b1e79cb15f9?w=800"
+    "ruta_imagen": "https://images.unsplash.com/photo-1433832565846-4b1e79cb15f9?w=800",
+    "asientos": [
+      { "id": "1A", "estado": "ocupado" }, { "id": "1B", "estado": "ocupado" }, { "id": "1C", "estado": "ocupado" }, { "id": "1D", "estado": "disponible" }, { "id": "1E", "estado": "disponible" }, { "id": "1F", "estado": "disponible" }, { "id": "1G", "estado": "ocupado" },
+      { "id": "2A", "estado": "disponible" }, { "id": "2B", "estado": "disponible" }, { "id": "2C", "estado": "disponible" }, { "id": "2D", "estado": "ocupado" }, { "id": "2E", "estado": "disponible" }, { "id": "2F", "estado": "disponible" }, { "id": "2G", "estado": "disponible" },
+      { "id": "3A", "estado": "disponible" }, { "id": "3B", "estado": "ocupado" }, { "id": "3C", "estado": "ocupado" }, { "id": "3D", "estado": "disponible" }, { "id": "3E", "estado": "disponible" }, { "id": "3F", "estado": "ocupado" }, { "id": "3G", "estado": "disponible" }
+    ]
   }
 ]
