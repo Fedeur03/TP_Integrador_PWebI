@@ -1,8 +1,10 @@
 .contenedor_vuelos {
     display: flex;
+    max-width: 70%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    justify-self: center;
     gap: 3rem;
     margin: 3rem;
 }

@@ -1,4 +1,14 @@
-let asientosElegidos = [];
+
+
+window.addEventListener('load', function(event){
+    const vuelo = JSON.parse(localStorage.getItem("vueloSeleccionado"));
+    const elementoAsientos = document.getElementById('asientos');
+    console.log(vuelo)
+    vuelo.asientos.forEach(asiento => {
+        elementoAsientos.innerHTML += 
+        ` <i class="fa-solid fa-couch ${asiento.estado}" onclick="elegirAsiento(this, '${asiento.id}')"></i>`;
+    })
+});
 
 function elegirAsiento(elemento, asiento) {
 
@@ -12,6 +22,9 @@ function elegirAsiento(elemento, asiento) {
 
     } else {
         elemento.classList.remove("disponible");
+        if (elemento.classList.contains("ocupado")) {
+            return;
+        }
         elemento.classList.add("seleccionado");
 
         asientosElegidos.push(asiento);
@@ -21,7 +34,10 @@ function elegirAsiento(elemento, asiento) {
     localStorage.setItem("asientoElegido", asientosElegidos.join(", "));
 }
 
+let asientosElegidos = [];
 const vuelo = JSON.parse(localStorage.getItem("vueloComprado"));
+
+
 
 if (vuelo) {
     document.getElementById("ruta").textContent = vuelo.origen + " → " + vuelo.destino;
