@@ -28,7 +28,7 @@ function mostrarVuelos() {
                 <hr class="separador">
                 <p>${vuelo.hora_vuelo} - ${vuelo.llegada_estimada}</p>
                 <p>Duración: ${vuelo.duracion_estimada}</p>
-                <p>${vuelo.escalas} escalas</p>
+                <p>${vuelo.escalas === 0 ? 'Directo' : vuelo.escalas + ' escalas'} </p>
                 <p>Precio: ${vuelo.precio_total_usd} USD</p>
                 <p>Aerolínea: ${vuelo.aerolinea}</p>
                 <button class="boton_comprar" data-codigovuelo="${vuelo.id}">Comprar</button>
