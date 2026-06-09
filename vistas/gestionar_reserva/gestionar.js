@@ -1,10 +1,10 @@
-
-const vueloReserva = JSON.parse(localStorage.getItem("reservaGestionada"));
+const vueloReserva = JSON.parse(localStorage.getItem("reservaSeleccionada"));
 
 const contenedorReservaGestionada = document.getElementById("reserva");
 
 if(!vueloReserva || vueloReserva.length == 0) {
-    contenedorReservaGestionada.innerHTML += `<h2>No se pudo cargar la información de la reserva</h2>`;
+    contenedorReservaGestionada.innerHTML += `<h2>No hay reservas para gestionar</h2>`;
+
 }else{
 contenedorReservaGestionada.innerHTML += `<span class="titulo rojo">Gestionar reserva</span>
         <span class="sub-titulo rojo">Partida ${vueloReserva.origen} con destino a ${vueloReserva.destino}.</span>

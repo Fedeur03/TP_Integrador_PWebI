@@ -58,6 +58,7 @@ html {
 .link:hover{
     color: #9c7575;
 }
+
 .vuelos {
     display: flex;
     flex-direction: column;
@@ -68,17 +69,18 @@ html {
     color: #642E2E;
 }
 
-.boton{
-    width: 22%;
+.boton {
+    width: 14%;
     background-color: #642E2E;
     color: #fff;
-    margin-top:1rem;
+    margin-top: 0.5rem;
     padding: 0.7em 1.2em;
     border: none;
     border-radius: 8px;
     font-size: 0.950rem;
     font-weight: bold;
     cursor: pointer;
+    text-align: center;
 }
 
 .tarjeta {
@@ -88,6 +90,7 @@ html {
     border-radius: 10px;
     padding: 1.2em;
     color: #602929;
+    margin-bottom: 0.8rem;
 }
 
 .cabecera {
@@ -95,6 +98,10 @@ html {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.4rem;
+}
+
+.cabecera strong {
+    font-size: 1.1rem;
 }
 
 .contenido {
@@ -106,4 +113,8 @@ html {
 
 .contenido img {
     width: 12%;
+}
+
+.abierta p {
+    margin-bottom: 0.7rem;
 }
