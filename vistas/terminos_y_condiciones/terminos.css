@@ -12,7 +12,16 @@
     width: 100%;
     padding: 0 2rem;
 }
-
+@media (max-width: 769px) {
+    .contenedor_terminos{
+        display: grid;
+        grid-template-columns: none;
+        padding: 0 0.5rem;
+    }
+    .contenedor_terminos img{
+        display: none;
+    }
+}
 .contenedor_terminos h1 {
     font-size: 1.5rem;
     color: #642E2E;

@@ -1,7 +1,7 @@
 .contenedor{
     height: 100%;
     margin: 2rem;
-    padding: 2rem;
+    padding: 1rem;
     background-color: #ebebeb;
 }
 
@@ -12,7 +12,16 @@
     width: 100%;
     padding: 0 2rem;
 }
-
+@media (max-width: 769px) {
+    .contenedor_privacidad{
+        display: grid;
+        grid-template-columns: none;
+        padding: 0 0.5rem;
+    }
+    .contenedor_privacidad img{
+        display: none;
+    }
+}
 .contenedor_privacidad h1 {
     font-size: 1.5rem;
     color: #642E2E;
@@ -28,4 +37,11 @@
 .contenedor_privacidad p {
     padding: 0.4rem 1rem 1.2rem 1rem;
     color: #642E2E;
+}
+.contenedor_privacidad img {
+    width: 100%;
+    max-width: 200px;
+    padding-top: 1rem;
+    height: auto;
+    justify-self: center;
 }

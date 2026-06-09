@@ -1,6 +1,6 @@
 .contenedor{
     height: 100%;
-    margin: 2rem;
+    margin: 1rem;
     padding: 2rem;
     background-color: #ebebeb;
 }
@@ -11,6 +11,16 @@
     gap: 2rem;
     width: 100%;
     padding: 0 2rem;
+}
+@media (max-width: 769px) {
+    .contenedor_preg_frecuentes{
+        display: grid;
+        grid-template-columns: none;
+        padding: 0 0.5rem;
+    }
+    .contenedor_preg_frecuentes img{
+        display: none;
+    }
 }
 
 .contenedor_preg_frecuentes h1 {
@@ -28,4 +38,11 @@
 .contenedor_preg_frecuentes p {
     padding: 0.4rem 1rem 1.2rem 1rem;
     color: #642E2E;
+}
+.contenedor_preg_frecuentes img {
+    width: 100%;
+    max-width: 200px;
+    padding-top: 1rem;
+    height: auto;
+    justify-self: center;
 }
