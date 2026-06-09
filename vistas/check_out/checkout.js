@@ -99,5 +99,9 @@ document.getElementById("form-checkout").addEventListener("submit", function (ev
         return;
     }
 
+    usuario.vuelos.push(vuelo);
+
+    localStorage.setItem("usuarioLogueado", JSON.stringify(usuario));
+
     window.location.href = "/vistas/reserva_confirmada/reserva_confirmada.html";
 });
