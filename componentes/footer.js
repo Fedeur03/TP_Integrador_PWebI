@@ -14,38 +14,36 @@ footer.innerHTML = `
             </section>
 
             <section class="informacion">
-                <p>Información</p>
-                <hr class="division">
-                <div class="lista">
-                    <span><a href="/vistas/preguntas_frecuentes/preguntas_frecuentes.html">Preguntas Frecuentes</a></span>
-                    <span><a href="/vistas/terminos_y_condiciones/terminos.html">Términos y Condiciones</a></span>
-                    <span><a href="/vistas/privacidad/privacidad.html">Privacidad</a></span>
+                <div>
+                    <p>Información</p>
+                    <hr class="division">
+                    <div class="lista">
+                        <span><a href="/vistas/preguntas_frecuentes/preguntas_frecuentes.html">Preguntas Frecuentes</a></span>
+                        <span><a href="/vistas/terminos_y_condiciones/terminos.html">Términos y Condiciones</a></span>
+                        <span><a href="/vistas/privacidad/privacidad.html">Privacidad</a></span>
+                    </div>
                 </div>
-
-            </section>
-
-            <section class="enlaces">
-                <p>Enlaces Útiles</p>
-                <hr class="division">
-                <div class="lista">
-                    <span><a href="/index.html">Inicio</a></span>
-                    <span><a href="/vistas/vuelos/vuelos.html">Vuelos</a></span>
-                    <span><a href="/vistas/contacto/contacto.html">Contacto</a></span>
+                <div>
+                    <p>Enlaces Útiles</p>
+                    <hr class="division">
+                    <div class="lista">
+                        <span><a href="/index.html">Inicio</a></span>
+                        <span><a href="/vistas/vuelos/vuelos.html">Vuelos</a></span>
+                        <span><a href="/vistas/contacto/contacto.html">Contacto</a></span>
+                    </div>
+                </div>
+                <div class="contacto">
+                    <p>Contacto</p>
+                    <hr class="division">
+                    <div class="lista">
+                        <span>Villanueva 123, CABA, Argentina</span>
+                        <span>flyway@mail.com</span>
+                        <span>(+54) 11 2345-6789</span>
+                        <span>Lun a Vie: 9:00 a 18:00</span>
+                    </div>
                 </div>
             </section>
-
-            <section class="contacto">
-                <p>Contacto</p>
-                <hr class="division">
-                <div class="lista">
-                    <span>Villanueva 123, CABA, Argentina</span>
-                    <span>flyway@customerservice.com</span>
-                    <span>(+54) 11 2345-6789</span>
-                    <span>Lun a Vie: 9:00 a 18:00</span>
-                </div>
-            </section>
-        </div>
-        <hr>
         <div class="copyright">
+            <hr>    
             <p>&copy; 2026 Mi página web. Todos los derechos reservados.</p>
         </div>`;

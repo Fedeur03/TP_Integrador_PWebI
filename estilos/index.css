@@ -1,3 +1,8 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
 .banner img {
     display: block;
     width: 100%;
@@ -34,6 +39,33 @@
     margin-left: auto;
     margin-right: auto;
 }
+@media (max-width: 768px) {
+
+    .contenido_buscar_vuelo {
+        width: 80%;
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+    #formBusqueda{
+        width: 100%;
+    }
+
+}
+@media (max-width: 481px) {
+    .contenido_buscar_vuelo {
+        width: 75%;
+    }
+    .contenido_buscar_vuelo h1 {
+        font-size: 1.5rem;
+    }
+    .fila label{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1 / -1;
+        gap: 0.5rem;
+    }
+    
+}
 
 .buscador label {
     display: flex;
@@ -58,8 +90,9 @@
 }
 
 .fila {
-    display: flex;
-    gap: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
 }
 
 .fila input,
