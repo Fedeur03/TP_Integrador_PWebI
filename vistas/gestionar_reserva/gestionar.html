@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../estilos/footer.css">
     <link rel="stylesheet" href="./gestionar.css">
     <link rel="icon" href="/media/flyway_logo.png">
+    <script src="/scripts/verificarSesion.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
@@ -16,66 +17,16 @@
 
     <nav class="navbar" id="navbar"></nav>
 
-    <main class="contenedor">
-        <span class="titulo rojo">Gestionar reserva</span>
-        <span class="sub-titulo rojo">Partida desde Buenos Aires (BUE) con destino a Madrid (MAD).</span>
-        <span class="sub-titulo rojo">Asientos: G6, H6, G7, H7.</span>
-        <span class="sub-titulo rojo">Código de reserva: <strong>AB1234XYZ</strong>
-            <button>Editar</button>
-            <button>Cancelar reserva</button>
-        </span>
-
-        <section class="detalles-vuelo">
-            <div class="grilla">
-                <span class="detalles rojo"><i class="fa-solid fa-calendar"></i>
-                    <div class="texto"><span>Fecha del vuelo</span><span class="info">15 de Julio de 2023</span></div>
-                </span>
-                <span class="detalles rojo"><i class="fa-solid fa-clock"></i>
-                    <div class="texto"><span>Hora del vuelo</span><span class="info">16:00 h</span></div>
-                </span>
-                <span class="detalles rojo"><i class="fa-solid fa-plane-up"></i>
-                    <div class="texto"><span>Escalas</span><span class="info">2</span></div>
-                </span>
-                <span class="detalles rojo"><i class="fa-solid fa-clock"></i>
-                    <div class="texto"><span>Duracion estimada</span><span class="info">3h 45 min</span></div>
-                </span>
-                <span class="detalles rojo"><i class="fa-solid fa-plane-arrival"></i>
-                    <div class="texto"><span>Llegada estimada</span><span class="info">19:45 h</span></div>
-                </span>
-                <span class="detalles rojo"><i class="fa-solid fa-tower-observation"></i>
-                    <div class="texto"><span>Terminal</span><span class="info">A</span></div>
-                </span>
-                <span class="detalles rojo"><i class="fa-solid fa-door-open"></i>
-                    <div class="texto"><span>Puerta</span><span class="info">23</span></div>
-                </span>
-                <span class="detalles rojo"><i class="fa-solid fa-plane-circle-exclamation"></i>
-                    <div class="texto"><span>Aerolínea</span><span class="info">Ita-Airways</span></div>
-                </span>
-                <span class="detalles rojo"><i class="fa-solid fa-money-bills"></i>
-                    <div class="texto"><span>Precio Total</span><span class="info">$ 800</span></div>
-                </span>
-
-            </div>
-
-            <div class="linea-divisoria"></div>
-            <aside>
-                <span class="detalles rojo">
-                    <div class="texto"><span>Estado de la reserva</span><span class="info">Pendiente de Check-In</span>
-                    </div>
-                </span>
-                <div class="detalles texto rojo">
-                    <span>QR de la reserva:</span>
-                    <span class="info"><img src="/media/QR.png" alt="QR de la Reserva"></span>
-                </div>
-            </aside>
-
-        </section>
+    <main class="contenedor" id="reserva">
+        
     </main>
 
     <footer class="footer" id="footer">
     </footer>
+
 <script src="/componentes/navbar.js"></script>
 <script src="/componentes/footer.js"></script>
+<script src="gestionar.js"></script>
 </body>
 
 </html>
