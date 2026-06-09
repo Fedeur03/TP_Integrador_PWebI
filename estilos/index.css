@@ -51,7 +51,7 @@ body {
     }
 
 }
-@media (max-width: 481px) {
+@media (max-width: 571px) {
     .contenido_buscar_vuelo {
         width: 75%;
     }

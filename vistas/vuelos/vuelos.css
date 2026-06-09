@@ -1,6 +1,6 @@
 .contenedor_vuelos {
     display: flex;
-    max-width: 70%;
+    max-width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -13,6 +13,17 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+}
+@media (max-width: 870px) {
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+@media (max-width: 623px) {
+    .row{
+        grid-template-columns: 1fr;
+    }
 }
 
 .card_vuelo {
