@@ -35,7 +35,7 @@ function elegirAsiento(elemento, asiento) {
 }
 
 let asientosElegidos = [];
-const vuelo = JSON.parse(localStorage.getItem("vueloComprado"));
+const vuelo = JSON.parse(localStorage.getItem("vueloSeleccionado"));
 
 
 

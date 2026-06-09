@@ -1,8 +1,7 @@
 const contenedorResultados = document.getElementById("resultados");
-const resultados = localStorage.getItem("vuelosFiltrados")
+const resultados = localStorage.getItem("vuelosFiltrados");
 
 function mostrarResultados(resultados) {
-
     const vuelosFiltrados = JSON.parse(resultados);
 
     if (vuelosFiltrados.length === 0) {
@@ -10,9 +9,10 @@ function mostrarResultados(resultados) {
         return;
     }
 
+    let htmlAcumulado = "";
     vuelosFiltrados.forEach(resultado => {
-        contenedorResultados.innerHTML += `<div class="resultados">
-                     <h4>${resultado.aerolinea}</h4>
+        htmlAcumulado += `<div class="resultados">
+                    <h4>${resultado.aerolinea}</h4>
                     <div class="resultado-aerolinea">
                         <div>
                             <p class="hora-y-ciudad">${resultado.hora_vuelo}</p>
@@ -26,12 +26,13 @@ function mostrarResultados(resultados) {
                             <p class="hora-y-ciudad">${resultado.destino}</p>
                         </div>
                         <div class="acciones">
-                            <button class="btn-seleccionar" data-vuelo="${JSON.stringify(resultado)}">SELECCIONAR</button>
+                            <button class="btn-seleccionar botonSeleccionar" type="button" data-vuelo='${JSON.stringify(resultado)}'>SELECCIONAR</button>
                         </div>
                     </div>
                     <p class="duracion-escala">${resultado.escalas} escalas</p>
-                </div>`
-    })
+                </div>`;
+    });
+    contenedorResultados.innerHTML = htmlAcumulado;
 }
 
 mostrarResultados(resultados);
@@ -84,7 +85,7 @@ botonFiltro.addEventListener('click', function (evento) {
                 soloAerolineas.push(arrayFiltrado[i]);
             }
             if (esEmirates && arrayFiltrado[i].aerolinea === "Emirates") {
-                soloAerolineas.push(arrayFiltrado[i]);
+                soloAerolineas.push(arrayAerolineas.push(arrayFiltrado[i]));
             }
         }
         arrayFiltrado = soloAerolineas;
@@ -94,9 +95,23 @@ botonFiltro.addEventListener('click', function (evento) {
 });
 
 const precioSeleccionado = document.getElementById('valor-range');
-
-
 const elementoRange = document.getElementById('rango-precio');
-elementoRange.addEventListener('change', function () {
+
+elementoRange.addEventListener('input', function () {
     precioSeleccionado.textContent = ` $ ${elementoRange.value}`;
+});
+
+contenedorResultados.addEventListener('click', function (evento) {
+    const botonSeleccionado = evento.target.closest('.botonSeleccionar');
+
+    if (botonSeleccionado) {
+        const dataVuelo = botonSeleccionado.getAttribute('data-vuelo');
+
+        if (dataVuelo) {
+            const vueloSeleccionado = JSON.parse(dataVuelo);
+            localStorage.setItem('vueloSeleccionado', JSON.stringify(vueloSeleccionado));
+            console.log(vueloSeleccionado);
+            window.location.href = '/vistas/detalles_del_vuelo/detalles_del_vuelo.html';
+        }
+    }
 });
