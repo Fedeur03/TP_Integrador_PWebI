@@ -181,8 +181,13 @@ input[type="range"] {
     background-color: #602929;
 }
 
-.btn-seleccionar a {
+.btn-seleccionar{
     color: #fff;
+    border: solid;
+}
+
+.btn-seleccionar:hover{
+     background-color: #753838;
 }
 
 .btn-detalles {

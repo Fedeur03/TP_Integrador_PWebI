@@ -12,6 +12,14 @@
     padding: 2rem;
 }
 
+.cuotas{
+    display: grid;
+    grid-template-columns: 1rem 1rem 1rem 1rem;
+    input[type="radio"] {
+        width: auto;
+    }
+}
+
 .categoria {
     color: #642E2E;
     font-size: 2rem;

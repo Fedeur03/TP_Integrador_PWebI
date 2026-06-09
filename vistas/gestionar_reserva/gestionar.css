@@ -6,6 +6,7 @@ body {
 
 .contenedor {
     width: 80%;
+    min-height: 55vh;
     display: flex;
     flex-direction: column;
     margin: 2rem auto;
