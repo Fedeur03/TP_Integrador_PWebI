@@ -1,8 +1,20 @@
 const form = document.getElementById("formBusqueda");
 const mensajeError = document.getElementById("mensajeError");
 
+const tipoVuelo = document.getElementById("tipo-vuelo");
+const esSoloIda = document.getElementById('vuelta');
+
+tipoVuelo.addEventListener('change', function () {
+    if (esSoloIda.checked) {
+        const fechaVuelta = document.getElementById("fechaVuelta").toggleAttribute("disabled", false);
+    } else {
+        const fechaVuelta = document.getElementById("fechaVuelta").toggleAttribute("disabled");
+    }
+})
+
 form.addEventListener("submit", function (evento) {
     evento.preventDefault();
+
 
     const origen = document.getElementById("origen").value;
     const destino = document.getElementById("destino").value;
@@ -26,11 +38,15 @@ form.addEventListener("submit", function (evento) {
         mensajeError.textContent = "La fecha de ida no puede ser anterior a la fecha actual";
         return;
     }
+    if (esSoloIda.checked) {
 
-    if (fechaVuelta < fechaIda) {
-        mensajeError.textContent = "La fecha de vuelta debe ser posterior a la ida";
-        return;
+
+        if (fechaVuelta < fechaIda) {
+            mensajeError.textContent = "La fecha de vuelta debe ser posterior a la ida";
+            return;
+        }
     }
+
 
     const busqueda = {
         origen: origen,
