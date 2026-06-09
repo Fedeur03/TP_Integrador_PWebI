@@ -1,13 +1,25 @@
-
-
-window.addEventListener('load', function(event){
+window.addEventListener('load', function () {
     const vuelo = JSON.parse(localStorage.getItem("vueloSeleccionado"));
+
     const elementoAsientos = document.getElementById('asientos');
-    console.log(vuelo)
-    vuelo.asientos.forEach(asiento => {
-        elementoAsientos.innerHTML += 
-        ` <i class="fa-solid fa-couch ${asiento.estado}" onclick="elegirAsiento(this, '${asiento.id}')"></i>`;
-    })
+    const otrosAsientos = document.getElementById('otros-asientos');
+
+    const mitad = vuelo.asientos.length / 2;
+
+    vuelo.asientos.forEach(function(asiento, indice) {
+
+        const icono = `
+            <i class="fa-solid fa-couch ${asiento.estado}"
+               onclick="elegirAsiento(this, '${asiento.id}')">
+            </i>
+        `;
+
+        if (indice < mitad) {
+            elementoAsientos.innerHTML += icono;
+        } else {
+            otrosAsientos.innerHTML += icono;
+        }
+    });
 });
 
 function elegirAsiento(elemento, asiento) {
@@ -36,8 +48,6 @@ function elegirAsiento(elemento, asiento) {
 
 let asientosElegidos = [];
 const vuelo = JSON.parse(localStorage.getItem("vueloSeleccionado"));
-
-
 
 if (vuelo) {
     document.getElementById("ruta").textContent = vuelo.origen + " → " + vuelo.destino;
