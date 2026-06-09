@@ -92,3 +92,11 @@ botonFiltro.addEventListener('click', function (evento) {
 
     mostrarResultados(JSON.stringify(arrayFiltrado));
 });
+
+const precioSeleccionado = document.getElementById('valor-range');
+
+
+const elementoRange = document.getElementById('rango-precio');
+elementoRange.addEventListener('change', function () {
+    precioSeleccionado.textContent = ` $ ${elementoRange.value}`;
+});
