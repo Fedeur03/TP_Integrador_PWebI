@@ -12,7 +12,31 @@ body {
     background-color: #F5EDED;
     padding-bottom: 4rem;
 }
-
+@media (max-width: 630px) {
+    .contenedor {
+        padding: 1rem;
+    }
+    .title-header{
+        text-align: center;
+    }
+    
+}
+@media (max-width: 495px) {
+    .form-data {
+        flex-direction: column;
+    }
+    .form-message {
+        flex-direction: column;
+        max-width: 350px;
+    }
+    
+}
+@media (max-width: 411px) {
+    .form-message {
+        max-width: 286px;
+    }
+    
+}
 
 .form-header{
     display: flex;
