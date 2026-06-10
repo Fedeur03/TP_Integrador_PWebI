@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 
 .contenedor {
     display: flex;
@@ -28,6 +31,7 @@
 
 .caja h3 {
     color: #602929;
+    margin: 0;
 }
 
 .resultados {
@@ -36,7 +40,7 @@
     border: 1px solid #c9afaf;
     border-radius: 1rem;
     padding: 1rem;
-    gap: 0.6em;
+    gap: 0.8rem;
 }
 
 .resultado-aerolinea {
@@ -49,11 +53,33 @@
 
 .resultado-aerolinea hr {
     flex-grow: 1;
+    margin: 0;
+    border: none;
+    border-top: 1px solid #c9afaf;
+}
+
+.bloque-vuelo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.ciudad-texto {
+    font-weight: bold;
+    display: block;
+}
+
+.hora-texto {
+    color: #555;
+    font-size: 0.9rem;
+    display: block;
 }
 
 .duracion-mas-escala {
     font-size: 0.850rem;
     text-align: center;
+    margin: 0;
 }
 
 .botones {
@@ -74,7 +100,7 @@
     text-decoration: none;
     font-weight: bold;
     text-align: center;
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
 }
 
 .boton-volver {

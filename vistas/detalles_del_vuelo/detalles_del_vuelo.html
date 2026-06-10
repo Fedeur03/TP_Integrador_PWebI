@@ -27,15 +27,23 @@
 
                 <div class="resultados">
                     <p>Ida: <span id="ruta"></span></p>
+
                     <div class="resultado-aerolinea">
-                        <p class="hora-y-ciudad" id="hora-salida"></p>
-                        <p class="hora-y-ciudad" id="ciudad-origen"></p>
+                        <div class="bloque-vuelo">
+                            <span class="ciudad-texto" id="ciudad-origen"></span>
+                            <span class="hora-texto" id="hora-salida"></span>
+                        </div>
+
                         <hr>
                         <i class="fa-solid fa-plane"></i>
                         <hr>
-                        <p class="hora-y-ciudad" id="hora-llegada"></p>
-                        <p class="hora-y-ciudad" id="ciudad-destino"></p>
+
+                        <div class="bloque-vuelo">
+                            <span class="ciudad-texto" id="ciudad-destino"></span>
+                            <span class="hora-texto" id="hora-llegada"></span>
+                        </div>
                     </div>
+
                     <p class="duracion-mas-escala" id="duracion"></p>
                 </div>
 
@@ -48,15 +56,14 @@
 
                 <hr>
 
-               <p>Asientos: <span id="nombre-asiento">Ninguno</span></p>
+                <p>Asientos: <span id="nombre-asiento">Ninguno</span></p>
 
-               <hr>
-                
+                <hr>
+
                 <div class="botones">
                     <a class="boton-checkout" onclick="validar(event)" href="../check_out/check_out.html">AVANZAR</a>
                     <a class="boton-volver" href="../resultados_busqueda/resultados.html">VOLVER</a>
                 </div>
-
             </section>
 
             <section class="caja">

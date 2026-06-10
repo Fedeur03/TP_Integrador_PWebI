@@ -50,12 +50,13 @@ let asientosElegidos = [];
 const vuelo = JSON.parse(localStorage.getItem("vueloSeleccionado"));
 
 if (vuelo) {
-    document.getElementById("ruta").textContent = vuelo.origen + " → " + vuelo.destino;
-    document.getElementById("hora-salida").textContent = vuelo.salida;
     document.getElementById("ciudad-origen").textContent = vuelo.origen;
-    document.getElementById("hora-llegada").textContent = vuelo.llegada;
+     document.getElementById("hora-salida").textContent = vuelo.hora_vuelo;
+
     document.getElementById("ciudad-destino").textContent = vuelo.destino;
-    document.getElementById("duracion").textContent = vuelo.duracion;
+    document.getElementById("hora-llegada").textContent = vuelo.llegada_estimada;
+
+    document.getElementById("duracion").textContent = `${vuelo.duracion_estimada} · ${vuelo.escalas === 0 ? "Sin escalas" : vuelo.escalas + " escala(s)"}`;
     document.getElementById("precio-total").textContent = "$ " + vuelo.precio_total_usd + " USD";
 }
 

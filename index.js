@@ -63,7 +63,7 @@ form.addEventListener("submit", function (evento) {
         .then(response => response.json())
         .then(todosLosVuelos => {
             const vuelosFiltrados = todosLosVuelos.filter(vuelo =>
-                vuelo.origen.toLowerCase().includes(origen.toLowerCase()) ||
+                vuelo.origen.toLowerCase().includes(origen.toLowerCase()) &&
                 vuelo.destino.toLowerCase().includes(destino.toLowerCase())
             );
 

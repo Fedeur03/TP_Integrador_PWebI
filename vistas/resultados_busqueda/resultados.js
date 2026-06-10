@@ -1,41 +1,43 @@
 const contenedorResultados = document.getElementById("resultados");
 const resultados = localStorage.getItem("vuelosFiltrados");
 
-    if (!resultados) {
-        window.location.href = "/index.html";
-    }
+if (!resultados) {
+    window.location.href = "/index.html";
+}
 
-    function mostrarResultados(resultados) {
-        if (!resultados) {
-            contenedorResultados.innerHTML = "<p>No se encontraron resultados para esa búsqueda</p>";
-            return;
-        }
+function mostrarResultados(resultados) {
+    if (!resultados) {
+        contenedorResultados.innerHTML = "<p>No se encontraron resultados para esa búsqueda</p>";
+        return;
+    }
 
     const vuelosFiltrados = JSON.parse(resultados);
 
     let htmlAcumulado = "";
     vuelosFiltrados.forEach(resultado => {
         htmlAcumulado += `<div class="resultados">
-                    <h4>${resultado.aerolinea}</h4>
-                    <div class="resultado-aerolinea">
-                        <div>
-                            <p class="hora-y-ciudad">${resultado.hora_vuelo}</p>
-                            <p class="hora-y-ciudad">${resultado.origen}</p>
-                        </div>
-                        <hr>
-                        <i class="fa-solid fa-plane"></i>
-                        <hr>
-                        <div>
-                            <p class="hora-y-ciudad">${resultado.llegada_estimada}</p>
-                            <p class="hora-y-ciudad">${resultado.destino}</p>
-                        </div>
-                        <div class="acciones">
-                            <button class="btn-seleccionar botonSeleccionar" type="button" data-vuelo='${JSON.stringify(resultado)}'>SELECCIONAR</button>
-                        </div>
-                    </div>
-                    <p class="duracion-escala">${resultado.escalas} escalas</p>
-                </div>`;
+        <h4>${resultado.aerolinea}</h4>
+        <div class="resultado-aerolinea">
+            <div>
+                <p class="hora-y-ciudad">${resultado.hora_vuelo}</p>
+                <p class="hora-y-ciudad">${resultado.origen}</p>
+            </div>
+            <hr>
+            <i class="fa-solid fa-plane"></i>
+            <hr>
+            <div class="detalles-vuelo">
+                <p class="hora-y-ciudad">${resultado.llegada_estimada}</p>
+                <p class="hora-y-ciudad">${resultado.destino}</p>
+            </div>
+            <div class="acciones">
+                <p class="precio-vuelo">$ ${resultado.precio_total_usd} USD</p>
+                <button class="btn-seleccionar botonSeleccionar" type="button" data-vuelo='${JSON.stringify(resultado)}'>SELECCIONAR</button>
+            </div>
+        </div>
+        <p class="duracion-escala">${resultado.duracion_estimada} · ${resultado.escalas === 0 ? "Sin escalas" : resultado.escalas + " escala(s)"}</p>
+    </div>`;
     });
+
     contenedorResultados.innerHTML = htmlAcumulado;
 }
 
