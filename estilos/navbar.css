@@ -26,8 +26,11 @@
         gap: 10px;
         padding: 10px 20px;
     }
-    
+    nav ul li a {
+        padding: 0.7rem 0.7rem;
+    }    
 }
+
 .vistas {
     display: flex;
     justify-content: center;
@@ -74,6 +77,19 @@ ul li a:hover {
     background-color: #C9AFAF;
     font-weight: bold;
     color: #602929 !important;
-    border-radius: 3px;
+    border-radius: 0;
     margin-bottom: 10px;
+}
+@media (max-width: 442px) {
+    #formLogin{
+        margin: 2rem auto;
+        padding: 1rem;
+    }    
+    .contenedor{
+        margin-bottom: 6rem;
+    }
+    section .contenido_principal{
+
+        margin-bottom: 6rem;
+    }
 }
