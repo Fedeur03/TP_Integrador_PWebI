@@ -32,7 +32,7 @@ let precioBase = vuelo.precio_total_usd;
 document.getElementById("precio-total").textContent = "$ " + precioBase;
 
 const millasDisponibles = usuario.millas;
-document.getElementById("millas-disponibles").textContent = millasDisponibles;
+document.getElementById("millas-disponibles").textContent += millasDisponibles;
 document.getElementById("input-millas").max = millasDisponibles;
 
 
@@ -56,19 +56,33 @@ document.getElementById("input-millas").addEventListener("input", function () {
     }
 });
 
+let cuponAplicado = false;
 
 document.querySelector(".aplicar_cupon").addEventListener("click", function () {
 
     const codigo = document.getElementById("input-cupon").value.toUpperCase();
+
+    if (cuponAplicado) {
+        document.getElementById("mensaje-cupon").textContent = "Ya aplicaste un cupón";
+        document.getElementById("mensaje-cupon").style.color = "red";
+        return;
+    }
 
     if (cupones[codigo]) {
         const porcentaje = cupones[codigo];
         const descuento  = precioBase * porcentaje / 100;
         const nuevo      = precioBase - descuento;
 
-        document.getElementById("precio-total").textContent  = "$ " + nuevo.toFixed(2);
+        if (nuevo < 0) {
+            document.getElementById("precio-total").textContent = "$ 0.00";
+
+        } else {
+            document.getElementById("precio-total").textContent = "$ " + nuevo.toFixed(2);
+        }
+    
         document.getElementById("mensaje-cupon").textContent = "Cupón aplicado: " + porcentaje + "% de descuento";
         document.getElementById("mensaje-cupon").style.color = "green";
+        cuponAplicado = true;
 
     } else {
         document.getElementById("mensaje-cupon").textContent = "Cupón inválido";
@@ -97,6 +111,21 @@ document.getElementById("form-checkout").addEventListener("submit", function (ev
     if (!tarjeta || !titular || !vence || !cvv) {
         error.textContent = "Completá todos los datos de la tarjeta";
         return;
+    }
+
+    const fechaVencimiento = new Date(vence);
+    const hoy = new Date();
+
+    hoy.setHours(0, 0, 0, 0);
+
+    if (fechaVencimiento <= hoy) {
+        error.textContent = "Tarjeta vencida";
+        return;
+    }
+
+    if (cvv < 100 || cvv > 9999) {
+        error.textContent = "El CVV debe tener 3 o 4 dígitos";
+        return; 
     }
 
     usuario.vuelos.push(vuelo);
