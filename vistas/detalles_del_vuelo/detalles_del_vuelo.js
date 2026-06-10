@@ -59,9 +59,18 @@ if (vuelo) {
     document.getElementById("precio-total").textContent = "$ " + vuelo.precio_total_usd + " USD";
 }
 
+const textoPasajeros = localStorage.getItem("pasajeros");
+const cantidadPasajeros = parseInt(textoPasajeros);
+
 function validar(event) {
     if (asientosElegidos.length === 0) {
         event.preventDefault();
         alert("Seleccioná al menos un asiento antes de continuar.");
+        return;
+    }
+
+    if (asientosElegidos.length !== cantidadPasajeros) {
+        event.preventDefault();
+        alert("Tenés que elegir exactamente " + cantidadPasajeros + " asiento(s), uno por pasajero.");
     }
 }

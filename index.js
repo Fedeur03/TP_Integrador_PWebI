@@ -47,7 +47,6 @@ form.addEventListener("submit", function (evento) {
         }
     }
 
-
     const busqueda = {
         origen: origen,
         destino: destino,
@@ -57,6 +56,7 @@ form.addEventListener("submit", function (evento) {
         clase: clase,
         tipoDeVuelo: tipoDeVuelo
     };
+
     localStorage.setItem("busquedaVuelo", JSON.stringify(busqueda));
 
     fetch('/database/listadoVuelos.json')
@@ -74,4 +74,6 @@ form.addEventListener("submit", function (evento) {
             console.error('Error al cargar vuelos:', error);
             mensajeError.textContent = "Error al buscar vuelos. Intentá de nuevo.";
         });
+
+    localStorage.setItem("pasajeros", document.getElementById("pasajeros").value);
 });
