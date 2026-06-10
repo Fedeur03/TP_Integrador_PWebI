@@ -18,6 +18,7 @@ if (usuarioLogueado) {
                 <div class="usuario">
                     <li class="log-in"><a class="contenido-navbar" href="/vistas/usuario/usuario.html">${usuarioLogueado.nombre} ${usuarioLogueado.apellido} ▼</a></li>
                     <li class="log-in"><a class="contenido-navbar" href="/vistas/mis_reservas/mis_reservas.html">Mis Reservas</a></li>
+                    <li class="log-in"><a class="contenido-navbar" href="#" id="boton-salir"><i class="fa-solid fa-right-from-bracket"></i></a></li>
                 </div>
             </ul>
         </div>`;
@@ -69,3 +70,10 @@ function marcarEnlaceActivo() {
 
 // Se ejecuta justo después de haber inyectado el HTML en el navbar
 marcarEnlaceActivo();
+
+const botonSalir = document.getElementById('boton-salir');
+
+botonSalir.addEventListener('click', function () {
+    localStorage.removeItem('usuarioLogueado');
+    window.location.href = '/index.html';
+})
