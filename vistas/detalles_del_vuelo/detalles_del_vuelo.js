@@ -6,7 +6,7 @@ window.addEventListener('load', function () {
 
     const mitad = vuelo.asientos.length / 2;
 
-    vuelo.asientos.forEach(function(asiento, indice) {
+    vuelo.asientos.forEach(function (asiento, indice) {
 
         const icono = `
             <i class="fa-solid fa-couch ${asiento.estado}"
@@ -20,7 +20,24 @@ window.addEventListener('load', function () {
             otrosAsientos.innerHTML += icono;
         }
     });
+
+    const select = document.getElementById('cantidad-pasajeros-select');
+
+    if (localStorage.getItem("pasajeros") === null) {
+        localStorage.setItem("pasajeros", select.value);
+    }else{
+        console.log(select.childNodes);
+    }
+
+    select.addEventListener('change', function () {
+        localStorage.setItem("pasajeros", select.value);
+    });
 });
+
+
+
+
+
 
 function elegirAsiento(elemento, asiento) {
 
@@ -51,7 +68,7 @@ const vuelo = JSON.parse(localStorage.getItem("vueloSeleccionado"));
 
 if (vuelo) {
     document.getElementById("ciudad-origen").textContent = vuelo.origen;
-     document.getElementById("hora-salida").textContent = vuelo.hora_vuelo;
+    document.getElementById("hora-salida").textContent = vuelo.hora_vuelo;
 
     document.getElementById("ciudad-destino").textContent = vuelo.destino;
     document.getElementById("hora-llegada").textContent = vuelo.llegada_estimada;
@@ -60,10 +77,14 @@ if (vuelo) {
     document.getElementById("precio-total").textContent = "$ " + vuelo.precio_total_usd + " USD";
 }
 
-const textoPasajeros = localStorage.getItem("pasajeros");
-const cantidadPasajeros = parseInt(textoPasajeros);
+
+
 
 function validar(event) {
+
+    const textoPasajeros = localStorage.getItem("pasajeros");
+    const cantidadPasajeros = parseInt(textoPasajeros);
+
     if (asientosElegidos.length === 0) {
         event.preventDefault();
         alert("Seleccioná al menos un asiento antes de continuar.");

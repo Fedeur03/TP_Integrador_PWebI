@@ -22,7 +22,7 @@
 
         <section class="grilla">
 
-            <section class="caja">
+            <form class="caja">
                 <h3>Detalle de Vuelo</h3>
 
                 <div class="resultados">
@@ -50,6 +50,20 @@
                 <hr>
 
                 <div class="resultado-aerolinea">
+                    <p>Cantidad de asientos deseada:</p>
+                    <select id="cantidad-pasajeros-select" required>
+                        <option id="1" value="1" selected>1</option>
+                        <option id="2" value="2">2</option>
+                        <option id="3" value="3">3</option>
+                        <option id="4" value="4">4</option>
+                        <option id="5" value="5">5</option>
+                        <option id="6" value="6">6</option>
+                    </select>
+                </div>
+
+                <hr>
+
+                <div class="resultado-aerolinea">
                     <p>Total</p>
                     <strong id="precio-total">$ --- USD</strong>
                 </div>
@@ -64,7 +78,7 @@
                     <a class="boton-checkout" onclick="validar(event)" href="../check_out/check_out.html">AVANZAR</a>
                     <a class="boton-volver" href="../resultados_busqueda/resultados.html">VOLVER</a>
                 </div>
-            </section>
+            </form>
 
             <section class="caja">
                 <h3>Seleccioná tu Asiento</h3>
