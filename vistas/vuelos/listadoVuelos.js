@@ -77,6 +77,8 @@ function buscar() {
         return;
     }
 
+    localStorage.removeItem("pasajeros");
+
     let hayCoincidencia = false;
     let vuelosFiltrados = [];
 

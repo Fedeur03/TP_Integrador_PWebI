@@ -27,8 +27,6 @@ if (contenedorDatosUsuario == 0 || !usuarioActual) {
                             <input type="text" value="${usuarioActual.direccion || 'No agregó dirección'}" disabled>
                             <p class="label">Fecha de Nacimiento:</p>
                             <input type="text" value="${usuarioActual.nacimiento}" disabled>
-                            <p class="label">Millas Acumuladas:</p>
-                            <input type="text" value="${usuarioActual.millas || 0}" disabled>
                         </div>
                     </div>`
 }
