@@ -28,7 +28,7 @@ document.getElementById("vuelo-fecha").textContent    = vuelo.fecha_vuelo;
 document.getElementById("vuelo-hora").textContent     = vuelo.hora_vuelo;
 document.getElementById("vuelo-duracion").textContent = vuelo.duracion_estimada;
 
-let precioBase = vuelo.precio_total_usd;
+let precioBase = vuelo.precioFinal;
 document.getElementById("precio-total").textContent = "$ " + precioBase;
 
 const millasDisponibles = usuario.millas;

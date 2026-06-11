@@ -51,6 +51,9 @@ document.getElementById('cargarMasVuelos').addEventListener('click', function ()
 
 document.getElementById('contenedor_vuelos').addEventListener('click', function (evento) {
     if (evento.target.classList.contains('boton_comprar')) {
+
+        localStorage.removeItem("pasajeros");
+
         const id = evento.target.getAttribute('data-codigovuelo');
 
         // Buscamos el vuelo con ese id con un for

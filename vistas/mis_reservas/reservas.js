@@ -25,7 +25,7 @@ if (!usuario.vuelos || usuario.vuelos.length === 0) {
             <div class="tarjeta">
                 <div class="cabecera">
                     <h3>${vuelo.origen} → ${vuelo.destino}</h3>
-                    <strong>$ ${vuelo.precio_total_usd} USD</strong>
+                    <strong>$ ${vuelo.precioFinal} USD</strong>
                 </div>
 
                 <div class="contenido">

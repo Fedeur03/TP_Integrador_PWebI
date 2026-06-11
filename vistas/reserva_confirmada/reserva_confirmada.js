@@ -5,7 +5,7 @@ if (!vuelo) {
     
 } else {
     document.getElementById("ruta").textContent = vuelo.origen + " → " + vuelo.destino;
-    document.getElementById("precio").textContent = "$ " + vuelo.precio_total_usd + " USD";
+    document.getElementById("precio").textContent = "$ " + vuelo.precioFinal + " USD";
     document.getElementById("fecha").textContent = vuelo.fecha_vuelo;
     document.getElementById("hora").textContent = vuelo.hora_vuelo + " - " + vuelo.llegada_estimada;
     document.getElementById("codigo").textContent = vuelo.codigo_reserva;
