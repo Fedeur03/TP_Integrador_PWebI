@@ -48,16 +48,31 @@
     margin-bottom: 1rem;
 }
 
+.caja h4 {
+    font-size: 1.1rem;
+    color: #444;
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+}
+
+.caja label {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    margin: 0;
+}
+
+.resultados h4 {
+    padding: 0 0.5rem;
+}
+
 .encabezado-vuelo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 0.5rem;
     margin-bottom: 1rem;
-}
-
-h4 {
-    padding: 0 0.5rem;
 }
 
 .precio-vuelo {
@@ -68,6 +83,44 @@ h4 {
 
 .resultado-aerolinea {
     padding: 0 0.5rem;
+}
+
+.slider-container {
+    position: relative;
+    height: 4px;
+    margin: 14px 0;
+    background: #ddd;
+    border-radius: 5px;
+    margin: 12px 0;
+}
+
+.slider-container input[type="range"] {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    top: -6px;
+    width: 100%;
+    margin: 0;
+    background: none;
+    pointer-events: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.slider-container input[type="range"]::-webkit-slider-runnable-track {
+    background: transparent;
+    height: 6px;
+}
+
+.slider-container input[type="range"]::-webkit-slider-thumb {
+    pointer-events: auto;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #642E2E;
+    cursor: pointer;
 }
 
 @media (max-width: 1180px) {
