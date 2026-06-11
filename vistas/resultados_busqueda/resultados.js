@@ -7,9 +7,8 @@ if (!resultados) {
     window.location.href = "/index.html";
 }
 
-function mostrarResultados(lista) {
-
-    const vuelosFiltrados = JSON.parse(lista);
+// ── DIBUJAR EN EL HTML ───────────────────────────────────────
+function mostrarResultados(vuelosFiltrados) {
 
     if (vuelosFiltrados.length === 0) {
         contenedorResultados.innerHTML = "<p>No se encontraron resultados para esa búsqueda</p>";
@@ -57,46 +56,43 @@ function mostrarResultados(lista) {
     contenedorResultados.innerHTML = htmlAcumulado;
 }
 
-mostrarResultados(resultados);
-
-
-// ── EQUIPAJE ─────────────────────────────────────────────────
-document.getElementById("equipaje-mano").addEventListener("change", function () {
-    tipoEquipaje = "mano";
-    mostrarResultados(resultados);
-});
-
-document.getElementById("equipaje-bodega").addEventListener("change", function () {
-    tipoEquipaje = "bodega";
-    mostrarResultados(resultados);
-});
-
-
-// ── FILTROS ──────────────────────────────────────────────────
-document.getElementById("botonFiltrado").addEventListener("click", function (evento) {
-    evento.preventDefault();
-
-    const precioMin  = parseInt(document.getElementById("rango-min").value);
-    const precioMax  = parseInt(document.getElementById("rango-max").value);
-    const esDirecto  = document.getElementById("esDirecto").checked;
+// ── FUNCIÓN PRINCIPAL DE FILTRADO Y MUESTRA ──────────────────
+function aplicarFiltros() {
+    // 1. Capturamos los valores actuales de los filtros de la pantalla
+    const precioMin = parseInt(document.getElementById("rango-min").value);
+    const precioMax = parseInt(document.getElementById("rango-max").value);
+    const esDirecto = document.getElementById("esDirecto").checked;
     const tieneEscala = document.getElementById("esConEscala").checked;
     const esArgentina = document.getElementById("esAerolineaArgentina").checked;
-    const esAmerican  = document.getElementById("esAerolineaAmerican").checked;
-    const esFlybondi  = document.getElementById("esAerolineaFlybondi").checked;
-    const esEmirates  = document.getElementById("esAerolineaEmirates").checked;
+    const esAmerican = document.getElementById("esAerolineaAmerican").checked;
+    const esFlybondi = document.getElementById("esAerolineaFlybondi").checked;
+    const esEmirates = document.getElementById("esAerolineaEmirates").checked;
 
+    // Siempre partimos de la lista original completa del localStorage
     let arrayFiltrado = JSON.parse(resultados);
 
-    // Filtro Precio
+    // 2. Filtro de Precio (Acá se calcula el precio con equipaje y SE QUEDAN AFUERA los que se pasan)
     let soloPrecio = [];
     for (let i = 0; i < arrayFiltrado.length; i++) {
-        if (arrayFiltrado[i].precio_total_usd >= precioMin && arrayFiltrado[i].precio_total_usd <= precioMax) {
+        let precioConEquipaje = arrayFiltrado[i].precio_total_usd;
+
+        // Le sumamos el equipaje activo antes de comparar
+        if (tipoEquipaje === "mano") {
+            precioConEquipaje += 25;
+        }
+
+        if (tipoEquipaje === "bodega") {
+            precioConEquipaje += 75;
+        } 
+
+        // Si el precio final (con equipaje) entra en el rango, se muestra. Si no, se descarta.
+        if (precioConEquipaje >= precioMin && precioConEquipaje <= precioMax) {
             soloPrecio.push(arrayFiltrado[i]);
         }
     }
     arrayFiltrado = soloPrecio;
 
-    // Filtro Tipo de Vuelo
+    // 3. Filtro Tipo de Vuelo
     if (esDirecto || tieneEscala) {
         let soloTipo = [];
         for (let i = 0; i < arrayFiltrado.length; i++) {
@@ -110,7 +106,7 @@ document.getElementById("botonFiltrado").addEventListener("click", function (eve
         arrayFiltrado = soloTipo;
     }
 
-    // Filtro Aerolinea
+    // 4. Filtro Aerolínea
     if (esArgentina || esAmerican || esFlybondi || esEmirates) {
         let soloAerolineas = [];
         for (let i = 0; i < arrayFiltrado.length; i++) {
@@ -130,13 +126,35 @@ document.getElementById("botonFiltrado").addEventListener("click", function (eve
         arrayFiltrado = soloAerolineas;
     }
 
-    mostrarResultados(JSON.stringify(arrayFiltrado));
+    // 5. Mandamos a dibujar los que sobrevivieron a todos los filtros
+    mostrarResultados(arrayFiltrado);
+}
+
+// Al cargar por primera vez, ejecutamos para mostrar todo original
+aplicarFiltros();
+
+
+// ── EQUIPAJE (Ahora ejecutan la función inteligente) ─────────
+document.getElementById("equipaje-mano").addEventListener("change", function () {
+    tipoEquipaje = "mano";
+    aplicarFiltros(); 
+});
+
+document.getElementById("equipaje-bodega").addEventListener("change", function () {
+    tipoEquipaje = "bodega";
+    aplicarFiltros();
+});
+
+
+// ── BOTON FILTRADO ───────────────────────────────────────────
+document.getElementById("botonFiltrado").addEventListener("click", function (evento) {
+    evento.preventDefault();
+    aplicarFiltros();
 });
 
 
 // ── SELECCIONAR VUELO ────────────────────────────────────────
 contenedorResultados.addEventListener("click", function (evento) {
-
     const botonSeleccionado = evento.target.closest(".botonSeleccionar");
 
     if (botonSeleccionado) {
@@ -148,9 +166,11 @@ contenedorResultados.addEventListener("click", function (evento) {
             if (tipoEquipaje === "mano") {
                 vueloSeleccionado.equipaje = "Equipaje de mano";
                 vueloSeleccionado.precio_total_usd = vueloSeleccionado.precio_total_usd + 25;
+
             } else if (tipoEquipaje === "bodega") {
                 vueloSeleccionado.equipaje = "Equipaje en bodega";
                 vueloSeleccionado.precio_total_usd = vueloSeleccionado.precio_total_usd + 75;
+                
             } else {
                 vueloSeleccionado.equipaje = "Sin equipaje";
             }
@@ -161,13 +181,14 @@ contenedorResultados.addEventListener("click", function (evento) {
     }
 });
 
-// ── ACTUALIZA SLIDER SEGÚN RANGO ────────────────────────────────────────
+
+// ── ACTUALIZA SLIDER SEGÚN MINIMO Y MAXIMO ───────────────────
 function actualizarSlider() {
     const min = parseInt(document.getElementById("rango-min").value);
     const max = parseInt(document.getElementById("rango-max").value);
     const minPos = (min - 100) / (2500 - 100) * 100;
     const maxPos = (max - 100) / (2500 - 100) * 100;
-    document.querySelector(".slider-container").style.background = 
+    document.querySelector(".slider-container").style.background =
         `linear-gradient(to right, #ddd ${minPos}%, #642E2E ${minPos}%, #642E2E ${maxPos}%, #ddd ${maxPos}%)`;
 }
 
@@ -181,5 +202,4 @@ document.getElementById("rango-max").addEventListener("input", function () {
     actualizarSlider();
 });
 
-// La llamamos al cargar para que arranque pintada
 actualizarSlider();
