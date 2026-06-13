@@ -26,7 +26,7 @@ function mostrarResultados(vuelosFiltrados) {
 
         htmlAcumulado += `
         <div class="resultados">
-            <h4>${resultado.aerolinea}</h4>
+            <h4>${resultado.aerolinea} - ${resultado.fecha_vuelo}</h4>
             <div class="resultado-aerolinea">
                 <div>
                     <p class="hora-y-ciudad">${resultado.hora_vuelo}</p>
