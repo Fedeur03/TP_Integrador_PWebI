@@ -1,3 +1,5 @@
+
+
 let asientosElegidos = [];
 
 const vuelo = JSON.parse(localStorage.getItem("vueloSeleccionado"));
@@ -64,7 +66,7 @@ window.addEventListener("load", function () {
     actualizarPrecio();
 });
 
-function elegirAsiento(elemento, asiento) {
+function elegirAsiento(elemento, idAsiento) {
 
     if (elemento.classList.contains("seleccionado")) {
 
@@ -72,7 +74,7 @@ function elegirAsiento(elemento, asiento) {
         elemento.classList.add("disponible");
 
         asientosElegidos = asientosElegidos.filter(function (cadaAsiento) {
-            return cadaAsiento !== asiento;
+            return cadaAsiento.id !== idAsiento;
         });
 
     } else {
@@ -84,12 +86,16 @@ function elegirAsiento(elemento, asiento) {
         elemento.classList.remove("disponible");
         elemento.classList.add("seleccionado");
 
-        asientosElegidos.push(asiento);
+        let nuevoAsiento = {
+            id: idAsiento
+        };
+
+        asientosElegidos.push(nuevoAsiento);
     }
 
-    document.getElementById("nombre-asiento").textContent = asientosElegidos.join(", ");
+    document.getElementById("nombre-asiento").textContent = asientosElegidos.map(a => a.id).join(", ");
 
-    localStorage.setItem("asientoElegido", asientosElegidos.join(", "));
+    localStorage.setItem("asientoElegido", JSON.stringify(asientosElegidos));
 }
 
 function validar(event) {
@@ -119,9 +125,28 @@ function actualizarPrecio() {
         total = total + (total * 0.8 * (cantidadPasajeros - 1));
     }
 
-    vuelo.precioFinal = vuelo.precioFinal = total;
+    vuelo.precioFinal = total;
 
     localStorage.setItem("vueloSeleccionado", JSON.stringify(vuelo));
 
     document.getElementById("precio-total").textContent =  "$ " + total.toFixed(2) + " USD";
 }
+
+const finalizado = document.getElementById('continuar');
+
+finalizado.addEventListener('click', function(e){
+
+    let vueloActual = JSON.parse(localStorage.getItem('vueloSeleccionado'));
+
+    let asientosElegidosGuardados = JSON.parse(localStorage.getItem('asientoElegido')) || [];
+
+    asientosElegidosGuardados.forEach(asiento => {
+        vueloActual.asientos.forEach(asientoVuelo => {
+            if (asiento.id === asientoVuelo.id) {
+                asientoVuelo.estado = 'ocupado';
+            }
+        });
+    });
+
+    localStorage.setItem('vueloSeleccionado', JSON.stringify(vueloActual));
+});
