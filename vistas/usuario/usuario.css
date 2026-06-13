@@ -12,6 +12,10 @@
     padding: 1rem;
 }
 
+.boton-guardar {
+    display: none !important;
+}
+
 .lateral h1 {
     font-size: 1.5rem;
     color: #642E2E;

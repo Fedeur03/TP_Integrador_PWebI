@@ -19,7 +19,7 @@ if (!usuario.vuelos || usuario.vuelos.length === 0) {
 
     contenedorVuelos.innerHTML = "";
 
-    usuario.vuelos.forEach(function(vuelo, indice) {
+    usuario.vuelos.forEach(function(vuelo) {
 
         contenedorVuelos.innerHTML += `
             <div class="tarjeta">
