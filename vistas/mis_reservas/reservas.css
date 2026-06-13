@@ -94,7 +94,8 @@ html {
 }
 
 .cabecera {
-    display: flex;
+    display: grid;
+    grid-template-columns: 4fr 6rem 1rem;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.4rem;
@@ -118,3 +119,16 @@ html {
 .abierta p {
     margin-bottom: 0.7rem;
 }
+
+.cerrado {
+    display: none !important;
+}
+
+#icono:hover {
+    cursor: pointer;
+}
+
+.contenido-adicional p{
+    margin-bottom: 0.7rem;
+}
+
