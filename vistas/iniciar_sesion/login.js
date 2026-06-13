@@ -21,7 +21,7 @@ form.addEventListener("submit", function (evento) {
     }
 
     if (usuarioEncontrado == null) {
-        mensajeError.textContent = "Email o contraseña incorrectos";
+        mensajeError.textContent = "Correo electrónico y/o contraseña incorrectos";
         return;
     }
 

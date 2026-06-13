@@ -37,7 +37,7 @@ input:hover {
 }
 
 form a {
-    font-size: 0.850rem;
+    font-size: 1rem;
     color: #602929;
     text-align: end;
     text-decoration: none;
@@ -65,7 +65,7 @@ button:hover {
 
 form p {
     text-align: center;
-    font-size: 0.850rem;
+    font-size: 1rem;
     color: #555;
 }
 
@@ -79,12 +79,11 @@ form p {
     background-color: #d6d6d6;
 }
 
-#mensajeError {
-    width: 32%;
-    margin: auto;
-    background-color: red;
-    color: white;
-    margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
+.error {
+    display: none;
+    color: red;
     font-size: 1.4rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.7rem;
+    font-weight: bold;
 }

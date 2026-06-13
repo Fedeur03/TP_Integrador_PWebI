@@ -3,6 +3,11 @@ const form = document.getElementById("formRegistro");
 form.addEventListener("submit", function (evento) {
     evento.preventDefault();
 
+    document.querySelectorAll(".error").forEach(function (error) {
+        error.textContent = "";
+        error.style.display = "none";
+    });
+
     const nombre = document.getElementById("nombre").value;
     const apellido = document.getElementById("apellido").value;
     const dni = document.getElementById("dni").value;
@@ -13,7 +18,7 @@ form.addEventListener("submit", function (evento) {
 
     const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-  let usuarioExistente = false;
+    let usuarioExistente = false;
 
     for (let i = 0; i < usuarios.length; i++) {
         if (usuarios[i].email === email) {
@@ -21,18 +26,30 @@ form.addEventListener("submit", function (evento) {
         }
     }
 
-    if (dni.length != 8) {
-        mensajeError.textContent = "El DNI debe tener 8 dígitos";
+    if (dni.length !== 8) {
+        document.getElementById("errorDni").textContent = "El DNI debe tener 8 dígitos";
+        errorDni.style.display = "block";
         return;
     }
 
-     if (pasaporte !== "" && pasaporte.length <= 9) {
-        mensajeError.textContent = "El Pasaporte debe tener minimo 9 valores";
+    const fechaNacimiento = new Date(nacimiento).getFullYear();
+    const fechaActual = new Date().getFullYear();
+
+    if (fechaActual - fechaNacimiento < 18) {
+        document.getElementById("errorNacimiento").textContent = "Debes ser mayor de 18 años";
+        errorNacimiento.style.display = "block";
+        return;
+    }
+
+    if (pasaporte !== "" && pasaporte.length < 9) {
+        document.getElementById("errorPasaporte").textContent = "El pasaporte debe tener mínimo 9 caracteres";
+        errorPasaporte.style.display = "block";
         return;
     }
 
     if (usuarioExistente) {
-        mensajeError.textContent = "Ya existe una cuenta con ese correo";
+        document.getElementById("errorEmail").textContent = "Ya existe una cuenta con ese correo";
+        errorEmail.style.display = "block";
         return;
     }
 
@@ -49,7 +66,7 @@ form.addEventListener("submit", function (evento) {
         vuelos: []
     };
 
-    if (pasaporte.length != "") {
+    if (pasaporte !== "") {
         nuevoUsuario.pasaporte.push(pasaporte);
     }
 
