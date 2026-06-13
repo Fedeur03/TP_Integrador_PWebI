@@ -10,8 +10,7 @@ contenedorReservaGestionada.innerHTML += `<span class="titulo rojo">Gestionar re
         <span class="sub-titulo rojo">Partida ${vueloReserva.origen} con destino a ${vueloReserva.destino}.</span>
         <span class="sub-titulo rojo">Asiento(s): ${localStorage.getItem("asientoElegido")}.</span>
         <span class="sub-titulo rojo">Código de reserva: <strong>${vueloReserva.codigo_reserva}</strong>
-            <button>Editar</button>
-            <button data-codigo="${vueloReserva.codigo_reserva}">Cancelar reserva</button>
+            <button data-codigo="${vueloReserva.codigo_reserva}" id="cancelar-reserva">Cancelar reserva</button>
         </span>
 
         <section class="detalles-vuelo">
@@ -41,7 +40,7 @@ contenedorReservaGestionada.innerHTML += `<span class="titulo rojo">Gestionar re
                     <div class="texto"><span>Aerolínea</span><span class="info">${vueloReserva.aerolinea}</span></div>
                 </span>
                 <span class="detalles rojo"><i class="fa-solid fa-money-bills"></i>
-                    <div class="texto"><span>Precio Total</span><span class="info">$ ${vueloReserva.precio_total_usd} USD</span></div>
+                    <div class="texto"><span>Precio Total</span><span class="info">$ ${vueloReserva.precioFinal} USD</span></div>
                 </span>
 
             </div>
