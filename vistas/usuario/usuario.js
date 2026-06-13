@@ -30,12 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
             contenedorDatosUsuario.innerHTML = `<h2>No se pudo cargar la información del usuario</h2>`;
         }
     } else {
-        contenedorDatosUsuario.innerHTML = `<div>
-                            <img class="user-image" src="../../media/user_template.jpg"
-                                alt="Imagen de perfil del usuario" />
-                            <button class="boton-documento cambiar-imagen">Cambiar imagen</button>
-                        </div>
-
+        contenedorDatosUsuario.innerHTML = `
                         <div class="datos_personales">
                             <div class="row">
                                 <p class="label">Nombre Completo:</p>
@@ -98,10 +93,6 @@ document.addEventListener("DOMContentLoaded", function () {
             const fechaExpedicionFormateada = formatearFechaParaInput(documento.expedicion);
 
             contenedorDocumentos.innerHTML += `<div class="datos-documento" data-nro="${documento.nro}">
-                        <div class="sector-imagen">
-                            <img class="documento-imagen" src="../../media/assets/pasaporte.png"
-                                alt="Imagen del documento del usuario" />
-                        </div>
 
                         <div class="sector-datos">
                             <div class="row">
