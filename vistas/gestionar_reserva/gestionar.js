@@ -46,7 +46,7 @@ contenedorReservaGestionada.innerHTML += `<span class="titulo rojo">Gestionar re
                     <div class="texto"><span>Aerolínea</span><span class="info">${vueloReserva.aerolinea}</span></div>
                 </span>
                 <span class="detalles rojo"><i class="fa-solid fa-money-bills"></i>
-                    <div class="texto"><span>Precio Total</span><span class="info">$ ${vueloReserva.precioFinal} USD</span></div>
+                    <div class="texto"><span>Precio Total</span><span class="info">$ ${vueloReserva.precioFinal.toFixed(2)} USD</span></div>
                 </span>
 
             </div>

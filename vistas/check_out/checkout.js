@@ -83,6 +83,7 @@ document.querySelector(".aplicar_cupon").addEventListener("click", function () {
             vuelo.precioFinal = parseFloat((vuelo.precioFinal - descuentoVuelo).toFixed(2));
         });
 
+        localStorage.setItem("vueloCompra", JSON.stringify(vuelos));
 
         document.getElementById("precio-total").textContent = "$ " + precioBase.toFixed(2);
         document.getElementById("mensaje-cupon").textContent = "Cupón aplicado: " + porcentaje + "% de descuento";
@@ -139,15 +140,13 @@ document.getElementById("form-checkout").addEventListener("submit", function (ev
     vuelos.forEach(function (vuelo) {
 
         vuelo.asientosElegidos = asientosElegidos;
-        
 
         if (!usuario.vuelos) {
             usuario.vuelos = [];
         }
-        
-  
+
         usuario.vuelos.push(vuelo);
-    });
+});
 
     localStorage.setItem("usuarioLogueado", JSON.stringify(usuario));
 
