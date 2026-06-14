@@ -2,9 +2,11 @@ const vueloReserva = JSON.parse(localStorage.getItem("reservaSeleccionada"));
 
 const contenedorReservaGestionada = document.getElementById("reserva");
 
-const asientosElegidosEnString = JSON.parse(localStorage.getItem("asientoElegido"));
+const asientosElegidos = vueloReserva.asientosElegidos;
 
-const stringAsientos = asientosElegidosEnString.map(asiento => asiento.id).join(", ");
+console.log(asientosElegidos)
+
+const stringAsientos = asientosElegidos.map(asiento => asiento.id).join(", ");
 
 if(!vueloReserva || vueloReserva.length == 0) {
     contenedorReservaGestionada.innerHTML += `<h2>No hay reservas para gestionar</h2>`;

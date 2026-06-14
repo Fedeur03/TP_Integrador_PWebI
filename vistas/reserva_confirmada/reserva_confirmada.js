@@ -1,8 +1,5 @@
 const vuelos = JSON.parse(localStorage.getItem("vueloCompra")) || [];
 
-if (vuelos.length === 0) {
-    window.location.href = "/index.html";
-}
 
 const contenedor = document.getElementById("contenedor-reservas");
 
