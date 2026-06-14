@@ -63,4 +63,3 @@ contenedorReservaGestionada.innerHTML += `<span class="titulo rojo">Gestionar re
 
         </section>`
 }
-

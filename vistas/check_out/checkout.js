@@ -58,8 +58,7 @@ resumen.innerHTML = htmlResumen;
 
 // PRECIO
 
-document.getElementById("precio-total").textContent =
-    "$ " + precioBase.toFixed(2);
+document.getElementById("precio-total").textContent = "$ " + precioBase.toFixed(2);
 
 let cuponAplicado = false;
 
@@ -67,18 +66,11 @@ let cuponAplicado = false;
 
 document.querySelector(".aplicar_cupon").addEventListener("click", function () {
 
-    const codigo = document
-        .getElementById("input-cupon")
-        .value
-        .toUpperCase();
+    const codigo = document.getElementById("input-cupon").value.toUpperCase();
 
     if (cuponAplicado) {
-
-        document.getElementById("mensaje-cupon").textContent =
-            "Ya aplicaste un cupón";
-
-        document.getElementById("mensaje-cupon").style.color =
-            "red";
+        document.getElementById("mensaje-cupon").textContent = "Ya aplicaste un cupón";
+        document.getElementById("mensaje-cupon").style.color = "red";
 
         return;
     }
@@ -86,37 +78,18 @@ document.querySelector(".aplicar_cupon").addEventListener("click", function () {
     if (cupones[codigo]) {
 
         const porcentaje = cupones[codigo];
+        const descuento = precioBase * porcentaje / 100;
+        const nuevo = precioBase - descuento;
 
-        const descuento =
-            precioBase * porcentaje / 100;
-
-        const nuevo =
-            precioBase - descuento;
-
-        precioBase = parseFloat(
-            nuevo.toFixed(2)
-        );
-
-        document.getElementById("precio-total").textContent =
-            "$ " + precioBase.toFixed(2);
-
-        document.getElementById("mensaje-cupon").textContent =
-            "Cupón aplicado: " +
-            porcentaje +
-            "% de descuento";
-
-        document.getElementById("mensaje-cupon").style.color =
-            "green";
-
+        precioBase = parseFloat(nuevo.toFixed(2));
+        document.getElementById("precio-total").textContent = "$ " + precioBase.toFixed(2);
+        document.getElementById("mensaje-cupon").textContent = "Cupón aplicado: " + porcentaje + "% de descuento";
+        document.getElementById("mensaje-cupon").style.color = "green";
         cuponAplicado = true;
 
     } else {
-
-        document.getElementById("mensaje-cupon").textContent =
-            "Cupón inválido";
-
-        document.getElementById("mensaje-cupon").style.color =
-            "red";
+        document.getElementById("mensaje-cupon").textContent = "Cupón inválido";
+        document.getElementById("mensaje-cupon").style.color = "red";
     }
 });
 
@@ -126,26 +99,13 @@ document.getElementById("form-checkout").addEventListener("submit", function (ev
 
     evento.preventDefault();
 
-    const credito =
-        document.getElementById("radio-credito").checked;
-
-    const debito =
-        document.getElementById("radio-debito").checked;
-
-    const tarjeta =
-        document.querySelector("input[name='numero_tarjeta']").value;
-
-    const titular =
-        document.querySelector("input[name='nombre_titular']").value;
-
-    const vence =
-        document.querySelector("input[name='fecha_vencimiento']").value;
-
-    const cvv =
-        document.getElementById("cvv").value;
-
-    const error =
-        document.getElementById("mensaje-error");
+    const credito = document.getElementById("radio-credito").checked;
+    const debito = document.getElementById("radio-debito").checked;
+    const tarjeta = document.querySelector("input[name='numero_tarjeta']").value;
+    const titular = document.querySelector("input[name='nombre_titular']").value;
+    const vence = document.querySelector("input[name='fecha_vencimiento']").value;
+    const cvv = document.getElementById("cvv").value;
+    const error = document.getElementById("mensaje-error");
 
     error.textContent = "";
 
@@ -181,15 +141,11 @@ document.getElementById("form-checkout").addEventListener("submit", function (ev
         usuario.vuelos.push(vuelo);
     });
 
-    localStorage.setItem(
-        "usuarioLogueado",
-        JSON.stringify(usuario)
-    );
+    localStorage.setItem("usuarioLogueado", JSON.stringify(usuario));
 
     // OCUPAR ASIENTOS
 
-    let asientosElegidos =
-        JSON.parse(localStorage.getItem("asientoElegido")) || [];
+    let asientosElegidos = JSON.parse(localStorage.getItem("asientoElegido")) || [];
 
     vuelos.forEach(function (vuelo) {
 
@@ -222,15 +178,11 @@ document.getElementById("form-checkout").addEventListener("submit", function (ev
             return actualizado || cadaVuelo;
         });
 
-    localStorage.setItem(
-        "vuelos",
-        JSON.stringify(vuelosActualizados)
-    );
+    localStorage.setItem("vuelos", JSON.stringify(vuelosActualizados));
 
     // LIMPIEZA
 
     localStorage.removeItem("asientoElegido");
 
-    window.location.href =
-        "../reserva_confirmada/reserva_confirmada.html";
+    window.location.href = "../reserva_confirmada/reserva_confirmada.html";
 });

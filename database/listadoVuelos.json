@@ -3,7 +3,7 @@
     "id": 1,
     "tipo_de_Vuelo": "Ida",
     "codigo_reserva": "J0ZZU5KKMC",
-    "origen": "Buenos Aire (BUE)",
+    "origen": "Buenos Aires (BUE)",
     "destino": "Madrid (MAD)",
     "fecha_vuelo": "2026-07-01",
     "hora_vuelo": "08:15",
