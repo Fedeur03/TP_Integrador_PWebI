@@ -94,12 +94,7 @@ finalizado.addEventListener('click', function(evento) {
         return;
     }
 
-    let vueloActual = JSON.parse(localStorage.getItem('vueloSeleccionado'));
-    let asientosElegidosGuardados = JSON.parse(localStorage.getItem('asientoElegido'));
-
-    // Solo guardamos qué asientos eligió, sin tocar 'vuelos' todavía
-    vueloActual.asientosElegidos = asientosElegidosGuardados;
-    localStorage.setItem('vueloSeleccionado', JSON.stringify(vueloActual));
+    window.location.href = "../check_out/check_out.html";
 });
 
 function actualizarPrecio() {

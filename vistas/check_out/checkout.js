@@ -127,13 +127,15 @@ document.getElementById("form-checkout").addEventListener("submit", function (ev
 
     let todosLosVuelos = JSON.parse(localStorage.getItem('vuelos'));
     let vuelosActualizados = todosLosVuelos.map(function(cadaVuelo) {
-        if (vuelos.id === vuelo.id) {
+        if (cadaVuelo.id === vuelo.id) {
             return vuelo;
-        }
-        return cadaVuelo;
+            
+        } else {
+            return cadaVuelo;    
+        } 
     });
 
     localStorage.setItem('vuelos', JSON.stringify(vuelosActualizados));
 
-    window.location.href = "/vistas/reserva_confirmada/reserva_confirmada.html";
+    window.location.href = "../reserva_confirmada/reserva_confirmada.html";
 });
