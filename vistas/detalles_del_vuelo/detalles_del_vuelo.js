@@ -89,22 +89,16 @@ function validar(event) {
 }
 
 const finalizado = document.getElementById('continuar');
-finalizado.addEventListener('click', function(e) {
-    if (!validar(e)) {
+finalizado.addEventListener('click', function(evento) {
+    if (!validar(evento)) {
         return;
     }
 
     let vueloActual = JSON.parse(localStorage.getItem('vueloSeleccionado'));
-    let asientosElegidosGuardados = JSON.parse(localStorage.getItem('asientoElegido')) || [];
+    let asientosElegidosGuardados = JSON.parse(localStorage.getItem('asientoElegido'));
 
-    asientosElegidosGuardados.forEach(asiento => {
-        vueloActual.asientos.forEach(asientoVuelo => {
-            if (asiento.id === asientoVuelo.id) {
-                asientoVuelo.estado = 'ocupado';
-            }
-        });
-    });
-
+    // Solo guardamos qué asientos eligió, sin tocar 'vuelos' todavía
+    vueloActual.asientosElegidos = asientosElegidosGuardados;
     localStorage.setItem('vueloSeleccionado', JSON.stringify(vueloActual));
 });
 

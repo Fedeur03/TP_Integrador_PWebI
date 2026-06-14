@@ -113,7 +113,27 @@ document.getElementById("form-checkout").addEventListener("submit", function (ev
     usuario.vuelos.push(vuelo);
     localStorage.setItem("usuarioLogueado", JSON.stringify(usuario));
 
-    localStorage.setItem("vueloSeleccionado", JSON.stringify(vuelo));
+   let asientosElegidos = JSON.parse(localStorage.getItem('asientoElegido'));
+
+    asientosElegidos.forEach(function(asiento) {
+        vuelo.asientos.forEach(function(asientoVuelo) {
+            if (asiento.id === asientoVuelo.id) {
+                asientoVuelo.estado = 'ocupado';
+            }
+        });
+    });
+
+    localStorage.setItem('vueloSeleccionado', JSON.stringify(vuelo));
+
+    let todosLosVuelos = JSON.parse(localStorage.getItem('vuelos'));
+    let vuelosActualizados = todosLosVuelos.map(function(cadaVuelo) {
+        if (vuelos.id === vuelo.id) {
+            return vuelo;
+        }
+        return cadaVuelo;
+    });
+
+    localStorage.setItem('vuelos', JSON.stringify(vuelosActualizados));
 
     window.location.href = "/vistas/reserva_confirmada/reserva_confirmada.html";
 });

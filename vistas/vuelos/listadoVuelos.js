@@ -10,8 +10,6 @@ function verificarSiVueloDisponible(vuelo, asientosNecesarios) {
         return true;
     }
     return false;
-
-
 }
 
 let todosLosVuelos = [];
@@ -19,15 +17,22 @@ let cantidadVuelosMostrados = 9;
 
 async function inicializarVuelos() {
     try {
-        const response = await fetch('../../database/listadoVuelos.json');
-        todosLosVuelos = await response.json();
+        const vuelosGuardados = JSON.parse(localStorage.getItem('vuelos'));
+
+        if (vuelosGuardados) {
+            todosLosVuelos = vuelosGuardados;
+
+        } else {
+            const response = await fetch('../../database/listadoVuelos.json');
+            todosLosVuelos = await response.json();
+            localStorage.setItem('vuelos', JSON.stringify(todosLosVuelos));
+        }
         mostrarVuelos();
+        
     } catch (error) {
         console.error('Error al cargar los vuelos:', error);
     }
 }
-
-
 
 function mostrarVuelos() {
     const contenedorVuelos = document.getElementById('contenedor_vuelos');

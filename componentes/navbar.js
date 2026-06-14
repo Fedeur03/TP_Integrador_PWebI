@@ -71,16 +71,18 @@ function marcarEnlaceActivo() {
 // Se ejecuta justo después de haber inyectado el HTML en el navbar
 marcarEnlaceActivo();
 
+
 const botonSalir = document.getElementById('boton-salir');
-
-
 
 botonSalir.addEventListener('click', function () {
     const usuarioLogueado = JSON.parse(localStorage.getItem("usuarioLogueado"));
     const listaUsuarios = JSON.parse(localStorage.getItem("usuarios"));
+
     const nuevoArrayUsuarios = listaUsuarios.filter(usuario => usuario.email !== usuarioLogueado.email);
     nuevoArrayUsuarios.push(usuarioLogueado);
+
     localStorage.setItem('usuarios', JSON.stringify(nuevoArrayUsuarios));
     localStorage.removeItem('usuarioLogueado');
+    
     window.location.href = '/index.html';
 })

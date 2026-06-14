@@ -95,7 +95,7 @@ html {
 
 .cabecera {
     display: grid;
-    grid-template-columns: 4fr 6rem 1rem;
+    grid-template-columns: 4fr 7rem 1rem;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.4rem;
@@ -124,7 +124,7 @@ html {
     display: none !important;
 }
 
-#icono:hover {
+.boton-desplegar:hover {
     cursor: pointer;
 }
 
