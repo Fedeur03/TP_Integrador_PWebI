@@ -1,6 +1,14 @@
 let asientosElegidos = [];
 const vuelo = JSON.parse(localStorage.getItem("vueloSeleccionado"));
 
+const vueltaSelector = document.getElementById('opcionalVuelta');
+
+if(localStorage.getItem('requiereVuelta') === 'true') {
+    vueltaSelector.style.display = 'none';
+}else{
+    vueltaSelector.style.display = 'block';
+}
+
 window.addEventListener("load", function () {
     const elementoAsientos = document.getElementById("asientos");
     const otrosAsientos = document.getElementById("otros-asientos");
@@ -116,15 +124,23 @@ function actualizarPrecio() {
 
 function verificarSiQuiereVuelta() {
 
+    const vueltaCheckbox = document.getElementById("vuelta");
+    const vuelta = vueltaCheckbox.checked;
+
     const siQuiere = localStorage.getItem("requiereVuelta");
 
     let vueloCompra = JSON.parse(localStorage.getItem("vueloCompra")) || [];
 
-    vueloCompra.push(vuelo);
+    let vueloExiste = vueloCompra.find(vuelo => vuelo.id === vuelo.id);
+
+    if(!vueloExiste) {
+       vueloCompra.push(vuelo);
+    }
+
 
     localStorage.setItem("vueloCompra", JSON.stringify(vueloCompra));
 
-    if (siQuiere === "true") {
+    if (siQuiere === "true" || vuelta === true) {
         return "../viaje_vuelta/vuelta.html";
     } else {
         return "../check_out/check_out.html";
