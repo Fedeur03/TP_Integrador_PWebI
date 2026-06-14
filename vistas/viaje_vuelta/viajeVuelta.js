@@ -348,3 +348,4 @@ document.getElementById("rango-max")
     });
 
 actualizarSlider();
+localStorage.removeItem('requiereVuelta');

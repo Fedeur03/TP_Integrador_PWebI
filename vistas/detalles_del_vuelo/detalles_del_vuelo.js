@@ -9,8 +9,8 @@ window.addEventListener("load", function () {
     vuelo.asientos.forEach(function (asiento, indice) {
         const icono = document.createElement("i");
         icono.className = `fa-solid fa-couch ${asiento.estado}`;
-        
-        icono.addEventListener("click", function() {
+
+        icono.addEventListener("click", function () {
             elegirAsiento(icono, asiento.id);
         });
 
@@ -88,13 +88,17 @@ function validar() {
     return true;
 }
 
-const finalizado = document.getElementById('continuar');
-finalizado.addEventListener('click', function(evento) {
+const finalizado = document.getElementById("continuar");
+
+finalizado.addEventListener('click', function (evento) {
+
     if (!validar(evento)) {
         return;
     }
-    console.log(verificarSiQuiereVuelta())
-    window.location.href = verificarSiQuiereVuelta();
+
+    const destino = verificarSiQuiereVuelta();
+
+    window.location.href = destino;
 });
 
 function actualizarPrecio() {
@@ -110,12 +114,19 @@ function actualizarPrecio() {
     document.getElementById("precio-total").textContent = "$ " + total.toFixed(2) + " USD";
 }
 
-function verificarSiQuiereVuelta(){
+function verificarSiQuiereVuelta() {
+
     const siQuiere = localStorage.getItem("requiereVuelta");
-    console.log(siQuiere)
+
+    let vueloCompra = JSON.parse(localStorage.getItem("vueloCompra")) || [];
+
+    vueloCompra.push(vuelo);
+
+    localStorage.setItem("vueloCompra", JSON.stringify(vueloCompra));
+
     if (siQuiere === "true") {
-       return  "../viaje_vuelta/vuelta.html";
-    }else{
-        return "../check_out/check_out.html"
+        return "../viaje_vuelta/vuelta.html";
+    } else {
+        return "../check_out/check_out.html";
     }
 }

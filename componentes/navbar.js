@@ -88,6 +88,7 @@ botonSalir.addEventListener('click', function () {
     localStorage.removeItem('pasajeros');
     localStorage.removeItem('vuelosFiltrados');
     localStorage.removeItem('busquedaVuelo');
+    localStorage.removeItem('vueloCompra');
     
     window.location.href = '/index.html';
 })

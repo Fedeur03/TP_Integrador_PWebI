@@ -21,35 +21,11 @@
         <p>Gracias por elegir FlyWay. Tu reserva ha sido confirmada exitosamente.</p>
         <p>Detalles de tu reserva:</p>
 
-        <div class="tarjeta">
-            <div class="cabecera">
-                <h3 id="ruta"></h3>
-                <strong id="precio"></strong>
-            </div>
-            <div class="contenido">
-                <div class="abierta">
-                    <p><i class="fa-solid fa-calendar icon"></i>Fecha: <strong id="fecha"></strong></p>
-                    <p><i class="fa-solid fa-clock icon"></i>Hora estimada: <strong id="hora"></strong></p>
-
-                    <p id="texto-escalas">
-                        <i class="fa-solid fa-plane-circle-check icon"></i>
-                        <span id="label-escalas"></span>
-                        <strong id="escalas"></strong>
-                    </p>
-                </div>
-                <img src="../../media/QR.png" alt="QR">
-            </div>
-        </div>
-        <div class="contenido-secundario">
-            <p>Tu código de reserva es: <strong id="codigo"></strong></p>
-            <p>Por favor, guarda este código para futuras referencias.</p>
-            <p>Recibirás un correo electrónico con los detalles de tu vuelo y el código QR para el check-in.</p>
-            <p>¡Esperamos que tengas un excelente viaje con FlyWay!</p>
-        </div>
+        <div id="contenedor-reservas"></div>
     </main>
 
     <footer class="footer" id="footer"></footer>
-    
+
     <script src="/componentes/navbar.js"></script>
     <script src="/componentes/footer.js"></script>
     <script src="./reserva_confirmada.js"></script>

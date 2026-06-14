@@ -1,21 +1,84 @@
-const vuelo = JSON.parse(localStorage.getItem("vueloSeleccionado"));
+const vuelos = JSON.parse(localStorage.getItem("vueloCompra")) || [];
 
-if (!vuelo) {
+if (vuelos.length === 0) {
     window.location.href = "/index.html";
-    
-} else {
-    document.getElementById("ruta").textContent = vuelo.origen + " → " + vuelo.destino;
-    document.getElementById("precio").textContent = "$ " + vuelo.precioFinal + " USD";
-    document.getElementById("fecha").textContent = vuelo.fecha_vuelo;
-    document.getElementById("hora").textContent = vuelo.hora_vuelo + " - " + vuelo.llegada_estimada;
-    document.getElementById("codigo").textContent = vuelo.codigo_reserva;
-
-    if (vuelo.escalas === 0) {
-        document.getElementById("label-escalas").textContent = "Sin escalas";
-        document.getElementById("escalas").textContent = "";
-    
-    } else {
-        document.getElementById("label-escalas").textContent = "Escalas: ";
-        document.getElementById("escalas").textContent = vuelo.escalas;
-    }
 }
+
+const contenedor = document.getElementById("contenedor-reservas");
+
+let html = "";
+
+vuelos.forEach(function(vuelo, indice){
+
+    html += `
+    
+    <div class="tarjeta">
+
+        <div class="cabecera">
+
+            <h3>
+                ${indice === 0 ? "IDA" : "VUELTA"}
+                ·
+                ${vuelo.origen} → ${vuelo.destino}
+            </h3>
+
+            <strong>
+                $ ${vuelo.precioFinal} USD
+            </strong>
+
+        </div>
+
+        <div class="contenido">
+
+            <div class="abierta">
+
+                <p>
+                    <i class="fa-solid fa-calendar icon"></i>
+                    Fecha:
+                    <strong>${vuelo.fecha_vuelo}</strong>
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-clock icon"></i>
+                    Hora estimada:
+                    <strong>
+                        ${vuelo.hora_vuelo}
+                        -
+                        ${vuelo.llegada_estimada}
+                    </strong>
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-plane-circle-check icon"></i>
+
+                    ${
+                        vuelo.escalas === 0
+                        ? "Sin escalas"
+                        : "Escalas: " + vuelo.escalas
+                    }
+
+                </p>
+
+            </div>
+
+            <img src="../../media/QR.png" alt="QR">
+
+        </div>
+
+        <div class="contenido-secundario">
+
+            <p>
+                Tu código de reserva es:
+                <strong>${vuelo.codigo_reserva}</strong>
+            </p>
+
+        </div>
+
+    </div>
+
+    <br>
+    `;
+});
+
+contenedor.innerHTML = html;
