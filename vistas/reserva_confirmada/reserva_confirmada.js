@@ -77,7 +77,6 @@ vuelos.forEach(function(vuelo, indice){
 
     </div>
 
-    <br>
     `;
 });
 
