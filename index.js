@@ -1,6 +1,6 @@
 const form = document.getElementById("formBusqueda");
 const mensajeError = document.getElementById("mensajeError");
-
+localStorage.removeItem('vueloCompra');
 const tipoVuelo = document.getElementById("tipo-vuelo");
 const esSoloIda = document.getElementById('vuelta');
 

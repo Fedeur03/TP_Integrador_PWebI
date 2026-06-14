@@ -134,5 +134,6 @@ function buscar() {
 const busqueda = document.getElementById('icono-busqueda');
 busqueda.addEventListener('click', buscar);
 
-
+localStorage.removeItem('vueloCompra');
+localStorage.removeItem('requiereVuelta');
 inicializarVuelos();
