@@ -7,10 +7,9 @@ const cupones = {
 const vuelo   = JSON.parse(localStorage.getItem("vueloSeleccionado"));
 const usuario = JSON.parse(localStorage.getItem("usuarioLogueado"));
 
-// Usamos como BASE el precioFinal que ya viene multiplicado por los pasajeros
+
 const precioBase = vuelo.precioFinal; 
 
-// Llenamos los datos del usuario
 document.getElementById("nombre").value   = usuario.nombre;
 document.getElementById("apellido").value = usuario.apellido;
 document.getElementById("email").value    = usuario.email;
@@ -25,16 +24,15 @@ document.getElementById("tipo-documento").addEventListener("change", function ()
     }
 });
 
-// Llenamos los datos del vuelo
+
 document.getElementById("vuelo-ruta").textContent      = vuelo.origen + " → " + vuelo.destino;
 document.getElementById("vuelo-fecha").textContent     = vuelo.fecha_vuelo;
 document.getElementById("vuelo-hora").textContent      = vuelo.hora_vuelo;
 document.getElementById("vuelo-duracion").textContent = vuelo.duracion_estimada;
 
-// Mostramos el precio total inicial
+
 document.getElementById("precio-total").textContent = "$ " + precioBase.toFixed(2);
 
-// ── EVENTO CUPÓN ────────────────────────────────────────────────────────────
 let cuponAplicado = false;
 
 document.querySelector(".aplicar_cupon").addEventListener("click", function () {
@@ -50,7 +48,7 @@ document.querySelector(".aplicar_cupon").addEventListener("click", function () {
     if (cupones[codigo]) {
         const porcentaje = cupones[codigo];
         
-        // TRUCO: Calculamos el % de descuento sobre el precioFinal acumulado actual
+
         const descuento  = vuelo.precioFinal * porcentaje / 100;
         const nuevo      = vuelo.precioFinal - descuento;
 
@@ -73,7 +71,7 @@ document.querySelector(".aplicar_cupon").addEventListener("click", function () {
 });
 
 
-// ── SUBMIT FORMULARIO ────────────────────────────────────────────────────────
+
 document.getElementById("form-checkout").addEventListener("submit", function (evento) {
     evento.preventDefault();
 

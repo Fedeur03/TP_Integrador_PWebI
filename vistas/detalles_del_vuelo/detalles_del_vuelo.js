@@ -71,7 +71,7 @@ function elegirAsiento(elemento, idAsiento) {
     localStorage.setItem("asientoElegido", JSON.stringify(asientosElegidos));
 }
 
-function validar(event) {
+function validar() {
     const cantidadPasajeros = parseInt(localStorage.getItem("pasajeros"));
 
     if (asientosElegidos.length === 0) {
@@ -93,8 +93,8 @@ finalizado.addEventListener('click', function(evento) {
     if (!validar(evento)) {
         return;
     }
-
-    window.location.href = "../check_out/check_out.html";
+    console.log(verificarSiQuiereVuelta())
+    window.location.href = verificarSiQuiereVuelta();
 });
 
 function actualizarPrecio() {
@@ -108,4 +108,14 @@ function actualizarPrecio() {
     vuelo.precioFinal = total;
     localStorage.setItem("vueloSeleccionado", JSON.stringify(vuelo));
     document.getElementById("precio-total").textContent = "$ " + total.toFixed(2) + " USD";
+}
+
+function verificarSiQuiereVuelta(){
+    const siQuiere = localStorage.getItem("requiereVuelta");
+    console.log(siQuiere)
+    if (siQuiere === "true") {
+       return  "../viaje_vuelta/vuelta.html";
+    }else{
+        return "../check_out/check_out.html"
+    }
 }

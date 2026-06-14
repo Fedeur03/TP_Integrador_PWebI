@@ -54,8 +54,14 @@ form.addEventListener("submit", function (evento) {
         fecha_vuelta: fechaVuelta,
         cantidad_pasajeros: pasajeros,
         clase: clase,
-        tipoDeVuelo: tipoDeVuelo
+        tipoDeVuelo: tipoDeVuelo,
     };
+
+    if(esSoloIda.checked){
+        localStorage.setItem('requiereVuelta', true)
+    }else{
+        localStorage.setItem('requiereVuelta', false)
+    }
 
     localStorage.setItem("busquedaVuelo", JSON.stringify(busqueda));
 

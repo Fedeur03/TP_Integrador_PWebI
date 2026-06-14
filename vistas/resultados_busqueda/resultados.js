@@ -7,6 +7,11 @@ if (!resultados) {
     window.location.href = "/index.html";
 }
 
+if(localStorage.getItem('requiereVuelta') === 'true') {
+    const titulo = document.getElementById("titulo-resultado");
+    titulo.innerHTML = "Vuelos de Ida";
+}
+
 // ── DIBUJAR EN EL HTML ───────────────────────────────────────
 function mostrarResultados(vuelosFiltrados) {
 

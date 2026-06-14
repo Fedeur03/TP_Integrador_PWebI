@@ -17,6 +17,9 @@ let cantidadVuelosMostrados = 9;
 
 async function inicializarVuelos() {
     try {
+        const response = await fetch('../../database/listadoVuelos.json');
+            todosLosVuelos = await response.json();
+            localStorage.setItem('vuelos', JSON.stringify(todosLosVuelos));
         const vuelosGuardados = JSON.parse(localStorage.getItem('vuelos'));
 
         if (vuelosGuardados) {
@@ -53,6 +56,7 @@ function mostrarVuelos() {
             <div class="info_vuelo">
                 <p><strong>${vuelo.origen} → ${vuelo.destino}</strong></p>
                 <hr class="separador">
+                <p>${vuelo.fecha_vuelo}</p>
                 <p>${vuelo.hora_vuelo} - ${vuelo.llegada_estimada}</p>
                 <p>Duración: ${vuelo.duracion_estimada}</p>
                 <p>${vuelo.escalas === 0 ? 'Directo' : vuelo.escalas + ' escalas'} </p>

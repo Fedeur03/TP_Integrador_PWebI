@@ -83,6 +83,11 @@ botonSalir.addEventListener('click', function () {
 
     localStorage.setItem('usuarios', JSON.stringify(nuevoArrayUsuarios));
     localStorage.removeItem('usuarioLogueado');
+    localStorage.removeItem('vueloSeleccionado');
+    localStorage.removeItem('reservaSeleccionada');
+    localStorage.removeItem('pasajeros');
+    localStorage.removeItem('vuelosFiltrados');
+    localStorage.removeItem('busquedaVuelo');
     
     window.location.href = '/index.html';
 })
