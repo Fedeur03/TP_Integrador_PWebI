@@ -13,7 +13,7 @@ if (!usuario || !usuario.vuelos || usuario.vuelos.length === 0) {
         tarjeta.innerHTML = `
             <div class="cabecera">
                 <h3>${vuelo.origen} → ${vuelo.destino}</h3>
-                <strong>$ ${vuelo.precioFinal} USD</strong>
+                <strong>$ ${vuelo.precioFinal.toFixed(2)} USD</strong>
                 <i class="fa-solid fa-chevron-down boton-desplegar"></i>
             </div>
             <p>Código de reserva: <strong>${vuelo.codigo_reserva}</strong></p>

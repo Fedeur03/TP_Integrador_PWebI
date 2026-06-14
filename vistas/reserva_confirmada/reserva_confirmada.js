@@ -8,7 +8,7 @@ const contenedor = document.getElementById("contenedor-reservas");
 
 let html = "";
 
-vuelos.forEach(function(vuelo, indice){
+vuelos.forEach(function (vuelo, indice) {
 
     html += `
     
@@ -23,7 +23,7 @@ vuelos.forEach(function(vuelo, indice){
             </h3>
 
             <strong>
-                $ ${vuelo.precioFinal} USD
+                $ ${vuelo.precioFinal.toFixed(2)} USD
             </strong>
 
         </div>
@@ -52,11 +52,10 @@ vuelos.forEach(function(vuelo, indice){
 
                     <i class="fa-solid fa-plane-circle-check icon"></i>
 
-                    ${
-                        vuelo.escalas === 0
-                        ? "Sin escalas"
-                        : "Escalas: " + vuelo.escalas
-                    }
+                    ${vuelo.escalas === 0
+            ? "Sin escalas"
+            : "Escalas: " + vuelo.escalas
+        }
 
                 </p>
 
