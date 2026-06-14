@@ -75,7 +75,7 @@ function elegirAsiento(elemento, idAsiento) {
         asientosElegidos.push(nuevoAsiento);
     }
 
-    document.getElementById("nombre-asiento").textContent = asientosElegidos.map(a => a.id).join(", ");
+    document.getElementById("nombre-asiento").textContent = asientosElegidos.map(asiento => asiento.id).join(", ");
     localStorage.setItem("asientoElegido", JSON.stringify(asientosElegidos));
 }
 

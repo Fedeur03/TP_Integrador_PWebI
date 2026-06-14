@@ -44,14 +44,12 @@ vuelos.forEach(function (vuelo, indice) {
 
     htmlResumen += `
         <div style="margin-bottom:15px;">
-            <strong>${indice === 0 ? "IDA" : "VUELTA"}</strong>
+            <strong>${indice === 0 ? "Viaje de Ida: " : "Viaje de Vuelta: "}</strong>
 
             <p>${vuelo.origen} → ${vuelo.destino}</p>
             <p>Fecha: ${vuelo.fecha_vuelo}</p>
             <p>Hora: ${vuelo.hora_vuelo}</p>
             <p>Duración: ${vuelo.duracion_estimada}</p>
-
-            <hr>
         </div>
     `;
 });

@@ -136,6 +136,7 @@
 .referencias {
     display: flex;
     align-items: center;
+    margin-top: 0.4rem;
     gap: 0.5rem;
     font-size: 0.9rem;
     color: #602929;
@@ -152,6 +153,7 @@
 .mapa {
     width: 100%;
     display: flex;
+    margin-top: 1.2rem;
     flex-direction: row;
     align-items: flex-start;
     gap: 1.5rem;

@@ -181,10 +181,6 @@ select {
     gap: 1rem;
 }
 
-.contenido_row {
-    color:#642E2E !important;
-}
-
 .fecha_cvv {
     width: auto !important;
     display: flex;
@@ -201,7 +197,7 @@ select {
 }
 
 .centrado p {
-    font-weight: bold;
+    margin-top: 0.7rem;
 }
 
 .precio {
