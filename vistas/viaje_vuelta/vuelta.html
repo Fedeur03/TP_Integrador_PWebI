@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+    <link rel="stylesheet" href="../../estilos/navbar.css">
+    <link rel="stylesheet" href="../../estilos/footer.css">
+    <link rel="icon" href="/media/flyway_logo.png">
+    <link rel="stylesheet" href="./resultados.css">
+    <link rel="icon" href="/media/flyway_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar"></nav>
+
+    <main class="contenedor">
+
+        <h2>Vuelos de Vuelta</h2>
+
+
+        <div class="grilla">
+
+            <form>
+                <section class="caja">
+                    <h3>Filtrar por</h3>
+
+                    <h4>Precio</h4>
+
+                    <div class="rango_precio">
+                        <span>Mín: $<span id="precio-min">100</span></span>
+                        <span>Máx: $<span id="precio-max">2500</span></span>
+                    </div>
+
+                    <div class="slider-container">
+                        <input type="range" id="rango-min" min="100" max="2500" value="100">
+                        <input type="range" id="rango-max" min="100" max="2500" value="2500">
+                    </div>
+
+                    <h4>Tipo de vuelo</h4>
+                    <label><input type="checkbox" id="esDirecto"> Directo</label>
+                    <label><input type="checkbox" id="esConEscala"> Con escalas</label>
+
+                    <h4>Aerolínea</h4>
+                    <label><input type="checkbox" id="esAerolineaArgentina"> Aerolíneas Argentinas</label>
+                    <label><input type="checkbox" id="esAerolineaAmerican"> American Airlines </label>
+                    <label><input type="checkbox" id="esAerolineaFlybondi"> Flybondi </label>
+                    <label><input type="checkbox" id="esAerolineaEmirates"> Emirates </label>
+
+                    <div class="botones-filtro">
+                        <button class="refrescar-filtro" id="botonFiltrado">
+                            APLICAR
+                        </button>
+
+
+                        <button class="volver-filtro">
+                            <a href="/index.html">VOLVER</a>
+                        </button>
+                    </div>
+                </section>
+            </form>
+
+            <section class="caja" id="resultados">
+                <h3>Aerolínea</h3>
+
+
+
+            </section>
+
+            <section class="caja equipaje">
+                <div class="caja">
+                    <h3>Equipaje</h3>
+                    <label><input type="radio" name="equipaje" id="equipaje-mano"><i
+                            class="fa-solid fa-briefcase"></i>Equipaje de mano</label>
+                    <label><input type="radio" name="equipaje" id="equipaje-bodega"><i
+                            class="fa-solid fa-suitcase"></i>Equipaje en bodega</label>
+                </div>
+
+                <div class="caja">
+                    <h3>Políticas</h3>
+                    <p>Priorizar la integridad de los pasajeros</p>
+                    <p>Cancelación gratuita en 24 horas</p>
+                    <p>Seguridad total en cada vuelo</p>
+                    <p>Sin reembolso luego del despegue</p>
+                    <p>Minimizar el impacto ambiental</p>
+                    <p>Puntualidad máxima garantizada</p>
+                    <p>Cuidado experto del equipaje</p>
+                    <p>Atención al cliente 24/7</p>
+                    <p>Cambios de fecha flexibles</p>
+                    <p>Información de vuelo en tiempo real</p>
+                    <p>Embarque rápido y organizado</p>
+                    <p>Equipaje protegido en todo momento</p>
+                    <p>Protocolos sanitarios actualizados</p>
+                    <p>Transparencia en tarifas y cargos</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer" id="footer">
+    </footer>
+    <script src="/componentes/navbar.js"></script>
+    <script src="/componentes/footer.js"></script>
+    <script src="viajeVuelta.js"></script>
+</body>
+
+</html>
