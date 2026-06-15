@@ -58,7 +58,6 @@ vuelos.forEach(function (vuelo, indice) {
 
             </div>
 
-            <img src="../../media/QR.png" alt="QR">
 
         </div>
 
