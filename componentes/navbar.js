@@ -37,26 +37,24 @@ if (usuarioLogueado) {
 }
 
 function marcarEnlaceActivo() {
-    let rutaActual = window.location.pathname;
-    
-    if (rutaActual === "/" || rutaActual === "") {
-        rutaActual = "/index.html";
+    let rutaActual = window.location.pathname.split("/").pop();
+
+    if (rutaActual === "") {
+        rutaActual = "index.html";
     }
 
-    // Ahora esto solo va a iterar sobre Inicio, Vuelos y Contacto
-    const enlaces = document.querySelectorAll('.contenido-navbar');
+    const enlaces = document.querySelectorAll(".contenido-navbar");
 
     enlaces.forEach(enlace => {
-        const hrefEnlace = enlace.getAttribute('href');
+        const hrefEnlace = enlace.getAttribute("href").split("/").pop();
 
         if (rutaActual === hrefEnlace) {
-            enlace.classList.add('contenido-seleccionado'); 
+            enlace.classList.add("contenido-seleccionado");
         } else {
-            enlace.classList.remove('contenido-seleccionado');
+            enlace.classList.remove("contenido-seleccionado");
         }
     });
 }
-
 marcarEnlaceActivo();
 
 const botonSalir = document.getElementById('boton-salir');
