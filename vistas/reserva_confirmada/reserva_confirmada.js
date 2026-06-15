@@ -20,7 +20,7 @@ vuelos.forEach(function (vuelo, indice) {
             </h3>
 
             <strong>
-                $ ${vuelo.precioFinal.toFixed(2)} USD
+                Total: $ ${vuelo.precioFinal.toFixed(2)} USD
             </strong>
 
         </div>
