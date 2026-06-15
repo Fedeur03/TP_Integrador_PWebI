@@ -357,3 +357,83 @@
     button a {
         text-decoration: none;
     }
+
+    html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.grilla {
+    width: 100%;
+    min-width: 0;
+}
+
+.caja,
+.resultados,
+.resultado-aerolinea {
+    min-width: 0;
+}
+
+@media (max-width: 768px) {
+
+    .contenedor {
+        padding: 1rem;
+    }
+
+    .resultado-aerolinea {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .resultado-aerolinea hr {
+        width: 100%;
+    }
+
+    .hora-y-ciudad {
+        margin: 0;
+        font-size: 1.1rem;
+    }
+
+    .acciones {
+        width: 100%;
+        align-items: center;
+    }
+
+    .botones-filtro {
+        width: 100%;
+    }
+
+    .btn-seleccionar,
+    .btn-detalles,
+    .refrescar-filtro,
+    .volver-filtro {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .contenedor {
+        padding: 0.8rem;
+    }
+
+    .caja {
+        padding: 1rem;
+    }
+
+    .hora-y-ciudad {
+        font-size: 1rem;
+    }
+
+    .resultado-aerolinea {
+        gap: 0.8rem;
+    }
+}
