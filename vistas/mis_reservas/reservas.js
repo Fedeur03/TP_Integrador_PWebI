@@ -11,28 +11,29 @@ if (!usuario || !usuario.vuelos || usuario.vuelos.length === 0) {
         tarjeta.className = "tarjeta";
 
         tarjeta.innerHTML = `
-            <div class="cabecera">
-                <h3>${vuelo.origen} → ${vuelo.destino}</h3>
-                <strong>$ ${vuelo.precioFinal.toFixed(2)} USD</strong>
-                <i class="fa-solid fa-chevron-down boton-desplegar"></i>
+    <div class="cabecera">
+        <h3>${vuelo.origen} → ${vuelo.destino}</h3>
+        <strong>$ ${vuelo.precioFinal.toFixed(2)} USD</strong>
+        <i class="fa-solid fa-chevron-down boton-desplegar"></i>
+    </div>
+    <p>Código de reserva: <strong>${vuelo.codigo_reserva}</strong></p>
+    
+    <div class="contenido">
+        <div class="desplegable cerrado">
+            <div class="contenido-adicional">
+                <p>Origen: <strong>${vuelo.origen}</strong></p>
+                <p>Destino: <strong>${vuelo.destino}</strong></p>
+                <p>Fecha: <strong>${vuelo.fecha_vuelo}</strong></p>
+                <p>Hora estimada: <strong>${vuelo.hora_vuelo}</strong></p>
+                <p>${vuelo.escalas === 0 ? "Sin escalas" : `Escalas: <strong>${vuelo.escalas}</strong>`}</p>
             </div>
-            <p>Código de reserva: <strong>${vuelo.codigo_reserva}</strong></p>
-            <div class="contenido">
-                <div class="desplegable cerrado">
-                <div class="contenido-adicional">
-                    <p>Origen: <strong>${vuelo.origen}</strong></p>
-                    <p>Destino: <strong>${vuelo.destino}</strong></p>
-                    <p>Fecha: <strong>${vuelo.fecha_vuelo}</strong></p>
-                    <p>Hora estimada: <strong>${vuelo.hora_vuelo}</strong></p>
-                    <p>${vuelo.escalas === 0 ? "Sin escalas" : `Escalas: <strong>${vuelo.escalas}</strong>`}</p>
-                </div>
-            </div>
-            <div class="inferior-tarjeta">
-                <a href="../gestionar_reserva/gestionar.html" class="boton boton-gestionar">
-                    Gestionar reserva
-                </a>
-            </div>
-        `;
+        </div>
+    </div>
+
+    <a href="../gestionar_reserva/gestionar.html" class="boton boton-gestionar">
+        Gestionar reserva
+    </a>
+`;
 
         const flecha = tarjeta.querySelector(".boton-desplegar");
         const contenidoDesplegable = tarjeta.querySelector(".desplegable");
