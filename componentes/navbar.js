@@ -39,6 +39,7 @@ if (usuarioLogueado) {
 function marcarEnlaceActivo() {
     let rutaActual = window.location.pathname.split("/").pop();
 
+
     if (rutaActual === "") {
         rutaActual = "index.html";
     }

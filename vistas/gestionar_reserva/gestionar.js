@@ -2,6 +2,8 @@ const vueloReserva = JSON.parse(localStorage.getItem("reservaSeleccionada"));
 
 const contenedorReservaGestionada = document.getElementById("reserva");
 
+console.log(vueloReserva);
+
 const asientosElegidos = vueloReserva.asientosElegidos;
 
 console.log(asientosElegidos)
