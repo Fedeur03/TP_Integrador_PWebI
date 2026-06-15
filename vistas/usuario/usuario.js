@@ -31,24 +31,25 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     } else {
         contenedorDatosUsuario.innerHTML = `
-                        <div class="datos_personales">
-                            <div class="row">
-                                <p class="label">Nombre Completo:</p>
-                                <input type="text" id="per-nombre-apellido" value="${usuarioActual.nombre} ${usuarioActual.apellido}" disabled>
-                                <p class="label">Correo Electrónico:</p>
-                                <input type="text" id="per-email" value="${usuarioActual.email}" disabled>
-                                <p class="label">Teléfono:</p>
-                                <input type="text" id="per-telefono" value="${usuarioActual.telefono || 'No agregó teléfono'}" disabled>
-                            </div>
+            <div class="datos_personales">
+                <div class="row">
+                    <p class="label">Nombre Completo:</p>
+                    <input type="text" id="per-nombre-apellido" value="${usuarioActual.nombre} ${usuarioActual.apellido}" disabled>
+                    <p class="label">Correo Electrónico:</p>
+                    <input type="text" id="per-email" value="${usuarioActual.email}" disabled>
+                    <p class="label">Teléfono:</p>
+                    <input type="text" id="per-telefono" value="${usuarioActual.telefono || 'No agregó teléfono'}" disabled>
+                </div>
 
-                            <div class="row">
-                                <p class="label">Dirección:</p>
-                                <input type="text" id="per-direccion" value="${usuarioActual.direccion || 'No agregó dirección'}" disabled>
-                                <p class="label">Fecha de Nacimiento:</p>
-                                <input type="date" id="per-nacimiento" value="${usuarioActual.nacimiento}" disabled><br>
-                                <button class="boton-documento" id="guardar-datos-personales" style="display:none; color: white; margin-top: 10px;">Guardar Cambios</button>
-                            </div>
-                        </div>`;
+                <div class="row">
+                    <p class="label">Dirección:</p>
+                    <input type="text" id="per-direccion" value="${usuarioActual.direccion || 'No agregó dirección'}" disabled>
+                    <p class="label">Fecha de Nacimiento:</p>
+                    <input type="date" id="per-nacimiento" value="${usuarioActual.nacimiento}" disabled>
+                </div>
+                
+                <button class="boton-documento" id="guardar-datos-personales" style="display:none; color: white; width: 100%; margin-top: 10px;">Guardar Cambios</button>
+            </div>`;
     }
 
     const botonEditarPerfil = document.getElementById("editar");
@@ -92,33 +93,33 @@ document.addEventListener("DOMContentLoaded", function () {
             const fechaVencimientoFormateada = formatearFechaParaInput(documento.vencimiento);
             const fechaExpedicionFormateada = formatearFechaParaInput(documento.expedicion);
 
-            contenedorDocumentos.innerHTML += `<div class="datos-documento" data-nro="${documento.nro}">
-
-                        <div class="sector-datos">
-                            <div class="row">
-                                <p class="label">Tipo de Documento</p>
-                                <input type="text" class="doc-tipo" value="${documento.tipo.toUpperCase()}" disabled>
-                                <p class="label">Nro de Documento</p>
-                                <input type="text" class="doc-nro" value="${documento.nro}" disabled>
-                                <p class="label">Fecha de Vencimiento</p>
-                                <input type="date" class="doc-vencimiento" value="${fechaVencimientoFormateada}" disabled>
-                            </div>
-                            <div class="row">
-                                <p class="label">Fecha de Expedición</p>
-                                <input type="date" class="doc-expedicion" value="${fechaExpedicionFormateada}" disabled>
-                                <p class="label">País de Emisión</p>
-                                <input type="text" class="doc-paisEmision" value="${documento.paisEmision}" disabled>
-                                <p class="label">País de Residencia</p>
-                                <input type="text" class="doc-paisResidencia" value="${documento.paisResidencia}" disabled>
-                            </div>
+            contenedorDocumentos.innerHTML += `
+                <div class="datos-documento" data-nro="${documento.nro}">
+                    <div class="sector-datos">
+                        <div class="row">
+                            <p class="label">Tipo de Documento</p>
+                            <input type="text" class="doc-tipo" value="${documento.tipo.toUpperCase()}" disabled>
+                            <p class="label">Nro de Documento</p>
+                            <input type="text" class="doc-nro" value="${documento.nro}" disabled>
+                            <p class="label">Fecha de Vencimiento</p>
+                            <input type="date" class="doc-vencimiento" value="${fechaVencimientoFormateada}" disabled>
                         </div>
-
-                        <div class="editar-documento">
-                            <button class="boton-documento boton-editar">Editar</button>
-                            <button class="boton-documento boton-guardar-doc" style="display: none; background-color: #28a745; color: white;">Guardar</button>
-                            <button class="boton-documento boton-eliminar-doc" data-codigo="${documento.nro}">Eliminar</button>
+                        <div class="row">
+                            <p class="label">Fecha de Expedición</p>
+                            <input type="date" class="doc-expedicion" value="${fechaExpedicionFormateada}" disabled>
+                            <p class="label">País de Emisión</p>
+                            <input type="text" class="doc-paisEmision" value="${documento.paisEmision}" disabled>
+                            <p class="label">País de Residencia</p>
+                            <input type="text" class="doc-paisResidencia" value="${documento.paisResidencia}" disabled>
                         </div>
                     </div>
+
+                    <div class="editar-documento">
+                        <button class="boton-documento boton-editar">Editar</button>
+                        <button class="boton-documento boton-guardar-doc" style="display: none; background-color: #28a745; color: white;">Guardar</button>
+                        <button class="boton-documento boton-eliminar-doc" data-codigo="${documento.nro}">Eliminar</button>
+                    </div>
+                </div>
                 <hr>`;
         });
     }
