@@ -18,13 +18,13 @@ body {
 
 }
 
-.sub-titulo{
-    margin-top:1rem;
+.sub-titulo {
+    margin-top: 1rem;
     font-size: 1.2rem;
 
 }
 
-.sub-titulo button{
+.sub-titulo button {
     background-color: #642E2E;
     color: #fff;
     border: none;
@@ -39,19 +39,19 @@ body {
     color: #642E2E;
 }
 
-.grilla{
+.grilla {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.detalles-vuelo{
+.detalles-vuelo {
     display: grid;
     grid-template-columns: 2fr 0.5rem 1fr;
-    padding:2rem;
-    gap:1rem;
+    padding: 2rem;
+    gap: 1rem;
 }
 
-.detalles{
+.detalles {
     display: flex;
     align-items: center;
     gap: 0.6rem;
@@ -59,23 +59,62 @@ body {
     margin-bottom: 1rem;
 }
 
-.texto{
+.texto {
     display: grid;
     grid-template-rows: 2;
 }
-.info{
+
+.info {
     font-weight: bold;
 }
 
-.linea-divisoria{
+.linea-divisoria {
     border-left: #642E2E solid 0.1rem;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.forma-rojo{
-    color:#642E2E;
+.forma-rojo {
+    color: #642E2E;
     background-color: #642E2E;
 }
 
+
+@media (max-width: 768px) {
+    .detalles-vuelo {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    .grilla {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .eliminar{
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 468px) {
+    .detalles-vuelo {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    .grilla {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .eliminar{
+        margin-top: 1rem;
+    }
+}

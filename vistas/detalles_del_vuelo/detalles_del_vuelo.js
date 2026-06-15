@@ -1,12 +1,14 @@
 let asientosElegidos = [];
 const vuelo = JSON.parse(localStorage.getItem("vueloSeleccionado"));
-
 const vueltaSelector = document.getElementById("opcionalVuelta");
+
 
 if (localStorage.getItem("requiereVuelta") === "true") {
     vueltaSelector.style.display = "none";
+
 } else {
     vueltaSelector.style.display = "block";
+    corroborarSiEsVuelta(localStorage.getItem('vueloCompra'));
 }
 
 window.addEventListener("load", function () {
@@ -59,6 +61,12 @@ window.addEventListener("load", function () {
 
     actualizarPrecio();
 });
+
+function corroborarSiEsVuelta(vueloCompra){
+    if(vueloCompra){
+        vueltaSelector.style.display = "none";
+    }
+}
 
 function elegirAsiento(elemento, idAsiento) {
     if (elemento.classList.contains("seleccionado")) {

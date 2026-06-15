@@ -9,28 +9,44 @@ console.log('Vuelo Ida:', vueloIda);
 const todosLosVuelos = JSON.parse(localStorage.getItem("vuelos")) || [];
 
 
-if (!vueloIdeal && !vueloIda) {
+if (!vueloIda) {
     console.error("No se encontró información del vuelo.");
     window.location.href = "/index.html";
 }
 
-const fechaVuelta = new Date(vueloIdeal.fecha_vuelta);
+let vuelosFiltrados = [];
 
-const vuelosFiltrados = todosLosVuelos.filter(vuelo => {
+if (vueloIdeal && vueloIdeal.fecha_vuelta) {
 
-    const coincideTrayecto =
-        vuelo.origen === vueloIda.destino &&
-        vuelo.destino === vueloIda.origen;
+    const fechaVuelta = new Date(vueloIdeal.fecha_vuelta);
 
-    const fechaVuelo = new Date(vuelo.fecha_vuelo);
+    vuelosFiltrados = todosLosVuelos.filter(vuelo => {
 
-    const coincideFecha = fechaVuelo >= fechaVuelta;
+        const coincideTrayecto =
+            vuelo.origen === vueloIda.destino &&
+            vuelo.destino === vueloIda.origen;
+
+        const fechaVuelo = new Date(vuelo.fecha_vuelo);
+
+        const coincideFecha =
+            fechaVuelo >= fechaVuelta;
+
+        return coincideTrayecto && coincideFecha;
+    });
+
+} else {
+
+    vuelosFiltrados = todosLosVuelos.filter(vuelo => {
+
+        return (
+            vuelo.origen === vueloIda.destino &&
+            vuelo.destino === vueloIda.origen
+        );
+    });
+
+}
 
 
-    return coincideTrayecto && coincideFecha;
-});
-
-console.log("vuelosFiltrados:", vuelosFiltrados);
 
 function mostrarResultados(vuelos) {
 

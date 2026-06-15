@@ -17,8 +17,8 @@ if(!vueloReserva || vueloReserva.length == 0) {
 contenedorReservaGestionada.innerHTML += `<span class="titulo rojo">Gestionar reserva</span>
         <span class="sub-titulo rojo">Partida ${vueloReserva.origen} con destino a ${vueloReserva.destino}.</span>
         <span class="sub-titulo rojo">Asiento(s): ${stringAsientos}.</span>
-        <span class="sub-titulo rojo">Código de reserva: <strong>${vueloReserva.codigo_reserva}</strong>
-            <button data-codigo="${vueloReserva.codigo_reserva}" id="cancelar-reserva">Cancelar reserva</button>
+        <span class="sub-titulo rojo ">Código de reserva: <strong>${vueloReserva.codigo_reserva}</strong>
+            <button class="eliminar" data-codigo="${vueloReserva.codigo_reserva}" id="cancelar-reserva">Cancelar reserva</button>
         </span>
 
         <section class="detalles-vuelo">
