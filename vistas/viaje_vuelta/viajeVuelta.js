@@ -3,11 +3,13 @@ let tipoEquipaje = "ninguno";
 const contenedorResultados = document.getElementById("resultados");
 
 const vueloIdeal = JSON.parse(localStorage.getItem("busquedaVuelo"));
+console.log('Vuelo ideal:', vueloIdeal);
 const vueloIda = JSON.parse(localStorage.getItem("vueloSeleccionado"));
+console.log('Vuelo Ida:', vueloIda);
 const todosLosVuelos = JSON.parse(localStorage.getItem("vuelos")) || [];
 
 
-if (!vueloIdeal || !vueloIda) {
+if (!vueloIdeal && !vueloIda) {
     console.error("No se encontró información del vuelo.");
     window.location.href = "/index.html";
 }
