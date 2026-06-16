@@ -82,4 +82,5 @@ form.addEventListener("submit", function (evento) {
         });
 
     localStorage.setItem("pasajeros", document.getElementById("pasajeros").value);
+    localStorage.setItem("clase", document.getElementById("clase").value);
 });
