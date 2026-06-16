@@ -3,9 +3,7 @@ let tipoEquipaje = "ninguno";
 const contenedorResultados = document.getElementById("resultados");
 
 const vueloIdeal = JSON.parse(localStorage.getItem("busquedaVuelo"));
-console.log('Vuelo ideal:', vueloIdeal);
 const vueloIda = JSON.parse(localStorage.getItem("vueloSeleccionado"));
-console.log('Vuelo Ida:', vueloIda);
 const todosLosVuelos = JSON.parse(localStorage.getItem("vuelos")) || [];
 
 
@@ -28,8 +26,7 @@ if (vueloIdeal && vueloIdeal.fecha_vuelta) {
 
         const fechaVuelo = new Date(vuelo.fecha_vuelo);
 
-        const coincideFecha =
-            fechaVuelo >= fechaVuelta;
+        const coincideFecha = fechaVuelo >= fechaVuelta;
 
         return coincideTrayecto && coincideFecha;
     });
@@ -45,8 +42,6 @@ if (vueloIdeal && vueloIdeal.fecha_vuelta) {
     });
 
 }
-
-
 
 function mostrarResultados(vuelos) {
 
@@ -243,8 +238,7 @@ aplicarFiltros();
 
 
 
-document.getElementById("equipaje-mano")
-    .addEventListener("change", function () {
+document.getElementById("equipaje-mano").addEventListener("change", function () {
 
         tipoEquipaje = "mano";
         console.log("Equipaje mano");
@@ -252,8 +246,7 @@ document.getElementById("equipaje-mano")
         aplicarFiltros();
     });
 
-document.getElementById("equipaje-bodega")
-    .addEventListener("change", function () {
+document.getElementById("equipaje-bodega").addEventListener("change", function () {
 
         tipoEquipaje = "bodega";
         console.log("Equipaje bodega");
@@ -261,10 +254,7 @@ document.getElementById("equipaje-bodega")
         aplicarFiltros();
     });
 
-
-
-document.getElementById("botonFiltrado")
-    .addEventListener("click", function (evento) {
+document.getElementById("botonFiltrado").addEventListener("click", function (evento) {
 
         evento.preventDefault();
         console.log("Botón aplicar filtros");
@@ -272,54 +262,43 @@ document.getElementById("botonFiltrado")
         aplicarFiltros();
     });
 
-
-
 contenedorResultados.addEventListener("click", function (evento) {
 
-    const botonSeleccionado =
-        evento.target.closest(".botonSeleccionar");
+    const botonSeleccionado = evento.target.closest(".botonSeleccionar");
 
     if (botonSeleccionado) {
 
-        const dataVuelo =
-            botonSeleccionado.getAttribute("data-vuelo");
+        const dataVuelo = botonSeleccionado.getAttribute("data-vuelo");
 
         console.log("Botón seleccionar presionado");
 
         if (dataVuelo) {
 
-            const vueloSeleccionado =
-                JSON.parse(dataVuelo);
+            const vueloSeleccionado = JSON.parse(dataVuelo);
 
             console.log("Vuelo seleccionado:", vueloSeleccionado);
 
             if (tipoEquipaje === "mano") {
 
-                vueloSeleccionado.equipaje =
-                    "Equipaje de mano";
+                vueloSeleccionado.equipaje = "Equipaje de mano";
 
                 vueloSeleccionado.precio_total_usd += 25;
 
             } else if (tipoEquipaje === "bodega") {
 
-                vueloSeleccionado.equipaje =
-                    "Equipaje en bodega";
+                vueloSeleccionado.equipaje = "Equipaje en bodega";
 
                 vueloSeleccionado.precio_total_usd += 75;
 
             } else {
 
-                vueloSeleccionado.equipaje =
-                    "Sin equipaje";
+                vueloSeleccionado.equipaje = "Sin equipaje";
             }
 
-            localStorage.setItem(
-                "vueloSeleccionado",
-                JSON.stringify(vueloSeleccionado)
-            );
+            localStorage.setItem("vueloSeleccionado", JSON.stringify(vueloSeleccionado));
+            localStorage.setItem("esVuelta", "true");
 
-            window.location.href =
-                "/vistas/detalles_del_vuelo/detalles_del_vuelo.html";
+            window.location.href = "/vistas/detalles_del_vuelo/detalles_del_vuelo.html";
         }
     }
 });
@@ -327,40 +306,27 @@ contenedorResultados.addEventListener("click", function (evento) {
 
 function actualizarSlider() {
 
-    const min =
-        parseInt(document.getElementById("rango-min").value);
+    const min = parseInt(document.getElementById("rango-min").value);
 
-    const max =
-        parseInt(document.getElementById("rango-max").value);
+    const max = parseInt(document.getElementById("rango-max").value);
 
-    const minPos =
-        (min - 100) / (2500 - 100) * 100;
+    const minPos = (min - 100) / (2500 - 100) * 100;
 
-    const maxPos =
-        (max - 100) / (2500 - 100) * 100;
+    const maxPos = (max - 100) / (2500 - 100) * 100;
 
-    document.querySelector(".slider-container").style.background =
-        `linear-gradient(to right,
-        #ddd ${minPos}%,
-        #642E2E ${minPos}%,
-        #642E2E ${maxPos}%,
-        #ddd ${maxPos}%)`;
+    document.querySelector(".slider-container").style.background = `linear-gradient(to right, #ddd ${minPos}%, #642E2E ${minPos}%, #642E2E ${maxPos}%, #ddd ${maxPos}%)`;
 }
 
-document.getElementById("rango-min")
-    .addEventListener("input", function () {
+document.getElementById("rango-min").addEventListener("input", function () {
 
-        document.getElementById("precio-min").textContent =
-            this.value;
+        document.getElementById("precio-min").textContent = this.value;
 
         actualizarSlider();
     });
 
-document.getElementById("rango-max")
-    .addEventListener("input", function () {
+document.getElementById("rango-max").addEventListener("input", function () {
 
-        document.getElementById("precio-max").textContent =
-            this.value;
+        document.getElementById("precio-max").textContent = this.value;
 
         actualizarSlider();
     });

@@ -2,11 +2,10 @@ let asientosElegidos = [];
 const vuelo = JSON.parse(localStorage.getItem("vueloSeleccionado"));
 const vueltaSelector = document.getElementById("opcionalVuelta");
 
-
-if (localStorage.getItem('requiereVuelta') === 'true') {
-    vueltaSelector.style.display = 'none';
+if (localStorage.getItem("esVuelta") === "true") {
+    vueltaSelector.style.display = "none";
 } else {
-    vueltaSelector.style.display = 'block';
+    vueltaSelector.style.display = "block";
 }
 
 window.addEventListener("load", function () {
@@ -35,59 +34,71 @@ window.addEventListener("load", function () {
     const claseGuardada = localStorage.getItem("clase");
 
     if (pasajerosGuardados && claseGuardada) {
+
         document.getElementById("contenedor-pasajeros").style.display = "none";
+
         document.getElementById("cantidad-pasajeros-texto").textContent = "Pasajeros: " + pasajerosGuardados;
-        document.getElementById("clase-texto").textContent = "Clase: " + claseGuardada;
+
+        let claseTexto = "Económica";
+
+        if (claseGuardada === "ejecutiva") {
+            claseTexto = "Ejecutiva";
+        }
+
+        if (claseGuardada === "primera") {
+            claseTexto = "Primera Clase";
+        }
+
+        document.getElementById("clase-texto").textContent =
+            "Clase: " + claseTexto;
 
     } else {
+
         localStorage.setItem("pasajeros", document.getElementById("cantidad-pasajeros-select").value);
         localStorage.setItem("clase", document.getElementById("clase-select").value);
 
         document.getElementById("cantidad-pasajeros-texto").textContent = "Pasajeros: " + document.getElementById("cantidad-pasajeros-select").value;
-        document.getElementById("clase-texto").textContent = "Clase: " + document.getElementById("clase-select").value;
+        document.getElementById("clase-texto").textContent = "Clase: Económica";
 
         document.getElementById("cantidad-pasajeros-select").addEventListener("change", function () {
-            localStorage.setItem("pasajeros", this.value);
-            document.getElementById("cantidad-pasajeros-texto").textContent = "Pasajeros: " + this.value;
-            actualizarPrecio();
-        });
+                localStorage.setItem("pasajeros", this.value);
+                document.getElementById("cantidad-pasajeros-texto").textContent = "Pasajeros: " + this.value;
+                actualizarPrecio();
+            });
 
         document.getElementById("clase-select").addEventListener("change", function () {
-            localStorage.setItem("clase", this.value);
 
-            let claseTexto = "Económica";
+                localStorage.setItem("clase", this.value);
 
-            if (claseGuardada === "ejecutiva") {
-                claseTexto = "Ejecutiva";
-            }
+                let claseTexto = "Económica";
 
-            if (claseGuardada === "primera") {
-                claseTexto = "Primera Clase";
-            }
+                if (this.value === "ejecutiva") {
+                    claseTexto = "Ejecutiva";
+                }
 
-            document.getElementById("clase-texto").textContent = "Clase: " + claseTexto;
-            actualizarPrecio();
-        });
+                if (this.value === "primera") {
+                    claseTexto = "Primera Clase";
+                }
+
+                document.getElementById("clase-texto").textContent =
+                    "Clase: " + claseTexto;
+
+                actualizarPrecio();
+            });
     }
-
-    select.addEventListener("change", function () {
-        localStorage.setItem("pasajeros", this.value);
-        textoPasajeros.textContent = "Pasajeros: " + this.value;
-        actualizarPrecio();
-    });
 
     document.getElementById("ciudad-origen").textContent = vuelo.origen;
     document.getElementById("hora-salida").textContent = vuelo.hora_vuelo;
     document.getElementById("ciudad-destino").textContent = vuelo.destino;
     document.getElementById("hora-llegada").textContent = vuelo.llegada_estimada;
-
+    document.getElementById("fecha-del-vuelo").textContent = "Fecha del vuelo: " + vuelo.fecha_vuelo;
     document.getElementById("duracion").textContent = `${vuelo.duracion_estimada} · ${vuelo.escalas === 0 ? "Sin escalas" : vuelo.escalas + " escala(s)"}`;
 
     actualizarPrecio();
 });
 
-function corroborarSiEsVuelta(vueloCompra){
-    if(vueloCompra){
+function corroborarSiEsVuelta(vueloCompra) {
+    if (vueloCompra) {
         vueltaSelector.style.display = "none";
     }
 }
@@ -95,6 +106,7 @@ function corroborarSiEsVuelta(vueloCompra){
 function elegirAsiento(elemento, idAsiento) {
 
     if (elemento.classList.contains("seleccionado")) {
+
         elemento.classList.remove("seleccionado");
         elemento.classList.add("disponible");
 
@@ -128,18 +140,15 @@ function validar() {
     const cantidadPasajeros = parseInt(localStorage.getItem("pasajeros"));
 
     if (asientosElegidos.length === 0) {
-        evento.preventDefault();
+
         alert("Seleccioná al menos un asiento antes de continuar.");
         return false;
     }
 
     if (asientosElegidos.length !== cantidadPasajeros) {
-        evento.preventDefault();
-        alert(
-            "Tenés que elegir exactamente " +
-            cantidadPasajeros +
-            " asiento(s), uno por pasajero."
-        );
+
+        alert("Tenés que elegir exactamente " + cantidadPasajeros + " asiento(s), uno por pasajero.");
+
         return false;
     }
 
@@ -149,17 +158,20 @@ function validar() {
 const finalizado = document.getElementById("continuar");
 
 finalizado.addEventListener("click", function (evento) {
+
     if (!validar(evento)) {
         return;
     }
 
     const destino = verificarSiQuiereVuelta();
+
     window.location.href = destino;
 });
 
 function actualizarPrecio() {
 
     const cantidadPasajeros = parseInt(localStorage.getItem("pasajeros"));
+
     const clase = localStorage.getItem("clase");
 
     let extraClase = 0;
@@ -182,13 +194,17 @@ function actualizarPrecio() {
 }
 
 function verificarSiQuiereVuelta() {
-    const vueltaCheckbox = document.getElementById("vuelta");
-    const vuelta = vueltaCheckbox.checked;
 
+    const vueltaCheckbox = document.getElementById("vuelta");
+    let vuelta = false;
+
+    if (vueltaCheckbox) {
+        vuelta = vueltaCheckbox.checked;
+    }
+    
     const siQuiere = localStorage.getItem("requiereVuelta");
 
-    let vueloCompra =
-        JSON.parse(localStorage.getItem("vueloCompra")) || [];
+    let vueloCompra = JSON.parse(localStorage.getItem("vueloCompra")) || [];
 
     let vueloExiste = vueloCompra.find(cadaVuelo => cadaVuelo.id === vuelo.id);
 
@@ -198,12 +214,10 @@ function verificarSiQuiereVuelta() {
 
     localStorage.setItem("vueloCompra", JSON.stringify(vueloCompra));
 
-    if (siQuiere === "true" || vuelta === true) {
+    if (siQuiere === "true" && localStorage.getItem("esVuelta") !== "true" || vuelta === true) {
         return "../viaje_vuelta/vuelta.html";
-
-    } else {
-        return "../check_out/check_out.html";
     }
 
+    localStorage.removeItem("esVuelta");
     return "../check_out/check_out.html";
 }
