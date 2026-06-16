@@ -71,7 +71,7 @@ document.querySelector(".aplicar_cupon").addEventListener("click", function () {
 
     if (cupones[codigo]) {
         const porcentaje = cupones[codigo];
-        
+
 
         const descuento = precioBase * porcentaje / 100;
         const nuevo = precioBase - descuento;
@@ -134,27 +134,25 @@ document.getElementById("form-checkout").addEventListener("submit", function (ev
         return;
     }
 
-
-    const asientosElegidos = JSON.parse(localStorage.getItem("asientoElegido")) || [];
-
     vuelos.forEach(function (vuelo) {
-
-        vuelo.asientosElegidos = asientosElegidos;
 
         if (!usuario.vuelos) {
             usuario.vuelos = [];
         }
 
         usuario.vuelos.push(vuelo);
-});
+    });
 
     localStorage.setItem("usuarioLogueado", JSON.stringify(usuario));
 
-
     vuelos.forEach(function (vuelo) {
-        if (vuelo.asientos) {
-            asientosElegidos.forEach(function (asiento) {
+
+        if (vuelo.asientos && vuelo.asientosElegidos) {
+
+            vuelo.asientosElegidos.forEach(function (asiento) {
+
                 vuelo.asientos.forEach(function (asientoVuelo) {
+
                     if (asiento.id === asientoVuelo.id) {
                         asientoVuelo.estado = "ocupado";
                     }
@@ -174,8 +172,6 @@ document.getElementById("form-checkout").addEventListener("submit", function (ev
     });
 
     localStorage.setItem("vuelos", JSON.stringify(vuelosActualizados));
-
-    localStorage.removeItem("asientoElegido");
 
     window.location.href = "../reserva_confirmada/reserva_confirmada.html";
 });

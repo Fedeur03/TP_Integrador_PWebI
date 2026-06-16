@@ -167,7 +167,7 @@
     font-weight: bold;
     font-size: 1.1rem;
     text-align: right;
-    gap: 0.4rem;
+    gap: 0.7rem;
 }
 
 .numeros p {
@@ -235,6 +235,20 @@
 
 #continuar {
     cursor: pointer;
+}
+
+#asientos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: center;
+}
+
+#otros-asientos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: center;
 }
 
 @media (max-width: 1024px) {
