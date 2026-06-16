@@ -12,7 +12,6 @@ if(localStorage.getItem('requiereVuelta') === 'true') {
     titulo.innerHTML = "Vuelos de Ida";
 }
 
-// ── DIBUJAR EN EL HTML ───────────────────────────────────────
 function mostrarResultados(vuelosFiltrados) {
 
     if (vuelosFiltrados.length === 0) {
@@ -61,9 +60,7 @@ function mostrarResultados(vuelosFiltrados) {
     contenedorResultados.innerHTML = htmlAcumulado;
 }
 
-// ── FUNCIÓN PRINCIPAL DE FILTRADO Y MUESTRA ──────────────────
 function aplicarFiltros() {
-    // 1. Capturamos los valores actuales de los filtros de la pantalla
     const precioMin = parseInt(document.getElementById("rango-min").value);
     const precioMax = parseInt(document.getElementById("rango-max").value);
     const esDirecto = document.getElementById("esDirecto").checked;
@@ -73,15 +70,13 @@ function aplicarFiltros() {
     const esFlybondi = document.getElementById("esAerolineaFlybondi").checked;
     const esEmirates = document.getElementById("esAerolineaEmirates").checked;
 
-    // Siempre partimos de la lista original completa del localStorage
     let arrayFiltrado = JSON.parse(resultados);
 
-    // 2. Filtro de Precio (Acá se calcula el precio con equipaje y SE QUEDAN AFUERA los que se pasan)
     let soloPrecio = [];
     for (let i = 0; i < arrayFiltrado.length; i++) {
         let precioConEquipaje = arrayFiltrado[i].precio_total_usd;
 
-        // Le sumamos el equipaje activo antes de comparar
+
         if (tipoEquipaje === "mano") {
             precioConEquipaje += 25;
         }
@@ -90,14 +85,13 @@ function aplicarFiltros() {
             precioConEquipaje += 75;
         } 
 
-        // Si el precio final (con equipaje) entra en el rango, se muestra. Si no, se descarta.
         if (precioConEquipaje >= precioMin && precioConEquipaje <= precioMax) {
             soloPrecio.push(arrayFiltrado[i]);
         }
     }
     arrayFiltrado = soloPrecio;
 
-    // 3. Filtro Tipo de Vuelo
+
     if (esDirecto || tieneEscala) {
         let soloTipo = [];
         for (let i = 0; i < arrayFiltrado.length; i++) {
@@ -111,7 +105,7 @@ function aplicarFiltros() {
         arrayFiltrado = soloTipo;
     }
 
-    // 4. Filtro Aerolínea
+
     if (esArgentina || esAmerican || esFlybondi || esEmirates) {
         let soloAerolineas = [];
         for (let i = 0; i < arrayFiltrado.length; i++) {
@@ -131,15 +125,15 @@ function aplicarFiltros() {
         arrayFiltrado = soloAerolineas;
     }
 
-    // 5. Mandamos a dibujar los que sobrevivieron a todos los filtros
+
     mostrarResultados(arrayFiltrado);
 }
 
-// Al cargar por primera vez, ejecutamos para mostrar todo original
+
 aplicarFiltros();
 
 
-// ── EQUIPAJE (Ahora ejecutan la función inteligente) ─────────
+
 document.getElementById("equipaje-mano").addEventListener("change", function () {
     tipoEquipaje = "mano";
     aplicarFiltros(); 
@@ -151,14 +145,13 @@ document.getElementById("equipaje-bodega").addEventListener("change", function (
 });
 
 
-// ── BOTON FILTRADO ───────────────────────────────────────────
 document.getElementById("botonFiltrado").addEventListener("click", function (evento) {
     evento.preventDefault();
     aplicarFiltros();
 });
 
 
-// ── SELECCIONAR VUELO ────────────────────────────────────────
+
 contenedorResultados.addEventListener("click", function (evento) {
     const botonSeleccionado = evento.target.closest(".botonSeleccionar");
 
@@ -187,7 +180,7 @@ contenedorResultados.addEventListener("click", function (evento) {
 });
 
 
-// ── ACTUALIZA SLIDER SEGÚN MINIMO Y MAXIMO ───────────────────
+
 function actualizarSlider() {
     const min = parseInt(document.getElementById("rango-min").value);
     const max = parseInt(document.getElementById("rango-max").value);

@@ -101,6 +101,10 @@ select {
     flex-direction: column;
 }
 
+ input[type='radio'] { 
+     transform: scale(3); 
+    }
+
 .sub-header {
     width: 100%;
     padding: 0.5rem;
@@ -178,6 +182,14 @@ select {
     width: auto;
     display: flex;
     padding: 1rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido_row div{
+    align-self: center;
+    display: flex;
     gap: 1rem;
 }
 
@@ -322,4 +334,125 @@ input[type="radio"] {
 label {
     font-size: 1rem;
     color: #000000;
+}
+@media (max-width: 1200px) {
+
+    .contenedor {
+        max-width: 95%;
+    }
+
+    .resumen {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+
+    input[type='radio'] { 
+     transform: scale(2); 
+    }
+
+    .contenedor {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .contenido_row {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    
+
+    .documento {
+        flex-direction: column;
+    }
+
+    .fecha_cvv {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cvv {
+        width: 100%;
+    }
+
+    .cupon_descuento {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cupon_precio,
+    .titulo_cupon {
+        width: 100%;
+    }
+
+    .cupon_precio input,
+    .aplicar_cupon {
+        width: 100%;
+    }
+
+    .precio {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    input[type="number"] {
+        width: 100% !important;
+    }
+
+    select,
+    input[type="text"],
+    input[type="email"],
+    input[type="date"] {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .categoria {
+        font-size: 1.6rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .contenido,
+    .sub_contenido,
+    .contenido_row {
+        padding: 0.75rem;
+    }
+
+    .contenido_row {
+        align-items: flex-start;
+        flex-direction: center;
+    }
+
+     input[type='radio'] { 
+     transform: scale(2); 
+    }
+
+    .tarjeta {
+        font-size: 1rem;
+    }
+
+    .confirmar {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .sector_inferior {
+        width: 95%;
+    }
 }

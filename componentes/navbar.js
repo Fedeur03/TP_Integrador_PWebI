@@ -3,92 +3,81 @@ const usuarioLogueado = JSON.parse(localStorage.getItem("usuarioLogueado"));
 
 if (usuarioLogueado) {
     navbar.innerHTML = `
-        <div class="nav-left">
-            <ul class="nav-list">
-                <a href="/index.html"><img src="../../media/flyway_logo.png" class="nav-logo" /></a>
-                <div class="vistas">
-                    <li><a class="contenido-navbar" href="/index.html">Inicio</a></li>
-                    <li><a class="contenido-navbar" href="/vistas/vuelos/vuelos.html">Vuelos</a></li>
-                    <li><a class="contenido-navbar" href="/vistas/contacto/contacto.html">Contacto</a></li>
-                </div>
-            </ul>
+        <div class="nav-top-bar">
+            <a href="/index.html"><img src="../../media/flyway_logo.png" class="nav-logo" /></a>
+            <div class="usuario-container">
+                <a class="user-name" href="/vistas/usuario/usuario.html">Mi Perfil</a>
+                <a class="mis-reservas-btn" href="/vistas/mis_reservas/mis_reservas.html">Mis Reservas</a>
+                <a class="log-out-icon" href="#" id="boton-salir"><i class="fa-solid fa-right-from-bracket"></i></a>
+            </div>
         </div>
-        <div class="nav-right">
+        <nav class="nav-navigation">
             <ul class="nav-list">
-                <div class="usuario">
-                    <li class="log-in"><a class="contenido-navbar" href="/vistas/usuario/usuario.html">${usuarioLogueado.nombre} ${usuarioLogueado.apellido} ▼</a></li>
-                    <li class="log-in"><a class="contenido-navbar" href="/vistas/mis_reservas/mis_reservas.html">Mis Reservas</a></li>
-                    <li class="log-in"><a class="contenido-navbar" href="#" id="boton-salir"><i class="fa-solid fa-right-from-bracket"></i></a></li>
-                </div>
+                <li><a class="contenido-navbar" href="/index.html">Inicio</a></li>
+                <li><a class="contenido-navbar" href="/vistas/vuelos/vuelos.html">Vuelos</a></li>
+                <li><a class="contenido-navbar" href="/vistas/contacto/contacto.html">Contacto</a></li>
             </ul>
-        </div>`;
+        </nav>`;
 } else {
     navbar.innerHTML = `
-        <div class="nav-left">
-            <ul class="nav-list">
-                <a href="/index.html"><img src="../../media/flyway_logo.png" class="nav-logo" /></a>
-                <div class="vistas">
-                    <li><a class="contenido-navbar" href="/index.html">Inicio</a></li>
-                    <li><a class="contenido-navbar" href="/vistas/vuelos/vuelos.html">Vuelos</a></li>
-                    <li><a class="contenido-navbar" href="/vistas/contacto/contacto.html">Contacto</a></li>
-                </div>
-            </ul>
+        <div class="nav-top-bar">
+            <a href="/index.html"><img src="../../media/flyway_logo.png" class="nav-logo" /></a>
+            <div class="usuario-container">
+                <a class="login-link" href="/vistas/iniciar_sesion/login.html">Acceder</a>
+                <a href="/vistas/registrarse/registro.html" class="sign-in-btn">Comenzar ahora</a>
+            </div>
         </div>
-        <div class="nav-right">
+        <nav class="nav-navigation">
             <ul class="nav-list">
-                <div class="usuario">
-                    <li class="log-in"><a class="contenido-navbar" href="/vistas/iniciar_sesion/login.html">Acceder</a></li>
-                    <li><a href="/vistas/registrarse/registro.html" class="sign-in">Comenzar ahora</a></li>
-                </div>
+                <li><a class="contenido-navbar" href="/index.html">Inicio</a></li>
+                <li><a class="contenido-navbar" href="/vistas/vuelos/vuelos.html">Vuelos</a></li>
+                <li><a class="contenido-navbar" href="/vistas/contacto/contacto.html">Contacto</a></li>
             </ul>
-        </div>`;
+        </nav>`;
 }
 
 function marcarEnlaceActivo() {
-    // 1. Usamos window.location.pathname completo (ej: "/vistas/vuelos/vuelos.html")
-    let rutaActual = window.location.pathname;
-    
-    // Si la ruta termina en barra o está vacía, asumimos que es el index
-    if (rutaActual === "/" || rutaActual === "") {
-        rutaActual = "/index.html";
+    let rutaActual = window.location.pathname.split("/").pop();
+
+
+    if (rutaActual === "") {
+        rutaActual = "index.html";
     }
 
-    // 2. Seleccionamos todos los enlaces con la clase correspondientes
-    const enlaces = document.querySelectorAll('.contenido-navbar');
+    const enlaces = document.querySelectorAll(".contenido-navbar");
 
     enlaces.forEach(enlace => {
-        const hrefEnlace = enlace.getAttribute('href');
+        const hrefEnlace = enlace.getAttribute("href").split("/").pop();
 
-        // 3. Comparamos la ruta completa de la URL con el href del enlace
         if (rutaActual === hrefEnlace) {
-            enlace.classList.add('contenido-seleccionado'); 
+            enlace.classList.add("contenido-seleccionado");
         } else {
-            enlace.classList.remove('contenido-seleccionado');
+            enlace.classList.remove("contenido-seleccionado");
         }
     });
 }
-
-// Se ejecuta justo después de haber inyectado el HTML en el navbar
 marcarEnlaceActivo();
-
 
 const botonSalir = document.getElementById('boton-salir');
 
-botonSalir.addEventListener('click', function () {
-    const usuarioLogueado = JSON.parse(localStorage.getItem("usuarioLogueado"));
-    const listaUsuarios = JSON.parse(localStorage.getItem("usuarios"));
+if (botonSalir) {
+    botonSalir.addEventListener('click', function (e) {
+        e.preventDefault();
+        const usuarioLogueado = JSON.parse(localStorage.getItem("usuarioLogueado"));
+        const listaUsuarios = JSON.parse(localStorage.getItem("usuarios"));
 
-    const nuevoArrayUsuarios = listaUsuarios.filter(usuario => usuario.email !== usuarioLogueado.email);
-    nuevoArrayUsuarios.push(usuarioLogueado);
+        const nuevoArrayUsuarios = listaUsuarios.filter(usuario => usuario.email !== usuarioLogueado.email);
+        nuevoArrayUsuarios.push(usuarioLogueado);
 
-    localStorage.setItem('usuarios', JSON.stringify(nuevoArrayUsuarios));
-    localStorage.removeItem('usuarioLogueado');
-    localStorage.removeItem('vueloSeleccionado');
-    localStorage.removeItem('reservaSeleccionada');
-    localStorage.removeItem('pasajeros');
-    localStorage.removeItem('vuelosFiltrados');
-    localStorage.removeItem('busquedaVuelo');
-    localStorage.removeItem('vueloCompra');
-    
-    window.location.href = '/index.html';
-})
+        localStorage.setItem('usuarios', JSON.stringify(nuevoArrayUsuarios));
+        localStorage.removeItem('usuarioLogueado');
+        localStorage.removeItem('vueloSeleccionado');
+        localStorage.removeItem('reservaSeleccionada');
+        localStorage.removeItem('pasajeros');
+        localStorage.removeItem('vuelosFiltrados');
+        localStorage.removeItem('busquedaVuelo');
+        localStorage.removeItem('vueloCompra');
+        
+        window.location.href = '/index.html';
+    });
+}

@@ -2,84 +2,152 @@
     box-sizing: border-box;
 }
 
-.contenedor{
+body {
+    overflow-x: hidden;
+}
+
+.contenedor {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 3rem auto 1rem auto;
-    width: 80%;
+    padding: 0 1rem;
+    width: 100%;
+    max-width: 800px;
     min-height: 75vh;
     color: #602929;
 }
 
-h1{
+h1 {
     margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
 }
 
-.contenedor p{
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+.contenedor > p {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    text-align: center;
+    color: #444;
 }
 
-#contenedor-reservas{
+#contenedor-reservas {
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 .tarjeta {
-    width: 55%;
-    background-color: #C9AFAF;
-    border-radius: 15px 50px 15px 50px;
-    border: 1px solid #602929;
-    padding: 1.2em;
+    width: 100%;
+    background-color: #f9f3f3;
+    border-radius: 1rem;
+    border: 1px solid #c9afaf;
+    padding: 1.5rem;
     color: #602929;
-    margin: 1rem auto;
-    font-size: large;
-}
-
-.abierta {
-    display: flex;
-    flex-direction: column;
-    gap: 0.7rem;
-}
-
-.abierta p{
-    display:flex;
-    align-items: center;
-    font-size: 1.1em;
-    gap: 0.4rem;
-}
-
-.icon{
-    width: 35px;
+    margin: 0 auto 1.5rem auto;
 }
 
 .cabecera {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #c9afaf;
+    flex-wrap: wrap;
 }
 
-.contenido-secundario{
-    text-align: center;
-    color: black;
-    font-size: 1.2em;
-    margin-top: 1rem;
+.cabecera h3 {
+    font-size: 1.1rem;
+    margin: 0;
+    flex: 1;
 }
 
-.contenido {
+.cabecera strong {
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+.abierta {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1rem 0;
+}
+
+.abierta p {
+    display: flex;
     align-items: center;
-    margin-top: 1em;
+    font-size: 1rem;
+    gap: 0.6rem;
+    margin: 0;
+    color: #444;
 }
 
-.contenido img {
-    width: 15%;
+.abierta p strong {
+    color: #602929;
 }
 
-.link{
+.icon {
+    width: 20px;
+    text-align: center;
+    color: #602929;
+    flex-shrink: 0;
+}
+
+.contenido-secundario {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #c9afaf;
+    margin-top: 0.5rem;
+}
+
+.contenido-secundario p {
+    font-size: 1rem;
+    color: #444;
+    margin: 0;
+}
+
+.contenido-secundario strong {
+    display: block;
+    font-size: 1.4rem;
+    color: #602929;
+    letter-spacing: 0.1rem;
+    margin-top: 0.3rem;
+}
+
+.link {
     text-decoration: none;
-    color:#642E2E;
+    color: #642E2E;
     font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .contenedor > p {
+        font-size: 1rem;
+    }
+
+    .tarjeta {
+        padding: 1.1rem;
+    }
+
+    .cabecera {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .cabecera strong {
+        font-size: 1.1rem;
+    }
+
+    .abierta p {
+        font-size: 0.95rem;
+    }
+
+    .contenido-secundario strong {
+        font-size: 1.2rem;
+    }
 }

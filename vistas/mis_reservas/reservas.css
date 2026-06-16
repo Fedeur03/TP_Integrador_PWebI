@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: Calibri, sans-serif;
+}
+
 html {
     height: 100vh;
     background-color: #ebebeb;
@@ -12,15 +22,6 @@ html {
     min-height: 70vh;
 }
 
-.tarjeta a{
-    text-decoration: none;
-    color:#fff
-}
-
-.tarjeta button:hover{
-    background-color: #7c5050;
-}
-
 .lateral {
     display: flex;
     flex-direction: column;
@@ -30,10 +31,10 @@ html {
 }
 
 .lateral h1 {
-    color: #602929;
     font-size: 1.5rem;
     color: #642E2E;
     border-bottom: 0.1rem solid #642E2E;
+    padding-bottom: 0.5rem;
 }
 
 .lateral h2 {
@@ -49,17 +50,18 @@ html {
     font-weight: bold;
 }
 
-.link{
+.link {
     text-decoration: none;
-    color:#642E2E;
+    color: #642E2E;
     font-weight: bold;
 }
 
-.link:hover{
+.link:hover {
     color: #9c7575;
 }
 
 .vuelos {
+    width: 55%;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -67,20 +69,6 @@ html {
     border-left: 0.1rem solid #642E2E;
     padding-left: 1rem;
     color: #642E2E;
-}
-
-.boton {
-    width: 14%;
-    background-color: #642E2E;
-    color: #fff;
-    margin-top: 0.5rem;
-    padding: 0.7em 1.2em;
-    border: none;
-    border-radius: 8px;
-    font-size: 0.950rem;
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center;
 }
 
 .tarjeta {
@@ -109,7 +97,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1em;
+    margin-top: 0.5em;
 }
 
 .contenido img {
@@ -128,7 +116,64 @@ html {
     cursor: pointer;
 }
 
-.contenido-adicional p{
+.contenido-adicional p {
     margin-bottom: 0.7rem;
 }
 
+.boton {
+    display: inline-block;
+    width: max-content;
+    min-width: 160px;
+    background-color: #642E2E;
+    color: #fff !important;
+    margin-top: 1.2rem;
+    padding: 0.7em 1.2em;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.950rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    align-self: flex-start;
+    transition: background-color 0.2s ease;
+}
+
+.boton:hover {
+    background-color: #7c5050;
+}
+
+@media (max-width: 768px) {
+    .contenedor_reservas {
+        grid-template-columns: 1fr;
+        gap: 1.5em;
+        padding: 1em;
+    }
+
+    .vuelos {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        padding-left: 1rem;
+        color: #642E2E;
+        width: 100%;
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .cabecera {
+        grid-template-columns: 1fr auto auto;
+        gap: 10px;
+    }
+
+    .cabecera h3 {
+        font-size: 1.1rem;
+    }
+
+    .boton {
+        width: 100%;
+        align-self: center;
+        margin-top: 1rem;
+    }
+
+}

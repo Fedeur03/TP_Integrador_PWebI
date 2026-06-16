@@ -83,3 +83,9 @@ form p {
     font-size: 1.4rem;
     font-weight: bold;
 }
+
+@media (max-width: 768px) {
+    form {
+        width: 80%;
+    }
+}
