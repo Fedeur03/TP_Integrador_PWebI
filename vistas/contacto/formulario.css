@@ -12,6 +12,39 @@ body {
     background-color: #F5EDED;
     padding-bottom: 4rem;
 }
+
+.mensaje {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgb(240, 248, 240);
+    border: 1px solid rgb(180, 220, 180);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.aviso-titulo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: rgb(5, 104, 5);
+    margin: 0;
+}
+
+.aviso-subtitulo {
+    font-size: 1.1rem;
+    color: rgb(40, 80, 40);
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
 @media (max-width: 630px) {
     .contenedor {
         padding: 1rem;
