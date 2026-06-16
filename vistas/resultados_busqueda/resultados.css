@@ -123,6 +123,18 @@
     cursor: pointer;
 }
 
+.volver-filtro {
+    display: flex;
+    justify-content: center;
+    padding: 7px 14px;
+    background: white;
+    color: #5c2020;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 @media (max-width: 1180px) {
     .grilla {
         grid-template-columns: 1fr 3fr;
