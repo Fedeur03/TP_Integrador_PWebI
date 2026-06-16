@@ -11,7 +11,7 @@ if (vuelo) {
 
 const vueltaSelector = document.getElementById("opcionalVuelta");
 
-if (localStorage.getItem("esVuelta") === "true") {
+if (localStorage.getItem("requiereVuelta") === "true" || localStorage.getItem("esVuelta") === "true") {
     vueltaSelector.style.display = "none";
 } else {
     vueltaSelector.style.display = "block";

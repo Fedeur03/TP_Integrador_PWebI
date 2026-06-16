@@ -15,33 +15,25 @@ if (!vueloIda) {
 let vuelosFiltrados = [];
 
 if (vueloIdeal && vueloIdeal.fecha_vuelta) {
-
-    const fechaVuelta = new Date(vueloIdeal.fecha_vuelta);
-
     vuelosFiltrados = todosLosVuelos.filter(vuelo => {
-
         const coincideTrayecto =
             vuelo.origen === vueloIda.destino &&
             vuelo.destino === vueloIda.origen;
 
-        const fechaVuelo = new Date(vuelo.fecha_vuelo);
-
-        const coincideFecha = fechaVuelo >= fechaVuelta;
+        const coincideFecha = vuelo.fecha_vuelo >= vueloIdeal.fecha_vuelta;
 
         return coincideTrayecto && coincideFecha;
     });
-
+    
 } else {
-
     vuelosFiltrados = todosLosVuelos.filter(vuelo => {
-
         return (
             vuelo.origen === vueloIda.destino &&
             vuelo.destino === vueloIda.origen
         );
     });
-
 }
+
 
 function mostrarResultados(vuelos) {
 

@@ -74,6 +74,7 @@ if (botonSalir) {
         localStorage.removeItem('vueloSeleccionado');
         localStorage.removeItem('reservaSeleccionada');
         localStorage.removeItem('pasajeros');
+        localStorage.removeItem('clase')
         localStorage.removeItem('vuelosFiltrados');
         localStorage.removeItem('busquedaVuelo');
         localStorage.removeItem('vueloCompra');

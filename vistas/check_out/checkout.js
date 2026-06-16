@@ -9,7 +9,7 @@ const usuario = JSON.parse(localStorage.getItem("usuarioLogueado"));
 
 
 if (vuelos.length === 0) {
-    alert("Redirección automática: El carrito de compras está vacío en el LocalStorage ('vueloCompra').");
+    alert("Redirección automática, no posee vuelos.");
     window.location.href = "/index.html";
 }
 
