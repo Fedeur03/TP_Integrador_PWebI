@@ -1,5 +1,14 @@
 let asientosElegidos = [];
-const vuelo = JSON.parse(localStorage.getItem("vueloSeleccionado"));
+let vuelo = JSON.parse(localStorage.getItem("vueloSeleccionado"));
+const vueloCompraHistorial = JSON.parse(localStorage.getItem("vueloCompra")) || [];
+
+if (vuelo) {
+    const vueloGuardado = vueloCompraHistorial.find(cadaVuelo => cadaVuelo.id === vuelo.id);
+    if (vueloGuardado) {
+        vuelo.asientos = vueloGuardado.asientos;
+    }
+}
+
 const vueltaSelector = document.getElementById("opcionalVuelta");
 
 if (localStorage.getItem("esVuelta") === "true") {
@@ -13,35 +22,27 @@ window.addEventListener("load", function () {
     const elementoAsientos = document.getElementById("asientos");
     const otrosAsientos = document.getElementById("otros-asientos");
 
-    vuelo.asientos.forEach(function (asiento) {
+    if (vuelo && vuelo.asientos) {
+        vuelo.asientos.forEach(function (asiento) {
 
-        const icono = document.createElement("i");
-        icono.className = `fa-solid fa-couch ${asiento.estado}`;
+            const icono = document.createElement("i");
+            icono.className = `fa-solid fa-couch ${asiento.estado}`;
 
-        icono.addEventListener("click", function () {
-            elegirAsiento(icono, asiento.id);
+            icono.addEventListener("click", function () {
+                elegirAsiento(icono, asiento.id);
+            });
+
+            const letra = asiento.id.slice(-1);
+
+            const columnasIzq = ["A", "B", "C", "D"];
+
+            if (columnasIzq.includes(letra)) {
+                elementoAsientos.appendChild(icono);
+            } else {
+                otrosAsientos.appendChild(icono);
+            }
         });
-
-        const letra = asiento.id.slice(-1);
-
-        const columnasIzq = ["A", "B", "C", "D"];
-
-        if (columnasIzq.includes(letra)) {
-            elementoAsientos.appendChild(icono);
-        } else {
-            otrosAsientos.appendChild(icono);
-        }
-    });
-
-    vuelo.asientos.forEach(function (asiento) {
-
-        const icono = document.createElement("i");
-        icono.className = `fa-solid fa-couch ${asiento.estado}`;
-
-        icono.addEventListener("click", function () {
-            elegirAsiento(icono, asiento.id);
-        });
-    });
+    }
 
     const pasajerosGuardados = localStorage.getItem("pasajeros");
     const claseGuardada = localStorage.getItem("clase");
@@ -100,12 +101,14 @@ window.addEventListener("load", function () {
         });
     }
 
-    document.getElementById("ciudad-origen").textContent = vuelo.origen;
-    document.getElementById("hora-salida").textContent = vuelo.hora_vuelo;
-    document.getElementById("ciudad-destino").textContent = vuelo.destino;
-    document.getElementById("hora-llegada").textContent = vuelo.llegada_estimada;
-    document.getElementById("fecha-del-vuelo").textContent = "Fecha del vuelo: " + vuelo.fecha_vuelo;
-    document.getElementById("duracion").textContent = `${vuelo.duracion_estimada} · ${vuelo.escalas === 0 ? "Sin escalas" : vuelo.escalas + " escala(s)"}`;
+    if (vuelo) {
+        document.getElementById("ciudad-origen").textContent = vuelo.origen;
+        document.getElementById("hora-salida").textContent = vuelo.hora_vuelo;
+        document.getElementById("ciudad-destino").textContent = vuelo.destino;
+        document.getElementById("hora-llegada").textContent = vuelo.llegada_estimada;
+        document.getElementById("fecha-del-vuelo").textContent = "Fecha del vuelo: " + vuelo.fecha_vuelo;
+        document.getElementById("duracion").textContent = `${vuelo.duracion_estimada} · ${vuelo.escalas === 0 ? "Sin escalas" : vuelo.escalas + " escala(s)"}`;
+    }
 
     actualizarPrecio();
 });
@@ -118,6 +121,10 @@ function corroborarSiEsVuelta(vueloCompra) {
 
 function elegirAsiento(elemento, idAsiento) {
 
+    if (elemento.classList.contains("ocupado")) {
+        return;
+    }
+
     if (elemento.classList.contains("seleccionado")) {
 
         elemento.classList.remove("seleccionado");
@@ -128,10 +135,6 @@ function elegirAsiento(elemento, idAsiento) {
         });
 
     } else {
-
-        if (elemento.classList.contains("ocupado")) {
-            return;
-        }
 
         elemento.classList.remove("disponible");
         elemento.classList.add("seleccionado");
@@ -183,6 +186,8 @@ finalizado.addEventListener("click", function (evento) {
 
 function actualizarPrecio() {
 
+    if (!vuelo) return;
+
     const cantidadPasajeros = parseInt(localStorage.getItem("pasajeros"));
 
     const clase = localStorage.getItem("clase");
@@ -208,6 +213,8 @@ function actualizarPrecio() {
 
 function verificarSiQuiereVuelta() {
 
+    if (!vuelo) return "../check_out/check_out.html";
+
     const vueltaCheckbox = document.getElementById("vuelta");
     let vuelta = false;
 
@@ -219,15 +226,25 @@ function verificarSiQuiereVuelta() {
 
     let vueloCompra = JSON.parse(localStorage.getItem("vueloCompra")) || [];
 
+    vuelo.asientos.forEach(function (asiento) {
+        let fueElegido = asientosElegidos.some(elegido => elegido.id === asiento.id);
+        if (fueElegido) {
+            asiento.estado = "ocupado";
+        }
+    });
+
     vuelo.asientosElegidos = JSON.parse(JSON.stringify(asientosElegidos));
 
     let vueloExiste = vueloCompra.find(cadaVuelo => cadaVuelo.id === vuelo.id);
 
     if (!vueloExiste) {
         vueloCompra.push(vuelo);
+    } else {
+        vueloCompra = vueloCompra.map(cadaVuelo => cadaVuelo.id === vuelo.id ? vuelo : cadaVuelo);
     }
 
     localStorage.setItem("vueloCompra", JSON.stringify(vueloCompra));
+    localStorage.setItem("vueloSeleccionado", JSON.stringify(vuelo));
 
     if (siQuiere === "true" && localStorage.getItem("esVuelta") !== "true" || vuelta === true) {
         return "../viaje_vuelta/vuelta.html";
