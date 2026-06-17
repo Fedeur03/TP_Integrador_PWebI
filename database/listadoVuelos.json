@@ -15,7 +15,7 @@
     "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 1438,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOwfFwy9VfrFwe867ijD5IY8arTI5hNtqndCzschn8AbqsvGP05o0yACft&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -259,7 +259,7 @@
     "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 941,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://static.wixstatic.com/media/4c919a_d3695f98f85f448fad539cb9057b3243~mv2.jpg/v1/fill/w_670,h_376,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/4c919a_d3695f98f85f448fad539cb9057b3243~mv2.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -500,10 +500,10 @@
     "llegada_estimada": "04:45",
     "terminal": "2",
     "puerta": "E54",
-    "aerolinea": "British Airways",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 2101,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9GLP8XVVvprRQqWbFglMVwnidL5hgbYCzdPeCRFE7M46zkeAOyEt17VhH&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -744,10 +744,10 @@
     "llegada_estimada": "22:45",
     "terminal": "4",
     "puerta": "G49",
-    "aerolinea": "British Airways",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 1122,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://blog.viajemos.com/wp-content/uploads/2023/06/%C2%BFQue-hacer-un-dia-en-New-York-3.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -988,10 +988,10 @@
     "llegada_estimada": "23:15",
     "terminal": "2",
     "puerta": "A14",
-    "aerolinea": "Air France",
+    "aerolinea": "Emirates",
     "precio_total_usd": 578,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB4IZNtM4VQKfUYXt0k4-jlIdzwj54zDPn6K2CkUfmNPMGEYixaoriG-8L&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -1232,10 +1232,10 @@
     "llegada_estimada": "21:15",
     "terminal": "2",
     "puerta": "G48",
-    "aerolinea": "Air France",
+    "aerolinea": "Emirates",
     "precio_total_usd": 1946,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://www.nyhabitat.com/sp/blog/wp-content/uploads/2014/05/diez-mejores-paris-paisajes-torre-eiffel.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -1476,10 +1476,10 @@
     "llegada_estimada": "16:15",
     "terminal": "2",
     "puerta": "C21",
-    "aerolinea": "LATAM",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1894,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://www.civitatis.com/blog/wp-content/uploads/2024/09/panorama-santiago-de-chile.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -1720,10 +1720,10 @@
     "llegada_estimada": "09:00",
     "terminal": "4",
     "puerta": "E8",
-    "aerolinea": "LATAM",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 738,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://content-viajes.nationalgeographic.com.es/medio/2024/09/05/sao-paulo_6c6f7dc5_2491744801_240905113414_1280x852.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -1967,7 +1967,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 2168,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://www.latamairlines.com/content/dam/latamxp/sites/vamos-latam/news-caribe-dic-2024/cancun/Cancun_Destino_Foto%201_Gaviota%20Azul.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -2211,7 +2211,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 1204,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://i.pinimg.com/564x/dd/ed/51/dded517d7038e33a8f436f658e561c37.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -2452,10 +2452,10 @@
     "llegada_estimada": "15:45",
     "terminal": "4",
     "puerta": "B24",
-    "aerolinea": "Lufthansa",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 865,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://content-viajes.nationalgeographic.com.es/medio/2017/02/09/shutterstock-302415089_6b607cdb.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -2696,10 +2696,10 @@
     "llegada_estimada": "06:00",
     "terminal": "1",
     "puerta": "A38",
-    "aerolinea": "Lufthansa",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 662,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://www.italia.it/content/dam/tdh/es/interests/lazio/roma/roma-in-48-ore/media/20220127150143-colosseo-roma-lazio-shutterstock-756032350.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -2943,7 +2943,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 1412,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvORG_Nec0V_8YTeuvJwFsd9_rT1GQr7aa1H7skhKzPBoSbXs0ptb4aRc&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -3187,7 +3187,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 1371,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://dizen.pro/blog/img/posts/buenos-aires-al-aire-libre/obelisco-buenos-aires-letras-ba.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -3431,7 +3431,7 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 1965,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://images.trvl-media.com/place/1079/7c70ab1d-5b73-4916-a4a6-3cfdd2e876b7.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -3675,7 +3675,7 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 1786,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqhQrQ6vaQcxR2Zhb_IXEhX-ReL9yA4WiQEER8eqpGxxqWSdc7p3jQx7Id&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -3916,10 +3916,10 @@
     "llegada_estimada": "23:30",
     "terminal": "3",
     "puerta": "H58",
-    "aerolinea": "Qantas",
+    "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 2303,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoTFAE9EsgLHctl0X7MwloEERgxw2HKUfVmGIDwpgrdLw_40cT400wJdg&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -4160,10 +4160,10 @@
     "llegada_estimada": "17:45",
     "terminal": "1",
     "puerta": "E58",
-    "aerolinea": "Qantas",
+    "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 1399,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://www.civitatis.com/blog/wp-content/uploads/2023/10/vista-opera-house-sidney-australia.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -4404,10 +4404,10 @@
     "llegada_estimada": "22:15",
     "terminal": "3",
     "puerta": "D29",
-    "aerolinea": "Air Canada",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 1320,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://media-cdn.tripadvisor.com/media/photo-s/19/73/15/71/vancouver-es-reconocido.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -4648,10 +4648,10 @@
     "llegada_estimada": "08:30",
     "terminal": "5",
     "puerta": "G28",
-    "aerolinea": "Air Canada",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 2433,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX0q4A6nwJBe4Hc5Np8lELC1lx2qaNV_9lO2UKNQwDewkmqO4xgkYRgRVE&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -4892,10 +4892,10 @@
     "llegada_estimada": "18:30",
     "terminal": "5",
     "puerta": "G54",
-    "aerolinea": "Aerolíneas Argentinas",
+    "aerolinea": "Emirates",
     "precio_total_usd": 2201,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl_fA0iyPTkm0T_6PbYdKDksSKL2uWKMRRwgTGA05Nc6LJoKLB1zZh8JpT&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -5139,7 +5139,7 @@
     "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 1070,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://turismo.buenosaires.gob.ar/sites/turismo/files/field/image/obelisco_atardecer_9_de_julio_1500x610.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -5380,10 +5380,10 @@
     "llegada_estimada": "19:45",
     "terminal": "1",
     "puerta": "B59",
-    "aerolinea": "British Airways",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 1906,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://res.cloudinary.com/dtljonz0f/image/upload/f_auto/q_auto/v1/gc-v1/london-pass/blog/london-at-night-2.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -5624,10 +5624,10 @@
     "llegada_estimada": "04:15",
     "terminal": "2",
     "puerta": "A54",
-    "aerolinea": "British Airways",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 668,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://www.civitatis.com/f/estados-unidos/nueva-york/galeria/carteles-publicitarios-times-square.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -5868,10 +5868,10 @@
     "llegada_estimada": "13:15",
     "terminal": "3",
     "puerta": "A54",
-    "aerolinea": "Air France",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 650,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://estaticos-cdn.prensaiberica.es/clip/505169ee-420d-48d3-b446-f432cf0e19c4_16-9-discover-aspect-ratio_default_0.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -6112,10 +6112,10 @@
     "llegada_estimada": "16:15",
     "terminal": "4",
     "puerta": "E19",
-    "aerolinea": "Air France",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1406,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://cdn2.civitatis.com/francia/paris/galeria/torre-eiffel-altura.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -6356,10 +6356,10 @@
     "llegada_estimada": "12:00",
     "terminal": "5",
     "puerta": "H5",
-    "aerolinea": "LATAM",
+    "aerolinea": "Emirates",
     "precio_total_usd": 1904,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://vulcanopro.s3.amazonaws.com/images/lar_2yckeRoEuC5DG9x4aGcortKf4ZSno2sWUCYjYScQ.jpeg",
     "asientos": [
       {
         "id": "1A",
@@ -6600,10 +6600,10 @@
     "llegada_estimada": "03:15",
     "terminal": "4",
     "puerta": "H43",
-    "aerolinea": "LATAM",
+    "aerolinea": "Emirates",
     "precio_total_usd": 772,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://viajeydescubra.com/wp-content/uploads/elementor/thumbs/Praia-de-Castelhanos-Ilhabela-Sao-Paulo-Brasil-qeeowdba8h5v5yxgeurdjwhzyekxc39fyqxt23qylm.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -6847,7 +6847,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 1513,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH1PFPSH3Xyzzq8GTm5r9NPhm4yE0MG8IHTydz_FCpijg6NnnE4ZpVzJEa&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -7091,7 +7091,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 1509,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://rh-destinations.com/wp-content/uploads/2019/09/paisajes_hermosos_cdmx_2.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -7332,10 +7332,10 @@
     "llegada_estimada": "12:45",
     "terminal": "4",
     "puerta": "D11",
-    "aerolinea": "Lufthansa",
+    "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 1314,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://www.guiadealemania.com/wp-content/uploads/2009/08/Ciudad-de-Berlin.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -7576,10 +7576,10 @@
     "llegada_estimada": "07:30",
     "terminal": "4",
     "puerta": "G26",
-    "aerolinea": "Lufthansa",
+    "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 1900,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://www.enroma.com/wp-content/uploads/2022/01/Vista-aerea-del-Coliseo.webp",
     "asientos": [
       {
         "id": "1A",
@@ -7823,7 +7823,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 1843,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://www.civitatis.com/blog/wp-content/uploads/2024/10/capa-scaled.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -8067,7 +8067,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 1527,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://assets.turismocity.com/cdn-cgi/image/format=auto,width=500,fit=scale-down/img/1705672035651_bsasblog.png",
     "asientos": [
       {
         "id": "1A",
@@ -8311,7 +8311,7 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 2257,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://plus.unsplash.com/premium_photo-1697729914552-368899dc4757?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2l1ZGFkJTIwZGUlMjBkdWJhaXxlbnwwfHwwfHx8MA%3D%3D",
     "asientos": [
       {
         "id": "1A",
@@ -8555,7 +8555,7 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 1536,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://diario.madrid.es/wp-content/uploads/2021/07/El-Retiro-700x500.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -8796,10 +8796,10 @@
     "llegada_estimada": "13:00",
     "terminal": "1",
     "puerta": "C52",
-    "aerolinea": "Qantas",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 2097,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGlaReN8EclNTehQJT3AeEbSgDOu0ekbJUjnKJvkoS5EJll73kWr0BQ6o&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -9040,10 +9040,10 @@
     "llegada_estimada": "03:00",
     "terminal": "3",
     "puerta": "A13",
-    "aerolinea": "Qantas",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 239,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Sydney_skyline_at_dusk_-_Dec_2008.jpg/960px-Sydney_skyline_at_dusk_-_Dec_2008.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -9284,10 +9284,10 @@
     "llegada_estimada": "01:30",
     "terminal": "4",
     "puerta": "E12",
-    "aerolinea": "Air Canada",
+    "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 1315,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJvye5aYTEzdEEhp8IHzUbldQ5Sj5nCV-9yjIQ_0okKDHnquoVUVBASY&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -9528,10 +9528,10 @@
     "llegada_estimada": "19:30",
     "terminal": "2",
     "puerta": "C7",
-    "aerolinea": "Air Canada",
+    "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 1897,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe4_3hEaTSJ3sduupNlcz8x3f0fUp9BSukcJg6DqDc3e_8by6nZYY4MFbM&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -9772,10 +9772,10 @@
     "llegada_estimada": "09:30",
     "terminal": "2",
     "puerta": "G59",
-    "aerolinea": "Aerolíneas Argentinas",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1068,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://offloadmedia.feverup.com/madridsecreto.co/wp-content/uploads/2021/03/27174510/paisajes-narturales-la-pedriza-madrid.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -10019,7 +10019,7 @@
     "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 1000,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://plus.unsplash.com/premium_photo-1697729901052-fe8900e24993?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnVlbm9zJTIwYWlyZXMlMkMlMjBhcmdlbnRpbmF8ZW58MHx8MHx8fDA%3D",
     "asientos": [
       {
         "id": "1A",
@@ -10260,10 +10260,10 @@
     "llegada_estimada": "11:30",
     "terminal": "3",
     "puerta": "E38",
-    "aerolinea": "British Airways",
+    "aerolinea": "Emirates",
     "precio_total_usd": 1841,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl56OhWswZtWJth48fW4_kG6p_4_UW1k-FpbUmoH9ESA9U6MWB6ukHSBM&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -10504,10 +10504,10 @@
     "llegada_estimada": "02:30",
     "terminal": "5",
     "puerta": "H34",
-    "aerolinea": "British Airways",
+    "aerolinea": "Emirates",
     "precio_total_usd": 1443,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://plus.unsplash.com/premium_photo-1661954654458-c673671d4a08?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG9yaXpvbnRlJTIwZGUlMjBsYSUyMGNpdWRhZCUyMGRlJTIwbnVldmElMjB5b3JrfGVufDB8fDB8fHww",
     "asientos": [
       {
         "id": "1A",
@@ -10748,10 +10748,10 @@
     "llegada_estimada": "05:15",
     "terminal": "1",
     "puerta": "H5",
-    "aerolinea": "Air France",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1993,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://travelbible.cz/wp-content/uploads/2025/08/Shinjuku-tokio-1.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -10992,10 +10992,10 @@
     "llegada_estimada": "01:15",
     "terminal": "3",
     "puerta": "E35",
-    "aerolinea": "Air France",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1698,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://media.foodandtravel.mx/wp-content/uploads/2017/07/shutterstock_387176845.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -11236,10 +11236,10 @@
     "llegada_estimada": "07:15",
     "terminal": "2",
     "puerta": "D26",
-    "aerolinea": "LATAM",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 347,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://assets.turismocity.com/cdn-cgi/image/format=auto/img/1698171825343_fotos%20(8).png",
     "asientos": [
       {
         "id": "1A",
@@ -11480,10 +11480,10 @@
     "llegada_estimada": "14:45",
     "terminal": "2",
     "puerta": "G2",
-    "aerolinea": "LATAM",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 495,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOfPUjDTy434bkEnrrjHSqH3M1hpjEYRE8Dggg5C_4YIGnodTXV9CNjRcz&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -11727,7 +11727,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 221,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://cdn.forbes.com.mx/2018/06/Captura-de-pantalla-2018-06-15-a-las-14.23.52.png",
     "asientos": [
       {
         "id": "1A",
@@ -11971,7 +11971,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 2437,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_8fTNFadvy5q3sYZzRDH6NuJzrq8n0urH0vDw_lDRdtplJ1jhJgoMCn4&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -12212,10 +12212,10 @@
     "llegada_estimada": "06:30",
     "terminal": "2",
     "puerta": "E41",
-    "aerolinea": "Lufthansa",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 1075,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://www.germany.travel/media/redaktion/kampagne/top100___2021/gettyimages-518023832.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -12456,10 +12456,10 @@
     "llegada_estimada": "19:45",
     "terminal": "5",
     "puerta": "B9",
-    "aerolinea": "Lufthansa",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 179,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoxpQtcnkiHa52Yqxe5ndmVePhdewWemuY9a1vTfFlIjwKKd-Vdq53TNAj&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -12700,10 +12700,10 @@
     "llegada_estimada": "20:45",
     "terminal": "5",
     "puerta": "H48",
-    "aerolinea": "American Airlines",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1735,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://media-cdn.tripadvisor.com/media/photo-s/0a/14/75/64/miami-beach.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -12944,10 +12944,10 @@
     "llegada_estimada": "10:30",
     "terminal": "4",
     "puerta": "E9",
-    "aerolinea": "American Airlines",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 2284,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://www.clarin.com/images/2025/05/15/xyDG7uEd5_1200x630__1.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -13191,7 +13191,7 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 1043,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://assets.voxcity.com/uploads/blog_images/water-pond-near-entrance-dubai-mall-promenade-embankment-with-skyscrapers-background_optimized_200_original.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -13435,7 +13435,7 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 2483,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://offloadmedia.feverup.com/madridsecreto.co/wp-content/uploads/2021/03/27174507/cascada-del-hervidero-naturaleza-madrid.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -13676,10 +13676,10 @@
     "llegada_estimada": "01:00",
     "terminal": "5",
     "puerta": "G34",
-    "aerolinea": "Qantas",
+    "aerolinea": "Emirates",
     "precio_total_usd": 1352,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://media.istockphoto.com/id/2209132275/es/foto/distrito-central-de-negocios-de-auckland-nueva-zelanda.jpg?s=612x612&w=0&k=20&c=onBH6rGFAR7B6yQoB_IcuGQxl3v-AZhLrWUOJHyEySY=",
     "asientos": [
       {
         "id": "1A",
@@ -13920,10 +13920,10 @@
     "llegada_estimada": "11:45",
     "terminal": "3",
     "puerta": "G52",
-    "aerolinea": "Qantas",
+    "aerolinea": "Emirates",
     "precio_total_usd": 1438,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://cdn.getyourguide.com/img/location/5e425e4456c3d.jpeg/99.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -14164,10 +14164,10 @@
     "llegada_estimada": "13:00",
     "terminal": "4",
     "puerta": "E4",
-    "aerolinea": "Air Canada",
+    "aerolinea": "Emirates",
     "precio_total_usd": 1273,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://stylemapvancouver.travesiasdigital.com/wp-content/uploads/2019/08/otono-01.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -14408,10 +14408,10 @@
     "llegada_estimada": "08:00",
     "terminal": "3",
     "puerta": "F48",
-    "aerolinea": "Air Canada",
+    "aerolinea": "Emirates",
     "precio_total_usd": 1889,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://marthagabriela.mx/wp-content/uploads/2020/02/Martha_Gabriela_TORONTOIMAGEN.png",
     "asientos": [
       {
         "id": "1A",
@@ -14652,10 +14652,10 @@
     "llegada_estimada": "13:15",
     "terminal": "1",
     "puerta": "E39",
-    "aerolinea": "Aerolíneas Argentinas",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1574,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://www.vinccihoteles.com/uploads/cms_apps/imagenes/patrimonio-unesco-madrid.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -14899,7 +14899,7 @@
     "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 2308,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://i0.wp.com/vacacionesporargentina.com/wp-content/uploads/2020/09/puerto-madero-588392_1920.jpg?resize=640%2C360&ssl=1",
     "asientos": [
       {
         "id": "1A",
@@ -15140,10 +15140,10 @@
     "llegada_estimada": "22:15",
     "terminal": "5",
     "puerta": "B52",
-    "aerolinea": "British Airways",
+    "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 1333,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://images.ctfassets.net/x5n15ofh32yq/357qtM67F4OJ0emtAOT0Tf/c82e466452d80ad9d0838c8561c19e13/London_01_AdobeStock_135613354.jpeg?fm=webp&q=75&w=3840",
     "asientos": [
       {
         "id": "1A",
@@ -15384,10 +15384,10 @@
     "llegada_estimada": "05:45",
     "terminal": "5",
     "puerta": "D44",
-    "aerolinea": "British Airways",
+    "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 181,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/blt39cb04171bc3ea0d/668ac49bcf6f65148f6e61d8/jan-folwarczny-ZXBPMnNVtlE-unsplash-HEADER_MOBILE.jpg?fit=crop&disable=upscale&auto=webp&quality=60&crop=smart",
     "asientos": [
       {
         "id": "1A",
@@ -15628,10 +15628,10 @@
     "llegada_estimada": "00:15",
     "terminal": "3",
     "puerta": "A8",
-    "aerolinea": "Air France",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 2312,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://plus.unsplash.com/premium_photo-1661914240950-b0124f20a5c1?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGFpc2FqZSUyMGRlJTIwdG9raW98ZW58MHx8MHx8fDA%3D",
     "asientos": [
       {
         "id": "1A",
@@ -15872,10 +15872,10 @@
     "llegada_estimada": "16:30",
     "terminal": "1",
     "puerta": "E40",
-    "aerolinea": "Air France",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1730,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://media.istockphoto.com/id/2211711751/es/foto/la-torre-eiffel-y-las-calles-de-par%C3%ADs-en-primavera-francia.jpg?s=612x612&w=0&k=20&c=iEh8LLxIqb4rO7FvjLq4RIyekTXmictsF5yxZnEQ_HA=",
     "asientos": [
       {
         "id": "1A",
@@ -16116,10 +16116,10 @@
     "llegada_estimada": "17:00",
     "terminal": "2",
     "puerta": "H40",
-    "aerolinea": "LATAM",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1997,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://www.cascada.travel/hs-fs/hubfs/1.png?width=860&height=574&name=1.png",
     "asientos": [
       {
         "id": "1A",
@@ -16360,10 +16360,10 @@
     "llegada_estimada": "12:15",
     "terminal": "1",
     "puerta": "C9",
-    "aerolinea": "LATAM",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1814,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/fc/27/35.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -16607,7 +16607,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 624,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://www.shutterstock.com/image-photo/beautiful-aerial-perspective-cancuns-hotel-600nw-2555938245.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -16851,7 +16851,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 526,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://muyinteresante.okdiario.com/wp-content/uploads/sites/5/2023/09/14/65031bd0e7138.jpeg",
     "asientos": [
       {
         "id": "1A",
@@ -17092,10 +17092,10 @@
     "llegada_estimada": "08:45",
     "terminal": "5",
     "puerta": "E13",
-    "aerolinea": "Lufthansa",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 380,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://acrobatadelcamino.com/wp-content/uploads/2021/06/parques-de-berlin-tiergarten.webp",
     "asientos": [
       {
         "id": "1A",
@@ -17336,10 +17336,10 @@
     "llegada_estimada": "03:45",
     "terminal": "4",
     "puerta": "D51",
-    "aerolinea": "Lufthansa",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 2200,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://www.walksinsiderome.com/_next/image/?url=https%3A%2F%2Fwww.walksinsiderome.com%2Fuploads%2F2023%2F09%2FUntitled-design-19.png&w=1920&q=75",
     "asientos": [
       {
         "id": "1A",
@@ -17583,7 +17583,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 2246,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://fotografias-2.larazon.es/clipping/cmsimages02/2023/10/05/F72DF2A6-9CB5-4778-A9CD-F4D878476D1F/miami-skyline_98.jpg?crop=3466,1950,x0,y183&width=1900&height=1069&optimize=low&format=webply",
     "asientos": [
       {
         "id": "1A",
@@ -17827,7 +17827,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 927,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2w5D6KnYLNa1DhRBcxodX6NxZbVfq40vtQrkH8BGWjLH_-Yz7kZkm-zL5&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -18071,7 +18071,7 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 1667,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://cdn.sanity.io/images/nxpteyfv/goguides/7db2e66cfa88c5343b74e2ef7b27821fe11b9bf4-1600x1066.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -18315,7 +18315,7 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 1344,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://thumbs.dreamstime.com/b/paisaje-urbano-de-madrid-espa%C3%B1a-54054012.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -18556,10 +18556,10 @@
     "llegada_estimada": "12:00",
     "terminal": "5",
     "puerta": "B38",
-    "aerolinea": "Qantas",
+    "aerolinea": "Emirates",
     "precio_total_usd": 2155,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://dynamic-media.tacdn.com/media/photo-o/31/8c/b9/9a/caption.jpg?f=webp&w=1000&h=700",
     "asientos": [
       {
         "id": "1A",
@@ -18800,10 +18800,10 @@
     "llegada_estimada": "11:15",
     "terminal": "5",
     "puerta": "G14",
-    "aerolinea": "Qantas",
+    "aerolinea": "Emirates",
     "precio_total_usd": 578,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://images.trvl-media.com/place/502950/3976c6f9-4173-4359-8a39-120bd8a7447d.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -19044,10 +19044,10 @@
     "llegada_estimada": "01:45",
     "terminal": "3",
     "puerta": "C43",
-    "aerolinea": "Air Canada",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1834,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://res.cloudinary.com/worldpackers/image/upload/c_fill,f_auto,q_auto,w_1024/v1/guides/article_cover/gfuvmfczfyosqs1k4ema?_a=BACAGSGT",
     "asientos": [
       {
         "id": "1A",
@@ -19288,10 +19288,10 @@
     "llegada_estimada": "03:45",
     "terminal": "5",
     "puerta": "G57",
-    "aerolinea": "Air Canada",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1469,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://panavision-tours.es/viajes/toronto-canada/toronto.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -19532,10 +19532,10 @@
     "llegada_estimada": "02:00",
     "terminal": "5",
     "puerta": "F33",
-    "aerolinea": "Aerolíneas Argentinas",
+    "aerolinea": "Emirates",
     "precio_total_usd": 2160,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw2ywQDvprok5UJB_srTXuVh3Lxt0RvBHTzR0B00yv1he6rJRVQUond8wp&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -19779,7 +19779,7 @@
     "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 2010,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://rutachina.com/wp-content/uploads/2024/06/cit.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -20020,10 +20020,10 @@
     "llegada_estimada": "03:00",
     "terminal": "4",
     "puerta": "H31",
-    "aerolinea": "British Airways",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 2209,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://offloadmedia.feverup.com/secretldn.com/wp-content/uploads/2025/09/02112119/shutterstock_419740690.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -20264,10 +20264,10 @@
     "llegada_estimada": "14:30",
     "terminal": "5",
     "puerta": "F43",
-    "aerolinea": "British Airways",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 1147,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_4:3,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/new-york-pass/blog/New-York_Governors-Island-Manhattan-skyline_ss_non-editorial_iaiii3?_a=BAVAZGDY0",
     "asientos": [
       {
         "id": "1A",
@@ -20508,10 +20508,10 @@
     "llegada_estimada": "12:15",
     "terminal": "1",
     "puerta": "D14",
-    "aerolinea": "Air France",
+    "aerolinea": "Emirates",
     "precio_total_usd": 1693,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://www.gotokyo.org/shared/site_gotokyo/images/story/guide/tokyo-at-night/sub_009.webp",
     "asientos": [
       {
         "id": "1A",
@@ -20752,10 +20752,10 @@
     "llegada_estimada": "18:15",
     "terminal": "5",
     "puerta": "H31",
-    "aerolinea": "Air France",
+    "aerolinea": "Emirates",
     "precio_total_usd": 2290,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://cdn.tickadoo.com/blog/u14RtTYEf5NXp0L3kj7W0cE.png",
     "asientos": [
       {
         "id": "1A",
@@ -20996,10 +20996,10 @@
     "llegada_estimada": "04:15",
     "terminal": "5",
     "puerta": "G57",
-    "aerolinea": "LATAM",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 388,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb0_45f1qj1M6HYMmPbTMoRo5vX_H8lM4MiQ9ptqCg0rMPLrnsHFL8KYIc&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -21240,10 +21240,10 @@
     "llegada_estimada": "18:45",
     "terminal": "5",
     "puerta": "E14",
-    "aerolinea": "LATAM",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 2473,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://uvn-brightspot.s3.amazonaws.com/assets/vixes/imj/nuestrorumbo/t/top-5-de-lugares-turisticos-de-sao-paulo.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -21487,7 +21487,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 2465,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://static.vecteezy.com/ti/fotos-gratis/p2/10562529-cancun-quintana-roo-mexico-2022-tip-street-road-cars-buildings-and-cityscape-of-cancun-mexico-gratis-foto.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -21731,7 +21731,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 2255,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://i.pinimg.com/736x/75/cc/00/75cc005b1d7016d84916372f22838ce3.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -21972,10 +21972,10 @@
     "llegada_estimada": "09:00",
     "terminal": "3",
     "puerta": "E25",
-    "aerolinea": "Lufthansa",
+    "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 173,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://img.freepik.com/fotos-premium/paisaje-urbano-horizonte-ciudad-centrica-berlin-alemania_255553-4202.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -22216,10 +22216,10 @@
     "llegada_estimada": "23:30",
     "terminal": "4",
     "puerta": "F19",
-    "aerolinea": "Lufthansa",
+    "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 1850,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://machbel.com/fotos/2020/06/Panor%C3%A1mica-de-Roma-Roma-Italia-by-machbel.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -22463,7 +22463,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 525,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAfodvUKFxCUKpqpKoC_n0J5VQic20QPVQ6fmdvkWPY_gqPkClpTKskkAL&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -22707,7 +22707,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 1361,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3PbpBb8-uiT1X-mx8FcIlgyi65CIXk9qi86J5rI8XWNliXXPhG6NbkZA&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -22951,7 +22951,7 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 2006,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://digital.ihg.com/is/image/ihg/voco-dubai-10336494449-4x3",
     "asientos": [
       {
         "id": "1A",
@@ -23195,7 +23195,7 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 1345,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://static-resources-elementor.mirai.com/wp-content/uploads/sites/719/d60eb3830442f4b53af1b26cc3fbdf1cb1a2d1f8.jpeg",
     "asientos": [
       {
         "id": "1A",
@@ -23436,10 +23436,10 @@
     "llegada_estimada": "05:45",
     "terminal": "5",
     "puerta": "B19",
-    "aerolinea": "Qantas",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 2006,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://travelwisenet.com/wp-content/uploads/2025/08/sky-tower-with-blue-sky-and-business-building-duri-2025-03-26-19-39-40-utc.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -23680,10 +23680,10 @@
     "llegada_estimada": "20:30",
     "terminal": "5",
     "puerta": "D42",
-    "aerolinea": "Qantas",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1291,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjDRt_lx8pmGVVVjVEozTgU_F4BrJdqXuYY-mUjmrm5ZnAKFxbMbWNqQ&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -23924,10 +23924,10 @@
     "llegada_estimada": "03:45",
     "terminal": "5",
     "puerta": "D1",
-    "aerolinea": "Air Canada",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1280,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS2hwbumASbsKKwSZnmXOhgZR29QV7kFgp6VwcINiJGEPUr6Ssy5bfUEOI&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -24168,10 +24168,10 @@
     "llegada_estimada": "18:30",
     "terminal": "5",
     "puerta": "B45",
-    "aerolinea": "Air Canada",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 2425,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/blta5abe00235919420/67ce9162ef4ce61b7bd21dd1/BCC-2024-EXPLORER-TORONTO-BEST_PLACES_TO_VISIT-HEADER-MOBILE.jpg?format=webp&quality=60&width=1440",
     "asientos": [
       {
         "id": "1A",
@@ -24415,7 +24415,7 @@
     "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 1215,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-WYpkuXr5E-KFdll5HY6IKwCBvuMjiI4Ko3nz0FcLkMTz8CveKDPPS9LW&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -24659,7 +24659,7 @@
     "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 2028,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://i0.wp.com/www.buenosairesfreewalks.com/spanish/wp-content/uploads/2017/06/planetarium-buenos-aires.jpg?resize=960%2C520&ssl=1",
     "asientos": [
       {
         "id": "1A",
@@ -24900,10 +24900,10 @@
     "llegada_estimada": "11:45",
     "terminal": "1",
     "puerta": "D10",
-    "aerolinea": "British Airways",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 1782,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://www.universal-assistance.com/uablog/wp-content/uploads/2022/12/London-bridge.png",
     "asientos": [
       {
         "id": "1A",
@@ -25144,10 +25144,10 @@
     "llegada_estimada": "03:45",
     "terminal": "2",
     "puerta": "C20",
-    "aerolinea": "British Airways",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 1945,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://www.riu.com/blog/wp-content/uploads/2019/01/shutterstock_259501811.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -25388,10 +25388,10 @@
     "llegada_estimada": "20:45",
     "terminal": "5",
     "puerta": "A48",
-    "aerolinea": "Air France",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 368,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://www.ncl.com/sites/default/files/1000x667-ncl-jewel-tokyo-skyline-2.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -25632,10 +25632,10 @@
     "llegada_estimada": "10:45",
     "terminal": "3",
     "puerta": "E43",
-    "aerolinea": "Air France",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1785,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnhlTZtkEJLB43Pu28cWJkpkXVZF6lSr1tx00kg3_enF1gw9WlsGqzPdTD&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -25876,10 +25876,10 @@
     "llegada_estimada": "05:00",
     "terminal": "5",
     "puerta": "G59",
-    "aerolinea": "LATAM",
+    "aerolinea": "Emirates",
     "precio_total_usd": 243,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://chileestuyo.cl/wp-content/uploads/2020/09/teleferico.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -26120,10 +26120,10 @@
     "llegada_estimada": "10:45",
     "terminal": "4",
     "puerta": "H29",
-    "aerolinea": "LATAM",
+    "aerolinea": "Emirates",
     "precio_total_usd": 1770,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://st2.depositphotos.com/4909875/9280/i/450/depositphotos_92808390-stock-photo-estaiada-bridge-in-sao-paulo.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -26367,7 +26367,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 2430,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://www.mycancuntours.com.mx/images/imgeditor/donde-esta-cancun3.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -26611,7 +26611,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 1863,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://www.civitatis.com/blog/wp-content/uploads/2022/12/zocalo-ciudad-mexico-noche.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -26852,10 +26852,10 @@
     "llegada_estimada": "21:00",
     "terminal": "3",
     "puerta": "B43",
-    "aerolinea": "Lufthansa",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1703,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKVzvGCBBv8IEYzS_aAH1gUTkfr2o_ccgMlrUsquhSZlxDMqKlQPLt1qbh&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -27096,10 +27096,10 @@
     "llegada_estimada": "06:45",
     "terminal": "3",
     "puerta": "D18",
-    "aerolinea": "Lufthansa",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1945,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://tourismmedia.italia.it/is/image/mitur/20210410125258-enit-lazio-roma-tevere-2?wid=1080&hei=660&fit=constrain,1&fmt=webp",
     "asientos": [
       {
         "id": "1A",
@@ -27340,10 +27340,10 @@
     "llegada_estimada": "03:45",
     "terminal": "3",
     "puerta": "A5",
-    "aerolinea": "American Airlines",
+    "aerolinea": "Emirates",
     "precio_total_usd": 916,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://www.viajarmiami.com/img/guia-viaje-miami.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -27587,7 +27587,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 1803,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://descubrirturismo.com/wp-content/uploads/2017/06/Delta-portada.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -27831,7 +27831,7 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 1125,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://www.civitatis.com/blog/wp-content/uploads/2022/12/panoramica-burj-al-arab-dubai.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -28075,7 +28075,7 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 1084,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeTZvzYS9F1TyzRw8VbzvGe1bthBCEFrBfnxsyiKVlgkAMU1YjxxvjFww&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -28316,10 +28316,10 @@
     "llegada_estimada": "10:15",
     "terminal": "4",
     "puerta": "B18",
-    "aerolinea": "Qantas",
+    "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 2175,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://plus.unsplash.com/premium_photo-1742457649789-c7a89b1130c5?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXVja2xhbmQlMkMlMjBudWV2YSUyMHplbGFuZGF8ZW58MHx8MHx8fDA=",
     "asientos": [
       {
         "id": "1A",
@@ -28560,10 +28560,10 @@
     "llegada_estimada": "12:30",
     "terminal": "2",
     "puerta": "G46",
-    "aerolinea": "Qantas",
+    "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 2333,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://images.unsplash.com/photo-1741510345561-4ba8df308818?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "asientos": [
       {
         "id": "1A",
@@ -28804,10 +28804,10 @@
     "llegada_estimada": "17:15",
     "terminal": "5",
     "puerta": "C8",
-    "aerolinea": "Air Canada",
+    "aerolinea": "Emirates",
     "precio_total_usd": 174,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVJkuqBMibHYrMENaTgv314Z7urO86lqOtArzRuutQvs_iEHXa5bM7XOxh&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -29048,10 +29048,10 @@
     "llegada_estimada": "16:30",
     "terminal": "2",
     "puerta": "G22",
-    "aerolinea": "Air Canada",
+    "aerolinea": "Emirates",
     "precio_total_usd": 1507,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://thumbs.dreamstime.com/b/la-noche-del-invierno-paisaje-urbano-en-toronto-canad%C3%A1-vista-panor%C3%A1mica-de-ciudad-invernal-exterior-tarde-por-edificios-casas-147872739.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -29292,10 +29292,10 @@
     "llegada_estimada": "10:00",
     "terminal": "4",
     "puerta": "A47",
-    "aerolinea": "Aerolíneas Argentinas",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 751,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://madrides.es/wp-content/uploads/2014/05/3-The-new-river-townscape-e1491463787233.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -29539,7 +29539,7 @@
     "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 2277,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://viagemeturismo.abril.com.br/wp-content/uploads/2012/03/puente-de-la-mujer-em-puerto-madero-bairro-de-buenos-aires-argentina-anton-petrus-istock-516140410.jpg?crop=1&resize=1212,909",
     "asientos": [
       {
         "id": "1A",
@@ -29780,10 +29780,10 @@
     "llegada_estimada": "00:15",
     "terminal": "5",
     "puerta": "H48",
-    "aerolinea": "British Airways",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 1870,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLirUNp1aTnNZSRW3oigCZZ-0GaONcUbKRKdlghdZc_qGcxUihCEA1fJs&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -30024,10 +30024,10 @@
     "llegada_estimada": "13:45",
     "terminal": "3",
     "puerta": "D24",
-    "aerolinea": "British Airways",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 1056,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://img.nh-hotels.net/8yYbq/1j6GD/original/Brooklyn_Bridge.jpg?output-quality=70&resize=555:*&composite-to=center,center|555:280&background-color=white",
     "asientos": [
       {
         "id": "1A",
@@ -30268,10 +30268,10 @@
     "llegada_estimada": "09:15",
     "terminal": "1",
     "puerta": "C17",
-    "aerolinea": "Air France",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1086,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://images.trvl-media.com/place/6233492/55f1feea-69af-4811-94c1-61c2f152f807.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -30512,10 +30512,10 @@
     "llegada_estimada": "02:45",
     "terminal": "5",
     "puerta": "H51",
-    "aerolinea": "Air France",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1939,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://www.nyhabitat.com/sp/blog/wp-content/uploads/2014/12/Par%C3%ADs-mejores-10-parques-tuileries-jard%C3%ADn.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -30756,10 +30756,10 @@
     "llegada_estimada": "19:45",
     "terminal": "3",
     "puerta": "F20",
-    "aerolinea": "LATAM",
+    "aerolinea": "Emirates",
     "precio_total_usd": 1959,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://disfrutasantiago.cl/wp-content/uploads/2021/07/Yerba-Loca-1024x683-1.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -31000,10 +31000,10 @@
     "llegada_estimada": "14:45",
     "terminal": "1",
     "puerta": "D16",
-    "aerolinea": "LATAM",
+    "aerolinea": "Emirates",
     "precio_total_usd": 848,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://www.rionegro.com.ar/wp-content/uploads/2025/10/Imagen-c64704f4-3b1d-435f-ac7b-727eaab3b287.jpg?w=920&h=520&crop=1",
     "asientos": [
       {
         "id": "1A",
@@ -31247,7 +31247,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 2302,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://p1.hippopx.com/preview/965/666/417/cancun-city-cityscape-photos.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -31491,7 +31491,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 1563,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://static.nationalgeographicla.com/files/styles/image_3200/public/teotihuacan-pyramid-mexico-city-mexico-lead.webp?w=1600&h=900",
     "asientos": [
       {
         "id": "1A",
@@ -31732,10 +31732,10 @@
     "llegada_estimada": "20:30",
     "terminal": "1",
     "puerta": "D8",
-    "aerolinea": "Lufthansa",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 961,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYJ_fdnQwpHA4T5_sf95akJXV4dIeS379E3DHf9uIpW_U4CMpt4p1cqc8g&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -31976,10 +31976,10 @@
     "llegada_estimada": "01:30",
     "terminal": "3",
     "puerta": "D38",
-    "aerolinea": "Lufthansa",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 872,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD_xtuMHoRz4qj3QJh1R7sPr1e4PiTmjkqNIijp62sR4OKc1l2UkrW--A&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -32220,10 +32220,10 @@
     "llegada_estimada": "18:30",
     "terminal": "5",
     "puerta": "C28",
-    "aerolinea": "American Airlines",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1029,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://img.magnific.com/foto-gratis/escena-nocturna-miami_649448-4750.jpg?semt=ais_hybrid&w=740&q=80",
     "asientos": [
       {
         "id": "1A",
@@ -32467,7 +32467,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 1200,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://bucket.somosohlala.com.ar/s3fs-public/styles/img_internal/public/2024-03/plaza-sanmartin.jpg.webp",
     "asientos": [
       {
         "id": "1A",
@@ -32711,7 +32711,7 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 1768,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://content.r9cdn.net/rimg/dimg/9c/5d/375edbe5-city-6080-1634b258bcf.jpg?width=1366&height=768&xhint=1502&yhint=989&crop=true",
     "asientos": [
       {
         "id": "1A",
@@ -32955,7 +32955,7 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 898,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxZ8Lmiar6CU5s_GhEa6cFx72h4K_sO5CmOMCQK-n0Ns0vwYsZ4_8LwJ4x&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -33196,10 +33196,10 @@
     "llegada_estimada": "14:15",
     "terminal": "5",
     "puerta": "B48",
-    "aerolinea": "Qantas",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 174,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://www.shutterstock.com/image-photo/auckland-city-skyline-night-sky-600nw-2722031095.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -33440,10 +33440,10 @@
     "llegada_estimada": "12:30",
     "terminal": "1",
     "puerta": "D12",
-    "aerolinea": "Qantas",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 515,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/bltdec7db7befab477a/67a8adf0e0ac120ce628d957/iStock-1498418424-2-Header_Mobile.jpg?fit=crop&disable=upscale&auto=webp&quality=60&crop=smart",
     "asientos": [
       {
         "id": "1A",
@@ -33684,10 +33684,10 @@
     "llegada_estimada": "06:15",
     "terminal": "5",
     "puerta": "A18",
-    "aerolinea": "Air Canada",
+    "aerolinea": "Emirates",
     "precio_total_usd": 345,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=400,height=265,dpr=2/tour_img/fe9c594ca3cb0fa6314c054317df3b5f9f76257979670eb8a2c3f4f1c6da76f8.png",
     "asientos": [
       {
         "id": "1A",
@@ -33928,10 +33928,10 @@
     "llegada_estimada": "16:15",
     "terminal": "3",
     "puerta": "F29",
-    "aerolinea": "Air Canada",
+    "aerolinea": "Emirates",
     "precio_total_usd": 1522,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://a0.muscache.com/im/pictures/miso/Hosting-625504954174240602/original/c0204ac2-dc58-46e1-a1cb-f86c45d8bf0b.jpeg?im_w=720",
     "asientos": [
       {
         "id": "1A",
@@ -34172,10 +34172,10 @@
     "llegada_estimada": "10:15",
     "terminal": "3",
     "puerta": "H39",
-    "aerolinea": "Aerolíneas Argentinas",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 1349,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVfk2P30tRmwmfzhxyrhdSBAnwTP5NPWFvoSNDPxl-sTDvDNwN2_PcyCP1&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -34419,7 +34419,7 @@
     "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 281,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://upload.wikimedia.org/wikipedia/commons/8/82/2019_Buenos_Aires_-_Palacio_del_Congreso_de_la_Naci%C3%B3n_Argentina.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -34660,10 +34660,10 @@
     "llegada_estimada": "12:30",
     "terminal": "4",
     "puerta": "F45",
-    "aerolinea": "British Airways",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 1566,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://plus.unsplash.com/premium_photo-1680806491608-af096f1fc916?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZWRpZmljaW9zJTIwZGUlMjBsb25kcmVzfGVufDB8fDB8fHww",
     "asientos": [
       {
         "id": "1A",
@@ -34904,10 +34904,10 @@
     "llegada_estimada": "22:30",
     "terminal": "3",
     "puerta": "H45",
-    "aerolinea": "British Airways",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 1116,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzc1aZ1nwWp31yMaBttW4tR963uFG9wY-Kl345z55RkEOWuh6DZeBKuzA&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -35148,10 +35148,10 @@
     "llegada_estimada": "11:00",
     "terminal": "5",
     "puerta": "H6",
-    "aerolinea": "Air France",
+    "aerolinea": "Emirates",
     "precio_total_usd": 1985,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://images.trvl-media.com/place/179167/164220a1-5da1-4636-a193-ce02a8acd57b.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -35392,10 +35392,10 @@
     "llegada_estimada": "16:00",
     "terminal": "4",
     "puerta": "E21",
-    "aerolinea": "Air France",
+    "aerolinea": "Emirates",
     "precio_total_usd": 1708,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2hTWULwHGpKiogqklYEIscf-KqOfqVDLy21L4lBvcGvpg3k3RKh95nWM&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -35636,10 +35636,10 @@
     "llegada_estimada": "22:00",
     "terminal": "5",
     "puerta": "G33",
-    "aerolinea": "LATAM",
+    "aerolinea": "Emirates",
     "precio_total_usd": 2182,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://chileestuyo.cl/wp-content/uploads/2015/08/Santiago_Edificios2_RET.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -35880,10 +35880,10 @@
     "llegada_estimada": "03:45",
     "terminal": "5",
     "puerta": "G38",
-    "aerolinea": "LATAM",
+    "aerolinea": "Emirates",
     "precio_total_usd": 2194,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://spanish.xinhuanet.com/20250518/8c91bacb8d234f948c049b591cea483f/202505188c91bacb8d234f948c049b591cea483f_20250518fbffe8da6c1a4c90a9a3bc62d154e758.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -36127,7 +36127,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 776,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://www.interactiveaquariumcancun.com/hubfs/Playa-las-Perlas-Cancun-Como-es-Playa-las-Perlas.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -36371,7 +36371,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 1397,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://cdn1.matadornetwork.com/blogs/2/2018/04/Paseo-de-la-Reforma-Mexico.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -36612,10 +36612,10 @@
     "llegada_estimada": "22:00",
     "terminal": "2",
     "puerta": "B19",
-    "aerolinea": "Lufthansa",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 2476,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://www.egali.com.mx/wp-content/uploads/sites/3/2018/07/germany-6887063_1280-1024x663.jpg?x35269",
     "asientos": [
       {
         "id": "1A",
@@ -36856,10 +36856,10 @@
     "llegada_estimada": "09:45",
     "terminal": "1",
     "puerta": "D50",
-    "aerolinea": "Lufthansa",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 664,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://tips.mnstatic.com/wp-content/uploads/2022/06/coliseo-7f7c57ae827d942544637296a906c689.jpg?quality=60",
     "asientos": [
       {
         "id": "1A",
@@ -37100,10 +37100,10 @@
     "llegada_estimada": "13:45",
     "terminal": "2",
     "puerta": "D16",
-    "aerolinea": "American Airlines",
+    "aerolinea": "Emirates",
     "precio_total_usd": 1128,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://img.pikbest.com/ai/illus_our/20230422/95e1f0755e6e85f7aa98db115d3db727.jpg!w700wp",
     "asientos": [
       {
         "id": "1A",
@@ -37344,10 +37344,10 @@
     "llegada_estimada": "04:15",
     "terminal": "1",
     "puerta": "E15",
-    "aerolinea": "American Airlines",
+    "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 2258,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://upload.wikimedia.org/wikipedia/commons/9/95/Casa_Rosada_exterior_from_Plaza_de_Mayo.JPG",
     "asientos": [
       {
         "id": "1A",
@@ -37588,10 +37588,10 @@
     "llegada_estimada": "06:15",
     "terminal": "2",
     "puerta": "F28",
-    "aerolinea": "Emirates",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1449,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://www.kiwakatravel.com/wp-content/uploads/2024/02/2jfz2vj06sk-1024x698.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -37832,10 +37832,10 @@
     "llegada_estimada": "20:00",
     "terminal": "3",
     "puerta": "G38",
-    "aerolinea": "Emirates",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 571,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX4E1EPk7q67SNYrX3js3XrEfjVd3YTvc6cDfXOfRWALR6LgF79t5827T4&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -38076,10 +38076,10 @@
     "llegada_estimada": "14:45",
     "terminal": "3",
     "puerta": "H36",
-    "aerolinea": "Qantas",
+    "aerolinea": "Emirates",
     "precio_total_usd": 488,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://media.istockphoto.com/id/1137761057/es/foto/public-park-by-harbor-con-una-impresionante-vista-del-centro-de-auckland-nueva-zelanda.jpg?s=612x612&w=0&k=20&c=OnR1EhOjxkVm_ioB5-Z7sJjFyma7GykVr-OpGTjPo1w=",
     "asientos": [
       {
         "id": "1A",
@@ -38320,10 +38320,10 @@
     "llegada_estimada": "10:00",
     "terminal": "5",
     "puerta": "D47",
-    "aerolinea": "Qantas",
+    "aerolinea": "Emirates",
     "precio_total_usd": 622,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://content.r9cdn.net/rimg/dimg/43/4b/72c43e11-city-2258-16e22333599.jpg?width=1366&height=768&xhint=1308&yhint=1560&crop=true",
     "asientos": [
       {
         "id": "1A",
@@ -38564,10 +38564,10 @@
     "llegada_estimada": "12:00",
     "terminal": "4",
     "puerta": "F8",
-    "aerolinea": "Air Canada",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1120,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://st2.depositphotos.com/1030808/11630/i/450/depositphotos_116301938-stock-photo-vancouver-night-view.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -38808,10 +38808,10 @@
     "llegada_estimada": "13:00",
     "terminal": "4",
     "puerta": "C2",
-    "aerolinea": "Air Canada",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 987,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://media.cntraveler.com/photos/676301f20c28cb5fbda5caaf/16:9/w_2560,c_limit/Trillium%20Park%20toronto_GettyImages-2151046978.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -39052,10 +39052,10 @@
     "llegada_estimada": "03:00",
     "terminal": "4",
     "puerta": "C40",
-    "aerolinea": "Aerolíneas Argentinas",
+    "aerolinea": "Emirates",
     "precio_total_usd": 1689,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://media.istockphoto.com/id/2211714808/es/foto/paisaje-del-parque-del-buen-retiro-en-primavera-madrid-espa%C3%B1a.jpg?s=612x612&w=0&k=20&c=N_t21-VtvMLj2smeHNhN1hsXHW35qpoy8i5LYS-Pb64=",
     "asientos": [
       {
         "id": "1A",
@@ -39296,10 +39296,10 @@
     "llegada_estimada": "08:30",
     "terminal": "1",
     "puerta": "B31",
-    "aerolinea": "Aerolíneas Argentinas",
+    "aerolinea": "Emirates",
     "precio_total_usd": 1275,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkfHQD6QvGcYAXpM60am6pNFXlfCGQzjH2A8EVdKUA2K1EkklBeaDVo052&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -39540,10 +39540,10 @@
     "llegada_estimada": "04:45",
     "terminal": "5",
     "puerta": "D9",
-    "aerolinea": "British Airways",
+    "aerolinea": "Emirates",
     "precio_total_usd": 1557,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://media.traveler.es/photos/66c31ef6c2e52241907309c5/16:9/w_2560%2Cc_limit/hyde%2520park-london%2520area-jul24%2520-GettyImages-1207359066.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -39784,10 +39784,10 @@
     "llegada_estimada": "23:30",
     "terminal": "4",
     "puerta": "B1",
-    "aerolinea": "British Airways",
+    "aerolinea": "Emirates",
     "precio_total_usd": 1373,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://static.anuevayork.com/wp-content/uploads/2020/06/13180423/Que-ver-en-Central-Park-Rutas-a-pie-y-en-bicicleta.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -40028,10 +40028,10 @@
     "llegada_estimada": "09:00",
     "terminal": "4",
     "puerta": "G13",
-    "aerolinea": "Air France",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 367,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/63/0f/0e/caption.jpg?w=1200&h=-1&s=1",
     "asientos": [
       {
         "id": "1A",
@@ -40272,10 +40272,10 @@
     "llegada_estimada": "10:15",
     "terminal": "2",
     "puerta": "D45",
-    "aerolinea": "Air France",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 560,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://www.nyhabitat.com/sp/blog/wp-content/uploads/2014/12/Par%C3%ADs-mejores-10-parques-luxembourg-palacio-jard%C3%ADn.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -40516,10 +40516,10 @@
     "llegada_estimada": "05:00",
     "terminal": "5",
     "puerta": "C20",
-    "aerolinea": "LATAM",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 2110,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://chileestuyo.cl/wp-content/uploads/2024/06/Puente-Nilhue-1024x613-1.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -40760,10 +40760,10 @@
     "llegada_estimada": "05:15",
     "terminal": "2",
     "puerta": "C38",
-    "aerolinea": "LATAM",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 600,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://viacapi.com/wp-content/uploads/2020/04/sp12.jpeg",
     "asientos": [
       {
         "id": "1A",
@@ -41004,10 +41004,10 @@
     "llegada_estimada": "22:45",
     "terminal": "2",
     "puerta": "E19",
-    "aerolinea": "American Airlines",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1612,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMcQhgfhTBlU2tPgUkayut9ZLOMZGXBv-S5g5wcgg9dZpDXYRqyyXB7rk&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -41248,10 +41248,10 @@
     "llegada_estimada": "10:30",
     "terminal": "1",
     "puerta": "E14",
-    "aerolinea": "American Airlines",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 828,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://i0.wp.com/blog.vivaaerobus.com/wp-content/uploads/2020/03/Lugares-para-visitar-en-CDMX.jpg?resize=1200%2C640&ssl=1",
     "asientos": [
       {
         "id": "1A",
@@ -41492,10 +41492,10 @@
     "llegada_estimada": "19:30",
     "terminal": "5",
     "puerta": "A15",
-    "aerolinea": "Lufthansa",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 2080,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://fra1.digitaloceanspaces.com/walkative-e9373acb44-cdn/media/main/articles/images/berlin-victory-column-siegessaule-1a2b3c.webp",
     "asientos": [
       {
         "id": "1A",
@@ -41736,10 +41736,10 @@
     "llegada_estimada": "20:30",
     "terminal": "1",
     "puerta": "F36",
-    "aerolinea": "Lufthansa",
+    "aerolinea": "Emirates",
     "precio_total_usd": 990,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://www.latamairlines.com/content/dam/latamxp/sites/vamos-latam/news-italia-ago-2024/roma/Italia_Roma-2.png",
     "asientos": [
       {
         "id": "1A",
@@ -41980,10 +41980,10 @@
     "llegada_estimada": "03:30",
     "terminal": "3",
     "puerta": "C59",
-    "aerolinea": "American Airlines",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 2422,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://www.edreams.es/blog/wp-content/uploads/sites/5/2018/03/shutterstock_490898872-1.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -42224,10 +42224,10 @@
     "llegada_estimada": "21:00",
     "terminal": "5",
     "puerta": "F60",
-    "aerolinea": "American Airlines",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 674,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://isibaires.com/wp-content/uploads/2023/05/barrio-la-boca-caminito.webp",
     "asientos": [
       {
         "id": "1A",
@@ -42468,10 +42468,10 @@
     "llegada_estimada": "14:45",
     "terminal": "3",
     "puerta": "G47",
-    "aerolinea": "Emirates",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 927,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://img.freepik.com/fotos-premium/paisaje-urbano-carreteras-dubai-dia_93675-117460.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -42715,7 +42715,7 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 1812,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://media.traveler.es/photos/6712429132de56225d8bb7ff/16:9/w_2560%2Cc_limit/GettyImages-1752719931.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -42956,10 +42956,10 @@
     "llegada_estimada": "06:15",
     "terminal": "2",
     "puerta": "C25",
-    "aerolinea": "Qantas",
+    "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 739,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://images.myguide-cdn.com/md/common/large/63fd754274d63-1345671.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -43200,10 +43200,10 @@
     "llegada_estimada": "05:15",
     "terminal": "3",
     "puerta": "H55",
-    "aerolinea": "Qantas",
+    "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 2056,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://images.trvl-media.com/place/178312/9381f518-1fbc-49a0-8c86-4c909a8c6b0e.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -43444,10 +43444,10 @@
     "llegada_estimada": "07:45",
     "terminal": "4",
     "puerta": "A13",
-    "aerolinea": "Air Canada",
+    "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 234,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://www.supernaturalbc.com/content/uploads/2025/09/205706-PowerPoint-2400px.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -43688,10 +43688,10 @@
     "llegada_estimada": "07:00",
     "terminal": "3",
     "puerta": "F42",
-    "aerolinea": "Air Canada",
+    "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 1014,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://cdn-3.expansion.mx/dims4/default/2e247ae/2147483647/strip/true/crop/3794x1992+0+61/resize/1200x630!/format/jpg/quality/80/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F20%2F34%2F92f97c8f4a3390468759a81ac53f%2Fshutterstock-156105914.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -43932,10 +43932,10 @@
     "llegada_estimada": "15:00",
     "terminal": "1",
     "puerta": "A35",
-    "aerolinea": "Aerolíneas Argentinas",
+    "aerolinea": "Emirates",
     "precio_total_usd": 191,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://e01-elmundo.uecdn.es/assets/multimedia/imagenes/2026/03/09/17730729324621.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -44176,10 +44176,10 @@
     "llegada_estimada": "23:00",
     "terminal": "5",
     "puerta": "B10",
-    "aerolinea": "Aerolíneas Argentinas",
+    "aerolinea": "Emirates",
     "precio_total_usd": 463,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://www.postcardsfromivi.com/wp-content/uploads/2020/07/buenos-aires-en-3-dias-argentina.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -44420,10 +44420,10 @@
     "llegada_estimada": "21:15",
     "terminal": "5",
     "puerta": "H51",
-    "aerolinea": "British Airways",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 909,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://www.dfds.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fz860498abl84%2F7cewLXIkE0DWNlSJzMZjBr%2Fe0c9b7097bd3f0dc6cd4d1b7b4257ba6%2FVE13307-LET-OP-ALTIJD-VISITENGLAND-CREDITEN.jpg&w=1920&q=75",
     "asientos": [
       {
         "id": "1A",
@@ -44664,10 +44664,10 @@
     "llegada_estimada": "09:15",
     "terminal": "2",
     "puerta": "H55",
-    "aerolinea": "British Airways",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 623,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://assets.gqindia.com/photos/6458a2957690ae5bb90b447f/16:9/w_2560%2Cc_limit/hp-gq-6dec18_istock_.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -44908,10 +44908,10 @@
     "llegada_estimada": "04:00",
     "terminal": "5",
     "puerta": "B52",
-    "aerolinea": "Air France",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1248,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://resources.matcha-jp.com/resize/720x2000/2016/11/21-9872.webp",
     "asientos": [
       {
         "id": "1A",
@@ -45152,10 +45152,10 @@
     "llegada_estimada": "21:15",
     "terminal": "1",
     "puerta": "C10",
-    "aerolinea": "Air France",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 1134,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://i.pinimg.com/736x/c3/ee/ec/c3eeec89a3e4f57be4c714b3d8ed84ae.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -45396,10 +45396,10 @@
     "llegada_estimada": "16:15",
     "terminal": "5",
     "puerta": "B47",
-    "aerolinea": "LATAM",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 970,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/c/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNRH8DAay4XC2GlI8-cc8losqXv_w35xM_ZmN3Abvn5pu_6FN_dIUWC9s&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -45640,10 +45640,10 @@
     "llegada_estimada": "01:45",
     "terminal": "3",
     "puerta": "B26",
-    "aerolinea": "LATAM",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 1503,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://i0.wp.com/apuntesyviajes.com/wp-content/uploads/2019/06/morro_de_sao_paulo_brasil.jpg?fit=1600%2C1067&ssl=1",
     "asientos": [
       {
         "id": "1A",
@@ -45887,7 +45887,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 761,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVp8Err261uLJZ3YgBLYuVx-CYydHaijpTL2cGaJY-EWir1dovoT3cJqg&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -46131,7 +46131,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 1806,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://pbs.twimg.com/media/B_7PCoHUgAA-KuE.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -46372,10 +46372,10 @@
     "llegada_estimada": "20:30",
     "terminal": "5",
     "puerta": "H14",
-    "aerolinea": "Lufthansa",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 599,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://www.civitatis.com/blog/wp-content/uploads/2025/03/torre-television-berlin-alemania.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -46616,10 +46616,10 @@
     "llegada_estimada": "02:45",
     "terminal": "4",
     "puerta": "B38",
-    "aerolinea": "Lufthansa",
+    "aerolinea": "Flybondi",
     "precio_total_usd": 2020,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm9mv2pIgSGbLIzdQYCBP_ZPu24_fr8vsT3zffqNGYG94Rl67fTvpVMc-S&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -46863,7 +46863,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 406,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://content.r9cdn.net/rimg/dimg/49/2b/79b8cf38-city-14305-16296e6ddcb.jpg?crop=true&width=1020&height=498",
     "asientos": [
       {
         "id": "1A",
@@ -47107,7 +47107,7 @@
     "aerolinea": "American Airlines",
     "precio_total_usd": 1527,
     "estado_reserva": "Confirmado",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmCVqhZJnPT4lElofggw_VrKyjFGKrSoRr_mchTHJ-Qp2gAO6BvSMGYQYZ&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -47351,7 +47351,7 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 1708,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://media.tacdn.com/media/attractions-splice-spp-674x446/10/59/6a/19.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -47595,7 +47595,7 @@
     "aerolinea": "Emirates",
     "precio_total_usd": 1624,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN3HX_-CrKv23p-7zG7GlveWwjebZHp_gsKSdA66_oaACiUV7GVT6Kq1w&s=10",
     "asientos": [
       {
         "id": "1A",
@@ -47836,10 +47836,10 @@
     "llegada_estimada": "14:30",
     "terminal": "5",
     "puerta": "G47",
-    "aerolinea": "Qantas",
+    "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 1756,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://res.cloudinary.com/enchanting/image/upload/v1/artemis-mdm/95981e24-195a-4def-8cf7-375bde384689.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -48080,10 +48080,10 @@
     "llegada_estimada": "16:00",
     "terminal": "4",
     "puerta": "H32",
-    "aerolinea": "Qantas",
+    "aerolinea": "Aerolíneas Argentinas",
     "precio_total_usd": 2372,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/a/800/600",
+    "ruta_imagen": "https://images.trvl-media.com/place/6050650/3e9711b0-7312-415c-b66d-ee57aaad87cb.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -48324,10 +48324,10 @@
     "llegada_estimada": "18:30",
     "terminal": "4",
     "puerta": "E50",
-    "aerolinea": "Air Canada",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 787,
     "estado_reserva": "Pendiente de Check-In",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_768/v1709248864/post_images/Vancouver/Night%20in%20Vancouver/4783416645_8a2a3af22c_k_Cropped.jpg",
     "asientos": [
       {
         "id": "1A",
@@ -48568,10 +48568,10 @@
     "llegada_estimada": "15:15",
     "terminal": "5",
     "puerta": "H22",
-    "aerolinea": "Air Canada",
+    "aerolinea": "American Airlines",
     "precio_total_usd": 581,
     "estado_reserva": "Check-In Disponible",
-    "ruta_imagen": "https://picsum.photos/seed/b/800/600",
+    "ruta_imagen": "https://r-xx.bstatic.com/xdata/images/xphoto/max1200/652220637.jpg?k=cae3ef360731fe65026c8f3cb4859c0c06fbfeabd2d4a65c3145363506836da6&o=",
     "asientos": [
       {
         "id": "1A",
