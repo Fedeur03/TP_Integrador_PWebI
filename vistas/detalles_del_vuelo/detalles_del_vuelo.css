@@ -60,6 +60,22 @@
     align-items: center;
     gap: 0.5em;
     text-align: center;
+
+}
+
+.resultado-aerolinea p{
+        color:#4e2020 !important;
+}
+
+.resultado-aerolinea select {
+    padding: 0.5rem !important;
+    color:#4e2020;
+    font-size: 1em;
+}
+
+.texto-detalle{
+    font-size: 1.1em !important;
+    color:#4e2020;
 }
 
 .resultado-aerolinea hr {
@@ -74,6 +90,10 @@
     flex-direction: column;
     align-items: center;
     gap: 0.1rem;
+}
+
+#vuelta {
+    accent-color:#4e2020;
 }
 
 .ciudad-texto {

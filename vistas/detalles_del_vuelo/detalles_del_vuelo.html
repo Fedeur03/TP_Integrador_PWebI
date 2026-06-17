@@ -42,7 +42,7 @@
                             <span class="hora-texto" id="hora-llegada"></span>
                         </div>
                     </div>
-                    <p class="duracion-mas-escala" id="fecha-del-vuelo">Fecha del vuelo: </p>
+                    <p class="duracion-mas-escala texto-detalle" id="fecha-del-vuelo">Fecha del vuelo: </p>
                     <p class="duracion-mas-escala" id="duracion"></p>
 
                 </div>
@@ -50,7 +50,7 @@
                 <hr>
 
                 <div class="resultado-aerolinea" id="contenedor-pasajeros">
-                    <p>Cantidad de asientos deseada:</p>
+                    <p class="texto-detalle">Cantidad de asientos deseada:</p>
 
                     <select id="cantidad-pasajeros-select" required>
                         <option value="1" selected>1</option>
@@ -61,7 +61,7 @@
                         <option value="6">6</option>
                     </select>
 
-                    <p>Clase:</p>
+                    <p class="texto-detalle">Clase:</p>
                     <select id="clase-select">
                         <option value="economica" selected>Económica</option>
                         <option value="ejecutiva">Ejecutiva</option>
@@ -71,24 +71,24 @@
 
                 <hr>
 
-                <p id="cantidad-pasajeros-texto"></p>
+                <p id="cantidad-pasajeros-texto" class="texto-detalle"></p>
                 <hr>
-                <p id="clase-texto"></p>
+                <p id="clase-texto" class="texto-detalle"></p>
 
                 <hr>
 
                 <div class="resultado-aerolinea">
-                    <p>Total</p>
+                    <p class="texto-detalle">Total</p>
                     <strong id="precio-total">$ --- USD</strong>
                 </div>
 
                 <hr>
 
-                <p>Asientos: <span id="nombre-asiento">Ninguno</span></p>
+                <p class="texto-detalle">Asientos: <span id="nombre-asiento">Ninguno</span></p>
 
                 <hr>
                 <div class="opcionalVuelta" id="opcionalVuelta">
-                    <div class="requiereVuelta" id="quiereVuelta">Incluir vuelta <input type="checkbox" id="vuelta"
+                    <div class="requiereVuelta texto-detalle" id="quiereVuelta">Incluir vuelta <input type="checkbox" id="vuelta"
                             name="vuelta"></div>
                     <hr>
                 </div>
