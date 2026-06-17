@@ -17,21 +17,19 @@ let cantidadVuelosMostrados = 9;
 
 async function inicializarVuelos() {
     try {
-        const response = await fetch('../../database/listadoVuelos.json');
-            todosLosVuelos = await response.json();
-            localStorage.setItem('vuelos', JSON.stringify(todosLosVuelos));
-        const vuelosGuardados = JSON.parse(localStorage.getItem('vuelos'));
+        const response = await fetch('/database/listadoVuelos.json');
+        const vuelosDelJson = await response.json();
 
-        if (vuelosGuardados) {
-            todosLosVuelos = vuelosGuardados;
+        const vuelosGuardados = JSON.parse(localStorage.getItem('vuelos')) || [];
 
-        } else {
-            const response = await fetch('../../database/listadoVuelos.json');
-            todosLosVuelos = await response.json();
-            localStorage.setItem('vuelos', JSON.stringify(todosLosVuelos));
-        }
+        todosLosVuelos = vuelosDelJson.map(function(vuelo) {
+            const guardado = vuelosGuardados.find(v => v.id === vuelo.id);
+            return guardado ? guardado : vuelo;
+        });
+
+        localStorage.setItem('vuelos', JSON.stringify(todosLosVuelos));
         mostrarVuelos();
-        
+
     } catch (error) {
         console.error('Error al cargar los vuelos:', error);
     }
