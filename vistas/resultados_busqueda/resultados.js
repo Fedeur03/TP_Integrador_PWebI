@@ -1,4 +1,5 @@
-let tipoEquipaje = "ninguno";
+let equipajeMano = false;
+let equipajeBodega = false;
 
 const contenedorResultados = document.getElementById("resultados");
 const resultados = localStorage.getItem("vuelosFiltrados");
@@ -7,7 +8,7 @@ if (!resultados) {
     window.location.href = "/index.html";
 }
 
-if(localStorage.getItem('requiereVuelta') === 'true') {
+if (localStorage.getItem('requiereVuelta') === 'true') {
     const titulo = document.getElementById("titulo-resultado");
     titulo.innerHTML = "Vuelos de Ida";
 }
@@ -25,8 +26,13 @@ function mostrarResultados(vuelosFiltrados) {
 
         let precio = resultado.precio_total_usd;
 
-        if (tipoEquipaje === "mano") precio += 25;
-        if (tipoEquipaje === "bodega") precio += 75;
+        if (equipajeMano) {
+            precio += 25;
+        }
+
+        if (equipajeBodega) {
+            precio += 75;
+        }
 
         htmlAcumulado += `
         <div class="resultados">
@@ -77,13 +83,13 @@ function aplicarFiltros() {
         let precioConEquipaje = arrayFiltrado[i].precio_total_usd;
 
 
-        if (tipoEquipaje === "mano") {
+        if (equipajeMano) {
             precioConEquipaje += 25;
         }
 
-        if (tipoEquipaje === "bodega") {
+        if (equipajeBodega) {
             precioConEquipaje += 75;
-        } 
+        }
 
         if (precioConEquipaje >= precioMin && precioConEquipaje <= precioMax) {
             soloPrecio.push(arrayFiltrado[i]);
@@ -133,14 +139,13 @@ function aplicarFiltros() {
 aplicarFiltros();
 
 
-
 document.getElementById("equipaje-mano").addEventListener("change", function () {
-    tipoEquipaje = "mano";
-    aplicarFiltros(); 
+    equipajeMano = this.checked;
+    aplicarFiltros();
 });
 
 document.getElementById("equipaje-bodega").addEventListener("change", function () {
-    tipoEquipaje = "bodega";
+    equipajeBodega = this.checked;
     aplicarFiltros();
 });
 
@@ -161,14 +166,23 @@ contenedorResultados.addEventListener("click", function (evento) {
         if (dataVuelo) {
             const vueloSeleccionado = JSON.parse(dataVuelo);
 
-            if (tipoEquipaje === "mano") {
-                vueloSeleccionado.equipaje = "Equipaje de mano";
-                vueloSeleccionado.precio_total_usd = vueloSeleccionado.precio_total_usd + 25;
+            let adicional = 0;
+            let equipajes = [];
 
-            } else if (tipoEquipaje === "bodega") {
-                vueloSeleccionado.equipaje = "Equipaje en bodega";
-                vueloSeleccionado.precio_total_usd = vueloSeleccionado.precio_total_usd + 75;
-                
+            if (equipajeMano) {
+                adicional += 25;
+                equipajes.push("De mano");
+            }
+
+            if (equipajeBodega) {
+                adicional += 75;
+                equipajes.push("De bodega");
+            }
+
+            vueloSeleccionado.precio_total_usd += adicional;
+
+            if (equipajes.length > 0) {
+                vueloSeleccionado.equipaje = equipajes.join(" y ");
             } else {
                 vueloSeleccionado.equipaje = "Sin equipaje";
             }
