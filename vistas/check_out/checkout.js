@@ -7,7 +7,6 @@ const cupones = {
 const vuelos = JSON.parse(localStorage.getItem("vueloCompra")) || [];
 const usuario = JSON.parse(localStorage.getItem("usuarioLogueado"));
 
-
 if (vuelos.length === 0) {
     alert("Redirección automática, no posee vuelos.");
     window.location.href = "/index.html";
@@ -16,9 +15,22 @@ if (vuelos.length === 0) {
 let precioBase = 0;
 
 vuelos.forEach(function (vuelo) {
-    precioBase += vuelo.precioFinal;
+    if (!vuelo.precioOriginal) {
+        vuelo.precioOriginal = vuelo.precioFinal;
+    }
+    precioBase += vuelo.precioOriginal;
 });
 
+let cuponAplicado = vuelos.some(function (vuelo) {
+    return vuelo.precioFinal < vuelo.precioOriginal;
+});
+
+if (cuponAplicado) {
+    precioBase = 0;
+    vuelos.forEach(function (vuelo) {
+        precioBase += vuelo.precioFinal;
+    });
+}
 
 if (usuario) {
     document.getElementById("nombre").value = usuario.nombre || "";
@@ -36,66 +48,86 @@ if (usuario) {
 }
 
 const resumen = document.getElementById("resumen-vuelos");
-let htmlResumen = "";
-
-vuelos.forEach(function (vuelo, indice) {
-    htmlResumen += `
-        <div style="margin-bottom:15px;">
-            <strong>${indice === 0 ? "Viaje de Ida: " : "Viaje de Vuelta: "}</strong>
-            <p>${vuelo.origen} → ${vuelo.destino}</p>
-            <p>Fecha: ${vuelo.fecha_vuelo}</p>
-            <p>Hora: ${vuelo.hora_vuelo}</p>
-            <p>Duración: ${vuelo.duracion_estimada}</p>
-        </div>
-    `;
-});
-
 if (resumen) {
+    let htmlResumen = "";
+    vuelos.forEach(function (vuelo, indice) {
+        htmlResumen += `
+            <div style="margin-bottom:15px;">
+                <strong>${indice === 0 ? "Viaje de Ida: " : "Viaje de Vuelta: "}</strong>
+                <p>${vuelo.origen} → ${vuelo.destino}</p>
+                <p>Fecha: ${vuelo.fecha_vuelo}</p>
+                <p>Hora: ${vuelo.hora_vuelo}</p>
+                <p>Duración: ${vuelo.duracion_estimada}</p>
+            </div>
+        `;
+    });
     resumen.innerHTML = htmlResumen;
 }
 
-
 document.getElementById("precio-total").textContent = "$ " + precioBase.toFixed(2);
 
-let cuponAplicado = false;
+const btnAplicar = document.querySelector(".aplicar_cupon");
+const btnQuitar = document.querySelector(".quitar_cupon");
+const mensajeCupon = document.getElementById("mensaje-cupon");
 
+if (cuponAplicado) {
+    btnAplicar.style.display = "none";
+    btnQuitar.style.display = "inline-block";
+    mensajeCupon.textContent = "Cupón ya aplicado";
+    mensajeCupon.style.color = "green";
+} else {
+    btnQuitar.style.display = "none";
+}
 
-document.querySelector(".aplicar_cupon").addEventListener("click", function () {
+btnAplicar.addEventListener("click", function () {
     const codigo = document.getElementById("input-cupon").value.toUpperCase();
 
-    if (cuponAplicado) {
-        document.getElementById("mensaje-cupon").textContent = "Ya aplicaste un cupón";
-        document.getElementById("mensaje-cupon").style.color = "red";
+    if (!cupones[codigo]) {
+        mensajeCupon.textContent = "Cupón inválido";
+        mensajeCupon.style.color = "red";
         return;
     }
 
-    if (cupones[codigo]) {
-        const porcentaje = cupones[codigo];
+    const porcentaje = cupones[codigo];
 
+    vuelos.forEach(function (vuelo) {
+        vuelo.precioFinal = parseFloat((vuelo.precioOriginal * (1 - porcentaje / 100)).toFixed(2));
+    });
 
-        const descuento = precioBase * porcentaje / 100;
-        const nuevo = precioBase - descuento;
-        precioBase = parseFloat(nuevo.toFixed(2));
+    precioBase = 0;
+    vuelos.forEach(function (vuelo) {
+        precioBase += vuelo.precioFinal;
+    });
+    precioBase = parseFloat(precioBase.toFixed(2));
 
+    localStorage.setItem("vueloCompra", JSON.stringify(vuelos));
+    document.getElementById("precio-total").textContent = "$ " + precioBase.toFixed(2);
+    mensajeCupon.textContent = "Cupón aplicado: " + porcentaje + "% de descuento";
+    mensajeCupon.style.color = "green";
 
-        vuelos.forEach(function (vuelo) {
-            const descuentoVuelo = vuelo.precioFinal * porcentaje / 100;
-            vuelo.precioFinal = parseFloat((vuelo.precioFinal - descuentoVuelo).toFixed(2));
-        });
-
-        localStorage.setItem("vueloCompra", JSON.stringify(vuelos));
-
-        document.getElementById("precio-total").textContent = "$ " + precioBase.toFixed(2);
-        document.getElementById("mensaje-cupon").textContent = "Cupón aplicado: " + porcentaje + "% de descuento";
-        document.getElementById("mensaje-cupon").style.color = "green";
-        cuponAplicado = true;
-
-    } else {
-        document.getElementById("mensaje-cupon").textContent = "Cupón inválido";
-        document.getElementById("mensaje-cupon").style.color = "red";
-    }
+    btnAplicar.style.display = "none";
+    btnQuitar.style.display = "inline-block";
 });
 
+btnQuitar.addEventListener("click", function () {
+    vuelos.forEach(function (vuelo) {
+        vuelo.precioFinal = vuelo.precioOriginal;
+    });
+
+    precioBase = 0;
+    vuelos.forEach(function (vuelo) {
+        precioBase += vuelo.precioFinal;
+    });
+    precioBase = parseFloat(precioBase.toFixed(2));
+
+    localStorage.setItem("vueloCompra", JSON.stringify(vuelos));
+    document.getElementById("precio-total").textContent = "$ " + precioBase.toFixed(2);
+    document.getElementById("input-cupon").value = "";
+    mensajeCupon.textContent = "";
+
+    btnQuitar.style.display = "none";
+    btnAplicar.style.display = "inline-block";
+});
 
 document.getElementById("form-checkout").addEventListener("submit", function (evento) {
     evento.preventDefault();
@@ -134,25 +166,22 @@ document.getElementById("form-checkout").addEventListener("submit", function (ev
         return;
     }
 
+    if (!usuario.vuelos) {
+        usuario.vuelos = [];
+    }
+
     vuelos.forEach(function (vuelo) {
-
-        if (!usuario.vuelos) {
-            usuario.vuelos = [];
-        }
-
+        vuelo.codigo_reserva = Math.random().toString(36).substring(2, 10).toUpperCase();
         usuario.vuelos.push(vuelo);
     });
 
+    localStorage.setItem("vueloCompra", JSON.stringify(vuelos));
     localStorage.setItem("usuarioLogueado", JSON.stringify(usuario));
 
     vuelos.forEach(function (vuelo) {
-
         if (vuelo.asientos && vuelo.asientosElegidos) {
-
             vuelo.asientosElegidos.forEach(function (asiento) {
-
                 vuelo.asientos.forEach(function (asientoVuelo) {
-
                     if (asiento.id === asientoVuelo.id) {
                         asientoVuelo.estado = "ocupado";
                     }
@@ -161,9 +190,7 @@ document.getElementById("form-checkout").addEventListener("submit", function (ev
         }
     });
 
-    // ACTUALIZAR VUELOS GENERALES
     let todosLosVuelos = JSON.parse(localStorage.getItem("vuelos")) || [];
-
     let vuelosActualizados = todosLosVuelos.map(function (cadaVuelo) {
         const actualizado = vuelos.find(function (vuelo) {
             return vuelo.id === cadaVuelo.id;
@@ -172,6 +199,5 @@ document.getElementById("form-checkout").addEventListener("submit", function (ev
     });
 
     localStorage.setItem("vuelos", JSON.stringify(vuelosActualizados));
-
     window.location.href = "../reserva_confirmada/reserva_confirmada.html";
 });
