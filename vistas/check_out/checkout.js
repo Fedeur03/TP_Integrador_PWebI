@@ -32,20 +32,6 @@ if (cuponAplicado) {
     });
 }
 
-if (usuario) {
-    document.getElementById("nombre").value = usuario.nombre || "";
-    document.getElementById("apellido").value = usuario.apellido || "";
-    document.getElementById("email").value = usuario.email || "";
-    document.getElementById("numero-documento").value = usuario.dni || "";
-
-    document.getElementById("tipo-documento").addEventListener("change", function () {
-        if (this.value === "DNI") {
-            document.getElementById("numero-documento").value = usuario.dni || "";
-        } else {
-            document.getElementById("numero-documento").value = (usuario.pasaporte && usuario.pasaporte[0]) || "";
-        }
-    });
-}
 
 const resumen = document.getElementById("resumen-vuelos");
 if (resumen) {
@@ -166,12 +152,27 @@ document.getElementById("form-checkout").addEventListener("submit", function (ev
         return;
     }
 
+    const cantidadPasajeros = parseInt(localStorage.getItem('pasajeros')) || 1;
+    const listaPasajeros = [];
+
+    for (let i = 1; i <= cantidadPasajeros; i++) {
+        const pasajero = {
+            nombre: document.querySelector(`input[name='nombre_${i}']`).value,
+            email: document.querySelector(`input[name='email_${i}']`).value,
+            tipoDoc: document.querySelector(`select[name='tipo_doc_${i}']`).value,
+            dni: document.querySelector(`input[name='dni_${i}']`).value,
+            nacimiento: document.querySelector(`input[name='nacimiento_${i}']`).value
+        };
+        listaPasajeros.push(pasajero);
+    }
+
     if (!usuario.vuelos) {
         usuario.vuelos = [];
     }
 
     vuelos.forEach(function (vuelo) {
         vuelo.codigo_reserva = Math.random().toString(36).substring(2, 10).toUpperCase();
+        vuelo.pasajeros = listaPasajeros; 
         usuario.vuelos.push(vuelo);
     });
 
@@ -200,4 +201,71 @@ document.getElementById("form-checkout").addEventListener("submit", function (ev
 
     localStorage.setItem("vuelos", JSON.stringify(vuelosActualizados));
     window.location.href = "../reserva_confirmada/reserva_confirmada.html";
+});
+
+window.addEventListener("load", () => {
+    const contenedorPasajeros = document.getElementById("pasajeros");
+    const cantidadPasajeros = parseInt(localStorage.getItem('pasajeros')) || 1;
+
+    for (let i = 1; i <= cantidadPasajeros; i++) {
+        const bloquePasajero = document.createElement("div");
+        bloquePasajero.classList.add("tarjeta-pasajero");
+        
+        if (i === 1) {
+            bloquePasajero.classList.add("abierto");
+        }
+
+        bloquePasajero.innerHTML = `
+            <div class="barra-pasajero">
+                <span><i class="fa fa-user" aria-hidden="true"></i> Pasajero ${i}</span>
+                <i class="fa fa-chevron-down flecha" aria-hidden="true"></i>
+            </div>
+            <div class="datos-pasajero-ocultos">
+                <div class="sub_contenido">
+                    <div class="dos-columnas">
+                        <label>Nombre Completo:</label>
+                        <input type="text" name="nombre_${i}" placeholder="Ej. Juan Pérez" required>
+                        
+                        <label>Email:</label>
+                        <input type="email" name="email_${i}" placeholder="ejemplo@correo.com" required>
+                    </div>
+                    <div class="documento">
+                        <div>
+                            <label>Tipo Doc:</label>
+                            <select name="tipo_doc_${i}">
+                                <option value="DNI">DNI</option>
+                                <option value="Pasaporte">Pasaporte</option>
+                            </select>
+                        </div>
+                        <div style="flex-grow: 1;">
+                            <label>Nro Documento:</label>
+                            <input type="text" name="dni_${i}" placeholder="12345678" required style="width: 100% !important;">
+                        </div>
+                    </div>
+                    <div>
+                        <label>Fecha de Nacimiento:</label>
+                        <input type="date" name="nacimiento_${i}" required>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        contenedorPasajeros.appendChild(bloquePasajero);
+    }
+
+    const barras = document.querySelectorAll(".barra-pasajero");
+    
+    barras.forEach(barra => {
+        barra.addEventListener("click", () => {
+            const tarjetaActual = barra.parentElement;
+            
+            document.querySelectorAll(".tarjeta-pasajero").forEach(tarjeta => {
+                if (tarjeta !== tarjetaActual) {
+                    tarjeta.classList.remove("abierto");
+                }
+            });
+
+            tarjetaActual.classList.toggle("abierto");
+        });
+    });
 });

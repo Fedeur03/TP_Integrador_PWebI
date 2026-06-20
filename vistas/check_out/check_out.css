@@ -479,3 +479,56 @@ label {
         width: 95%;
     }
 }
+
+.tarjeta-pasajero {
+    border: 0.1rem solid #9c9c9c;
+    border-radius: 10px;
+    margin-bottom: 0.8rem;
+    overflow: hidden;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+
+.barra-pasajero {
+    background-color: #f7f7f7;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    color: #642E2E;
+}
+
+.barra-pasajero:hover {
+    background-color: #eee;
+}
+
+.flecha {
+    transition: 0.3s ease;
+}
+
+.datos-pasajero-ocultos {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+
+.datos-pasajero-ocultos .sub_contenido {
+    border: none;
+    border-radius: 0;
+}
+
+.tarjeta-pasajero.abierto .datos-pasajero-ocultos {
+    max-height: 500px; 
+}
+
+.tarjeta-pasajero.abierto .flecha {
+    transform: rotate(180deg);
+}
+
+.tarjeta-pasajero.abierto .barra-pasajero {
+    border-bottom: 0.1rem solid #9c9c9c;
+    background-color: #f1efe5;
+}
