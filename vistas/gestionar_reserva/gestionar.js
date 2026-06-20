@@ -14,12 +14,37 @@ if(!vueloReserva || vueloReserva.length == 0) {
     contenedorReservaGestionada.innerHTML += `<h2>No hay reservas para gestionar</h2>`;
 
 }else{
-contenedorReservaGestionada.innerHTML += `<span class="titulo rojo">Gestionar reserva</span>
+    let htmlPasajeros = "";
+    
+    if (vueloReserva.pasajeros && vueloReserva.pasajeros.length > 0) {
+        htmlPasajeros += `<div class="seccion-pasajeros" style="margin-top: 20px;">
+                            <span class="sub-titulo rojo" style="display: block; margin-bottom: 10px;">Pasajeros registrados:</span>
+                            <div class="lista-pasajeros" style="display: flex; flex-direction: column; gap: 10px;">`;
+        
+        vueloReserva.pasajeros.forEach(function (p, indice) {
+            htmlPasajeros += `
+                <div class="info-p" style="border: 1px solid #9c9c9c; padding: 10px; border-radius: 5px; background: #fff;">
+                    <strong>Pasajero ${indice + 1}:</strong> ${p.nombre} 
+                    <span style="color: #555; font-size: 0.95rem; margin-left: 10px;">
+                        (${p.tipoDoc}: ${p.dni}) | Email: ${p.email} | F. Nac: ${p.nacimiento}
+                    </span>
+                </div>
+            `;
+        });
+        
+        htmlPasajeros += `  </div>
+                          </div>`;
+    } else {
+        htmlPasajeros = `<p style="margin-top: 20px; color: gray;">No hay pasajeros registrados en esta reserva.</p>`;
+    }
+
+    contenedorReservaGestionada.innerHTML += `<span class="titulo rojo">Gestionar reserva</span>
         <span class="sub-titulo rojo">Partida ${vueloReserva.origen} con destino a ${vueloReserva.destino}.</span>
         <span class="sub-titulo rojo">Asiento(s): ${stringAsientos}.</span>
         <span class="sub-titulo rojo ">Código de reserva: <strong>${vueloReserva.codigo_reserva}</strong>
             <button class="eliminar" data-codigo="${vueloReserva.codigo_reserva}" id="cancelar-reserva">Cancelar reserva</button>
         </span>
+        ${htmlPasajeros}
 
         <section class="detalles-vuelo">
             <div class="grilla">
@@ -65,5 +90,8 @@ contenedorReservaGestionada.innerHTML += `<span class="titulo rojo">Gestionar re
                 </div>
             </aside>
 
-        </section>`
+        </section>
+        
+        
+        `
 }
