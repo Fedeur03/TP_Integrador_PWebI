@@ -207,6 +207,8 @@ window.addEventListener("load", () => {
     const contenedorPasajeros = document.getElementById("pasajeros");
     const cantidadPasajeros = parseInt(localStorage.getItem('pasajeros')) || 1;
 
+    const userLogueado = JSON.parse(localStorage.getItem("usuarioLogueado")) || {};
+
     for (let i = 1; i <= cantidadPasajeros; i++) {
         const bloquePasajero = document.createElement("div");
         bloquePasajero.classList.add("tarjeta-pasajero");
@@ -215,36 +217,56 @@ window.addEventListener("load", () => {
             bloquePasajero.classList.add("abierto");
         }
 
+        let nombreVal = "";
+        let emailVal = "";
+        let tipoDocVal = "DNI";
+        let dniVal = "";
+        let nacimientoVal = "";
+
+        if (i === 1 && userLogueado && userLogueado.nombre) {
+            nombreVal = userLogueado.nombre || "";
+            emailVal = userLogueado.email || "";
+            nacimientoVal = userLogueado.nacimiento || "";
+            
+            if (userLogueado.documento && userLogueado.documento.length > 0) {
+                const primerDoc = userLogueado.documento[0];
+                tipoDocVal = primerDoc.tipo ? primerDoc.tipo.toUpperCase() : "DNI";
+                dniVal = primerDoc.nro || "";
+            } else if (userLogueado.dni) {
+                dniVal = userLogueado.dni;
+            }
+        }
+
         bloquePasajero.innerHTML = `
             <div class="barra-pasajero">
-                <span><i class="fa fa-user" aria-hidden="true"></i> Pasajero ${i}</span>
+                <span><i class="fa fa-user" aria-hidden="true"></i> Pasajero ${i} ${i === 1 && userLogueado.nombre ? "(Tú)" : ""}</span>
                 <i class="fa fa-chevron-down flecha" aria-hidden="true"></i>
             </div>
             <div class="datos-pasajero-ocultos">
                 <div class="sub_contenido">
                     <div class="dos-columnas">
                         <label>Nombre Completo:</label>
-                        <input type="text" name="nombre_${i}" placeholder="Ej. Juan Pérez" required>
+                        <input type="text" name="nombre_${i}" placeholder="Ej. Juan Pérez" value="${nombreVal}" required>
                         
                         <label>Email:</label>
-                        <input type="email" name="email_${i}" placeholder="ejemplo@correo.com" required>
+                        <input type="email" name="email_${i}" placeholder="ejemplo@correo.com" value="${emailVal}" required>
                     </div>
                     <div class="documento">
                         <div>
                             <label>Tipo Doc:</label>
                             <select name="tipo_doc_${i}">
-                                <option value="DNI">DNI</option>
-                                <option value="Pasaporte">Pasaporte</option>
+                                <option value="DNI" ${tipoDocVal === "DNI" ? "selected" : ""}>DNI</option>
+                                <option value="Pasaporte" ${tipoDocVal === "PASAPORTE" ? "selected" : ""}>Pasaporte</option>
                             </select>
                         </div>
                         <div style="flex-grow: 1;">
                             <label>Nro Documento:</label>
-                            <input type="text" name="dni_${i}" placeholder="12345678" required style="width: 100% !important;">
+                            <input type="text" name="dni_${i}" placeholder="12345678" value="${dniVal}" required style="width: 100% !important;">
                         </div>
                     </div>
                     <div>
                         <label>Fecha de Nacimiento:</label>
-                        <input type="date" name="nacimiento_${i}" required>
+                        <input type="date" name="nacimiento_${i}" value="${nacimientoVal}" required>
                     </div>
                 </div>
             </div>
