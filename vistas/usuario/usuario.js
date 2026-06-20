@@ -34,18 +34,20 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="datos_personales">
                 <div class="row">
                     <p class="label">Nombre Completo:</p>
-                    <input type="text" id="per-nombre-apellido" value="${usuarioActual.nombre} ${usuarioActual.apellido}" disabled>
+                    <input type="text" id="per-nombre-apellido" value="${usuarioActual.nombre} ${usuarioActual.apellido}".trim() disabled>
                     <p class="label">Correo Electrónico:</p>
                     <input type="text" id="per-email" value="${usuarioActual.email}" disabled>
                     <p class="label">Teléfono:</p>
-                    <input type="text" id="per-telefono" value="${usuarioActual.telefono || 'No agregó teléfono'}" disabled>
+                    <input type="text" id="per-telefono" value="${usuarioActual.telefono || ''}" placeholder="No agregó teléfono" disabled>
                 </div>
 
                 <div class="row">
                     <p class="label">Dirección:</p>
-                    <input type="text" id="per-direccion" value="${usuarioActual.direccion || 'No agregó dirección'}" disabled>
+                    <input type="text" id="per-direccion" value="${usuarioActual.direccion || ''}" placeholder="No agregó dirección" disabled>
                     <p class="label">Fecha de Nacimiento:</p>
                     <input type="date" id="per-nacimiento" value="${usuarioActual.nacimiento}" disabled>
+                    <p class="label">Contraseña:</p>
+                    <input type="text" id="per-contrasena" value="${usuarioActual.password}" disabled>
                 </div>
                 
                 <button class="boton-documento" id="guardar-datos-personales" style="display:none; color: white; width: 100%; margin-top: 10px;">Guardar Cambios</button>
@@ -68,13 +70,47 @@ document.addEventListener("DOMContentLoaded", function () {
     const btnGuardarPerfil = document.getElementById("guardar-datos-personales");
     if (btnGuardarPerfil) {
         btnGuardarPerfil.addEventListener("click", function () {
-            const nombreCompleto = document.getElementById("per-nombre-apellido").value.split(" ");
-            usuarioActual.nombre = nombreCompleto[0] || "";
-            usuarioActual.apellido = nombreCompleto.slice(1).join(" ") || "";
-            usuarioActual.email = document.getElementById("per-email").value;
-            usuarioActual.telefono = document.getElementById("per-telefono").value;
-            usuarioActual.direccion = document.getElementById("per-direccion").value;
-            usuarioActual.nacimiento = document.getElementById("per-nacimiento").value;
+            const txtNombreApellido = document.getElementById("per-nombre-apellido").value.trim();
+            const txtEmail = document.getElementById("per-email").value.trim();
+            const txtTelefono = document.getElementById("per-telefono").value.trim();
+            const txtDireccion = document.getElementById("per-direccion").value.trim();
+            const txtNacimiento = document.getElementById("per-nacimiento").value;
+            const txtContrasena = document.getElementById("per-contrasena").value;
+
+            if (!txtNombreApellido) {
+                alert("El nombre completo no puede quedar vacío.");
+                return;
+            }
+            if (!txtEmail) {
+                alert("El correo electrónico no puede quedar vacío.");
+                return;
+            }
+
+            if(!txtContrasena){
+                alert("La contraseña no puede quedar vacia.");
+                return;
+            }
+
+            const regexDelEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+            if (!regexDelEmail.test(txtEmail)) {
+                alert("El correo electrónico no es válido.");
+                return;
+            }
+
+            if (!txtNacimiento) {
+                alert("La fecha de nacimiento no puede quedar vacía.");
+                return;
+            }
+
+            const partesNombre = txtNombreApellido.split(" ");
+            usuarioActual.nombre = partesNombre[0] || "";
+            usuarioActual.apellido = partesNombre.slice(1).join(" ") || "";
+            usuarioActual.email = txtEmail;
+            usuarioActual.telefono = txtTelefono;
+            usuarioActual.direccion = txtDireccion;
+            usuarioActual.nacimiento = txtNacimiento;
+            usuarioActual.password = txtContrasena;
 
             localStorage.setItem("usuarioLogueado", JSON.stringify(usuarioActual));
             window.location.reload();
@@ -145,13 +181,26 @@ document.addEventListener("DOMContentLoaded", function () {
                 const docIndex = usuarioActual.documento.findIndex(d => d.nro === nroDocumentoOriginal);
 
                 if (docIndex !== -1) {
+                    const nuevoTipo = tarjetaDocumento.querySelector(".doc-tipo").value.trim();
+                    const nuevoNro = tarjetaDocumento.querySelector(".doc-nro").value.trim();
+                    const nuevoVencimiento = tarjetaDocumento.querySelector(".doc-vencimiento").value;
+                    const nuevaExpedicion = tarjetaDocumento.querySelector(".doc-expedicion").value;
+                    const nuevoPaisEmision = tarjetaDocumento.querySelector(".doc-paisEmision").value.trim();
+                    const nuevoPaisResidencia = tarjetaDocumento.querySelector(".doc-paisResidencia").value.trim();
+
+
+                    if (!nuevoTipo || !nuevoNro || !nuevoVencimiento || !nuevaExpedicion || !nuevoPaisEmision || !nuevoPaisResidencia) {
+                        alert("Ningún campo del documento puede quedar vacío.");
+                        return;
+                    }
+
                     usuarioActual.documento[docIndex] = {
-                        tipo: tarjetaDocumento.querySelector(".doc-tipo").value,
-                        nro: tarjetaDocumento.querySelector(".doc-nro").value,
-                        vencimiento: tarjetaDocumento.querySelector(".doc-vencimiento").value,
-                        expedicion: tarjetaDocumento.querySelector(".doc-expedicion").value,
-                        paisEmision: tarjetaDocumento.querySelector(".doc-paisEmision").value,
-                        paisResidencia: tarjetaDocumento.querySelector(".doc-paisResidencia").value
+                        tipo: nuevoTipo,
+                        nro: nuevoNro,
+                        vencimiento: nuevoVencimiento,
+                        expedicion: nuevaExpedicion,
+                        paisEmision: nuevoPaisEmision,
+                        paisResidencia: nuevoPaisResidencia
                     };
 
                     localStorage.setItem("usuarioLogueado", JSON.stringify(usuarioActual));
@@ -173,14 +222,19 @@ document.addEventListener("DOMContentLoaded", function () {
         formulario.addEventListener("submit", function (evento) {
             evento.preventDefault();
 
-            const documento = {
-                tipo: document.getElementById("tipo-documento").value,
-                nro: document.getElementById("nro-documento").value,
-                vencimiento: document.getElementById("vencimiento").value,
-                expedicion: document.getElementById("expedicion").value,
-                paisEmision: document.getElementById("pais-emision").value,
-                paisResidencia: document.getElementById("pais-residencia").value
-            };
+            const tipo = document.getElementById("tipo-documento").value.trim();
+            const nro = document.getElementById("nro-documento").value.trim();
+            const vencimiento = document.getElementById("vencimiento").value;
+            const expedicion = document.getElementById("expedicion").value;
+            const paisEmision = document.getElementById("pais-emision").value.trim();
+            const paisResidencia = document.getElementById("pais-residencia").value.trim();
+
+            if (!tipo || !nro || !vencimiento || !expedicion || !paisEmision || !paisResidencia) {
+                alert("Todos los campos son obligatorios para registrar el documento.");
+                return;
+            }
+
+            const documento = { tipo, nro, vencimiento, expedicion, paisEmision, paisResidencia };
 
             usuarioActual.documento.push(documento);
             localStorage.setItem("usuarioLogueado", JSON.stringify(usuarioActual));
