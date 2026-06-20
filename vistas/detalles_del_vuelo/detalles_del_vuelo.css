@@ -271,6 +271,23 @@
     align-items: center;
 }
 
+#ver-detalle-precio{
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#detalle-precio{
+    margin-top: 10px;
+}
+
+#detalle-precio p{
+    margin: 8px 0;
+}
+
 @media (max-width: 1024px) {
 
     .grilla {

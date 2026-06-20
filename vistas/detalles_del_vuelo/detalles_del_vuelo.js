@@ -149,6 +149,8 @@ function elegirAsiento(elemento, idAsiento) {
     document.getElementById("nombre-asiento").textContent = asientosElegidos.map(asiento => asiento.id).join(", ");
 
     localStorage.setItem("asientoElegido", JSON.stringify(asientosElegidos));
+
+    actualizarPrecio();
 }
 
 function validar() {
@@ -184,32 +186,79 @@ finalizado.addEventListener("click", function (evento) {
     window.location.href = destino;
 });
 
+function calcularPrecioAsientos() {
+
+    const clase = localStorage.getItem("clase");
+
+    let precioPorAsiento = 20;
+
+    if (clase === "ejecutiva") {
+        precioPorAsiento = 50;
+    }
+
+    if (clase === "primera") {
+        precioPorAsiento = 100;
+    }
+
+    return precioPorAsiento * asientosElegidos.length;
+}
+
 function actualizarPrecio() {
 
-    if (!vuelo) return;
+    if (!vuelo) {
+        return;
+    }
 
     const cantidadPasajeros = parseInt(localStorage.getItem("pasajeros"));
 
     const clase = localStorage.getItem("clase");
 
-    let extraClase = 0;
+    let extraClase = 25;
 
     if (clase === "ejecutiva") {
-        extraClase = 35;
+        extraClase = 75;
     }
 
     if (clase === "primera") {
-        extraClase = 85;
+        extraClase = 150;
     }
 
-    const total = (vuelo.precio_total_usd + extraClase) * cantidadPasajeros;
+    const precioBase = vuelo.precio_total_usd * cantidadPasajeros;
+
+    const precioClase = extraClase * cantidadPasajeros;
+
+    const precioAsientos = calcularPrecioAsientos();
+
+    const total = precioBase + precioClase + precioAsientos;
 
     vuelo.precioFinal = total;
 
     localStorage.setItem("vueloSeleccionado", JSON.stringify(vuelo));
 
     document.getElementById("precio-total").textContent = "$ " + total.toFixed(2) + " USD";
+
+    document.getElementById("detalle-base").textContent = "$ " + precioBase.toFixed(2) + " USD";
+
+    document.getElementById("detalle-clase").textContent = "$ " + precioClase.toFixed(2) + " USD";
+
+    document.getElementById("detalle-asientos").textContent = "$ " + precioAsientos.toFixed(2) + " USD";
 }
+
+const botonDetalle = document.getElementById("ver-detalle-precio");
+const detallePrecio = document.getElementById("detalle-precio");
+
+botonDetalle.addEventListener("click", function () {
+
+    if (detallePrecio.style.display === "none") {
+        detallePrecio.style.display = "block";
+        botonDetalle.textContent = "▲ Ocultar detalle";
+
+    } else {
+        detallePrecio.style.display = "none";
+        botonDetalle.textContent = "▼ Ver detalle";
+    }
+
+});
 
 function verificarSiQuiereVuelta() {
 

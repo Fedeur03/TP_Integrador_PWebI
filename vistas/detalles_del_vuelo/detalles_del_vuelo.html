@@ -82,14 +82,26 @@
                     <strong id="precio-total">$ --- USD</strong>
                 </div>
 
+                <button type="button" id="ver-detalle-precio">
+                    ▼ Ver detalle del precio
+                </button>
+
+                <div id="detalle-precio" style="display:none;">
+                    <p>Precio base: <span id="detalle-base">$0</span></p>
+                    <p>Clase: <span id="detalle-clase">$0</span></p>
+                    <p>Asientos: <span id="detalle-asientos">$0</span></p>
+                </div>
+
                 <hr>
 
-                <p class="texto-detalle">Asientos: <span id="nombre-asiento">Ninguno</span></p>
+                <p class="texto-detalle">
+                    Asientos: <span id="nombre-asiento">Ninguno</span>
+                </p>
 
                 <hr>
                 <div class="opcionalVuelta" id="opcionalVuelta">
-                    <div class="requiereVuelta texto-detalle" id="quiereVuelta">Incluir vuelta <input type="checkbox" id="vuelta"
-                            name="vuelta"></div>
+                    <div class="requiereVuelta texto-detalle" id="quiereVuelta">Incluir vuelta <input type="checkbox"
+                            id="vuelta" name="vuelta"></div>
                     <hr>
                 </div>
 
