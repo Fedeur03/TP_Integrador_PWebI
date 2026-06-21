@@ -22,7 +22,7 @@ vuelos.forEach(function (vuelo) {
 });
 
 let cuponAplicado = vuelos.some(function (vuelo) {
-    return vuelo.precioFinal < vuelo.precioOriginal;
+    return vuelo.cuponAplicado === true;
 });
 
 if (cuponAplicado) {
@@ -78,12 +78,15 @@ btnAplicar.addEventListener("click", function () {
 
     vuelos.forEach(function (vuelo) {
         vuelo.precioFinal = parseFloat((vuelo.precioOriginal * (1 - porcentaje / 100)).toFixed(2));
+        vuelo.cuponAplicado = true;
     });
 
     precioBase = 0;
+
     vuelos.forEach(function (vuelo) {
         precioBase += vuelo.precioFinal;
     });
+
     precioBase = parseFloat(precioBase.toFixed(2));
 
     localStorage.setItem("vueloCompra", JSON.stringify(vuelos));
@@ -98,12 +101,15 @@ btnAplicar.addEventListener("click", function () {
 btnQuitar.addEventListener("click", function () {
     vuelos.forEach(function (vuelo) {
         vuelo.precioFinal = vuelo.precioOriginal;
+        vuelo.cuponAplicado = false;
     });
 
     precioBase = 0;
+
     vuelos.forEach(function (vuelo) {
         precioBase += vuelo.precioFinal;
     });
+
     precioBase = parseFloat(precioBase.toFixed(2));
 
     localStorage.setItem("vueloCompra", JSON.stringify(vuelos));

@@ -1,5 +1,13 @@
 let asientosElegidos = [];
 
+const esVuelta = localStorage.getItem("esVuelta") === "true";
+
+if (!esVuelta) {
+    localStorage.removeItem("vueloCompra");
+    localStorage.removeItem("clase");
+    localStorage.removeItem("pasajeros");
+}
+
 let vuelo = JSON.parse(localStorage.getItem("vueloSeleccionado"));
 const vueloCompraHistorial = JSON.parse(localStorage.getItem("vueloCompra")) || [];
 
@@ -12,7 +20,7 @@ if (vuelo) {
 
 const vueltaSelector = document.getElementById("opcionalVuelta");
 
-if (localStorage.getItem("requiereVuelta") === "true" || localStorage.getItem("esVuelta") === "true") {
+if (localStorage.getItem("requiereVuelta") === "true" || esVuelta) {
     vueltaSelector.style.display = "none";
 } else {
     vueltaSelector.style.display = "block";
@@ -128,28 +136,32 @@ window.addEventListener("load", function () {
         });
     }
 
-    const info = document.getElementById("info-clase-asientos");
-    if (info) info.textContent = mensajeClaseActual();
-
     const pasajerosGuardados = localStorage.getItem("pasajeros");
     const claseGuardada = localStorage.getItem("clase");
 
     if (pasajerosGuardados && claseGuardada) {
 
-        // Ida normal: todo guardado, ocultar ambos selects
         document.getElementById("contenedor-pasajeros").style.display = "none";
         document.getElementById("cantidad-pasajeros-texto").textContent = "Pasajeros: " + pasajerosGuardados;
 
         let claseTexto = "Económica";
-        if (claseGuardada === "ejecutiva") claseTexto = "Ejecutiva";
-        if (claseGuardada === "primera") claseTexto = "Primera Clase";
+        if (claseGuardada === "ejecutiva") {
+            claseTexto = "Ejecutiva";
+        }
+
+        if (claseGuardada === "primera") {
+            claseTexto = "Primera Clase";
+        }
+
         document.getElementById("clase-texto").textContent = "Clase: " + claseTexto;
+
+        const info = document.getElementById("info-clase-asientos");
+        if (info) info.textContent = mensajeClaseActual();
 
         actualizarOpacidadAsientos();
 
     } else if (pasajerosGuardados && !claseGuardada) {
 
-        // Vuelta: pasajeros ya fijados, solo dejar elegir clase
         document.getElementById("cantidad-pasajeros-texto").textContent = "Pasajeros: " + pasajerosGuardados;
         document.getElementById("cantidad-pasajeros-select").style.display = "none";
         document.getElementById("cantidad-pasajeros-select").previousElementSibling.style.display = "none";
@@ -165,8 +177,14 @@ window.addEventListener("load", function () {
             localStorage.setItem("clase", this.value);
 
             let claseTexto = "Económica";
-            if (this.value === "ejecutiva") claseTexto = "Ejecutiva";
-            if (this.value === "primera") claseTexto = "Primera Clase";
+            if (this.value === "ejecutiva") {
+                claseTexto = "Ejecutiva";
+            }
+
+            if (this.value === "primera") {
+                claseTexto = "Primera Clase";
+            }
+
             document.getElementById("clase-texto").textContent = "Clase: " + claseTexto;
 
             const info = document.getElementById("info-clase-asientos");
@@ -178,12 +196,16 @@ window.addEventListener("load", function () {
 
     } else {
 
-        // Primera vez: elegir todo desde cero
         localStorage.setItem("pasajeros", document.getElementById("cantidad-pasajeros-select").value);
         localStorage.setItem("clase", document.getElementById("clase-select").value);
 
         document.getElementById("cantidad-pasajeros-texto").textContent = "Pasajeros: " + document.getElementById("cantidad-pasajeros-select").value;
         document.getElementById("clase-texto").textContent = "Clase: Económica";
+
+        const info = document.getElementById("info-clase-asientos");
+        if (info) info.textContent = mensajeClaseActual();
+
+        actualizarOpacidadAsientos();
 
         document.getElementById("cantidad-pasajeros-select").addEventListener("change", function () {
             localStorage.setItem("pasajeros", this.value);
@@ -195,8 +217,14 @@ window.addEventListener("load", function () {
             localStorage.setItem("clase", this.value);
 
             let claseTexto = "Económica";
-            if (this.value === "ejecutiva") claseTexto = "Ejecutiva";
-            if (this.value === "primera") claseTexto = "Primera Clase";
+            if (this.value === "ejecutiva") {
+                claseTexto = "Ejecutiva";
+            }
+
+            if (this.value === "primera") {
+                claseTexto = "Primera Clase";
+            }
+            
             document.getElementById("clase-texto").textContent = "Clase: " + claseTexto;
 
             const info = document.getElementById("info-clase-asientos");
@@ -351,7 +379,7 @@ function verificarSiQuiereVuelta() {
     localStorage.setItem("vueloCompra", JSON.stringify(vueloCompra));
     localStorage.setItem("vueloSeleccionado", JSON.stringify(vuelo));
 
-    if ((siQuiere === "true" && localStorage.getItem("esVuelta") !== "true") || vuelta) {
+    if ((siQuiere === "true" && !esVuelta) || vuelta) {
         localStorage.removeItem("clase");
         return "../viaje_vuelta/vuelta.html";
     }
