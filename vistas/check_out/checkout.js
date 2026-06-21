@@ -32,7 +32,6 @@ if (cuponAplicado) {
     });
 }
 
-
 const resumen = document.getElementById("resumen-vuelos");
 if (resumen) {
     let htmlResumen = "";
@@ -172,13 +171,31 @@ document.getElementById("form-checkout").addEventListener("submit", function (ev
         listaPasajeros.push(pasajero);
     }
 
+    for (let i = 0; i < listaPasajeros.length; i++) {
+
+        if (listaPasajeros[i].email) {
+            const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(listaPasajeros[i].email);
+            if (!emailValido) {
+                error.textContent = "El email del pasajero " + (i + 1) + " no es válido";
+                return;
+            }
+        }
+
+        for (let j = 0; j < i; j++) {
+            if (listaPasajeros[i].email && listaPasajeros[i].email === listaPasajeros[j].email) {
+                error.textContent = "El email del pasajero " + (i + 1) + " ya fue usado por otro pasajero";
+                return;
+            }
+        }
+    }
+
     if (!usuario.vuelos) {
         usuario.vuelos = [];
     }
 
     vuelos.forEach(function (vuelo) {
         vuelo.codigo_reserva = Math.random().toString(36).substring(2, 10).toUpperCase();
-        vuelo.pasajeros = listaPasajeros; 
+        vuelo.pasajeros = listaPasajeros;
         usuario.vuelos.push(vuelo);
     });
 
@@ -212,13 +229,13 @@ document.getElementById("form-checkout").addEventListener("submit", function (ev
 window.addEventListener("load", () => {
     const contenedorPasajeros = document.getElementById("pasajeros");
     const cantidadPasajeros = parseInt(localStorage.getItem('pasajeros')) || 1;
-
     const userLogueado = JSON.parse(localStorage.getItem("usuarioLogueado")) || {};
+    const hoyStr = new Date().toISOString().split("T")[0];
 
     for (let i = 1; i <= cantidadPasajeros; i++) {
         const bloquePasajero = document.createElement("div");
         bloquePasajero.classList.add("tarjeta-pasajero");
-        
+
         if (i === 1) {
             bloquePasajero.classList.add("abierto");
         }
@@ -233,7 +250,7 @@ window.addEventListener("load", () => {
             nombreVal = userLogueado.nombre || "";
             emailVal = userLogueado.email || "";
             nacimientoVal = userLogueado.nacimiento || "";
-            
+
             if (userLogueado.documento && userLogueado.documento.length > 0) {
                 const primerDoc = userLogueado.documento[0];
                 tipoDocVal = primerDoc.tipo ? primerDoc.tipo.toUpperCase() : "DNI";
@@ -253,9 +270,8 @@ window.addEventListener("load", () => {
                     <div class="dos-columnas">
                         <label>Nombre Completo:</label>
                         <input type="text" name="nombre_${i}" placeholder="Ej. Juan Pérez" value="${nombreVal}" required>
-                        
                         <label>Email:</label>
-                        <input type="email" name="email_${i}" placeholder="ejemplo@correo.com" value="${emailVal}" required>
+                        <input type="email" name="email_${i}" placeholder="ejemplo@correo.com" value="${emailVal}">
                     </div>
                     <div class="documento">
                         <div>
@@ -272,21 +288,21 @@ window.addEventListener("load", () => {
                     </div>
                     <div>
                         <label>Fecha de Nacimiento:</label>
-                        <input type="date" name="nacimiento_${i}" value="${nacimientoVal}" required>
+                        <input type="date" name="nacimiento_${i}" value="${nacimientoVal}" max="${hoyStr}" required>
                     </div>
                 </div>
             </div>
         `;
-        
+
         contenedorPasajeros.appendChild(bloquePasajero);
     }
 
     const barras = document.querySelectorAll(".barra-pasajero");
-    
+
     barras.forEach(barra => {
         barra.addEventListener("click", () => {
             const tarjetaActual = barra.parentElement;
-            
+
             document.querySelectorAll(".tarjeta-pasajero").forEach(tarjeta => {
                 if (tarjeta !== tarjetaActual) {
                     tarjeta.classList.remove("abierto");
