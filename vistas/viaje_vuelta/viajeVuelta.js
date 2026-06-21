@@ -27,10 +27,7 @@ if (vueloIdeal && vueloIdeal.fecha_vuelta) {
     
 } else {
     vuelosFiltrados = todosLosVuelos.filter(vuelo => {
-        return (
-            vuelo.origen === vueloIda.destino &&
-            vuelo.destino === vueloIda.origen
-        );
+        return (vuelo.origen === vueloIda.destino && vuelo.destino === vueloIda.origen && vuelo.fecha_vuelo >= vueloIda.fecha_vuelo);
     });
 }
 

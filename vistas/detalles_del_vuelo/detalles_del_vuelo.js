@@ -4,8 +4,7 @@ const esVuelta = localStorage.getItem("esVuelta") === "true";
 
 if (!esVuelta) {
     localStorage.removeItem("vueloCompra");
-    localStorage.removeItem("clase");
-    localStorage.removeItem("pasajeros");
+    localStorage.removeItem("clase")
 }
 
 let vuelo = JSON.parse(localStorage.getItem("vueloSeleccionado"));

@@ -69,11 +69,12 @@ form.addEventListener("submit", function (evento) {
         .then(response => response.json())
         .then(todosLosVuelos => {
             const vuelosFiltrados = todosLosVuelos.filter(vuelo =>
-                vuelo.origen.toLowerCase().includes(origen.toLowerCase()) &&
-                vuelo.destino.toLowerCase().includes(destino.toLowerCase())
-            );
+                vuelo.origen.toLowerCase().includes(origen.toLowerCase()) && vuelo.destino.toLowerCase().includes(destino.toLowerCase()) && vuelo.fecha_vuelo >= fechaIda);
 
             localStorage.setItem("vuelosFiltrados", JSON.stringify(vuelosFiltrados));
+            localStorage.setItem("pasajeros", pasajeros);
+            localStorage.setItem("clase", clase);  
+
             window.location.href = "/vistas/resultados_busqueda/resultados.html";
         })
         .catch(error => {
