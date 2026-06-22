@@ -26,6 +26,14 @@ form.addEventListener("submit", function (evento) {
         }
     }
 
+    const regexDelEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (!regexDelEmail.test(email)) {
+        document.getElementById("errorEmail").textContent = "El correo electrónico no es válido";
+        errorEmail.style.display = "block";
+        return;
+    }
+
     if (dni.length !== 8) {
         document.getElementById("errorDni").textContent = "El DNI debe tener 8 dígitos";
         errorDni.style.display = "block";

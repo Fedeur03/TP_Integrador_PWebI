@@ -92,7 +92,6 @@ btnAplicar.addEventListener("click", function () {
     document.getElementById("precio-total").textContent = "$ " + precioBase.toFixed(2);
     mensajeCupon.textContent = "Cupón aplicado: " + porcentaje + "% de descuento";
     mensajeCupon.style.color = "green";
-
     btnAplicar.style.display = "none";
     btnQuitar.style.display = "inline-block";
 });
