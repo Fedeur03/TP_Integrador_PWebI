@@ -1,5 +1,12 @@
 const form = document.getElementById("formLogin");
 const mensajeError = document.getElementById("mensajeError");
+const olvidoBoton = document.getElementById('olvido-contrasena');
+
+olvidoBoton.addEventListener('click', function () {
+    console.log(olvidoBoton);
+    mensajeError.textContent = "Te hemos enviado un correo para restablecer tu contraseña";
+    mensajeError.style.color = "green";
+})
 
 form.addEventListener("submit", function (evento) {
 
@@ -24,7 +31,6 @@ form.addEventListener("submit", function (evento) {
         mensajeError.textContent = "Correo electrónico y/o contraseña incorrectos";
         return;
     }
-
     mensajeError.textContent = "";
 
     localStorage.setItem("usuarioLogueado", JSON.stringify(usuarioEncontrado));
