@@ -1,6 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
     const usuarioActual = JSON.parse(localStorage.getItem("usuarioLogueado"));
 
+    function actualizarUsuarioEnLista(usuarioActualizado) {
+        const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+    
+        const indice = usuarios.findIndex(
+            usuario => usuario.dni === usuarioActualizado.dni
+        );
+    
+        if (indice !== -1) {
+            usuarios[indice] = usuarioActualizado;
+        }
+    
+        localStorage.setItem("usuarios", JSON.stringify(usuarios));
+        localStorage.setItem("usuarioLogueado", JSON.stringify(usuarioActualizado));
+    }
+
     if (usuarioActual && !usuarioActual.documento) {
         usuarioActual.documento = [];
     }
@@ -77,6 +92,18 @@ document.addEventListener("DOMContentLoaded", function () {
             const txtNacimiento = document.getElementById("per-nacimiento").value;
             const txtContrasena = document.getElementById("per-contrasena").value;
 
+            const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+const existeEmail = usuarios.some(usuario =>
+    usuario.email === txtEmail &&
+    usuario.dni !== usuarioActual.dni
+);
+
+if (existeEmail) {
+    alert("Ese correo ya está registrado.");
+    return;
+}
+
             if (!txtNombreApellido) {
                 alert("El nombre completo no puede quedar vacío.");
                 return;
@@ -112,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
             usuarioActual.nacimiento = txtNacimiento;
             usuarioActual.password = txtContrasena;
 
-            localStorage.setItem("usuarioLogueado", JSON.stringify(usuarioActual));
+            actualizarUsuarioEnLista(usuarioActual);
             window.location.reload();
         });
     }
@@ -203,7 +230,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         paisResidencia: nuevoPaisResidencia
                     };
 
-                    localStorage.setItem("usuarioLogueado", JSON.stringify(usuarioActual));
+                    actualizarUsuarioEnLista(usuarioActual);
                     window.location.reload();
                 }
             }
@@ -211,7 +238,9 @@ document.addEventListener("DOMContentLoaded", function () {
             if (target.classList.contains("boton-eliminar-doc")) {
                 const codigoDocumento = target.getAttribute("data-codigo");
                 usuarioActual.documento = usuarioActual.documento.filter(doc => doc.nro !== codigoDocumento);
-                localStorage.setItem("usuarioLogueado", JSON.stringify(usuarioActual));
+
+                actualizarUsuarioEnLista(usuarioActual);
+
                 window.location.reload();
             }
         });
@@ -237,7 +266,9 @@ document.addEventListener("DOMContentLoaded", function () {
             const documento = { tipo, nro, vencimiento, expedicion, paisEmision, paisResidencia };
 
             usuarioActual.documento.push(documento);
-            localStorage.setItem("usuarioLogueado", JSON.stringify(usuarioActual));
+
+            actualizarUsuarioEnLista(usuarioActual);
+
             window.location.reload();
         });
     }

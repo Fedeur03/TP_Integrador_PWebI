@@ -199,7 +199,19 @@ document.getElementById("form-checkout").addEventListener("submit", function (ev
     });
 
     localStorage.setItem("vueloCompra", JSON.stringify(vuelos));
-    localStorage.setItem("usuarioLogueado", JSON.stringify(usuario));
+
+const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+const indiceUsuario = usuarios.findIndex(
+    u => u.dni === usuario.dni
+);
+
+if (indiceUsuario !== -1) {
+    usuarios[indiceUsuario] = usuario;
+}
+
+localStorage.setItem("usuarios", JSON.stringify(usuarios));
+localStorage.setItem("usuarioLogueado", JSON.stringify(usuario));
 
     vuelos.forEach(function (vuelo) {
         if (vuelo.asientos && vuelo.asientosElegidos) {
